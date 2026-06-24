@@ -1,0 +1,251 @@
+@media print {
+  @page { margin: 0.5cm; }
+  section, article, figure, table { break-inside: avoid; }
+  *, ::before, ::after { print-color-adjust: exact; backdrop-filter: none !important; animation-delay: -99s !important; animation-duration: 0.001s !important; animation-iteration-count: 1 !important; animation-fill-mode: both !important; animation-play-state: running !important; transition-duration: 0s !important; }
+}
+
+.scp0:hover { color: rgb(23, 24, 27); }
+
+.scp1:hover { background: rgb(44, 45, 49); transform: translateY(-1px); }
+
+.scp2:hover { background: rgb(44, 45, 49); gap: 16px; transform: translateY(-1px); }
+
+.scp3:hover { text-decoration-color: rgb(23, 24, 27); }
+
+.scp4:hover { background: rgba(155, 123, 56, 0.05); box-shadow: rgb(155, 123, 56) 3px 0px 0px inset; }
+
+.scp5:hover { color: rgb(155, 123, 56); }
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { margin: 0px; }
+
+::selection { background: rgb(23, 24, 27); color: rgb(244, 241, 234); }
+
+section[id] { scroll-margin-top: 88px; }
+
+a:focus-visible, [data-sign]:focus-visible { outline: rgb(155, 123, 56) solid 2px; outline-offset: 3px; border-radius: 1px; }
+
+.cab-headinner { transition: height 0.28s; }
+
+.cab-header.is-scrolled { box-shadow: rgb(221, 214, 200) 0px 1px 0px, rgba(23, 24, 27, 0.07) 0px 10px 30px; background: rgba(244, 241, 234, 0.94) !important; }
+
+.cab-header.is-scrolled .cab-headinner { height: 56px; }
+
+.cab-navlink { position: relative; }
+
+.cab-navlink::after { content: ""; position: absolute; left: 0px; right: 0px; bottom: -5px; height: 1px; background: rgb(155, 123, 56); transform: scaleX(0); transform-origin: right center; transition: transform 0.28s cubic-bezier(0.65, 0.05, 0.36, 1); }
+
+.cab-navlink:hover::after { transform: scaleX(1); transform-origin: left center; }
+
+.cab-mandat-arrow { transition: transform 0.22s, color 0.22s; }
+
+.cab-mandat:hover .cab-mandat-arrow { transform: translate(3px, -3px); color: rgb(155, 123, 56); }
+
+.cab-step-card { transition: background 0.22s, box-shadow 0.22s; }
+
+.cab-step-card:hover { background: rgb(250, 247, 240); box-shadow: rgb(155, 123, 56) 0px 2px 0px inset; }
+
+.cab-paper { box-shadow: rgba(23, 24, 27, 0.05) 0px 1px 2px, rgba(23, 24, 27, 0.24) 0px 24px 44px -18px; }
+
+.cab-portrait-photo { box-shadow: rgba(23, 24, 27, 0.1) 0px 0px 0px 1px inset; }
+
+@keyframes cabRise { 
+  0% { opacity: 0; transform: translateY(22px); }
+  100% { opacity: 1; transform: none; }
+}
+
+@keyframes cabUnderline { 
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.cab-grain { position: fixed; inset: 0px; z-index: 1; pointer-events: none; opacity: 0.05; mix-blend-mode: multiply; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC44NSIgbnVtT2N0YXZlcz0iMiIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNuKSIvPjwvc3ZnPg=="); background-size: 170px 170px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { animation: auto ease 0s 1 normal none running none !important; transition: none !important; }
+  [data-reveal], [data-reveal-group] > * { opacity: 1 !important; transform: none !important; }
+}
+
+@media (max-width: 1000px) {
+  .cab-method { grid-template-columns: 1fr 1fr !important; }
+  .cab-proof { grid-template-columns: 1fr 1fr !important; }
+  .cab-foot-grid { grid-template-columns: 1.3fr 1fr !important; }
+}
+
+@media (max-width: 760px) {
+  .cab-navlinks { display: none !important; }
+  /* Header mobile : libellé court + bouton compact, marque rétractable pour empêcher le débordement */
+  .header-inner { gap: 12px !important; }
+  .header-inner > .flex-center { flex: 1 1 auto !important; min-width: 0 !important; }
+  .brand { min-width: 0 !important; }
+  .brand-text { min-width: 0 !important; }
+  .brand-name { font-size: 18px !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+  .brand-sub { display: none !important; }
+  .nav-group { flex: 0 0 auto !important; }
+  .btn-cta-full { display: none !important; }
+  .btn-cta-short { display: inline !important; }
+  .btn-sm { font-size: 12.5px !important; padding: 9px 14px !important; }
+  .cab-hide-sm { display: none !important; }
+  .cab-mandat { display: flex !important; flex-direction: column !important; gap: 13px !important; padding-left: 14px !important; padding-right: 0px !important; }
+  .cab-mandat-arrow { display: none !important; }
+  .cab-ticker { justify-content: center !important; }
+  .cab-hero-portrait { justify-self: stretch !important; max-width: 460px !important; margin: 0px auto !important; }
+  .cab-proof { grid-template-columns: 1fr 1fr !important; }
+  .cab-step-gap { margin-bottom: 22px !important; }
+  .cab-testi { flex-direction: column-reverse !important; gap: 24px !important; }
+  .cab-testi > div { flex: 0 0 auto !important; width: 100% !important; min-width: 0px !important; }
+  .cab-footer { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+  .cab-foot-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
+  .cab-brandname { font-size: 18px !important; }
+}
+
+@media (max-width: 500px) {
+  .cab-method { grid-template-columns: 1fr !important; }
+}
+
+/* ===== Composants (extraits des styles inline) ===== */
+.link-quiet { font-size: 14px; color: rgb(60, 61, 64); text-decoration: none; transition: color 0.18s; }
+.serif-muted { font-family: Spectral, serif; font-size: clamp(16px, 1.8vw, 20px); color: rgb(60, 61, 64); }
+.inline-dot { display: flex; align-items: center; gap: 9px; }
+.stat { background: rgb(244, 241, 234); padding: clamp(30px, 4vw, 46px) clamp(18px, 2.4vw, 30px); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.tick { width: 22px; height: 2px; background: rgb(155, 123, 56); margin-bottom: clamp(18px, 2.4vw, 26px); }
+.stat-num { font-family: Spectral, serif; font-weight: 400; font-size: clamp(40px, 5vw, 58px); line-height: 1; letter-spacing: -0.02em; font-feature-settings: "onum"; display: flex; align-items: baseline; gap: 7px; }
+.tnum { font-variant-numeric: tabular-nums; }
+.stat-unit { font-family: Spectral, serif; font-style: italic; font-size: 0.4em; color: rgb(155, 123, 56); letter-spacing: 0px; }
+.stat-label { font-size: 13.5px; line-height: 1.5; color: rgb(91, 92, 95); margin-top: 12px; max-width: 22ch; }
+.mandat { display: grid; grid-template-columns: minmax(64px, 0.6fr) minmax(190px, 2fr) minmax(200px, 2.4fr) minmax(120px, 1.3fr) 22px; gap: clamp(14px, 2.4vw, 40px); align-items: start; padding: clamp(24px, 3vw, 34px) clamp(10px, 1.4vw, 18px); border-top: 1px solid rgb(221, 214, 200); transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); opacity: 1; transform: none; }
+.pt-2 { padding-top: 2px; }
+.mandat-num { font-family: Spectral, serif; font-weight: 400; font-size: clamp(26px, 3vw, 34px); line-height: 1; letter-spacing: -0.02em; color: rgb(23, 24, 27); }
+.mandat-code { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.1em; color: rgb(155, 123, 56); margin-top: 8px; }
+.mandat-title { font-family: Spectral, serif; font-weight: 500; font-size: clamp(20px, 2.3vw, 27px); letter-spacing: -0.01em; margin: 0px; }
+.mandat-text { font-size: 15px; line-height: 1.6; color: rgb(70, 71, 74); margin: 0px; }
+.kv-label { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(138, 135, 126); margin-bottom: 6px; }
+.kv-value { font-size: 14px; color: rgb(23, 24, 27); }
+.arrow-cell { font-size: 16px; color: rgb(185, 176, 154); justify-self: end; padding-top: 6px; }
+.step { background: rgb(244, 241, 234); padding: clamp(24px, 3vw, 34px); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.sec-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: clamp(40px, 5vw, 64px); }
+.step-code { font-family: "Geist Mono", monospace; font-size: 12px; color: rgb(155, 123, 56); }
+.step-week { font-family: Spectral, serif; font-style: italic; font-size: 15px; color: rgb(185, 176, 154); }
+.step-title { font-family: Spectral, serif; font-weight: 500; font-size: 22px; margin: 0px 0px 10px; }
+.step-text { font-size: 14px; line-height: 1.55; color: rgb(91, 92, 95); margin: 0px; }
+.foot-nav-link { font-size: 14.5px; color: rgb(60, 61, 64); text-decoration: none; width: fit-content; transition: color 0.18s; }
+.dot-gold-sm { width: 5px; height: 5px; border-radius: 50%; background: rgb(155, 123, 56); }
+.hero-tag-txt { font-size: 13.5px; color: rgb(70, 71, 74); white-space: nowrap; }
+.section { max-width: 1240px; margin: 0px auto; padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 40px); }
+.principle { background: rgb(23, 24, 27); padding: clamp(22px, 3vw, 30px); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.principle-head { display: flex; align-items: baseline; gap: 14px; }
+.principle-num { font-family: "Geist Mono", monospace; font-size: 12px; color: rgb(189, 160, 95); }
+.principle-title { font-family: Spectral, serif; font-weight: 500; font-size: 20px; margin: 0px 0px 6px; color: rgb(244, 241, 234); }
+.principle-text { font-size: 14px; line-height: 1.55; color: rgb(165, 163, 155); margin: 0px; }
+.nav-group { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 30px); }
+.italic { font-style: italic; }
+.eyebrow { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 123, 56); }
+.bb { border-bottom: 1px solid rgb(221, 214, 200); }
+.kv-label-block { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(138, 135, 126); display: block; margin-bottom: 5px; }
+.icon-16 { font-size: 16px; }
+.foot-label { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 123, 56); margin-bottom: 18px; }
+.page { background: rgb(244, 241, 234); color: rgb(23, 24, 27); font-family: Geist, Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; font-optical-sizing: auto; text-rendering: optimizelegibility; overflow-x: hidden; }
+.ticker { background: rgb(23, 24, 27); color: rgb(207, 202, 187); }
+.ticker-inner { max-width: 1240px; margin: 0px auto; padding: 9px clamp(16px, 4vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; }
+.dot-live { width: 6px; height: 6px; border-radius: 50%; background: rgb(155, 176, 122); box-shadow: rgba(155, 176, 122, 0.7) 0px 0px 8px; }
+.ticker-sub { color: rgb(140, 138, 130); }
+.header-bar { position: sticky; top: 0px; z-index: 60; background: rgba(244, 241, 234, 0.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgb(221, 214, 200); transition: background 0.28s, box-shadow 0.28s; }
+.header-inner { max-width: 1240px; margin: 0px auto; padding: 0px clamp(16px, 4vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 68px; }
+.flex-center { display: flex; align-items: center; }
+.brand { display: flex; align-items: center; gap: 13px; text-decoration: none; color: rgb(23, 24, 27); }
+.mark { position: relative; width: 40px; height: 40px; border: 1px solid rgb(23, 24, 27); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+.mark-corner-tl { position: absolute; top: -1px; left: -1px; width: 8px; height: 8px; border-top: 2px solid rgb(155, 123, 56); border-left: 2px solid rgb(155, 123, 56); }
+.mark-corner-br { position: absolute; bottom: -1px; right: -1px; width: 8px; height: 8px; border-bottom: 2px solid rgb(155, 123, 56); border-right: 2px solid rgb(155, 123, 56); }
+.mark-gn { font-family: Spectral, serif; font-weight: 500; font-size: 18px; line-height: 1; }
+.brand-text { display: flex; flex-direction: column; gap: 5px; }
+.brand-name { font-family: Spectral, serif; font-weight: 500; font-size: 20px; line-height: 1; letter-spacing: -0.01em; white-space: nowrap; }
+.brand-sub { font-family: "Geist Mono", monospace; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(138, 135, 126); white-space: nowrap; }
+.btn-sm { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: rgb(244, 241, 234); background: rgb(23, 24, 27); text-decoration: none; padding: 10px 18px; white-space: nowrap; flex: 0 0 auto; transition: background 0.2s, transform 0.2s; }
+.btn-cta-short { display: none; }
+.hero { max-width: 1240px; margin: 0px auto; padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px) clamp(48px, 6vw, 84px); position: relative; }
+.hero-ref { position: absolute; top: clamp(28px, 4vw, 52px); right: clamp(16px, 4vw, 40px); font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.1em; color: rgb(155, 123, 56); display: flex; align-items: center; gap: 8px; }
+.dot-gold { width: 6px; height: 6px; border-radius: 50%; background: rgb(155, 123, 56); }
+.hero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(36px, 5vw, 64px); align-items: end; }
+.hero-eyebrow { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(138, 135, 126); margin-bottom: clamp(22px, 4vw, 34px); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.hero-title { font-family: Spectral, serif; font-weight: 400; font-size: clamp(38px, 6.4vw, 72px); line-height: 1.04; letter-spacing: -0.015em; margin: 0px 0px 26px; text-wrap: balance; opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.hero-lead { font-size: clamp(15px, 1.6vw, 18px); line-height: 1.62; color: rgb(70, 71, 74); max-width: 50ch; margin: 0px 0px 34px; text-wrap: pretty; opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.hero-cta { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.btn { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; color: rgb(244, 241, 234); background: rgb(23, 24, 27); text-decoration: none; padding: 15px 26px; white-space: nowrap; transition: background 0.2s, gap 0.2s, transform 0.2s; }
+.btn-link { font-size: 15px; color: rgb(23, 24, 27); text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 5px; transition: text-decoration-color 0.2s; }
+.hero-tags { display: flex; gap: clamp(18px, 3vw, 34px); flex-wrap: wrap; margin-top: clamp(34px, 5vw, 48px); padding-top: 22px; border-top: 1px solid rgb(221, 214, 200); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.portrait { position: relative; place-self: end; width: 100%; max-width: 520px; height: clamp(380px, 40vw, 540px); opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.portrait-img { position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: 50% 6%; }
+.portrait-fade { position: absolute; left: 0px; right: 0px; bottom: 0px; height: 120px; background: linear-gradient(to top, rgb(244, 241, 234) 5%, rgba(244, 241, 234, 0)); pointer-events: none; }
+.portrait-cap { position: absolute; left: 1px; bottom: 14px; display: flex; align-items: center; gap: 11px; }
+.cap-line { width: 28px; height: 1px; background: rgb(155, 123, 56); }
+.cap-txt { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(111, 108, 100); }
+.band { border-top: 1px solid rgb(221, 214, 200); border-bottom: 1px solid rgb(221, 214, 200); }
+.wrap { max-width: 1240px; margin: 0px auto; padding: 0px clamp(16px, 4vw, 40px); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgb(221, 214, 200); }
+.section-tight { max-width: 1240px; margin: 0px auto; padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 40px) clamp(40px, 5vw, 64px); }
+.mandats-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(30px, 4vw, 52px); }
+.h2-left { font-family: Spectral, serif; font-weight: 400; font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.015em; margin: 0px; max-width: 18ch; text-wrap: balance; }
+.bt { border-top: 1px solid rgb(221, 214, 200); }
+.section-method { max-width: 1240px; margin: 0px auto; padding: clamp(40px, 5vw, 64px) clamp(16px, 4vw, 40px) clamp(56px, 8vw, 100px); }
+.method-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: clamp(28px, 4vw, 46px); }
+.rule { flex: 1 1 0%; height: 1px; background: rgb(221, 214, 200); }
+.method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgb(221, 214, 200); border: 1px solid rgb(221, 214, 200); }
+.note { background: radial-gradient(120% 85% at 88% 0%, rgba(189, 160, 95, 0.12), transparent 55%) rgb(23, 24, 27); color: rgb(236, 234, 227); }
+.note-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 5vw, 72px); }
+.note-eyebrow { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(189, 160, 95); margin-bottom: 26px; }
+.note-quote { font-family: Spectral, serif; font-weight: 300; font-size: clamp(22px, 2.8vw, 33px); line-height: 1.36; letter-spacing: -0.01em; margin: 0px 0px 28px; color: rgb(244, 241, 234); }
+.note-body { font-size: 15.5px; line-height: 1.68; color: rgb(182, 180, 172); max-width: 54ch; margin: 0px; text-wrap: pretty; }
+.dropcap { float: left; font-family: Spectral, serif; font-weight: 400; font-size: 56px; line-height: 0.8; padding: 5px 11px 0px 0px; color: rgb(189, 160, 95); }
+.mt-36 { margin-top: 36px; }
+.signature { font-family: "Pinyon Script", cursive; font-size: 42px; line-height: 1; color: rgb(244, 241, 234); opacity: 1; transform: none; transition: opacity 0.85s, transform 0.85s; }
+.sig-line { width: 54px; height: 1px; background: rgb(189, 160, 95); margin: 12px 0px 8px; transition: width 0.7s 0.15s; }
+.sig-role { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(140, 138, 130); }
+.principles { display: flex; flex-direction: column; gap: 1px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.1); align-self: start; }
+.testi { display: flex; gap: clamp(32px, 5vw, 64px); flex-wrap: wrap; align-items: flex-start; }
+.testi-meta { flex: 1 1 220px; min-width: 200px; opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.testi-eyebrow { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 123, 56); margin-bottom: clamp(24px, 4vw, 40px); }
+.testi-name { font-family: Spectral, serif; font-size: 18px; font-weight: 500; }
+.testi-line { width: 40px; height: 1px; background: rgb(155, 123, 56); margin: 10px 0px; }
+.testi-role { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(138, 135, 126); line-height: 1.6; }
+.testi-quote-wrap { flex: 2 1 380px; min-width: 280px; position: relative; opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.bigquote { position: absolute; top: -0.35em; left: -0.06em; font-family: Spectral, serif; font-size: clamp(70px, 9vw, 120px); line-height: 1; color: rgb(226, 216, 194); }
+.testi-quote { position: relative; font-family: Spectral, serif; font-weight: 400; font-size: clamp(22px, 3vw, 34px); line-height: 1.36; letter-spacing: -0.01em; color: rgb(23, 24, 27); margin: 0px; text-wrap: balance; }
+.sectors { max-width: 1240px; margin: 0px auto; padding: clamp(34px, 4vw, 52px) clamp(16px, 4vw, 40px); display: flex; align-items: center; gap: clamp(20px, 4vw, 48px); flex-wrap: wrap; justify-content: space-between; }
+.sectors-label { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(138, 135, 126); }
+.sectors-list { display: flex; gap: clamp(16px, 2.6vw, 38px); flex-wrap: wrap; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 5vw, 64px); align-items: center; }
+.contact-eyebrow { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(155, 123, 56); margin-bottom: 22px; }
+.contact-title { font-family: Spectral, serif; font-weight: 400; font-size: clamp(32px, 5vw, 56px); line-height: 1.04; letter-spacing: -0.02em; margin: 0px 0px 20px; text-wrap: balance; }
+.contact-lead { font-size: clamp(15px, 1.6vw, 18px); line-height: 1.62; color: rgb(70, 71, 74); max-width: 48ch; margin: 0px; text-wrap: pretty; }
+.contact-card { border: 1px solid rgb(207, 199, 181); background: rgb(251, 250, 246); padding: clamp(24px, 3vw, 36px); }
+.contact-list { display: flex; flex-direction: column; gap: 0px; }
+.contact-link { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 0px; border-bottom: 1px solid rgb(221, 214, 200); text-decoration: none; color: rgb(23, 24, 27); transition: color 0.2s; }
+.icon-18 { font-size: 18px; }
+.contact-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 0px; border-bottom: 1px solid rgb(221, 214, 200); }
+.btn-block { display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 22px; font-size: 15px; color: rgb(244, 241, 234); background: rgb(23, 24, 27); text-decoration: none; padding: 16px 24px; transition: background 0.2s, gap 0.2s, transform 0.2s; }
+.footer { border-top: 1px solid rgb(221, 214, 200); background-image: radial-gradient(90% 120% at 8% 0%, rgba(155, 123, 56, 0.05), transparent 55%); }
+.footer-inner { max-width: 1240px; margin: 0px auto; padding: clamp(48px, 6vw, 72px) clamp(16px, 4vw, 40px) clamp(28px, 3vw, 36px); }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.footer-brand { display: flex; align-items: center; gap: 15px; }
+.mark-lg { position: relative; width: 52px; height: 52px; border: 1px solid rgb(23, 24, 27); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+.mark-corner-tl-lg { position: absolute; top: -1px; left: -1px; width: 9px; height: 9px; border-top: 2px solid rgb(155, 123, 56); border-left: 2px solid rgb(155, 123, 56); }
+.mark-corner-br-lg { position: absolute; bottom: -1px; right: -1px; width: 9px; height: 9px; border-bottom: 2px solid rgb(155, 123, 56); border-right: 2px solid rgb(155, 123, 56); }
+.mark-gn-lg { font-family: Spectral, serif; font-weight: 500; font-size: 22px; line-height: 1; }
+.footer-name { font-family: Spectral, serif; font-size: 21px; font-weight: 500; letter-spacing: -0.01em; line-height: 1; }
+.footer-sub { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(138, 135, 126); margin-top: 7px; }
+.footer-desc { font-size: 14px; line-height: 1.62; color: rgb(91, 92, 95); margin: 22px 0px 0px; max-width: 34ch; text-wrap: pretty; }
+.footer-nav { display: flex; flex-direction: column; gap: 11px; }
+.footer-email { font-family: Spectral, serif; font-size: 18px; color: rgb(23, 24, 27); text-decoration: none; transition: color 0.18s; }
+.footer-avail { display: flex; align-items: center; gap: 9px; margin-top: 16px; }
+.dot-live-sm { width: 6px; height: 6px; border-radius: 50%; background: rgb(155, 176, 122); }
+.txt-sm-gray { font-size: 13.5px; color: rgb(91, 92, 95); }
+.txt-sm-gray-mt { font-size: 13.5px; color: rgb(91, 92, 95); margin-top: 9px; }
+.foot-label-social { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 123, 56); margin: 22px 0px 12px; }
+.social-row { display: flex; gap: 18px; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: clamp(36px, 5vw, 52px); padding-top: 22px; border-top: 1px solid rgb(221, 214, 200); }
+.copyright { font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.06em; color: rgb(138, 135, 126); }
+.to-top { display: inline-flex; align-items: center; gap: 8px; font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(155, 123, 56); text-decoration: none; transition: color 0.18s; }
+

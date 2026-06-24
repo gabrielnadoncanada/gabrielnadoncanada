@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f4f1ea"/>
+  <!-- cadre / logo GN -->
+  <g transform="translate(96,205)">
+    <rect x="0" y="0" width="180" height="180" fill="none" stroke="#17181b" stroke-width="3"/>
+    <path d="M0 24 V0 H24" fill="none" stroke="#9b7b38" stroke-width="6"/>
+    <path d="M180 156 V180 H156" fill="none" stroke="#9b7b38" stroke-width="6"/>
+    <text x="90" y="120" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="96" fill="#17181b">GN</text>
+  </g>
+  <text x="340" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="#17181b">Gabriel Nadon</text>
+  <text x="344" y="350" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="38" letter-spacing="2" fill="#9b7b38">CONSEILLER · SYSTÈMES &amp; IA</text>
+</svg>
