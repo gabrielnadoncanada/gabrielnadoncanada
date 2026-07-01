@@ -263,7 +263,9 @@ a.mandat { text-decoration: none; color: inherit; }
 
 /* ===== Formulaire conversationnel (section contact) =====
    Progressive enhancement : sans JS, la carte affiche les liens directs. */
-.chat-thread { display: flex; flex-direction: column; gap: 12px; }
+.chat-thread { display: flex; flex-direction: column; gap: 12px; height: min(400px, 60vh); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgb(207, 199, 181) transparent; padding-right: 4px; }
+/* Ancre la conversation en bas (comme une messagerie) sans casser le défilement. */
+.chat-thread > :first-child { margin-top: auto; }
 .chat-msg { max-width: 92%; padding: 13px 16px; font-size: 14.5px; line-height: 1.55; animation: cabRise 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
 .chat-msg-a { align-self: flex-start; background: rgb(244, 241, 234); border: 1px solid rgb(221, 214, 200); color: rgb(23, 24, 27); }
 .chat-msg-u { align-self: flex-end; background: rgb(23, 24, 27); color: rgb(244, 241, 234); }

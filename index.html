@@ -125,7 +125,7 @@
       <div>
         <div class="hero-eyebrow" data-rise="50">Systèmes &amp; automatisation IA — Québec</div>
         <h1 class="hero-title" data-rise="120">Des systèmes qui <span class="italic">travaillent</span> pour votre entreprise.</h1>
-        <p class="hero-lead" data-rise="200">J’accompagne les PME dans l’audit, l’automatisation IA et la conception de systèmes web qui éliminent le travail répétitif et accélèrent la croissance. Un seul interlocuteur, du diagnostic à la mise en œuvre.</p>
+        <p class="hero-lead" data-rise="200">J’accompagne les PME dans l’audit, l’automatisation IA et les systèmes web — qu’il faille les concevoir de zéro ou refondre ceux qui vous ralentissent. Un seul interlocuteur, du diagnostic à la mise en œuvre.</p>
         <div class="hero-cta" data-rise="280">
           <a href="#contact" class="scp2 btn">Prendre rendez-vous <span>→</span></a>
           <a href="#mandats" class="scp3 btn-link">Voir les mandats</a>
@@ -188,7 +188,7 @@
   
   <section class="section-tight" id="mandats">
     <div class="mandats-head">
-      <h2 class="h2-left">Quatre mandats, un seul objectif : votre rendement.</h2>
+      <h2 class="h2-left">Cinq mandats, un seul objectif : votre rendement.</h2>
       <span class="eyebrow">§ 01 · Les mandats</span>
     </div>
     <div>
@@ -245,6 +245,20 @@
         <div>
           <div class="kv-label">Livrable</div>
           <div class="kv-value"><span>Site performant</span></div>
+        </div>
+        <span class="cab-mandat-arrow arrow-cell">↗</span>
+      </a>
+
+      <a href="/refonte-de-systeme/" aria-label="Refonte de systèmes existants — voir la démarche" class="cab-mandat scp4 mandat">
+        <div class="pt-2">
+          <div class="mandat-num"><span>05</span></div>
+          <div class="mandat-code"><span>M-05</span></div>
+        </div>
+        <h3 class="mandat-title"><span>Refonte de systèmes existants</span></h3>
+        <p class="mandat-text"><span>Votre logiciel maison ou vos fichiers Excel vous ralentissent. On refond l’existant par étapes, sans perdre vos données ni arrêter vos opérations.</span></p>
+        <div>
+          <div class="kv-label">Livrable</div>
+          <div class="kv-value"><span>Système modernisé, migration incluse</span></div>
         </div>
         <span class="cab-mandat-arrow arrow-cell">↗</span>
       </a>
@@ -519,7 +533,7 @@
   if (!root) return;
   var EMAIL = "bonjour@gabrielnadon.com";
   var CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
-  var SUJETS = ["Audit d’opérations", "Systèmes web sur mesure", "Automatisation IA", "Sites qui convertissent", "Autre sujet"];
+  var SUJETS = ["Audit d’opérations", "Systèmes web sur mesure", "Automatisation IA", "Refonte d’un système existant", "Sites qui convertissent", "Autre sujet"];
   var state = { sujet: null, detail: "", nom: "", email: "" };
   var thread = null;
   var pickSujet = null; // actif seulement pendant l'étape 1
@@ -539,6 +553,10 @@
     root.innerHTML = "";
     thread = el("div", "chat-thread");
     root.appendChild(thread);
+    // Le fil est borné en hauteur (pas d'étirement de la page) : on suit le bas.
+    new MutationObserver(function () {
+      thread.scrollTop = thread.scrollHeight;
+    }).observe(thread, { childList: true, subtree: true });
 
     var alt = el("div", "chat-alt");
     alt.appendChild(el("span", "chat-alt-label", "Vous préférez en direct ?"));
@@ -691,6 +709,18 @@
   });
 
   boot();
+
+  // ?sujet=refonte (etc.) : présélectionne le sujet — utilisé par les pages
+  // internes qui renvoient vers le formulaire.
+  var PARAM_SUJETS = {
+    refonte: "Refonte d’un système existant",
+    audit: "Audit d’opérations",
+    automatisation: "Automatisation IA",
+    web: "Systèmes web sur mesure",
+    site: "Sites qui convertissent",
+  };
+  var param = new URLSearchParams(window.location.search).get("sujet");
+  if (param && PARAM_SUJETS[param] && pickSujet) pickSujet(PARAM_SUJETS[param]);
 })();
 </script>
 </body>

@@ -8,6 +8,7 @@ const SUJETS = new Set([
   "Audit d’opérations",
   "Systèmes web sur mesure",
   "Automatisation IA",
+  "Refonte d’un système existant",
   "Sites qui convertissent",
   "Autre sujet",
 ]);
