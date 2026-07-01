@@ -629,24 +629,56 @@
     nom.focus();
   }
 
-  function finish() {
-    track("chat_submit");
+  function mailtoHref() {
     var subject = "Demande — " + state.sujet + " (" + state.nom + ")";
     var body = "Sujet : " + state.sujet + "\n" +
       (state.detail ? "Contexte : " + state.detail + "\n" : "") +
       "Nom : " + state.nom + "\nCourriel : " + state.email +
       "\n\n(Envoyé depuis gabrielnadon.com)";
-    var href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    say("Merci " + state.nom.split(" ")[0] + " — votre message est prêt dans votre courriel. S’il ne s’est pas ouvert, utilisez le bouton ci-dessous, ou réservez directement 20 minutes.");
-    var chips = el("div", "chat-chips");
-    var a = el("a", "chat-send", "Confirmer par courriel →");
-    a.href = href;
+    return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  }
+
+  function calendlyChip() {
     var b = el("a", "chat-chip", "Réserver 20 min");
     b.href = CAL; b.target = "_blank"; b.rel = "noopener";
     b.addEventListener("click", function () { track("clic_audit"); });
-    chips.appendChild(a); chips.appendChild(b);
-    thread.appendChild(chips);
-    window.location.href = href;
+    return b;
+  }
+
+  function finish() {
+    track("chat_submit");
+    var sending = el("div", "chat-msg chat-msg-a", "Envoi en cours…");
+    thread.appendChild(sending);
+    var prenom = state.nom.split(" ")[0];
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sujet: state.sujet,
+        detail: state.detail,
+        nom: state.nom,
+        email: state.email
+      })
+    }).then(function (r) {
+      if (!r.ok) throw new Error("send_failed");
+      return r.json();
+    }).then(function () {
+      sending.remove();
+      track("chat_sent");
+      say("Merci " + prenom + " — votre demande est envoyée. Je vous réponds sous 24 h à " + state.email + ". Si c’est urgent, réservez directement 20 minutes à mon agenda.");
+      var chips = el("div", "chat-chips");
+      chips.appendChild(calendlyChip());
+      thread.appendChild(chips);
+    }).catch(function () {
+      sending.remove();
+      say("Petit pépin technique : votre message n’est pas parti. Le bouton ci-dessous ouvre votre courriel avec le message déjà rédigé — ou réservez directement 20 minutes.");
+      var chips = el("div", "chat-chips");
+      var a = el("a", "chat-send", "Envoyer par courriel →");
+      a.href = mailtoHref();
+      chips.appendChild(a);
+      chips.appendChild(calendlyChip());
+      thread.appendChild(chips);
+    });
   }
 
   // Un clic sur un mandat présélectionne le sujet dans le formulaire.
