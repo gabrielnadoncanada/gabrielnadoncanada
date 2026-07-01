@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) — Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJHNSFXNH0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QJHNSFXNH0');
+  </script>
+
+  <!-- SEO primaire -->
+  <title>Cas concret : synchronisation des prix fournisseurs vers la caisse d'une épicerie | Gabriel Nadon</title>
+  <meta name="description" content="Comment une épicerie québécoise a éliminé la saisie manuelle des coûtants : import automatique des listes de prix de deux grands distributeurs (37 000+ lignes), comparaison multi-fournisseurs et export vers le système de caisse.">
+  <link rel="canonical" href="https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Gabriel Nadon">
+  <meta name="theme-color" content="#17181b">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gabriel Nadon">
+  <meta property="og:title" content="Cas concret : les prix de deux grossistes synchronisés vers la caisse, sans saisie manuelle">
+  <meta property="og:description" content="Import automatique des listes de prix fournisseurs, comparaison multi-fournisseurs et export vers le POS d'une épicerie québécoise.">
+  <meta property="og:url" content="https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:image" content="https://gabrielnadon.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gabriel Nadon — Conseiller, Systèmes &amp; IA">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cas concret : les prix de deux grossistes synchronisés vers la caisse d'une épicerie">
+  <meta name="twitter:description" content="Import automatique des listes de prix fournisseurs, comparaison multi-fournisseurs et export vers le POS. Sans saisie manuelle.">
+  <meta name="twitter:image" content="https://gabrielnadon.com/og-image.png">
+
+  <!-- Favicon (logo GN inline) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f1ea'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='54' fill='%2317181b'%3EGN%3C/text%3E%3C/svg%3E">
+
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Pinyon+Script&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap">
+
+  <!-- Données structurées : article + fil d'Ariane -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Synchroniser les prix de deux grossistes vers la caisse, sans une seule saisie manuelle",
+        "description": "Étude de cas : import automatique des listes de prix fournisseurs, comparaison multi-fournisseurs et export vers le système de caisse d'une épicerie québécoise.",
+        "inLanguage": "fr-CA",
+        "author": { "@type": "Person", "name": "Gabriel Nadon", "url": "https://gabrielnadon.com/" },
+        "publisher": { "@type": "Person", "name": "Gabriel Nadon", "url": "https://gabrielnadon.com/" },
+        "mainEntityOfPage": "https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/",
+        "image": "https://gabrielnadon.com/og-image.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://gabrielnadon.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Cas concrets", "item": "https://gabrielnadon.com/#cas" },
+          { "@type": "ListItem", "position": 3, "name": "Synchronisation des prix fournisseurs", "item": "https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="dc-root"><div><div class="page">
+
+  <div class="cab-grain" aria-hidden="true"></div>
+
+  <div class="ticker">
+    <div class="cab-ticker ticker-inner">
+      <span class="inline-dot"><span class="dot-live"></span>Disponible · 2 mandats · T3 2026</span>
+      <span class="cab-hide-sm ticker-sub">Cabinet indépendant · Montréal </span>
+    </div>
+  </div>
+
+  <header class="cab-header header-bar">
+    <div class="cab-headinner header-inner">
+      <div class="flex-center">
+        <a href="/" aria-label="Gabriel Nadon — Conseiller, Systèmes &amp; IA" class="cab-brand brand">
+          <span class="mark">
+            <span class="mark-corner-tl" aria-hidden="true"></span>
+            <span class="mark-corner-br" aria-hidden="true"></span>
+            <span class="mark-gn">GN</span>
+          </span>
+          <span class="cab-brandname brand-text">
+            <span class="brand-name">Gabriel Nadon</span>
+            <span class="brand-sub">Conseiller · Systèmes &amp; IA</span>
+          </span>
+        </a>
+      </div>
+      <nav class="nav-group">
+        <span class="cab-navlinks nav-group">
+            <a href="/#approche" class="cab-navlink scp0 link-quiet"><span>Approche</span></a>
+            <a href="/#mandats" class="cab-navlink scp0 link-quiet"><span>Mandats</span></a>
+            <a href="/#cas" class="cab-navlink scp0 link-quiet"><span>Cas concrets</span></a>
+            <a href="/#contact" class="cab-navlink scp0 link-quiet"><span>Contact</span></a>
+        </span>
+        <a href="/#contact" class="scp1 btn-sm"><span class="btn-cta-full">Prendre rendez-vous</span><span class="btn-cta-short">Rendez-vous</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero du cas -->
+  <section class="case-hero">
+    <div class="case-hero-grid">
+      <div>
+        <div class="eyebrow" data-rise="50">Cas concret · Commerce d'alimentation</div>
+        <h1 class="case-title" data-rise="120" style="margin-top: 22px;">Les prix de deux grossistes synchronisés vers la caisse, <span class="italic">sans une seule saisie manuelle.</span></h1>
+        <p class="case-lead" data-rise="200">Une épicerie indépendante du Québec recevait chaque semaine des listes de prix de dizaines de milliers de lignes de ses distributeurs. La mise à jour des coûtants dans le système de caisse se faisait à la main. Nous avons construit le système qui fait ce travail à sa place — et qui trouve, pour chaque produit, le fournisseur le moins cher.</p>
+      </div>
+      <div data-rise="280">
+        <div class="cab-paper case-shot">
+          <div class="case-shot-head">
+            <span class="kv-label" style="margin-bottom: 0;">Validation des prix</span>
+            <span class="case-shot-badge">2 fichiers importés</span>
+          </div>
+          <table class="case-shot-table">
+            <thead>
+              <tr><th>Produit</th><th>Dist. A</th><th>Dist. B</th><th>Retenu</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Huile d'olive 3 L</td><td class="num dim">21,49</td><td class="num">19,86</td><td class="best">B · −7,6 %</td></tr>
+              <tr><td>Farine tout usage 10 kg</td><td class="num">11,20</td><td class="num dim">11,64</td><td class="best">A · −3,8 %</td></tr>
+              <tr><td>Café espresso 1 kg</td><td class="num dim">14,05</td><td class="num">13,58</td><td class="best">B · −3,3 %</td></tr>
+              <tr><td>Tomates en dés 796 ml</td><td class="num">1,42</td><td class="num">1,42</td><td class="dim">Inchangé</td></tr>
+            </tbody>
+          </table>
+          <div class="case-shot-foot">
+            <span class="dot-live-sm"></span>
+            <span class="txt-sm-gray">Approuvé en lot · exporté vers la caisse</span>
+          </div>
+        </div>
+        <div class="case-shot-caption">Reproduction stylisée de l'écran de validation</div>
+      </div>
+    </div>
+    <div class="case-meta" data-rise="360">
+      <div class="case-meta-item">
+        <div class="kv-label">Client</div>
+        <div class="kv-value">Épicerie indépendante · Québec</div>
+      </div>
+      <div class="case-meta-item">
+        <div class="kv-label">Mandat</div>
+        <div class="kv-value">Système web sur mesure + automatisation</div>
+      </div>
+      <div class="case-meta-item">
+        <div class="kv-label">Livré</div>
+        <div class="kv-value">2026</div>
+      </div>
+      <div class="case-meta-item">
+        <div class="kv-label">Fournisseurs intégrés</div>
+        <div class="kv-value">2 grands distributeurs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chiffres -->
+  <section class="band">
+    <div class="wrap">
+      <div class="cab-proof stats-grid">
+          <div class="stat">
+            <div class="tick"></div>
+            <div class="stat-num"><span class="tnum">37&nbsp;k</span><span class="stat-unit"><span>lignes +</span></span></div>
+            <div class="stat-label"><span>traitées en arrière-plan, par fichier reçu</span></div>
+          </div>
+          <div class="stat">
+            <div class="tick"></div>
+            <div class="stat-num"><span class="tnum">2</span><span class="stat-unit"><span>distributeurs</span></span></div>
+            <div class="stat-label"><span>comparés produit par produit, extensible</span></div>
+          </div>
+          <div class="stat">
+            <div class="tick"></div>
+            <div class="stat-num"><span class="tnum">1</span><span class="stat-unit"><span>écran</span></span></div>
+            <div class="stat-label"><span>pour valider, substituer ou rejeter en lot</span></div>
+          </div>
+          <div class="stat">
+            <div class="tick"></div>
+            <div class="stat-num"><span class="tnum">0</span><span class="stat-unit"><span>saisie</span></span></div>
+            <div class="stat-label"><span>plus aucun coûtant retapé à la main</span></div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Le problème -->
+  <section class="band">
+    <div class="section" style="padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(40px, 6vw, 72px);">
+      <div class="note-grid">
+        <div>
+          <div class="eyebrow" style="margin-bottom: 22px;">Le problème</div>
+          <h2 class="h2-left" style="max-width: 22ch;">Des heures de saisie, des formats impossibles, et aucune vue d'ensemble.</h2>
+        </div>
+        <div class="case-prose">
+          <p>Chaque distributeur envoie sa liste de prix dans son propre format : l'un produit un guide de commande de <strong>37 000 lignes et plus</strong>, l'autre un fichier qui prétend être un tableur mais n'en est pas un. Aucun des deux ne parle le langage du système de caisse.</p>
+          <p>Résultat : l'équipe retapait les coûtants à la main, ligne par ligne. Des heures perdues à chaque liste reçue, des erreurs de saisie inévitables — et surtout, aucune façon de répondre à la question qui compte : <em>« pour ce produit, lequel de mes fournisseurs est le moins cher aujourd'hui ? »</em> Des produits achetés au mauvais prix, des marges qui s'érodent en silence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- La solution -->
+  <section class="section-method">
+    <div class="method-head">
+      <span class="eyebrow">La solution, en cinq étapes</span>
+      <span class="rule"></span>
+    </div>
+    <div class="case-steps">
+        <div class="case-step">
+          <div class="mandat-num"><span>01</span></div>
+          <h3 class="mandat-title"><span>Dépôt du fichier</span></h3>
+          <p class="mandat-text"><span>L'équipe téléverse la liste de prix telle que reçue du distributeur. Rien à convertir, rien à reformater.</span></p>
+        </div>
+        <div class="case-step">
+          <div class="mandat-num"><span>02</span></div>
+          <h3 class="mandat-title"><span>Lecture et nettoyage</span></h3>
+          <p class="mandat-text"><span>Le système décode chaque format, normalise les codes produits et écarte ce qui ne doit pas être synchronisé, en documentant chaque rejet.</span></p>
+        </div>
+        <div class="case-step">
+          <div class="mandat-num"><span>03</span></div>
+          <h3 class="mandat-title"><span>Comparaison</span></h3>
+          <p class="mandat-text"><span>Pour chaque produit, tous les fournisseurs actifs sont confrontés. Le meilleur coûtant est suggéré automatiquement.</span></p>
+        </div>
+        <div class="case-step">
+          <div class="mandat-num"><span>04</span></div>
+          <h3 class="mandat-title"><span>Validation humaine</span></h3>
+          <p class="mandat-text"><span>Un seul écran pour approuver, rejeter ou substituer — à la ligne ou en lot. L'équipe garde le dernier mot, chaque décision est tracée.</span></p>
+        </div>
+        <div class="case-step">
+          <div class="mandat-num"><span>05</span></div>
+          <h3 class="mandat-title"><span>Export vers la caisse</span></h3>
+          <p class="mandat-text"><span>Un fichier au format exact du système de caisse (SMS de LOC Software), avec historique des lots, ré-export et retour arrière.</span></p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Résultats -->
+  <section class="note">
+    <div class="section">
+      <div class="note-grid">
+        <div>
+          <div class="note-eyebrow">Ce que ça change</div>
+          <p class="note-quote">Le système fait la saisie. L'équipe prend les décisions.</p>
+          <p class="note-body">La valeur n'est pas dans la technologie : elle est dans les heures de retranscription qui disparaissent, dans les erreurs de frappe qui n'existent plus, et dans chaque produit désormais acheté au meilleur coûtant disponible. La marge se protège à la source.</p>
+        </div>
+        <div class="principles">
+            <div class="principle">
+              <div class="principle-head">
+                <span class="principle-num"><span>I.</span></span>
+                <div>
+                  <h3 class="principle-title"><span>La saisie manuelle éliminée</span></h3>
+                  <p class="principle-text"><span>37 000+ lignes traitées en arrière-plan par fichier reçu. Plus aucun coûtant retapé à la main.</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="principle">
+              <div class="principle-head">
+                <span class="principle-num"><span>II.</span></span>
+                <div>
+                  <h3 class="principle-title"><span>Le meilleur prix, systématiquement</span></h3>
+                  <p class="principle-text"><span>Chaque produit est comparé entre tous les fournisseurs actifs. Le moins cher est proposé d'office.</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="principle">
+              <div class="principle-head">
+                <span class="principle-num"><span>III.</span></span>
+                <div>
+                  <h3 class="principle-title"><span>Zéro décision non tracée</span></h3>
+                  <p class="principle-text"><span>Qui a approuvé quoi, quand, sur quelle base : tout est journalisé, avec ré-export et retour arrière.</span></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fiche technique -->
+  <section class="bb">
+    <div class="section" style="padding-top: clamp(36px, 5vw, 60px); padding-bottom: clamp(36px, 5vw, 60px);">
+      <div class="method-head" style="margin-bottom: clamp(24px, 3vw, 36px);">
+        <span class="eyebrow">Sous le capot</span>
+        <span class="rule"></span>
+      </div>
+      <div class="case-kv-grid">
+        <div>
+          <div class="kv-label">Plateforme</div>
+          <div class="kv-value">Laravel 12 · PHP 8.4 · Filament</div>
+        </div>
+        <div>
+          <div class="kv-label">Traitement</div>
+          <div class="kv-value">Files d'attente, lecture en flux des fichiers volumineux</div>
+        </div>
+        <div>
+          <div class="kv-label">Intégration</div>
+          <div class="kv-value">POS SMS de LOC Software, normalisation des codes UPC</div>
+        </div>
+        <div>
+          <div class="kv-label">Contrôle</div>
+          <div class="kv-value">Rôles et permissions, journal d'audit complet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-eyebrow">Et chez vous ?</div>
+        <h2 class="contact-title">Un processus manuel qui gruge <span class="italic">vos semaines ?</span></h2>
+        <p class="contact-lead">Mise à jour de prix, retranscription de données, rapports assemblés à la main : si votre équipe fait un travail qu'un système devrait faire, parlons-en. Vingt minutes suffisent pour cadrer le problème.</p>
+      </div>
+      <div class="cab-paper contact-card">
+        <div class="contact-list">
+          <a href="/#contact" class="scp2 btn-block">Discuter de votre situation <span>→</span></a>
+          <a href="https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min" target="_blank" rel="noopener" onclick="gtag('event','clic_audit')" class="scp5 contact-link" style="margin-top: 14px;">
+            <span><span class="kv-label-block">Ou directement</span><span class="icon-16">Réserver 20 min (Calendly)</span></span>
+            <span class="icon-18">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+        <span class="copyright">© 2026 Gabriel Nadon · Tous droits réservés</span>
+        <a href="/" class="cab-foot-link scp0 to-top">← Retour à l'accueil</a>
+      </div>
+    </div>
+  </footer></div></div></div>
+
+<script>
+(function () {
+  "use strict";
+  var header = document.querySelector(".cab-header");
+  if (header) {
+    var onScroll = function () { header.classList.toggle("is-scrolled", window.scrollY > 8); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+</body>
+</html>

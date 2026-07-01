@@ -287,3 +287,34 @@ a.mandat { text-decoration: none; color: inherit; }
 .chat-alt a { font-size: 13.5px; color: rgb(23, 24, 27); text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 4px; transition: text-decoration-color 0.2s, color 0.2s; }
 .chat-alt a:hover { text-decoration-color: rgb(155, 123, 56); color: rgb(155, 123, 56); }
 .chat-error { font-size: 13px; color: rgb(146, 60, 32); margin: 0; }
+
+/* ===== Études de cas ===== */
+.case-line { display: grid; grid-template-columns: minmax(64px, 0.6fr) minmax(220px, 2.2fr) minmax(200px, 2.4fr) minmax(120px, 1.1fr) 22px; gap: clamp(14px, 2.4vw, 40px); align-items: start; padding: clamp(24px, 3vw, 34px) clamp(10px, 1.4vw, 18px); border-top: 1px solid rgb(221, 214, 200); border-bottom: 1px solid rgb(221, 214, 200); text-decoration: none; color: inherit; }
+@media (max-width: 760px) { .case-line { display: flex !important; flex-direction: column !important; gap: 13px !important; padding-left: 14px !important; } }
+.case-hero { max-width: 1240px; margin: 0px auto; padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 40px) clamp(40px, 5vw, 64px); }
+.case-title { font-family: Spectral, serif; font-weight: 400; font-size: clamp(32px, 5vw, 58px); line-height: 1.08; letter-spacing: -0.015em; margin: 0px 0px 24px; max-width: 24ch; text-wrap: balance; }
+.case-lead { font-size: clamp(15px, 1.6vw, 18px); line-height: 1.62; color: rgb(70, 71, 74); max-width: 58ch; margin: 0px; text-wrap: pretty; }
+.case-meta { display: flex; flex-wrap: wrap; gap: clamp(20px, 4vw, 56px); margin-top: clamp(28px, 4vw, 44px); padding-top: 22px; border-top: 1px solid rgb(221, 214, 200); }
+.case-meta-item { min-width: 140px; }
+.case-prose { font-size: clamp(15px, 1.6vw, 17px); line-height: 1.7; color: rgb(60, 61, 64); max-width: 62ch; text-wrap: pretty; }
+.case-prose p { margin: 0 0 18px; }
+.case-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgb(221, 214, 200); border: 1px solid rgb(221, 214, 200); margin-top: clamp(28px, 4vw, 44px); }
+.case-tech { font-family: "Geist Mono", monospace; font-size: 11.5px; letter-spacing: 0.04em; line-height: 1.9; color: rgb(112, 108, 98); }
+
+/* ===== Page cas : reproduction stylisée de l'écran de validation ===== */
+.case-hero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(36px, 5vw, 64px); align-items: center; }
+.case-shot { background: rgb(251, 250, 246); border: 1px solid rgb(207, 199, 181); padding: clamp(18px, 2.2vw, 26px); }
+.case-shot-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.case-shot-badge { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(155, 123, 56); }
+.case-shot-table { width: 100%; border-collapse: collapse; }
+.case-shot-table th { font-family: "Geist Mono", monospace; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; color: rgb(112, 108, 98); text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid rgb(221, 214, 200); }
+.case-shot-table td { font-size: 13px; padding: 11px 10px 11px 0; border-bottom: 1px solid rgb(233, 227, 214); color: rgb(23, 24, 27); }
+.case-shot-table .num { font-family: "Geist Mono", monospace; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.case-shot-table .best { color: rgb(155, 123, 56); font-weight: 500; white-space: nowrap; }
+.case-shot-table .dim { color: rgb(112, 108, 98); }
+.case-shot-foot { display: flex; align-items: center; gap: 9px; margin-top: 14px; }
+.case-shot-caption { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(112, 108, 98); margin-top: 12px; }
+.case-steps { border-top: 1px solid rgb(221, 214, 200); }
+.case-step { display: grid; grid-template-columns: minmax(56px, 0.5fr) minmax(180px, 1.6fr) minmax(240px, 3fr); gap: clamp(14px, 2.4vw, 40px); align-items: start; padding: clamp(20px, 2.6vw, 30px) clamp(10px, 1.4vw, 18px); border-bottom: 1px solid rgb(221, 214, 200); }
+@media (max-width: 700px) { .case-step { display: flex; flex-direction: column; gap: 10px; padding-left: 14px; } }
+.case-kv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(20px, 3vw, 40px); }
