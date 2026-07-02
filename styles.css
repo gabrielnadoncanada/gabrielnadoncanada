@@ -261,34 +261,29 @@ a.mandat { text-decoration: none; color: inherit; }
 .to-top { display: inline-flex; align-items: center; gap: 8px; font-family: "Geist Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(155, 123, 56); text-decoration: none; transition: color 0.18s; }
 
 
-/* ===== Formulaire conversationnel (section contact) =====
-   Progressive enhancement : sans JS, la carte affiche les liens directs. */
-.chat-thread { display: flex; flex-direction: column; gap: 12px; height: min(400px, 60vh); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgb(207, 199, 181) transparent; padding-right: 4px; }
-/* Ancre la conversation en bas (comme une messagerie) sans casser le défilement. */
-.chat-thread > :first-child { margin-top: auto; }
-.chat-msg { max-width: 92%; padding: 13px 16px; font-size: 14.5px; line-height: 1.55; animation: cabRise 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.chat-msg-a { align-self: flex-start; background: rgb(244, 241, 234); border: 1px solid rgb(221, 214, 200); color: rgb(23, 24, 27); }
-.chat-msg-u { align-self: flex-end; background: rgb(23, 24, 27); color: rgb(244, 241, 234); }
-.chat-step { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(112, 108, 98); margin: 6px 0 2px; }
-.chat-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-.chat-chip { font-family: Geist, system-ui, sans-serif; font-size: 13.5px; color: rgb(23, 24, 27); background: transparent; border: 1px solid rgb(23, 24, 27); padding: 9px 14px; cursor: pointer; transition: background 0.18s, color 0.18s; }
-.chat-chip:hover { background: rgb(23, 24, 27); color: rgb(244, 241, 234); }
-.chat-chip:focus-visible { outline: rgb(155, 123, 56) solid 2px; outline-offset: 3px; }
-.chat-field { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
-.chat-input, .chat-textarea { font-family: Geist, system-ui, sans-serif; font-size: 14.5px; color: rgb(23, 24, 27); background: rgb(251, 250, 246); border: 1px solid rgb(207, 199, 181); padding: 12px 14px; width: 100%; }
-.chat-textarea { resize: vertical; min-height: 76px; }
-.chat-input:focus-visible, .chat-textarea:focus-visible { outline: rgb(155, 123, 56) solid 2px; outline-offset: 1px; }
-.chat-input::placeholder, .chat-textarea::placeholder { color: rgb(112, 108, 98); }
-.chat-send { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 14.5px; color: rgb(244, 241, 234); background: rgb(23, 24, 27); border: 0; cursor: pointer; padding: 13px 20px; transition: background 0.2s, gap 0.2s; }
-.chat-send:hover { background: rgb(44, 45, 49); gap: 14px; }
-.chat-send:focus-visible { outline: rgb(155, 123, 56) solid 2px; outline-offset: 3px; }
-.chat-skip { font-size: 13px; color: rgb(91, 92, 95); background: none; border: 0; cursor: pointer; text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 4px; padding: 0; width: fit-content; }
-.chat-skip:hover { text-decoration-color: rgb(23, 24, 27); }
-.chat-alt { margin-top: 18px; padding-top: 16px; border-top: 1px solid rgb(221, 214, 200); display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
-.chat-alt-label { font-family: "Geist Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(112, 108, 98); width: 100%; }
-.chat-alt a { font-size: 13.5px; color: rgb(23, 24, 27); text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 4px; transition: text-decoration-color 0.2s, color 0.2s; }
-.chat-alt a:hover { text-decoration-color: rgb(155, 123, 56); color: rgb(155, 123, 56); }
-.chat-error { font-size: 13px; color: rgb(146, 60, 32); margin: 0; }
+/* ===== Formulaire de contact simple (section contact) ===== */
+#contact-form { display: flex; flex-direction: column; gap: 18px; }
+.form-field { display: flex; flex-direction: column; gap: 7px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+.form-label { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(112, 108, 98); }
+.form-opt { text-transform: none; letter-spacing: 0; color: rgb(150, 146, 137); }
+.form-input { font-family: Geist, system-ui, sans-serif; font-size: 14.5px; color: rgb(23, 24, 27); background: rgb(251, 250, 246); border: 1px solid rgb(207, 199, 181); padding: 12px 14px; width: 100%; transition: border-color 0.18s; }
+.form-input:hover { border-color: rgb(185, 176, 154); }
+.form-textarea { resize: vertical; min-height: 84px; }
+.form-input:focus-visible { outline: rgb(155, 123, 56) solid 2px; outline-offset: 1px; }
+.form-input::placeholder { color: rgb(112, 108, 98); }
+select.form-input { appearance: none; -webkit-appearance: none; cursor: pointer; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%239b7b38' stroke-width='1.5'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; }
+#contact-form .btn-block { margin-top: 2px; }
+.form-error { font-size: 13px; color: rgb(146, 60, 32); margin: -6px 0 0; }
+.form-note { font-size: 13px; line-height: 1.5; color: rgb(91, 92, 95); margin: 4px 0 0; }
+.form-note a { color: rgb(23, 24, 27); text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 3px; transition: color 0.18s, text-decoration-color 0.18s; }
+.form-note a:hover { color: rgb(155, 123, 56); text-decoration-color: rgb(155, 123, 56); }
+.form-done { animation: cabRise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.form-done-title { font-family: Spectral, serif; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.3; margin: 0 0 12px; color: rgb(23, 24, 27); text-wrap: balance; }
+.form-done-text { font-size: 15px; line-height: 1.6; color: rgb(70, 71, 74); margin: 0; }
+.form-done-text a { color: rgb(23, 24, 27); text-decoration: underline 1px rgb(185, 176, 154); text-underline-offset: 3px; }
+.form-done-text a:hover { color: rgb(155, 123, 56); text-decoration-color: rgb(155, 123, 56); }
 
 /* ===== Études de cas ===== */
 .case-line { display: grid; grid-template-columns: minmax(64px, 0.6fr) minmax(220px, 2.2fr) minmax(200px, 2.4fr) minmax(120px, 1.1fr) 22px; gap: clamp(14px, 2.4vw, 40px); align-items: start; padding: clamp(24px, 3vw, 34px) clamp(10px, 1.4vw, 18px); border-top: 1px solid rgb(221, 214, 200); border-bottom: 1px solid rgb(221, 214, 200); text-decoration: none; color: inherit; }
@@ -329,3 +324,13 @@ a.mandat { text-decoration: none; color: inherit; }
 .money-fig .cur { font-size: 0.42em; font-style: italic; color: rgb(155, 123, 56); letter-spacing: 0; }
 .money-sub { font-size: 15px; line-height: 1.55; color: rgb(70, 71, 74); margin-top: 16px; max-width: 28ch; }
 .money-plus { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgb(221, 214, 200); font-family: Spectral, serif; font-size: clamp(17px, 2vw, 21px); font-style: italic; line-height: 1.4; color: rgb(23, 24, 27); }
+
+/* ===== Page refonte : liste des douleurs + encadré risque ===== */
+.pain-list { list-style: none; margin: 0; padding: 0; }
+.pain-item { display: flex; gap: 18px; padding: 20px 0; border-top: 1px solid rgb(221, 214, 200); }
+.pain-item:first-child { border-top: 0; }
+.pain-mark { flex: 0 0 auto; width: 24px; height: 2px; background: rgb(155, 123, 56); margin-top: 15px; }
+.pain-text { font-family: Spectral, serif; font-size: clamp(17px, 2vw, 22px); line-height: 1.45; letter-spacing: -0.01em; color: rgb(23, 24, 27); margin: 0; text-wrap: pretty; }
+.risk-item { padding: 15px 0; border-top: 1px solid rgb(221, 214, 200); font-size: 15px; line-height: 1.5; color: rgb(23, 24, 27); display: flex; gap: 12px; }
+.risk-item:first-of-type { border-top: 0; padding-top: 4px; }
+.risk-item .rmark { flex: 0 0 auto; color: rgb(155, 123, 56); font-family: "Geist Mono", monospace; font-size: 13px; line-height: 1.5; }

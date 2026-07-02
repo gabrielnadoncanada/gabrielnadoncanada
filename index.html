@@ -434,20 +434,38 @@
         <p class="contact-lead">On cadre vos opérations, on cible vos plus grosses pertes de temps et vous repartez avec un plan d’action concret — que l’on travaille ensemble ou non.</p>
       </div>
       <div class="cab-paper contact-card">
-        <div id="chat-root">
-          <!-- Fallback sans JavaScript : liens directs. Le script remplace ce bloc
-               par le formulaire conversationnel. -->
-          <div class="contact-list">
-            <a href="mailto:bonjour@gabrielnadon.com" class="scp5 contact-link">
-              <span><span class="kv-label-block">Courriel</span><span class="icon-16">bonjour<span>@</span>gabrielnadon.com</span></span>
-              <span class="icon-18">→</span>
-            </a>
-            <div class="contact-row">
-              <span><span class="kv-label-block">Disponibilité</span><span class="icon-16">2 mandats ce trimestre</span></span>
-            </div>
-            <a href="https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min" target="_blank" rel="noopener" onclick="gtag('event','clic_audit')" class="scp2 btn-block">Réserver mon audit <span>→</span></a>
+        <form id="contact-form" novalidate>
+          <div class="form-field">
+            <label class="form-label" for="cf-sujet">Votre besoin</label>
+            <select class="form-input" id="cf-sujet" name="sujet">
+              <option>Audit d’opérations</option>
+              <option>Systèmes web sur mesure</option>
+              <option>Automatisation IA</option>
+              <option>Refonte d’un système existant</option>
+              <option>Sites qui convertissent</option>
+              <option>Autre sujet</option>
+            </select>
           </div>
-        </div>
+          <div class="form-field">
+            <label class="form-label" for="cf-detail">En quelques mots, où perdez-vous le plus de temps ? <span class="form-opt">(facultatif)</span></label>
+            <textarea class="form-input form-textarea" id="cf-detail" name="detail" placeholder="Ex. : la facturation nous prend deux jours par semaine…"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="cf-nom">Nom</label>
+              <input class="form-input" id="cf-nom" name="nom" type="text" autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="cf-email">Courriel</label>
+              <input class="form-input" id="cf-email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+          <!-- Honeypot anti-pourriel (caché) -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <p class="form-error" id="cf-error" hidden></p>
+          <button type="submit" class="scp2 btn-block" id="cf-submit">Envoyer ma demande <span>→</span></button>
+          <p class="form-note">Réponse sous 24 h. Ou <a href="https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min" target="_blank" rel="noopener" onclick="gtag('event','clic_audit')">réservez 20 min directement</a>.</p>
+        </form>
       </div>
     </div>
   </section>
@@ -528,190 +546,19 @@
 
   function track(name) { if (typeof window.gtag === "function") window.gtag("event", name); }
 
-  // ===== Formulaire conversationnel (progressive enhancement) =====
-  var root = document.getElementById("chat-root");
-  if (!root) return;
+  // ===== Formulaire de contact simple =====
+  var form = document.getElementById("contact-form");
+  if (!form) return;
   var EMAIL = "bonjour@gabrielnadon.com";
   var CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
-  var SUJETS = ["Audit d’opérations", "Systèmes web sur mesure", "Automatisation IA", "Refonte d’un système existant", "Sites qui convertissent", "Autre sujet"];
-  var state = { sujet: null, detail: "", nom: "", email: "" };
-  var thread = null;
-  var pickSujet = null; // actif seulement pendant l'étape 1
+  var sujetSel = document.getElementById("cf-sujet");
+  var detailEl = document.getElementById("cf-detail");
+  var nomEl = document.getElementById("cf-nom");
+  var emailEl = document.getElementById("cf-email");
+  var errEl = document.getElementById("cf-error");
+  var submitBtn = document.getElementById("cf-submit");
 
-  function el(tag, cls, txt) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (txt != null) n.textContent = txt;
-    return n;
-  }
-  function say(txt) { thread.appendChild(el("div", "chat-msg chat-msg-a", txt)); }
-  function echo(txt) { thread.appendChild(el("div", "chat-msg chat-msg-u", txt)); }
-  function stepLabel(n) { thread.appendChild(el("div", "chat-step", "Étape " + n + " / 3")); }
-
-  function boot() {
-    state = { sujet: null, detail: "", nom: "", email: "" };
-    root.innerHTML = "";
-    thread = el("div", "chat-thread");
-    root.appendChild(thread);
-    // Le fil est borné en hauteur (pas d'étirement de la page) : on suit le bas.
-    new MutationObserver(function () {
-      thread.scrollTop = thread.scrollHeight;
-    }).observe(thread, { childList: true, subtree: true });
-
-    var alt = el("div", "chat-alt");
-    alt.appendChild(el("span", "chat-alt-label", "Vous préférez en direct ?"));
-    var a1 = el("a", null, "Réserver 20 min (Calendly)");
-    a1.href = CAL; a1.target = "_blank"; a1.rel = "noopener";
-    a1.addEventListener("click", function () { track("clic_audit"); });
-    var a2 = el("a", null, EMAIL);
-    a2.href = "mailto:" + EMAIL;
-    alt.appendChild(a1); alt.appendChild(a2);
-    root.appendChild(alt);
-
-    stepSujet();
-  }
-
-  function stepSujet() {
-    stepLabel(1);
-    say("Bonjour — dites-moi ce qui vous amène. Je réponds sous 24 h.");
-    var chips = el("div", "chat-chips");
-    SUJETS.forEach(function (s) {
-      var b = el("button", "chat-chip", s);
-      b.type = "button";
-      b.addEventListener("click", function () { pick(s); });
-      chips.appendChild(b);
-    });
-    thread.appendChild(chips);
-    pickSujet = function (s) {
-      pickSujet = null;
-      chips.remove();
-      state.sujet = s;
-      echo(s);
-      track("chat_sujet");
-      stepDetail();
-    };
-    function pick(s) { if (pickSujet) pickSujet(s); }
-  }
-
-  function stepDetail() {
-    stepLabel(2);
-    say("Très bien. En une phrase : où perdez-vous le plus de temps en ce moment ?");
-    var wrap = el("div", "chat-field");
-    var ta = el("textarea", "chat-textarea");
-    ta.placeholder = "Ex. : la facturation nous prend deux jours par semaine…";
-    ta.setAttribute("aria-label", "Votre contexte");
-    var send = el("button", "chat-send", "Continuer →");
-    send.type = "button";
-    var skip = el("button", "chat-skip", "Passer cette question");
-    skip.type = "button";
-    send.addEventListener("click", function () {
-      state.detail = ta.value.trim();
-      wrap.remove();
-      if (state.detail) echo(state.detail);
-      stepCoord();
-    });
-    skip.addEventListener("click", function () { wrap.remove(); stepCoord(); });
-    wrap.appendChild(ta); wrap.appendChild(send); wrap.appendChild(skip);
-    thread.appendChild(wrap);
-    ta.focus();
-  }
-
-  function stepCoord() {
-    stepLabel(3);
-    say("Parfait. Comment puis-je vous joindre ?");
-    var wrap = el("div", "chat-field");
-    var nom = el("input", "chat-input");
-    nom.placeholder = "Votre nom"; nom.autocomplete = "name";
-    nom.setAttribute("aria-label", "Votre nom");
-    var mail = el("input", "chat-input");
-    mail.type = "email"; mail.placeholder = "Votre courriel"; mail.autocomplete = "email";
-    mail.setAttribute("aria-label", "Votre courriel");
-    var err = el("p", "chat-error", "");
-    err.hidden = true;
-    var send = el("button", "chat-send", "Envoyer ma demande →");
-    send.type = "button";
-    send.addEventListener("click", function () {
-      if (!nom.value.trim() || !/.+@.+\..+/.test(mail.value)) {
-        err.textContent = "Votre nom et un courriel valide sont requis.";
-        err.hidden = false;
-        return;
-      }
-      state.nom = nom.value.trim();
-      state.email = mail.value.trim();
-      wrap.remove();
-      echo(state.nom + " · " + state.email);
-      finish();
-    });
-    wrap.appendChild(nom); wrap.appendChild(mail); wrap.appendChild(err); wrap.appendChild(send);
-    thread.appendChild(wrap);
-    nom.focus();
-  }
-
-  function mailtoHref() {
-    var subject = "Demande — " + state.sujet + " (" + state.nom + ")";
-    var body = "Sujet : " + state.sujet + "\n" +
-      (state.detail ? "Contexte : " + state.detail + "\n" : "") +
-      "Nom : " + state.nom + "\nCourriel : " + state.email +
-      "\n\n(Envoyé depuis gabrielnadon.com)";
-    return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  }
-
-  function calendlyChip() {
-    var b = el("a", "chat-chip", "Réserver 20 min");
-    b.href = CAL; b.target = "_blank"; b.rel = "noopener";
-    b.addEventListener("click", function () { track("clic_audit"); });
-    return b;
-  }
-
-  function finish() {
-    track("chat_submit");
-    var sending = el("div", "chat-msg chat-msg-a", "Envoi en cours…");
-    thread.appendChild(sending);
-    var prenom = state.nom.split(" ")[0];
-    fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        sujet: state.sujet,
-        detail: state.detail,
-        nom: state.nom,
-        email: state.email
-      })
-    }).then(function (r) {
-      if (!r.ok) throw new Error("send_failed");
-      return r.json();
-    }).then(function () {
-      sending.remove();
-      track("chat_sent");
-      say("Merci " + prenom + " — votre demande est envoyée. Je vous réponds sous 24 h à " + state.email + ". Si c’est urgent, réservez directement 20 minutes à mon agenda.");
-      var chips = el("div", "chat-chips");
-      chips.appendChild(calendlyChip());
-      thread.appendChild(chips);
-    }).catch(function () {
-      sending.remove();
-      say("Petit pépin technique : votre message n’est pas parti. Le bouton ci-dessous ouvre votre courriel avec le message déjà rédigé — ou réservez directement 20 minutes.");
-      var chips = el("div", "chat-chips");
-      var a = el("a", "chat-send", "Envoyer par courriel →");
-      a.href = mailtoHref();
-      chips.appendChild(a);
-      chips.appendChild(calendlyChip());
-      thread.appendChild(chips);
-    });
-  }
-
-  // Un clic sur un mandat présélectionne le sujet dans le formulaire.
-  document.querySelectorAll("[data-mandat]").forEach(function (link) {
-    link.addEventListener("click", function () {
-      var v = link.getAttribute("data-mandat");
-      if (pickSujet) { pickSujet(v); }
-      else if (!state.sujet) { boot(); if (pickSujet) pickSujet(v); }
-    });
-  });
-
-  boot();
-
-  // ?sujet=refonte (etc.) : présélectionne le sujet — utilisé par les pages
-  // internes qui renvoient vers le formulaire.
+  // Présélection du sujet : ?sujet=refonte, ou clic sur un mandat.
   var PARAM_SUJETS = {
     refonte: "Refonte d’un système existant",
     audit: "Audit d’opérations",
@@ -719,8 +566,71 @@
     web: "Systèmes web sur mesure",
     site: "Sites qui convertissent",
   };
+  function setSujet(v) {
+    for (var i = 0; i < sujetSel.options.length; i++) {
+      if (sujetSel.options[i].value === v) { sujetSel.selectedIndex = i; return; }
+    }
+  }
   var param = new URLSearchParams(window.location.search).get("sujet");
-  if (param && PARAM_SUJETS[param] && pickSujet) pickSujet(PARAM_SUJETS[param]);
+  if (param && PARAM_SUJETS[param]) setSujet(PARAM_SUJETS[param]);
+
+  document.querySelectorAll("[data-mandat]").forEach(function (link) {
+    link.addEventListener("click", function () { setSujet(link.getAttribute("data-mandat")); });
+  });
+
+  function mailtoHref(d) {
+    var subject = "Demande — " + d.sujet + " (" + d.nom + ")";
+    var body = "Sujet : " + d.sujet + "\n" +
+      (d.detail ? "Contexte : " + d.detail + "\n" : "") +
+      "Nom : " + d.nom + "\nCourriel : " + d.email +
+      "\n\n(Envoyé depuis gabrielnadon.com)";
+    return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  }
+
+  function done(html) {
+    form.innerHTML = '<div class="form-done">' + html + '</div>';
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var d = {
+      sujet: sujetSel.value,
+      detail: detailEl.value.trim(),
+      nom: nomEl.value.trim(),
+      email: emailEl.value.trim(),
+      website: form.website.value
+    };
+    if (!d.nom || !/.+@.+\..+/.test(d.email)) {
+      errEl.textContent = "Votre nom et un courriel valide sont requis.";
+      errEl.hidden = false;
+      (!d.nom ? nomEl : emailEl).focus();
+      return;
+    }
+    errEl.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi en cours…";
+    track("form_submit");
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(d)
+    }).then(function (r) {
+      if (!r.ok) throw new Error("send_failed");
+      return r.json();
+    }).then(function () {
+      track("form_sent");
+      var prenom = d.nom.split(" ")[0];
+      done("<p class=\"form-done-title\">Merci " + prenom + " — votre demande est envoyée.</p>" +
+        "<p class=\"form-done-text\">Je vous réponds sous 24 h à " + d.email + ". Si c’est urgent, " +
+        "<a href=\"" + CAL + "\" target=\"_blank\" rel=\"noopener\">réservez 20 minutes directement</a>.</p>");
+    }).catch(function () {
+      done("<p class=\"form-done-title\">Un pépin technique est survenu.</p>" +
+        "<p class=\"form-done-text\">Votre message n’est pas parti. " +
+        "<a href=\"" + mailtoHref(d) + "\">Envoyez-le par courriel</a> (déjà rédigé), ou " +
+        "<a href=\"" + CAL + "\" target=\"_blank\" rel=\"noopener\">réservez 20 minutes</a>.</p>");
+    });
+  });
 })();
 </script>
 </body>
