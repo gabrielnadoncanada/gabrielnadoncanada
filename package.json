@@ -1,0 +1,26 @@
+{
+  "name": "gabrielnadon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site web de Gabriel Nadon — Conseiller, Systèmes & IA (Next.js App Router)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "node scripts/postbuild.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && wrangler pages deploy out --project-name=gabrielnadon --branch=main"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
+  }
+}
