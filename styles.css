@@ -320,3 +320,12 @@ a.mandat { text-decoration: none; color: inherit; }
 .case-step { display: grid; grid-template-columns: minmax(56px, 0.5fr) minmax(180px, 1.6fr) minmax(240px, 3fr); gap: clamp(14px, 2.4vw, 40px); align-items: start; padding: clamp(20px, 2.6vw, 30px) clamp(10px, 1.4vw, 18px); border-bottom: 1px solid rgb(221, 214, 200); }
 @media (max-width: 700px) { .case-step { display: flex; flex-direction: column; gap: 10px; padding-left: 14px; } }
 .case-kv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(20px, 3vw, 40px); }
+
+/* ===== Cas : bloc chiffre-argent (remplace le faux dashboard) ===== */
+.money-box { border: 1px solid rgb(207, 199, 181); background: rgb(251, 250, 246); padding: clamp(30px, 4vw, 48px); box-shadow: rgba(23,24,27,.05) 0 1px 2px, rgba(23,24,27,.16) 0 24px 44px -20px; }
+.money-kicker { font-family: "Geist Mono", monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(112, 108, 98); }
+.money-fig { font-family: Spectral, serif; font-weight: 400; font-size: clamp(56px, 9vw, 92px); line-height: 0.94; letter-spacing: -0.03em; color: rgb(23, 24, 27); display: flex; align-items: baseline; gap: 8px; margin-top: 14px; }
+.money-fig .num { font-variant-numeric: tabular-nums; }
+.money-fig .cur { font-size: 0.42em; font-style: italic; color: rgb(155, 123, 56); letter-spacing: 0; }
+.money-sub { font-size: 15px; line-height: 1.55; color: rgb(70, 71, 74); margin-top: 16px; max-width: 28ch; }
+.money-plus { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgb(221, 214, 200); font-family: Spectral, serif; font-size: clamp(17px, 2vw, 21px); font-style: italic; line-height: 1.4; color: rgb(23, 24, 27); }
