@@ -51,9 +51,8 @@ export default function MerciPage() {
                   Demande reçue
                 </div>
                 <h1
-                  className="case-title"
+                  className="case-title u-mt-lg"
                   data-rise="120"
-                  style={{ marginTop: "22px" }}
                 >
                   C’est noté. Je vous réponds{" "}
                   <span className="italic">sous 24 heures.</span>
@@ -83,7 +82,7 @@ export default function MerciPage() {
                       href={CAL}
                       target="_blank"
                       rel="noopener"
-                      className="scp2 btn-block"
+                      className="btn-block"
                     >
                       Réserver mes 20 minutes <span>→</span>
                     </TrackedLink>
@@ -100,21 +99,14 @@ export default function MerciPage() {
           <section className="bb">
             <div className="sectors">
               <span className="sectors-label">En attendant</span>
-              <div style={{ maxWidth: "62ch" }}>
+              <div className="u-measure-prose">
                 <span className="serif-muted">
                   Voyez comment une épicerie du Québec a récupéré 56 000 $ par
                   année en éliminant une seule tâche manuelle.{" "}
                 </span>
                 <a
                   href="/cas/synchronisation-prix-fournisseurs/"
-                  className="scp5"
-                  style={{
-                    fontSize: "clamp(16px, 1.8vw, 20px)",
-                    fontFamily: "Spectral, serif",
-                    color: "rgb(23, 24, 27)",
-                    textDecoration: "underline 1px rgb(185, 176, 154)",
-                    textUnderlineOffset: "5px",
-                  }}
+                  className="link-serif"
                 >
                   Lire le cas →
                 </a>

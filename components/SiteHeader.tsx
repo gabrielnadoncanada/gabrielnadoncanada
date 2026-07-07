@@ -54,7 +54,7 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
               </a>
             ))}
           </span>
-          <a href={ctaHref} className="scp1 btn-sm">
+          <a href={ctaHref} className="btn-sm">
             <span className="btn-cta-full">Prendre rendez-vous</span>
             <span className="btn-cta-short">Rendez-vous</span>
           </a>

@@ -74,9 +74,8 @@ export default function DiagnosticPage() {
                   Diagnostic gratuit · 20 minutes · PME du Québec
                 </div>
                 <h1
-                  className="case-title"
+                  className="case-title u-mt-lg"
                   data-rise="120"
-                  style={{ marginTop: "22px" }}
                 >
                   Vos journées disparaissent dans des tâches qu’une machine
                   ferait <span className="italic">sans se tromper.</span>
@@ -90,7 +89,7 @@ export default function DiagnosticPage() {
                   ensemble ou non.
                 </p>
                 <div data-rise="240">
-                  <a href="#diagnostic" className="scp2 btn-block">
+                  <a href="#diagnostic" className="btn-block">
                     Obtenir mon diagnostic gratuit <span>→</span>
                   </a>
                   <p className="form-note">
@@ -131,18 +130,17 @@ export default function DiagnosticPage() {
 
           {/* Les signes */}
           <section
-            className="section"
-            style={{ paddingBottom: "clamp(40px, 5vw, 64px)" }}
+            className="section u-pb-64"
           >
             <div className="note-grid">
               <div>
-                <div className="eyebrow" style={{ marginBottom: "22px" }}>
+                <div className="eyebrow u-mb-lg">
                   Vous vous reconnaissez ?
                 </div>
-                <h2 className="h2-left" style={{ maxWidth: "20ch" }}>
+                <h2 className="h2-left u-measure-title">
                   Ce n’est pas « normal ». C’est juste devenu invisible.
                 </h2>
-                <p className="case-prose" style={{ marginTop: "22px" }}>
+                <p className="case-prose u-mt-lg">
                   Chacune de ces situations coûte des heures payées chaque
                   semaine — et aucune n’apparaît dans vos états financiers. Le
                   diagnostic sert exactement à ça : les rendre visibles, puis
@@ -328,7 +326,7 @@ export default function DiagnosticPage() {
           <section className="bb">
             <div className="sectors">
               <span className="sectors-label">Sur le terrain</span>
-              <div style={{ maxWidth: "62ch" }}>
+              <div className="u-measure-prose">
                 <span className="serif-muted">
                   Une épicerie du Québec a éliminé la mise à jour manuelle de
                   ses prix fournisseurs — 56 000 $ par année récupérés, sans
@@ -336,14 +334,7 @@ export default function DiagnosticPage() {
                 </span>
                 <a
                   href="/cas/synchronisation-prix-fournisseurs/"
-                  className="scp5"
-                  style={{
-                    fontSize: "clamp(16px, 1.8vw, 20px)",
-                    fontFamily: "Spectral, serif",
-                    color: "rgb(23, 24, 27)",
-                    textDecoration: "underline 1px rgb(185, 176, 154)",
-                    textUnderlineOffset: "5px",
-                  }}
+                  className="link-serif"
                 >
                   Lire le cas →
                 </a>

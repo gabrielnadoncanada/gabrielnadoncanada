@@ -117,9 +117,8 @@ export default function CasPage() {
                   Cas concret · Le vrai coût d&apos;un processus manuel
                 </div>
                 <h1
-                  className="case-title"
+                  className="case-title u-mt-lg"
                   data-rise="120"
-                  style={{ marginTop: "22px" }}
                 >
                   Près de 56 000 $ par année, cachés dans une tâche que{" "}
                   <span className="italic">personne n&apos;avait chiffrée.</span>
@@ -214,15 +213,14 @@ export default function CasPage() {
 
           {/* Le problème, en dollars */}
           <section
-            className="section"
-            style={{ paddingBottom: "clamp(40px, 5vw, 64px)" }}
+            className="section u-pb-64"
           >
             <div className="note-grid">
               <div>
-                <div className="eyebrow" style={{ marginBottom: "22px" }}>
+                <div className="eyebrow u-mb-lg">
                   Une dépense que personne ne voyait
                 </div>
-                <h2 className="h2-left" style={{ maxWidth: "20ch" }}>
+                <h2 className="h2-left u-measure-title">
                   La tâche n&apos;était pas sur les livres. Elle était sur la
                   paie.
                 </h2>
@@ -400,7 +398,7 @@ export default function CasPage() {
               </div>
               <div className="cab-paper contact-card">
                 <div className="contact-list">
-                  <a href="/#contact" className="scp2 btn-block">
+                  <a href="/#contact" className="btn-block">
                     Trouver ma tâche à 56 000 $ <span>→</span>
                   </a>
                   <TrackedLink
@@ -408,8 +406,7 @@ export default function CasPage() {
                     href="https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min"
                     target="_blank"
                     rel="noopener"
-                    className="scp5 contact-link"
-                    style={{ marginTop: "14px" }}
+                    className="scp5 contact-link u-mt-sm"
                   >
                     <span>
                       <span className="kv-label-block">Ou directement</span>

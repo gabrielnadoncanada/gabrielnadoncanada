@@ -106,9 +106,8 @@ export default function RefontePage() {
                   Refonte de système · PME du Québec
                 </div>
                 <h1
-                  className="case-title"
+                  className="case-title u-mt-lg"
                   data-rise="120"
-                  style={{ marginTop: "22px" }}
                 >
                   Votre entreprise roule sur un système que{" "}
                   <span className="italic">plus personne n’ose toucher.</span>
@@ -126,7 +125,7 @@ export default function RefontePage() {
               <div data-rise="280">
                 <div className="money-box">
                   <div className="money-kicker">Le coût de ne rien faire</div>
-                  <div style={{ marginTop: "16px" }}>
+                  <div className="u-mt-md">
                     <div className="risk-item">
                       <span className="rmark">→</span>
                       <span>
@@ -163,18 +162,17 @@ export default function RefontePage() {
 
           {/* Les signes qui font mal */}
           <section
-            className="section"
-            style={{ paddingBottom: "clamp(40px, 5vw, 64px)" }}
+            className="section u-pb-64"
           >
             <div className="note-grid">
               <div>
-                <div className="eyebrow" style={{ marginBottom: "22px" }}>
+                <div className="eyebrow u-mb-lg">
                   Vous vous reconnaissez ?
                 </div>
-                <h2 className="h2-left" style={{ maxWidth: "20ch" }}>
+                <h2 className="h2-left u-measure-title">
                   Ce ne sont pas des inconvénients. Ce sont des risques.
                 </h2>
-                <p className="case-prose" style={{ marginTop: "22px" }}>
+                <p className="case-prose u-mt-lg">
                   Aucun n’est assez grave pour tout arrêter aujourd’hui. C’est
                   exactement le piège : on repousse, on contourne, on s’habitue —
                   jusqu’au jour où l’un d’eux se transforme en crise.
@@ -389,7 +387,7 @@ export default function RefontePage() {
           <section className="bb">
             <div className="sectors">
               <span className="sectors-label">Sur le terrain</span>
-              <div style={{ maxWidth: "62ch" }}>
+              <div className="u-measure-prose">
                 <span className="serif-muted">
                   Une épicerie du Québec a branché son vieux système de caisse à
                   un moteur moderne de synchronisation des prix — sans le
@@ -397,14 +395,7 @@ export default function RefontePage() {
                 </span>
                 <a
                   href="/cas/synchronisation-prix-fournisseurs/"
-                  className="scp5"
-                  style={{
-                    fontSize: "clamp(16px, 1.8vw, 20px)",
-                    fontFamily: "Spectral, serif",
-                    color: "rgb(23, 24, 27)",
-                    textDecoration: "underline 1px rgb(185, 176, 154)",
-                    textUnderlineOffset: "5px",
-                  }}
+                  className="link-serif"
                 >
                   Lire le cas →
                 </a>
@@ -431,7 +422,7 @@ export default function RefontePage() {
                 <div className="contact-list">
                   <a
                     href="/?sujet=refonte#contact"
-                    className="scp2 btn-block"
+                    className="btn-block"
                   >
                     Discuter de votre refonte <span>→</span>
                   </a>
@@ -440,8 +431,7 @@ export default function RefontePage() {
                     href="https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min"
                     target="_blank"
                     rel="noopener"
-                    className="scp5 contact-link"
-                    style={{ marginTop: "14px" }}
+                    className="scp5 contact-link u-mt-sm"
                   >
                     <span>
                       <span className="kv-label-block">Ou directement</span>

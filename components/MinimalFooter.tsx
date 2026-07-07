@@ -3,8 +3,7 @@ export function MinimalFooter() {
     <footer className="footer">
       <div className="footer-inner">
         <div
-          className="footer-bottom"
-          style={{ marginTop: 0, borderTop: "none", paddingTop: 0 }}
+          className="footer-bottom footer--flush"
         >
           <span className="copyright">
             © 2026 Gabriel Nadon · Tous droits réservés

@@ -110,10 +110,10 @@ export default function Home() {
                   diagnostic à la mise en œuvre.
                 </p>
                 <div className="hero-cta" data-rise="280">
-                  <a href="#contact" className="scp2 btn">
+                  <a href="#contact" className="btn">
                     Prendre rendez-vous <span>→</span>
                   </a>
-                  <a href="#mandats" className="scp3 btn-link">
+                  <a href="#mandats" className="btn-link">
                     Voir les mandats
                   </a>
                 </div>

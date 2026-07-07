@@ -232,7 +232,7 @@ export function ContactForm({ withPhone = false }: { withPhone?: boolean }) {
       ) : null}
       <button
         type="submit"
-        className="scp2 btn-block"
+        className="btn-block"
         id="cf-submit"
         disabled={submitting}
       >
