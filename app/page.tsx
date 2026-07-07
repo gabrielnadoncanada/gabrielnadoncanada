@@ -36,34 +36,90 @@ export const metadata: Metadata = {
   },
 };
 
+const SITE = "https://gabrielnadon.com";
+
+const SAME_AS = [
+  "https://www.linkedin.com/in/gabrielnadoncanada/",
+  "https://www.facebook.com/gabriel.nadon.2025",
+];
+
+const MANDATS = [
+  "Audit d’opérations",
+  "Systèmes web sur mesure",
+  "Automatisation IA",
+  "Sites qui convertissent",
+  "Refonte de système informatique",
+];
+
 const JSONLD = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Gabriel Nadon",
-  url: "https://gabrielnadon.com/",
-  image: "https://gabrielnadon.com/portrait.png",
-  jobTitle: "Conseiller en Systèmes & IA",
-  email: "bonjour@gabrielnadon.com",
-  description:
-    "Gabriel Nadon, conseiller en systèmes et intelligence artificielle au Québec. J'accompagne les PME : audit d'opérations, automatisation IA et systèmes web sur mesure, du diagnostic à la croissance.",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Montréal",
-    addressRegion: "QC",
-    addressCountry: "CA",
-  },
-  areaServed: "Québec",
-  knowsAbout: [
-    "Intelligence artificielle",
-    "Automatisation IA",
-    "Systèmes web sur mesure",
-    "Audit d'opérations",
-    "Conseil stratégique",
-    "Transformation numérique des PME",
-  ],
-  sameAs: [
-    "https://www.linkedin.com/in/gabrielnadoncanada/",
-    "https://www.facebook.com/gabriel.nadon.2025",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE}/#website`,
+      url: `${SITE}/`,
+      name: "Gabriel Nadon — Conseiller, Systèmes & IA",
+      inLanguage: "fr-CA",
+      publisher: { "@id": `${SITE}/#gabriel` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE}/#gabriel`,
+      name: "Gabriel Nadon",
+      url: `${SITE}/`,
+      image: `${SITE}/portrait.png`,
+      jobTitle: "Conseiller en Systèmes & IA",
+      email: "bonjour@gabrielnadon.com",
+      description:
+        "Gabriel Nadon, conseiller en systèmes et intelligence artificielle au Québec. J'accompagne les PME : audit d'opérations, automatisation IA et systèmes web sur mesure, du diagnostic à la croissance.",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Montréal",
+        addressRegion: "QC",
+        addressCountry: "CA",
+      },
+      areaServed: "Québec",
+      knowsAbout: [
+        "Intelligence artificielle",
+        "Automatisation IA",
+        "Systèmes web sur mesure",
+        "Audit d'opérations",
+        "Conseil stratégique",
+        "Transformation numérique des PME",
+      ],
+      sameAs: SAME_AS,
+      worksFor: { "@id": `${SITE}/#business` },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": `${SITE}/#business`,
+      name: "Gabriel Nadon — Systèmes & IA",
+      url: `${SITE}/`,
+      image: `${SITE}/og-image.png`,
+      logo: `${SITE}/portrait.png`,
+      description:
+        "Conseil en systèmes et intelligence artificielle pour les PME du Québec : audit d'opérations, automatisation IA, systèmes web sur mesure et refonte de systèmes existants.",
+      founder: { "@id": `${SITE}/#gabriel` },
+      email: "bonjour@gabrielnadon.com",
+      priceRange: "$$",
+      areaServed: { "@type": "AdministrativeArea", name: "Québec" },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Montréal",
+        addressRegion: "QC",
+        addressCountry: "CA",
+      },
+      availableLanguage: "fr-CA",
+      sameAs: SAME_AS,
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Mandats",
+        itemListElement: MANDATS.map((name) => ({
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name, areaServed: "Québec" },
+        })),
+      },
+    },
   ],
 };
 
