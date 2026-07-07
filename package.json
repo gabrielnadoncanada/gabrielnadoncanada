@@ -9,7 +9,8 @@
     "postbuild": "node scripts/postbuild.mjs",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && wrangler pages deploy out --project-name=gabrielnadon --branch=main"
+    "verify": "node scripts/verify.mjs",
+    "deploy": "next build && node scripts/postbuild.mjs && node scripts/verify.mjs && wrangler pages deploy out --project-name=gabrielnadon --branch=main"
   },
   "dependencies": {
     "next": "^15.5.0",

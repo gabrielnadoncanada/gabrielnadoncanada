@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { AttributionTracker } from "@/components/AttributionTracker";
 import "./globals.css";
 
 const FAVICON =
@@ -42,6 +43,8 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        {/* Provenance (UTM, gclid…) conservée jusqu'au courriel de lead */}
+        <AttributionTracker />
         {/* Google Analytics GA4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QJHNSFXNH0"

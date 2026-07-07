@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { getAttribution, type Attribution } from "@/components/AttributionTracker";
 
 const EMAIL = "bonjour@gabrielnadon.com";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
@@ -33,7 +34,10 @@ type Data = {
   detail: string;
   nom: string;
   email: string;
+  tel: string;
   website: string;
+  page: string;
+  attribution: Attribution | null;
 };
 
 function mailtoHref(d: Data) {
@@ -41,16 +45,15 @@ function mailtoHref(d: Data) {
   const body =
     `Sujet : ${d.sujet}\n` +
     (d.detail ? `Contexte : ${d.detail}\n` : "") +
-    `Nom : ${d.nom}\nCourriel : ${d.email}\n\n(Envoyé depuis gabrielnadon.com)`;
+    `Nom : ${d.nom}\nCourriel : ${d.email}\n` +
+    (d.tel ? `Téléphone : ${d.tel}\n` : "") +
+    `\n(Envoyé depuis gabrielnadon.com)`;
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-type DoneState =
-  | { kind: "ok"; prenom: string; email: string }
-  | { kind: "error"; href: string }
-  | null;
+type DoneState = { kind: "error"; href: string } | null;
 
-export function ContactForm() {
+export function ContactForm({ withPhone = false }: { withPhone?: boolean }) {
   const sujetRef = useRef<HTMLSelectElement>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -84,12 +87,16 @@ export function ContactForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+    const telField = form.elements.namedItem("tel") as HTMLInputElement | null;
     const d: Data = {
       sujet: (form.elements.namedItem("sujet") as HTMLSelectElement).value,
       detail: (form.elements.namedItem("detail") as HTMLTextAreaElement).value.trim(),
       nom: (form.elements.namedItem("nom") as HTMLInputElement).value.trim(),
       email: (form.elements.namedItem("email") as HTMLInputElement).value.trim(),
+      tel: telField ? telField.value.trim() : "",
       website: (form.elements.namedItem("website") as HTMLInputElement).value,
+      page: window.location.pathname,
+      attribution: getAttribution(),
     };
     if (!d.nom || !/.+@.+\..+/.test(d.email)) {
       setError("Votre nom et un courriel valide sont requis.");
@@ -108,27 +115,12 @@ export function ContactForm() {
       if (!r.ok) throw new Error("send_failed");
       await r.json();
       track("form_sent");
-      setDone({ kind: "ok", prenom: d.nom.split(" ")[0], email: d.email });
+      // Point de conversion unique : /merci/ déclenche `generate_lead` (GA4),
+      // l'événement importé comme conversion dans Google Ads / Meta.
+      window.location.assign("/merci/");
     } catch {
       setDone({ kind: "error", href: mailtoHref(d) });
     }
-  }
-
-  if (done?.kind === "ok") {
-    return (
-      <div className="form-done">
-        <p className="form-done-title">
-          Merci {done.prenom} — votre demande est envoyée.
-        </p>
-        <p className="form-done-text">
-          Je vous réponds sous 24 h à {done.email}. Si c’est urgent,{" "}
-          <a href={CAL} target="_blank" rel="noopener">
-            réservez 20 minutes directement
-          </a>
-          .
-        </p>
-      </div>
-    );
   }
 
   if (done?.kind === "error") {
@@ -203,6 +195,21 @@ export function ContactForm() {
           />
         </div>
       </div>
+      {withPhone ? (
+        <div className="form-field">
+          <label className="form-label" htmlFor="cf-tel">
+            Téléphone <span className="form-opt">(facultatif — pour vous rappeler plus vite)</span>
+          </label>
+          <input
+            className="form-input"
+            id="cf-tel"
+            name="tel"
+            type="tel"
+            autoComplete="tel"
+            placeholder="418 555-0123"
+          />
+        </div>
+      ) : null}
       {/* Honeypot anti-pourriel (caché) */}
       <input
         type="text"
