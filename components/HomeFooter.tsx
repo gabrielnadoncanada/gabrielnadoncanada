@@ -43,6 +43,32 @@ export function HomeFooter() {
                 <span>Contact</span>
               </a>
             </nav>
+            <div className="foot-label" style={{ marginTop: "24px" }}>
+              Guides &amp; outils gratuits
+            </div>
+            <nav className="footer-nav">
+              <a href="/calculateur/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Calculateur du travail manuel</span>
+              </a>
+              <a href="/diagnostic-ia/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Test « prête pour l’IA ? »</span>
+              </a>
+              <a
+                href="/guides/automatisation-pme-quebec/"
+                className="cab-foot-link scp0 foot-nav-link"
+              >
+                <span>Guide : automatiser sa PME</span>
+              </a>
+              <a
+                href="/guides/comparatif-logiciels-epicerie-quebec/"
+                className="cab-foot-link scp0 foot-nav-link"
+              >
+                <span>Comparatif logiciels d’épicerie</span>
+              </a>
+              <a href="/barometre/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Baromètre PME 2026</span>
+              </a>
+            </nav>
           </div>
 
           <div>

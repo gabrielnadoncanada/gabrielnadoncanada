@@ -1,0 +1,8 @@
+# Réglages pnpm (pnpm 11 : les settings ne vivent plus dans package.json).
+# Autorise les scripts postinstall de ces paquets — sans quoi la vérification
+# pré-exécution de pnpm (verify-deps) fait échouer `pnpm build` avec
+# ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true

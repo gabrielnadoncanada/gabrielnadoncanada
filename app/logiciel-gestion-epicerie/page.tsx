@@ -356,6 +356,36 @@ export default function EpiceriePage() {
             </div>
           </section>
 
+          {/* Maillage : comparatif + guide prix fournisseurs */}
+          <section className="bb">
+            <div className="sectors">
+              <span className="sectors-label">Vous magasinez un système ?</span>
+              <div className="u-measure-prose">
+                <span className="serif-muted">
+                  Avant de signer une soumission, lisez le comparatif québécois
+                  des systèmes d’épicerie (SIR, LOC, Panza, Logivision, Square)
+                  — écrit du côté de ceux qui les utilisent, pas de ceux qui les
+                  vendent.{" "}
+                </span>
+                <a
+                  href="/guides/comparatif-logiciels-epicerie-quebec/"
+                  className="link-serif"
+                >
+                  Lire le comparatif →
+                </a>{" "}
+                <span className="serif-muted">
+                  Et pour la corvée des listes de prix :{" "}
+                </span>
+                <a
+                  href="/guides/mise-a-jour-prix-fournisseurs/"
+                  className="link-serif"
+                >
+                  les 4 méthodes de mise à jour comparées →
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* Objections */}
           <section className="section-method">
             <div className="method-head">
