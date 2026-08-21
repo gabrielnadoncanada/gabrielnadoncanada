@@ -1,0 +1,32 @@
+# Gabriel Nadon — Conseiller, Systèmes & IA
+
+> Consultant indépendant au Québec (Montréal, à distance) : automatisation de
+> processus, intégration d'IA et refonte de systèmes pour PME. Prix publiés :
+> diagnostic gratuit de 20 minutes ; sprint d'automatisation dès 4 500 $ CA ;
+> refonte de système par tranches d'environ 6 000 $ (la plupart entre 12 000 $
+> et 30 000 $). Cas documenté : une épicerie indépendante du Québec a récupéré
+> près de 56 000 $/an en éliminant la mise à jour manuelle de ses prix
+> fournisseurs, sans remplacer sa caisse. Contact : bonjour@gabrielnadon.com.
+
+## Pages principales
+
+- [Accueil](https://gabrielnadon.com/) : services, approche, cas concrets, contact
+- [Cas : synchronisation des prix fournisseurs](https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/) : 56 000 $/an récupérés, 37 000 prix synchronisés, caisse conservée
+- [Refonte de système](https://gabrielnadon.com/refonte-de-systeme/) : remplacer un vieux système par tranches, sans big bang
+- [Logiciel de gestion pour épicerie et dépanneur](https://gabrielnadon.com/logiciel-gestion-epicerie/) : automatiser la caisse existante d'un commerce d'alimentation au Québec
+
+## Guides
+
+- [Automatiser ses processus : le guide PME Québec (2026)](https://gabrielnadon.com/guides/automatisation-pme-quebec/) : quoi automatiser en premier, prix du marché, subventions actives vérifiées (ESSOR 1A/1B/1C, C3I, PME MTL, MFOR)
+- [Combien coûte l'automatisation d'un processus dans une PME au Québec ?](https://gabrielnadon.com/guides/combien-coute-automatisation-pme-quebec/) : fourchettes vérifiées 2026 — 2 500 $ à 10 000 $ (premier processus), 8 000 $ à 18 000 $ (3-5 processus), 150-350 $/h en consultation
+- [Comparatif des logiciels d'épicerie au Québec (2026)](https://gabrielnadon.com/guides/comparatif-logiciels-epicerie-quebec/) : SIR Solutions, LOC Software, Panza, ACCEO Logivision, Square — faits sourcés, prix publiés quand ils existent
+- [Mise à jour des prix fournisseurs : les 4 méthodes](https://gabrielnadon.com/guides/mise-a-jour-prix-fournisseurs/) : saisie manuelle, import CSV, portail/EDI, synchronisation automatisée
+- [Inventaire d'épicerie dans Excel](https://gabrielnadon.com/guides/inventaire-epicerie-excel/) : gabarit gratuit, comptage cyclique, limites d'Excel
+- [Calculer sa marge en épicerie](https://gabrielnadon.com/guides/calculer-marge-epicerie/) : marge vs majoration, formules exactes, pièges
+
+## Outils gratuits
+
+- [Calculateur du coût du travail manuel](https://gabrielnadon.com/calculateur/) : heures × personnes × taux × 50 semaines, résultat immédiat
+- [Test : votre PME est-elle prête pour l'IA ?](https://gabrielnadon.com/diagnostic-ia/) : 10 questions, résultat immédiat (52 % des Québécois utilisent l'IA générative, 12,7 % des entreprises — NETendances 2025 / ISQ)
+- [Baromètre IA & automatisation des PME du Québec](https://gabrielnadon.com/barometre/) : enquête annuelle, résultats compilés publiés
+- Gabarits Excel gratuits, sans inscription : [coût du travail manuel](https://gabrielnadon.com/gabarits/cout-travail-manuel.xlsx), [comparaison de prix fournisseurs](https://gabrielnadon.com/gabarits/comparaison-prix-fournisseurs.xlsx), [matrice de priorisation](https://gabrielnadon.com/gabarits/matrice-priorisation-automatisations.xlsx), [inventaire épicerie](https://gabrielnadon.com/gabarits/inventaire-epicerie.xlsx)

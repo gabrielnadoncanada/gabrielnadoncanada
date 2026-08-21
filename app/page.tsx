@@ -700,6 +700,37 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Outils et guides gratuits — maillage visible vers la grappe de
+              contenu (le footer seul ne suffit pas pour le crawl et le clic). */}
+          <section className="bb">
+            <div className="sectors">
+              <span className="sectors-label">Outils &amp; guides gratuits</span>
+              <div className="sectors-list">
+                <a href="/calculateur/" className="serif-muted link-serif">
+                  <span>Calculateur du travail manuel</span>
+                </a>
+                <a href="/diagnostic-ia/" className="serif-muted link-serif">
+                  <span>Test « prête pour l&apos;IA ? »</span>
+                </a>
+                <a
+                  href="/guides/automatisation-pme-quebec/"
+                  className="serif-muted link-serif"
+                >
+                  <span>Guide : automatiser sa PME</span>
+                </a>
+                <a
+                  href="/guides/comparatif-logiciels-epicerie-quebec/"
+                  className="serif-muted link-serif"
+                >
+                  <span>Comparatif logiciels d&apos;épicerie</span>
+                </a>
+                <a href="/barometre/" className="serif-muted link-serif">
+                  <span>Baromètre PME 2026</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
           <section className="section" id="contact">
             <div className="contact-grid">
               <div>

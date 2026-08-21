@@ -381,6 +381,21 @@ export default function EpiceriePage() {
                   className="link-serif"
                 >
                   les 4 méthodes de mise à jour comparées →
+                </a>{" "}
+                <span className="serif-muted">
+                  Aussi :{" "}
+                </span>
+                <a
+                  href="/guides/inventaire-epicerie-excel/"
+                  className="link-serif"
+                >
+                  gabarit d&apos;inventaire Excel gratuit →
+                </a>{" "}
+                <a
+                  href="/guides/calculer-marge-epicerie/"
+                  className="link-serif"
+                >
+                  calculer sa marge sans se tromper →
                 </a>
               </div>
             </div>
