@@ -7,20 +7,21 @@ const EMAIL = "bonjour@gabrielnadon.com";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 
 const SUJETS = [
-  "Audit d’opérations",
-  "Systèmes web sur mesure",
-  "Automatisation IA",
+  "Diagnostic de mes opérations",
+  "Système opérationnel sur mesure",
+  "Automatiser un processus",
   "Refonte d’un système existant",
-  "Sites qui convertissent",
+  "Site web",
   "Autre sujet",
 ];
 
 const PARAM_SUJETS: Record<string, string> = {
   refonte: "Refonte d’un système existant",
-  audit: "Audit d’opérations",
-  automatisation: "Automatisation IA",
-  web: "Systèmes web sur mesure",
-  site: "Sites qui convertissent",
+  audit: "Diagnostic de mes opérations",
+  diagnostic: "Diagnostic de mes opérations",
+  automatisation: "Automatiser un processus",
+  web: "Système opérationnel sur mesure",
+  site: "Site web",
 };
 
 function track(name: string) {
@@ -150,7 +151,7 @@ export function ContactForm({ withPhone = false }: { withPhone?: boolean }) {
           className="form-input"
           id="cf-sujet"
           name="sujet"
-          defaultValue="Audit d’opérations"
+          defaultValue="Diagnostic de mes opérations"
         >
           {SUJETS.map((s) => (
             <option key={s}>{s}</option>

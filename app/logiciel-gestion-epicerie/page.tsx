@@ -119,7 +119,7 @@ const JSONLD = {
 
 const NAV = [
   { href: "/#approche", label: "Approche" },
-  { href: "/#mandats", label: "Mandats" },
+  { href: "/#methode", label: "Méthode" },
   { href: "/#cas", label: "Cas concrets" },
   { href: "#diagnostic", label: "Diagnostic" },
 ];

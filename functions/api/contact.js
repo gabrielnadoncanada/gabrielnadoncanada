@@ -10,11 +10,11 @@ const FROM = "Formulaire du site <formulaire@send.gabrielnadon.com>";
 const FROM_REPLY = "Gabriel Nadon <formulaire@send.gabrielnadon.com>";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 const SUJETS = new Set([
-  "Audit d’opérations",
-  "Systèmes web sur mesure",
-  "Automatisation IA",
+  "Diagnostic de mes opérations",
+  "Système opérationnel sur mesure",
+  "Automatiser un processus",
   "Refonte d’un système existant",
-  "Sites qui convertissent",
+  "Site web",
   "Autre sujet",
 ]);
 // Clés d'attribution acceptées telles quelles depuis le client.

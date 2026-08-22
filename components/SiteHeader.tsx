@@ -28,7 +28,7 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
         <div className="flex-center">
           <a
             href={brandHref}
-            aria-label="Gabriel Nadon — Conseiller, Systèmes & IA"
+            aria-label="Gabriel Nadon — Systèmes opérationnels pour PME"
             className="cab-brand brand"
           >
             <span className="mark">
@@ -38,7 +38,7 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
             </span>
             <span className="cab-brandname brand-text">
               <span className="brand-name">Gabriel Nadon</span>
-              <span className="brand-sub">Conseiller · Systèmes &amp; IA</span>
+              <span className="brand-sub">Systèmes opérationnels</span>
             </span>
           </a>
         </div>
@@ -55,8 +55,8 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
             ))}
           </span>
           <a href={ctaHref} className="btn-sm">
-            <span className="btn-cta-full">Prendre rendez-vous</span>
-            <span className="btn-cta-short">Rendez-vous</span>
+            <span className="btn-cta-full">Analyser mes opérations</span>
+            <span className="btn-cta-short">Parlons-en</span>
           </a>
         </nav>
       </div>

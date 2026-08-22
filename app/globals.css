@@ -1887,6 +1887,60 @@ select.form-input {
   line-height: var(--lh-body);
 }
 
+/* ===== Variantes homepage « systèmes opérationnels » (réutilise .method-grid
+   et .pain-list telles quelles ; seuls la colonne et le fractionnement changent) ===== */
+.method-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  /* 3 étapes pleine largeur sur tablette/mobile (le !important de .cab-method
+     impose sinon 2 colonnes, qui laisse un trou sous la 3e carte). */
+  .method-grid--three {
+    grid-template-columns: 1fr !important;
+  }
+}
+.pain-list--cols {
+  columns: 2;
+  column-gap: clamp(28px, 4vw, 56px);
+}
+.pain-list--cols .pain-item {
+  break-inside: avoid;
+}
+@media (max-width: 700px) {
+  .pain-list--cols {
+    columns: 1;
+  }
+}
+/* CTA principal du hero : le libellé long (nowrap sur .btn) ne tient pas sous
+   ~360 px — version courte mobile, même mécanique que .btn-cta-full/-short. */
+.cta-full {
+  display: inline;
+}
+.cta-short {
+  display: none;
+}
+@media (max-width: 400px) {
+  .cta-full {
+    display: none;
+  }
+  .cta-short {
+    display: inline;
+  }
+}
+/* Sous ~352 px, les grilles auto-fit en minmax(300–320px) gardent un track
+   plus large que le conteneur (288 px utiles à 320 px) : le texte de droite
+   était rogné. On les laisse rétrécir jusqu'à 1fr. */
+@media (max-width: 420px) {
+  .hero-grid,
+  .note-grid,
+  .contact-grid,
+  .case-hero-grid,
+  .case-kv-grid,
+  .case-figures {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ===== Utilitaires extraits des styles inline JSX (Passe 7) ===== */
 /* Remplacent des style={{…}} répétés à l'identique dans app/**. */
 .u-mt-lg {

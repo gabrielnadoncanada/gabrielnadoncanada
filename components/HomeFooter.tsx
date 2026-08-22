@@ -12,23 +12,26 @@ export function HomeFooter() {
               </div>
               <div>
                 <div className="footer-name">Gabriel Nadon</div>
-                <div className="footer-sub">Conseiller · Systèmes &amp; IA</div>
+                <div className="footer-sub">
+                  Systèmes opérationnels · PME
+                </div>
               </div>
             </div>
             <p className="footer-desc">
-              Des systèmes web et des automatisations IA qui travaillent à la
-              place des PME — du diagnostic à la croissance.
+              Je remplace les suivis manuels des PME — Excel, courriels,
+              logiciels mal adaptés — par des systèmes qui centralisent
+              l&apos;information et font une partie du travail.
             </p>
           </div>
 
           <div>
             <div className="foot-label">Navigation</div>
             <nav className="footer-nav">
-              <a href="#approche" className="cab-foot-link scp0 foot-nav-link">
-                <span>Approche</span>
+              <a href="#probleme" className="cab-foot-link scp0 foot-nav-link">
+                <span>La situation</span>
               </a>
-              <a href="#mandats" className="cab-foot-link scp0 foot-nav-link">
-                <span>Mandats</span>
+              <a href="#methode" className="cab-foot-link scp0 foot-nav-link">
+                <span>Méthode</span>
               </a>
               <a href="#methode" className="cab-foot-link scp0 foot-nav-link">
                 <span>Méthode</span>
