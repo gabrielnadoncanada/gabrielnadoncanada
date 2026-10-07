@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 const URL = "https://gabrielnadon.com/agents-ia/";
-const TITLE = "Agents IA pour entreprise : conception et implantation au Québec";
+const TITLE = "Agents IA pour entreprise au Québec";
 const DESC =
-  "Un agent IA qui traite vos demandes, prépare vos soumissions ou répond aux questions répétitives — branché sur vos données, avec validation humaine. Conception et implantation pour PME du Québec.";
+  "Agents IA pour PME du Québec : un assistant qui traite vos demandes et prépare soumissions et réponses, branché sur vos données, avec validation humaine.";
 
 export const metadata: Metadata = {
   title: `${TITLE} | Gabriel Nadon`,

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 const URL = "https://gabrielnadon.com/automatisation-processus/";
-const TITLE = "Automatisation des processus d’affaires pour PME au Québec";
+const TITLE = "Automatisation des processus pour PME au Québec";
 const DESC =
-  "Double saisie, copier-coller entre logiciels, rapports refaits chaque semaine : j’automatise vos processus avec Make, n8n, Power Automate ou du code — et de l’IA là où elle aide. Sprint dès 4 500 $. PME du Québec.";
+  "Double saisie, copier-coller entre logiciels, rapports refaits chaque semaine : j’automatise vos processus (Make, n8n, Power Automate). PME du Québec.";
 
 export const metadata: Metadata = {
   title: `${TITLE} | Gabriel Nadon`,

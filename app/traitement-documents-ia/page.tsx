@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 const URL = "https://gabrielnadon.com/traitement-documents-ia/";
-const TITLE = "Traitement automatique des factures et documents par IA — PME Québec";
+const TITLE = "Traitement de factures et documents par IA";
 const DESC =
-  "Factures fournisseurs, bons de commande, listes de prix, bons de livraison : lus par l’IA, vérifiés et saisis dans votre logiciel comptable, ERP ou Excel. Les exceptions vont à un humain. PME du Québec.";
+  "Factures, bons de commande, listes de prix : lus par l’IA, vérifiés et saisis dans votre logiciel comptable ou ERP. Exceptions à un humain. PME du Québec.";
 
 export const metadata: Metadata = {
   title: `${TITLE} | Gabriel Nadon`,

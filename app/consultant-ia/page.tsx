@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 const URL = "https://gabrielnadon.com/consultant-ia/";
-const TITLE = "Consultant IA pour PME au Québec — implantation concrète";
+const TITLE = "Consultant IA pour PME au Québec";
 const DESC =
-  "Consultant en intelligence artificielle pour PME du Québec : je trouve où l’IA enlève vraiment du travail (factures, courriels, soumissions, suivis) et je l’implante dans vos outils actuels. Diagnostic gratuit de 20 minutes.";
+  "Consultant IA pour PME au Québec : je trouve où l’IA enlève du travail (factures, courriels, soumissions) et je l’implante dans vos outils.";
 
 export const metadata: Metadata = {
   title: `${TITLE} | Gabriel Nadon`,

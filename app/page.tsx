@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title:
-    "Gabriel Nadon — IA, automatisation et systèmes sur mesure pour PME (Québec)",
+    "Gabriel Nadon — IA et automatisation pour PME au Québec",
   description:
-    "Consultant IA et automatisation à Montréal : j'aide les PME québécoises à remplacer Excel, la double saisie et les logiciels mal adaptés par un système qui centralise l'information et fait une partie du travail.",
+    "Consultant IA et automatisation à Montréal : je remplace Excel, la double saisie et les outils dispersés des PME du Québec par un système qui travaille.",
   alternates: { canonical: "https://gabrielnadon.com/" },
   openGraph: {
     type: "website",

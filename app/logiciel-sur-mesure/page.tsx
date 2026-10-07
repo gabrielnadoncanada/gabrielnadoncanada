@@ -4,10 +4,10 @@ import { ServicePage } from "@/components/ServicePage";
 const URL = "https://gabrielnadon.com/logiciel-sur-mesure/";
 const TITLE = "Logiciel sur mesure pour PME au Québec";
 const DESC =
-  "Soumissions, bons de travail, feuilles de temps, inventaire, suivi de projets : quand Excel est devenu votre logiciel de gestion, je construis un vrai système interne, par tranches d’environ 6 000 $, relié à vos outils. PME du Québec.";
+  "Soumissions, bons de travail, feuilles de temps, inventaire : quand Excel est devenu votre logiciel de gestion, je bâtis un vrai système. PME du Québec.";
 
 export const metadata: Metadata = {
-  title: `${TITLE} : remplacer Excel | Gabriel Nadon`,
+  title: `${TITLE} | Gabriel Nadon`,
   description: DESC,
   alternates: { canonical: URL },
   openGraph: {

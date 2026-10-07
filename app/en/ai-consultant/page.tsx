@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 const URL = "https://gabrielnadon.com/en/ai-consultant/";
-const TITLE = "AI Consultant for Small Businesses in Montreal & Quebec";
+const TITLE = "AI Consultant in Montreal & Quebec for SMBs";
 const DESC =
-  "Independent AI consultant in Montreal: I find where AI actually removes work in your SMB — invoices, emails, quotes, follow-ups — and implement it in the tools you already use. Free 20-minute review.";
+  "Independent AI consultant in Montreal: I find where AI removes real work in your business — invoices, emails, quotes — and build it into your tools.";
 
 export const metadata: Metadata = {
   title: `${TITLE} | Gabriel Nadon`,
