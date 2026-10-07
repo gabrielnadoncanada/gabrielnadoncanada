@@ -267,6 +267,33 @@ const LEAD = {
   }
 }
 {
+  // Attribution SEO : référent Google sans paramètre de clic → [organique]
+  // dans le sujet, pour rattacher le mandat au canal organique.
+  const calls = mockFetch([true, true]);
+  await onRequestPost(
+    fakeRequest({
+      ...LEAD,
+      sujet: "Projet d’IA ou d’agent IA",
+      attribution: { landing: "/consultant-ia/", referrer: "https://www.google.com/" },
+    })
+  );
+  check(
+    calls[0]?.body.subject.includes("[organique]"),
+    "Function : un lead venu de Google n'est pas étiqueté [organique]."
+  );
+  check(
+    calls[0]?.body.subject.includes("Projet d’IA ou d’agent IA"),
+    "Function : le sujet « Projet d’IA ou d’agent IA » est refusé par le serveur."
+  );
+  check(
+    calls[0]?.body.text.includes("landing : /consultant-ia/"),
+    "Function : page d'entrée absente du courriel de lead."
+  );
+  const paid = mockFetch([true, true]);
+  await onRequestPost(fakeRequest(LEAD));
+  check(paid[0]?.body.subject.includes("[payant]"), "Function : un lead gclid n'est pas étiqueté [payant].");
+}
+{
   // Resend en panne → 502 (le client bascule sur mailto:).
   mockFetch([false]);
   const r = await onRequestPost(fakeRequest(LEAD));

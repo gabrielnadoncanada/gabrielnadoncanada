@@ -1,7 +1,9 @@
-# Gabriel Nadon — Conseiller, Systèmes & IA
+# Gabriel Nadon — Consultant IA et automatisation pour PME (Québec)
 
-> Consultant indépendant au Québec (Montréal, à distance) : automatisation de
-> processus, intégration d'IA et refonte de systèmes pour PME. Prix publiés :
+> Consultant indépendant au Québec (Montréal, à distance, en français et en
+> anglais) : implantation d'IA dans les PME — agents IA, traitement automatique
+> de factures et documents, automatisation des processus, logiciels sur mesure
+> et refonte de systèmes. Prix publiés :
 > diagnostic gratuit de 20 minutes ; sprint d'automatisation dès 4 500 $ CA ;
 > refonte de système par tranches d'environ 6 000 $ (la plupart entre 12 000 $
 > et 30 000 $). Cas documenté : une épicerie indépendante du Québec a récupéré
@@ -11,6 +13,12 @@
 ## Pages principales
 
 - [Accueil](https://gabrielnadon.com/) : services, approche, cas concrets, contact
+- [Consultant IA pour PME au Québec](https://gabrielnadon.com/consultant-ia/) : démarche en 5 étapes, prix (diagnostic gratuit, sprint dès 4 500 $), Loi 25
+- [Agents IA pour entreprise](https://gabrielnadon.com/agents-ia/) : agents de réception, de soumission, de service client et de suivi, avec validation humaine
+- [Traitement automatique des factures et documents par IA](https://gabrielnadon.com/traitement-documents-ia/) : factures, bons de commande, listes de prix ; OCR + IA + règles de validation ; QuickBooks, Acomba, Sage, ERP, Excel
+- [Automatisation des processus d'affaires](https://gabrielnadon.com/automatisation-processus/) : Make, n8n, Power Automate, Zapier ou code ; sprint dès 4 500 $
+- [Logiciel sur mesure pour PME](https://gabrielnadon.com/logiciel-sur-mesure/) : remplacer Excel par un système interne, par tranches d'environ 6 000 $
+- [AI consultant in Montreal & Quebec (English)](https://gabrielnadon.com/en/ai-consultant/) : English version of the AI consulting offer
 - [Cas : synchronisation des prix fournisseurs](https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/) : 56 000 $/an récupérés, 37 000 prix synchronisés, caisse conservée
 - [Refonte de système](https://gabrielnadon.com/refonte-de-systeme/) : remplacer un vieux système par tranches, sans big bang
 - [Logiciel de gestion pour épicerie et dépanneur](https://gabrielnadon.com/logiciel-gestion-epicerie/) : automatiser la caisse existante d'un commerce d'alimentation au Québec

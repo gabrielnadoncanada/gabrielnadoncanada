@@ -8,9 +8,11 @@ type Props = {
   brandHref: string;
   navItems: NavItem[];
   ctaHref: string;
+  lang?: "fr" | "en";
 };
 
-export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
+export function SiteHeader({ brandHref, navItems, ctaHref, lang = "fr" }: Props) {
+  const en = lang === "en";
   // Header rétractable au défilement (ajoute .is-scrolled après 8px).
   useEffect(() => {
     const header = document.querySelector(".cab-header");
@@ -38,7 +40,7 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
             </span>
             <span className="cab-brandname brand-text">
               <span className="brand-name">Gabriel Nadon</span>
-              <span className="brand-sub">Systèmes opérationnels</span>
+              <span className="brand-sub">{en ? "AI & operations systems" : "Systèmes opérationnels"}</span>
             </span>
           </a>
         </div>
@@ -55,8 +57,8 @@ export function SiteHeader({ brandHref, navItems, ctaHref }: Props) {
             ))}
           </span>
           <a href={ctaHref} className="btn-sm">
-            <span className="btn-cta-full">Analyser mes opérations</span>
-            <span className="btn-cta-short">Parlons-en</span>
+            <span className="btn-cta-full">{en ? "Review my operations" : "Analyser mes opérations"}</span>
+            <span className="btn-cta-short">{en ? "Let’s talk" : "Parlons-en"}</span>
           </a>
         </nav>
       </div>

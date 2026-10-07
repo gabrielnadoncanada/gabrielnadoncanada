@@ -1983,3 +1983,13 @@ select.form-input {
   border-top: none;
   padding-top: 0;
 }
+
+/* Pages de service : les intertitres de section sont des <h2> (structure
+   lisible par Google) mais gardent le rendu de leur classe. */
+h2.eyebrow {
+  margin: 0;
+  font-weight: inherit;
+}
+.note-body p {
+  margin: 0 0 1em;
+}

@@ -398,6 +398,12 @@ export default function RefontePage() {
                   className="link-serif"
                 >
                   Lire le cas →
+                </a>{" "}
+                <span className="serif-muted">
+                  Pas de système à remplacer, mais un Excel devenu ingérable ?{" "}
+                </span>
+                <a href="/logiciel-sur-mesure/" className="link-serif">
+                  Logiciel sur mesure pour PME →
                 </a>
               </div>
             </div>

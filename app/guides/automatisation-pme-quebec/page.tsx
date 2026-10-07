@@ -533,6 +533,30 @@ export default function GuideAutomatisationPage() {
             </div>
           </section>
 
+          {/* Pont vers les pages de service (intention commerciale) */}
+          <section className="bb">
+            <div className="sectors">
+              <span className="sectors-label">Faire implanter</span>
+              <div className="sectors-list">
+                <a href="/automatisation-processus/" className="serif-muted link-serif">
+                  <span>Automatisation des processus</span>
+                </a>
+                <a href="/traitement-documents-ia/" className="serif-muted link-serif">
+                  <span>Traitement de factures et documents</span>
+                </a>
+                <a href="/agents-ia/" className="serif-muted link-serif">
+                  <span>Agents IA</span>
+                </a>
+                <a href="/logiciel-sur-mesure/" className="serif-muted link-serif">
+                  <span>Logiciel sur mesure</span>
+                </a>
+                <a href="/consultant-ia/" className="serif-muted link-serif">
+                  <span>Consultant IA pour PME</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* CTA */}
           <section className="section">
             <div className="contact-grid">

@@ -1,3 +1,5 @@
+import { currentQuarter } from "@/components/Ticker";
+
 export function HomeFooter() {
   return (
     <footer className="footer">
@@ -33,8 +35,8 @@ export function HomeFooter() {
               <a href="#methode" className="cab-foot-link scp0 foot-nav-link">
                 <span>Méthode</span>
               </a>
-              <a href="#methode" className="cab-foot-link scp0 foot-nav-link">
-                <span>Méthode</span>
+              <a href="#services" className="cab-foot-link scp0 foot-nav-link">
+                <span>Services</span>
               </a>
               <a
                 href="/cas/synchronisation-prix-fournisseurs/"
@@ -44,6 +46,32 @@ export function HomeFooter() {
               </a>
               <a href="#contact" className="cab-foot-link scp0 foot-nav-link">
                 <span>Contact</span>
+              </a>
+            </nav>
+            <div className="foot-label" style={{ marginTop: "24px" }}>
+              Services
+            </div>
+            <nav className="footer-nav">
+              <a href="/consultant-ia/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Consultant IA pour PME</span>
+              </a>
+              <a href="/agents-ia/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Agents IA</span>
+              </a>
+              <a href="/traitement-documents-ia/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Traitement de factures et documents</span>
+              </a>
+              <a href="/automatisation-processus/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Automatisation des processus</span>
+              </a>
+              <a href="/logiciel-sur-mesure/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Logiciel sur mesure</span>
+              </a>
+              <a href="/refonte-de-systeme/" className="cab-foot-link scp0 foot-nav-link">
+                <span>Refonte de système</span>
+              </a>
+              <a href="/en/ai-consultant/" hrefLang="en" className="cab-foot-link scp0 foot-nav-link">
+                <span>AI consultant (English)</span>
               </a>
             </nav>
             <div className="foot-label" style={{ marginTop: "24px" }}>
@@ -85,7 +113,7 @@ export function HomeFooter() {
             <div className="footer-avail">
               <span className="dot-live-sm"></span>
               <span className="txt-sm-gray">
-                2 mandats disponibles · T3 2026
+                2 mandats disponibles · {currentQuarter()}
               </span>
             </div>
             <div className="txt-sm-gray-mt">Montréal, Québec · à distance</div>
@@ -113,7 +141,7 @@ export function HomeFooter() {
 
         <div className="footer-bottom">
           <span className="copyright">
-            © 2026 Gabriel Nadon · Tous droits réservés
+            © {new Date().getFullYear()} Gabriel Nadon · Tous droits réservés
           </span>
           <a href="#" className="cab-foot-link scp0 to-top">
             Haut de page <span aria-hidden="true">↑</span>

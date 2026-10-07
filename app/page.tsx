@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title:
-    "Gabriel Nadon — Systèmes opérationnels & automatisation pour PME (Québec)",
+    "Gabriel Nadon — IA, automatisation et systèmes sur mesure pour PME (Québec)",
   description:
-    "J'aide les PME québécoises aux opérations complexes à remplacer Excel, les courriels et les logiciels mal adaptés par un système opérationnel qui centralise l'information et fait une partie du travail.",
+    "Consultant IA et automatisation à Montréal : j'aide les PME québécoises à remplacer Excel, la double saisie et les logiciels mal adaptés par un système qui centralise l'information et fait une partie du travail.",
   alternates: { canonical: "https://gabrielnadon.com/" },
   openGraph: {
     type: "website",
@@ -44,11 +44,12 @@ const SAME_AS = [
 ];
 
 const OFFRES = [
-  "Diagnostic opérationnel",
-  "Système opérationnel sur mesure",
-  "Automatisation de processus",
-  "Refonte de systèmes existants",
-  "Site web professionnel",
+  { name: "Consultant IA pour PME", url: `${SITE}/consultant-ia/` },
+  { name: "Agents IA pour entreprise", url: `${SITE}/agents-ia/` },
+  { name: "Traitement automatique de factures et documents", url: `${SITE}/traitement-documents-ia/` },
+  { name: "Automatisation des processus d’affaires", url: `${SITE}/automatisation-processus/` },
+  { name: "Logiciel sur mesure pour PME", url: `${SITE}/logiciel-sur-mesure/` },
+  { name: "Refonte de systèmes existants", url: `${SITE}/refonte-de-systeme/` },
 ];
 
 const JSONLD = {
@@ -68,10 +69,10 @@ const JSONLD = {
       name: "Gabriel Nadon",
       url: `${SITE}/`,
       image: `${SITE}/portrait.png`,
-      jobTitle: "Conseiller en systèmes opérationnels",
+      jobTitle: "Consultant en IA et en systèmes opérationnels",
       email: "bonjour@gabrielnadon.com",
       description:
-        "Gabriel Nadon aide les PME québécoises aux opérations complexes à remplacer les suivis manuels, Excel, courriels et logiciels mal adaptés par des systèmes opérationnels qui centralisent l'information et automatisent une partie du travail.",
+        "Gabriel Nadon, consultant IA et automatisation à Montréal, aide les PME québécoises aux opérations complexes à remplacer les suivis manuels, Excel, courriels et logiciels mal adaptés par des systèmes qui centralisent l'information et automatisent une partie du travail.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Montréal",
@@ -86,19 +87,22 @@ const JSONLD = {
         "Logiciels sur mesure pour PME",
         "Automatisation de processus",
         "Intelligence artificielle",
+        "Agents IA",
+        "Traitement automatique de documents",
       ],
+      knowsLanguage: ["fr-CA", "en-CA"],
       sameAs: SAME_AS,
       worksFor: { "@id": `${SITE}/#business` },
     },
     {
       "@type": "ProfessionalService",
       "@id": `${SITE}/#business`,
-      name: "Gabriel Nadon — Systèmes opérationnels",
+      name: "Gabriel Nadon — IA, automatisation et systèmes pour PME",
       url: `${SITE}/`,
       image: `${SITE}/og-image.png`,
       logo: `${SITE}/portrait.png`,
       description:
-        "Systèmes opérationnels pour les PME du Québec aux opérations complexes : diagnostic opérationnel, centralisation des workflows, automatisation intelligente, intégration aux systèmes existants et refonte de systèmes vieillissants.",
+        "Consultation et implantation en IA pour les PME du Québec : agents IA, traitement automatique de factures et documents, automatisation des processus, logiciels sur mesure et refonte de systèmes vieillissants.",
       founder: { "@id": `${SITE}/#gabriel` },
       email: "bonjour@gabrielnadon.com",
       priceRange: "$$",
@@ -109,14 +113,14 @@ const JSONLD = {
         addressRegion: "QC",
         addressCountry: "CA",
       },
-      availableLanguage: "fr-CA",
+      availableLanguage: ["fr-CA", "en-CA"],
       sameAs: SAME_AS,
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Mandats",
-        itemListElement: OFFRES.map((name) => ({
+        itemListElement: OFFRES.map(({ name, url }) => ({
           "@type": "Offer",
-          itemOffered: { "@type": "Service", name, areaServed: "Québec" },
+          itemOffered: { "@type": "Service", name, url, areaServed: "Québec" },
         })),
       },
     },
@@ -126,7 +130,7 @@ const JSONLD = {
 const NAV = [
   { href: "#probleme", label: "La situation" },
   { href: "#methode", label: "Méthode" },
-  { href: "#exemples", label: "Exemples" },
+  { href: "#services", label: "Services" },
   { href: "#cas", label: "Cas concret" },
   { href: "#contact", label: "Contact" },
 ];
@@ -154,7 +158,7 @@ export default function Home() {
             <div className="hero-grid">
               <div>
                 <div className="hero-eyebrow" data-rise="50">
-                  Systèmes opérationnels sur mesure · PME québécoises
+                  IA, automatisation et systèmes sur mesure · PME québécoises
                 </div>
                 <h1 className="hero-title" data-rise="120">
                   Vos opérations ne devraient pas vivre dans{" "}
@@ -428,6 +432,87 @@ export default function Home() {
             </p>
           </section>
 
+          {/* SERVICES — hub vers les pages commerciales (une par intention) */}
+          <section className="section-tight" id="services">
+            <div className="mandats-head">
+              <h2 className="h2-left">
+                Ce que je mets en place, selon où le travail se perd.
+              </h2>
+              <span className="eyebrow">§ 04 · Services</span>
+            </div>
+            <div className="case-steps">
+              <div className="case-step">
+                <div className="mandat-code">
+                  <span>DÉMARRER</span>
+                </div>
+                <h3 className="mandat-title">
+                  <a href="/consultant-ia/" className="link-serif">
+                    Consultant IA pour PME →
+                  </a>
+                </h3>
+                <p className="mandat-text">
+                  Trouver les deux ou trois tâches où l&apos;IA rapporte vraiment chez vous, puis les implanter.
+                </p>
+              </div>
+              <div className="case-step">
+                <div className="mandat-code">
+                  <span>DOCUMENTS</span>
+                </div>
+                <h3 className="mandat-title">
+                  <a href="/traitement-documents-ia/" className="link-serif">
+                    Factures et documents traités par l&apos;IA →
+                  </a>
+                </h3>
+                <p className="mandat-text">
+                  Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu&apos;on les retape.
+                </p>
+              </div>
+              <div className="case-step">
+                <div className="mandat-code">
+                  <span>AGENTS</span>
+                </div>
+                <h3 className="mandat-title">
+                  <a href="/agents-ia/" className="link-serif">
+                    Agents IA →
+                  </a>
+                </h3>
+                <p className="mandat-text">
+                  Un assistant qui traite les demandes, prépare soumissions et réponses, et demande avant d&apos;agir.
+                </p>
+              </div>
+              <div className="case-step">
+                <div className="mandat-code">
+                  <span>PROCESSUS</span>
+                </div>
+                <h3 className="mandat-title">
+                  <a href="/automatisation-processus/" className="link-serif">
+                    Automatisation des processus →
+                  </a>
+                </h3>
+                <p className="mandat-text">
+                  La double saisie, les rapports et les relances qui se refont chaque semaine, confiés à la machine.
+                </p>
+              </div>
+              <div className="case-step">
+                <div className="mandat-code">
+                  <span>SYSTÈMES</span>
+                </div>
+                <h3 className="mandat-title">
+                  <a href="/logiciel-sur-mesure/" className="link-serif">
+                    Logiciel sur mesure →
+                  </a>
+                </h3>
+                <p className="mandat-text">
+                  Quand Excel est devenu votre logiciel de gestion — ou{" "}
+                  <a href="/refonte-de-systeme/" className="link-serif">
+                    quand le vieux système doit être remplacé
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* 5 · INTÉGRATIONS — on ne demande pas de tout jeter */}
           <section className="bb">
             <div
@@ -479,7 +564,7 @@ export default function Home() {
                 Près de 56 000 $ par année, récupérés sur une seule tâche
                 manuelle.
               </h2>
-              <span className="eyebrow">§ 04 · Cas concret</span>
+              <span className="eyebrow">§ 05 · Cas concret</span>
             </div>
             <div className="case-steps">
               <div className="case-step">
@@ -615,7 +700,7 @@ export default function Home() {
             <div className="section">
               <div className="note-grid">
                 <div>
-                  <div className="note-eyebrow">§ 05 · La note du conseiller</div>
+                  <div className="note-eyebrow">§ 06 · La note du conseiller</div>
                   <p className="note-quote">
                     Je ne vends pas de la technologie. Je règle des problèmes
                     d’affaires.
@@ -768,7 +853,7 @@ export default function Home() {
           <section className="section" id="contact">
             <div className="contact-grid">
               <div>
-                <div className="contact-eyebrow">§ 06 · Premier rendez-vous</div>
+                <div className="contact-eyebrow">§ 07 · Premier rendez-vous</div>
                 <h2 className="contact-title">
                   Montrez-moi comment vous{" "}
                   <span className="italic">travaillez.</span>

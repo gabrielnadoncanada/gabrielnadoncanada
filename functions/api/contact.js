@@ -9,10 +9,13 @@ const DEST = "bonjour@gabrielnadon.com";
 const FROM = "Formulaire du site <formulaire@send.gabrielnadon.com>";
 const FROM_REPLY = "Gabriel Nadon <formulaire@send.gabrielnadon.com>";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
+// Synchronisé avec components/ContactForm.tsx (SUJETS) — modifier les deux.
 const SUJETS = new Set([
   "Diagnostic de mes opérations",
-  "Système opérationnel sur mesure",
+  "Projet d’IA ou d’agent IA",
   "Automatiser un processus",
+  "Traitement de documents ou de factures",
+  "Système opérationnel sur mesure",
   "Refonte d’un système existant",
   "Site web",
   "Autre sujet",
@@ -45,6 +48,30 @@ function cleanAttribution(raw) {
     if (typeof raw[k] === "string" && raw[k]) out[k] = raw[k].slice(0, 300);
   }
   return Object.keys(out).length ? out : null;
+}
+
+// Canal d'acquisition déduit de l'attribution — même logique que
+// lib/analytics.ts (deriveChannel). Sert à rattacher chaque lead, puis
+// chaque mandat, au SEO : il figure dans le sujet du courriel.
+const SEARCH = /(^|\.)(google|bing|duckduckgo|yahoo|ecosia|qwant|brave|startpage)\./;
+const AI = /(^|\.)(chatgpt\.com|openai\.com|perplexity\.ai|claude\.ai|copilot\.microsoft\.com|gemini\.google\.com)$/;
+const SOCIAL = /(^|\.)(facebook|linkedin|instagram|t|x|twitter|youtube|reddit|lnkd)\.(com|co|in)$/;
+
+function deriveChannel(a) {
+  if (!a) return "direct";
+  if (a.gclid || a.msclkid || /cpc|ppc|paid/i.test(a.utm_medium || "")) return "payant";
+  if (a.utm_source || a.utm_medium || a.utm_campaign || a.fbclid) return "campagne";
+  let h = "";
+  try {
+    h = new URL(a.referrer || "").hostname.toLowerCase();
+  } catch {
+    h = "";
+  }
+  if (!h || h.endsWith("gabrielnadon.com")) return "direct";
+  if (AI.test(h)) return "assistant_ia";
+  if (SEARCH.test(h)) return "organique";
+  if (SOCIAL.test(h)) return "social";
+  return "referent";
 }
 
 async function sendResend(env, payload) {
@@ -81,9 +108,10 @@ export async function onRequestPost({ request, env }) {
     return Response.json({ ok: false, error: "invalid_fields" }, { status: 400 });
   }
 
-  const attrLines = attribution
-    ? Object.entries(attribution).map(([k, v]) => `${k} : ${v}`)
-    : [];
+  const canal = deriveChannel(attribution);
+  const attrLines = [`canal : ${canal}`].concat(
+    attribution ? Object.entries(attribution).map(([k, v]) => `${k} : ${v}`) : []
+  );
 
   const text =
     `Sujet : ${sujet}\n` +
@@ -112,7 +140,7 @@ export async function onRequestPost({ request, env }) {
     from: FROM,
     to: [DEST],
     reply_to: email,
-    subject: `🟢 Nouveau lead — ${sujet} (${email})`,
+    subject: `🟢 Nouveau lead [${canal}] — ${sujet} (${email})`,
     text,
     html,
   });

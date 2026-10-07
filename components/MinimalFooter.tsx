@@ -1,7 +1,36 @@
-export function MinimalFooter() {
+// Liens de service présents sur toutes les pages internes : c'est le maillage
+// qui pousse les pages commerciales prioritaires (crawl + clic).
+const SERVICES = [
+  { href: "/consultant-ia/", label: "Consultant IA" },
+  { href: "/agents-ia/", label: "Agents IA" },
+  { href: "/traitement-documents-ia/", label: "Traitement de documents" },
+  { href: "/automatisation-processus/", label: "Automatisation des processus" },
+  { href: "/logiciel-sur-mesure/", label: "Logiciel sur mesure" },
+  { href: "/refonte-de-systeme/", label: "Refonte de système" },
+];
+
+export function MinimalFooter({ lang = "fr" }: { lang?: "fr" | "en" }) {
+  const en = lang === "en";
   return (
     <footer className="footer">
       <div className="footer-inner">
+        <div className="footer-bottom footer--flush">
+          <span className="copyright">
+            Services :{" "}
+            {SERVICES.map((s, i) => (
+              <span key={s.href}>
+                {i > 0 ? " · " : null}
+                <a href={s.href} className="cab-foot-link scp0">
+                  {s.label}
+                </a>
+              </span>
+            ))}
+            {" · "}
+            <a href="/en/ai-consultant/" className="cab-foot-link scp0" hrefLang="en">
+              AI consultant (English)
+            </a>
+          </span>
+        </div>
         <div className="footer-bottom footer--flush">
           <span className="copyright">
             Gratuit :{" "}
@@ -25,14 +54,13 @@ export function MinimalFooter() {
             </a>
           </span>
         </div>
-        <div
-          className="footer-bottom footer--flush"
-        >
+        <div className="footer-bottom footer--flush">
           <span className="copyright">
-            © 2026 Gabriel Nadon · Tous droits réservés
+            © {new Date().getFullYear()} Gabriel Nadon ·{" "}
+            {en ? "All rights reserved" : "Tous droits réservés"}
           </span>
           <a href="/" className="cab-foot-link scp0 to-top">
-            ← Retour à l&apos;accueil
+            {en ? "← Home (French)" : "← Retour à l’accueil"}
           </a>
         </div>
       </div>

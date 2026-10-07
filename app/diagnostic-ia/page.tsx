@@ -207,6 +207,30 @@ export default function DiagnosticIAPage() {
             </div>
           </section>
 
+          {/* Pont vers l'offre : ceux qui cherchent « IA pour PME » veulent
+              souvent quelqu'un pour l'implanter, pas seulement un score. */}
+          <section className="bb">
+            <div className="sectors">
+              <span className="sectors-label">Passer à l’implantation</span>
+              <div className="u-measure-prose">
+                <span className="serif-muted">
+                  Vous préférez qu’on regarde ensemble où l’IA rapporterait chez
+                  vous — factures, courriels, soumissions, suivis ?{" "}
+                </span>
+                <a href="/consultant-ia/" className="link-serif">
+                  Consultant IA pour PME : la démarche et les prix →
+                </a>{" "}
+                <span className="serif-muted">Ou directement : </span>
+                <a href="/agents-ia/" className="link-serif">
+                  agents IA →
+                </a>{" "}
+                <a href="/traitement-documents-ia/" className="link-serif">
+                  traitement de factures et documents →
+                </a>
+              </div>
+            </div>
+          </section>
+
           <MinimalFooter />
         </div>
       </div>

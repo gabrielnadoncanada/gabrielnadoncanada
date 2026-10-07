@@ -63,6 +63,10 @@ export default function MerciPage() {
                   moi-même et je reviens vers vous avec de premières pistes —
                   pas un courriel automatique de plus.
                 </p>
+                <p className="form-note" lang="en">
+                  Thank you — your request is in. I&apos;ll reply within 24
+                  hours, in English.
+                </p>
               </div>
               <div data-rise="280">
                 <div className="cab-paper contact-card">
