@@ -30,6 +30,9 @@ function host(url: string) {
 export function deriveChannel(a: Attribution | null): Channel {
   if (!a) return "direct";
   if (a.gclid || a.msclkid || /cpc|ppc|paid/i.test(a.utm_medium || "")) return "payant";
+  // Les assistants IA marquent leurs liens (ChatGPT : ?utm_source=chatgpt.com) :
+  // à tester avant la règle « campagne », sinon ces leads y tombent.
+  if (AI.test((a.utm_source || "").toLowerCase())) return "assistant_ia";
   if (a.utm_source || a.utm_medium || a.utm_campaign || a.fbclid) return "campagne";
   const h = host(a.referrer || "");
   if (!h || h.endsWith("gabrielnadon.com")) return "direct";

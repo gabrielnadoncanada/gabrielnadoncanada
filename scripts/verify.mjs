@@ -289,6 +289,14 @@ const LEAD = {
     calls[0]?.body.text.includes("landing : /consultant-ia/"),
     "Function : page d'entrée absente du courriel de lead."
   );
+  const ai = mockFetch([true, true]);
+  await onRequestPost(
+    fakeRequest({ ...LEAD, attribution: { utm_source: "chatgpt.com", landing: "/consultant-ia/" } })
+  );
+  check(
+    ai[0]?.body.subject.includes("[assistant_ia]"),
+    "Function : un lead venu de ChatGPT (utm_source=chatgpt.com) n'est pas étiqueté [assistant_ia]."
+  );
   const paid = mockFetch([true, true]);
   await onRequestPost(fakeRequest(LEAD));
   check(paid[0]?.body.subject.includes("[payant]"), "Function : un lead gclid n'est pas étiqueté [payant].");
