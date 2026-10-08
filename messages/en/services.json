@@ -1,0 +1,672 @@
+{
+  "consultantIa": {
+    "meta": {
+      "title": "AI Consultant in Montreal & Quebec for SMBs | Gabriel Nadon",
+      "description": "Independent AI consultant in Montreal: I find where AI removes real work in your business — invoices, emails, quotes — and build it into your tools.",
+      "ogTitle": "AI Consultant in Montreal & Quebec for SMBs"
+    },
+    "breadcrumb": "AI consultant",
+    "service": {
+      "name": "AI consultant for small and mid-sized businesses",
+      "type": "AI consulting and implementation",
+      "description": "Process review for Quebec small and mid-sized businesses, selection of the tasks where AI pays off, and implementation in existing tools: document and invoice processing, AI agents, workflow automation and custom internal software."
+    },
+    "eyebrow": "AI consultant · Montreal & Quebec",
+    "title": "AI that removes real work from your operations — not another demo.",
+    "lead": "You know AI could help. What’s missing is knowing where, with which data, and who will set it up so it actually lasts. I’m an independent AI consultant based in Montreal: I look at how your business really runs, find the two or three tasks where AI pays off, and implement them — connected to the tools you already use, with a human in the loop.",
+    "box": {
+      "kicker": "Where AI pays off first in an SMB",
+      "items": [
+        "Reading invoices, purchase orders and supplier price lists — and keying them in for you.",
+        "Sorting incoming email requests and drafting the reply or the customer record.",
+        "Building a first-draft quote or report from your own data.",
+        "Finding information across a project’s documents in seconds."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Sound familiar?",
+      "title": "Everyone talks about AI. In your operations, nothing has changed yet.",
+      "intro": "It’s not a lack of will. Between a ChatGPT subscription and a process that runs on its own, there is a missing step: connecting AI to your data and to the way you actually work.",
+      "items": [
+        "A few employees use ChatGPT on their own, but day-to-day operations haven’t moved.",
+        "Every vendor pitches their platform “with AI” without ever looking at how you work.",
+        "Your data lives in Excel, inboxes and software that doesn’t talk to anything else.",
+        "You’re wary of putting customer data into an AI tool because of Quebec’s Law 25.",
+        "Nobody in-house has time to run one more project."
+      ]
+    },
+    "approach": {
+      "eyebrow": "How I work",
+      "quote": "AI isn’t the project. The project is the costly task — AI is one of the tools to remove it.",
+      "body": "<dropcap>I</dropcap> start with your operations, not with technology: where time goes, what it costs, what data already exists. Only then do we pick the tool — sometimes an AI model, sometimes a plain automation, sometimes a small internal app. You deal directly with the person who analyses and builds: no account managers, no jargon. I work in English and French.",
+      "principles": [
+        {
+          "title": "Priced before it’s built",
+          "text": "Every use case starts with simple math: hours per week × people × hourly rate. No number, no project."
+        },
+        {
+          "title": "Your data stays governed",
+          "text": "Sensitive data doesn’t go into consumer AI tools without safeguards; hosting, access and settings follow your obligations."
+        },
+        {
+          "title": "A human approves",
+          "text": "AI prepares, summarises and proposes. Decisions that commit the business stay with your people."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works, in five steps",
+      "items": [
+        {
+          "title": "Free 20-minute review",
+          "text": "You tell me where your team loses the most time; I tell you whether AI is the right answer — or not."
+        },
+        {
+          "title": "Map and prioritise",
+          "text": "We list the repetitive tasks, put a dollar figure on each, and pick the one with the best return for the least effort."
+        },
+        {
+          "title": "Prototype on your real files",
+          "text": "No generic demo: the first test runs on your invoices, your emails, your exports. You see right away whether it holds up."
+        },
+        {
+          "title": "Implement in your tools",
+          "text": "The system plugs into what you already use — Outlook, Excel, QuickBooks, your ERP — depending on available access."
+        },
+        {
+          "title": "Measure, then next use case",
+          "text": "We compare time before and after. Once the first case pays off, we move to the next one at your pace."
+        }
+      ]
+    },
+    "services": {
+      "title": "What I implement.",
+      "items": [
+        {
+          "kind": "AI agents",
+          "title": "AI agents for business",
+          "text": "An agent reads a request, checks your data and prepares the action — reply, quote, data entry — for approval."
+        },
+        {
+          "kind": "Documents",
+          "title": "Invoice and document processing",
+          "text": "Invoices, purchase orders, price lists: read, checked and keyed in automatically; exceptions go to a person."
+        },
+        {
+          "kind": "Automation",
+          "title": "Business process automation",
+          "text": "The copy-paste between apps, weekly reports and follow-ups — done by the machine, with Make, n8n, Power Automate or code."
+        },
+        {
+          "kind": "Systems",
+          "title": "Custom internal software",
+          "text": "When a spreadsheet has become your management system: a real internal tool, built in increments."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Real results",
+      "body": "<muted>An independent grocery store in Quebec was re-typing its suppliers’ prices by hand — close to $56,000 a year in staff time. The system now reads every supplier’s price list, compares about 37,000 prices each cycle and prepares the point-of-sale update, which the team approves. </muted><a>Read the full case study →</a> <muted>I also run my own AI agents: my prospecting system finds companies, analyses their website and drafts a personalised first email — nothing goes out without my approval.</muted>"
+    },
+    "price": {
+      "label": "Pricing",
+      "body": "<muted>Review: 20 minutes, free. First implementation sprint: from $4,500, fixed scope, 2 to 3 weeks — one task removed, not a subscription. Quebec programs can reimburse part of the fees (Investissement Québec’s ESSOR, PME MTL): </muted><a>market rates and grants in detail →</a>"
+    },
+    "faq": {
+      "eyebrow": "Questions I often get",
+      "items": [
+        {
+          "q": "How much does an AI consultant cost in Quebec?",
+          "a": "Published Canadian rates for AI and automation consulting range from roughly $150 to $350 an hour, but most projects are sold at a fixed price. With me: a free 20-minute review, then fixed-scope sprints from $4,500."
+        },
+        {
+          "q": "Do we need to replace our software to use AI?",
+          "a": "In most cases, no. AI connects to your current tools through their APIs, exports or email. We only replace what is genuinely in the way."
+        },
+        {
+          "q": "Is our data safe under Quebec’s Law 25?",
+          "a": "We decide together which data the AI can see, where it is processed and who has access. Personal information doesn’t go into consumer tools without safeguards, and every access is documented."
+        },
+        {
+          "q": "How is this different from an AI agency?",
+          "a": "You work directly with the person who analyses your operations and builds the system. No sales layer, no subcontracting, no imposed platform."
+        },
+        {
+          "q": "What if AI isn’t the right solution for us?",
+          "a": "I’ll tell you during the review. Often a simple automation or a better spreadsheet solves the problem for less — and that’s what I recommend in that case."
+        },
+        {
+          "q": "Do you work in English?",
+          "a": "Yes. I work in English and French, from Montreal and remotely across Quebec."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Free review",
+      "title": "Twenty minutes to find where AI would save your team time.",
+      "lead": "Describe the task that costs you the most hours. I’ll reply within 24 hours with an honest first take — whether or not we end up working together."
+    },
+    "related": {
+      "label": "Go further",
+      "links": [
+        "Test: is your SMB ready for AI?",
+        "Calculate the cost of a manual task",
+        "Guide: automating your SMB",
+        "En français : consultant IA au Québec"
+      ]
+    }
+  },
+  "agentsIa": {
+    "meta": {
+      "title": "AI Agents for Businesses in Quebec | Gabriel Nadon",
+      "description": "AI agents for Quebec SMBs: an assistant that handles incoming requests and drafts quotes and replies, connected to your data, with human approval.",
+      "ogTitle": "AI Agents for Businesses in Quebec"
+    },
+    "breadcrumb": "AI agents",
+    "service": {
+      "name": "AI agents for business",
+      "type": "Design and implementation of AI agents",
+      "description": "AI agents for Quebec SMBs: receiving and sorting requests, preparing quotes, answering repetitive questions from the company’s own documents, following up on files — connected to existing tools, with human approval."
+    },
+    "eyebrow": "AI agents · Quebec SMBs",
+    "title": "An AI agent that does a real task — and asks before it acts.",
+    "lead": "In practical terms, an AI agent is a software assistant that receives a request, pulls the information from your systems, prepares the action — a reply, a quote, a data entry — and submits it to you. Not a chat gadget: a virtual employee assigned to one specific task, working with your data and under your rules.",
+    "box": {
+      "kicker": "Agents that pay off in an SMB",
+      "items": [
+        "Intake: reads every request that comes in by email, creates the record and drafts the reply.",
+        "Quotes: builds a first draft from your prices, templates and past projects.",
+        "Customer service: answers repetitive questions from your documents, and hands off to a person.",
+        "Follow-up: spots overdue files and prepares the reminders."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Why an agent, and not just ChatGPT",
+      "title": "ChatGPT helps one person. An agent takes a task off the company’s plate.",
+      "intro": "A ChatGPT subscription makes each employee a bit faster — as long as they remember to use it. An agent is wired into the process itself: it starts on its own when a request comes in, and it knows your data.",
+      "items": [
+        "The same customer questions come back every day, and someone answers them by hand every time.",
+        "Requests arrive by email, web form and phone — and get lost between the three.",
+        "A quote takes hours even though most of its content already exists somewhere.",
+        "The information for a file is scattered across emails, PDFs and software.",
+        "You tried a generic chatbot: it made up answers."
+      ]
+    },
+    "approach": {
+      "eyebrow": "How I work",
+      "quote": "A good agent has one task, access to the right data, and a clear limit on what it can do on its own.",
+      "body": "<dropcap>T</dropcap>he agents that fail are the ones asked to “do everything.” I design narrow agents: one task, defined information sources, written rules, and a human approval step before any action that commits the business — sending, paying, making a commitment to a customer.",
+      "principles": [
+        {
+          "title": "It answers from your data",
+          "text": "The agent cites your documents, your prices, your files. If it can’t find the answer, it says so and hands off — it doesn’t make things up."
+        },
+        {
+          "title": "It asks before it acts",
+          "text": "Draft, proposal, pending entry: the final decision stays with a person until trust is established."
+        },
+        {
+          "title": "It leaves a trail",
+          "text": "Every action is logged: what it read, what it proposed, who approved it."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works, in five steps",
+      "items": [
+        {
+          "title": "Pick the task",
+          "text": "A frequent, repetitive and costly task. We put a number on it before writing a single line."
+        },
+        {
+          "title": "Gather the sources",
+          "text": "Documents, templates, prices, history: what the agent needs to know, and what it must never see."
+        },
+        {
+          "title": "Prototype on real cases",
+          "text": "We replay past requests. You compare what the agent proposes with what your team actually did."
+        },
+        {
+          "title": "Supervised go-live",
+          "text": "The agent prepares, your team approves. We measure the time saved and the corrections needed."
+        },
+        {
+          "title": "Expand carefully",
+          "text": "Once its proposals are reliable, we give it more autonomy — or a second task."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Real results",
+      "body": "<muted>I run my own agents before selling you one: my prospecting system finds companies, analyses their website and drafts a personalised first email — nothing goes out without my approval. On the client side, the supplier price system of an independent grocery store reads every supplier’s price list and prepares the point-of-sale update, which the team approves: close to $56,000 a year of data entry eliminated. </muted><a>Read the full case study →</a>"
+    },
+    "price": {
+      "label": "Pricing",
+      "body": "<muted>First agent: fixed-scope sprint from $4,500, 2 to 3 weeks. On top of that come the AI model’s usage fees, billed per use by the provider — I estimate them on your real volumes before building, so there are no surprises.</muted>"
+    },
+    "faq": {
+      "eyebrow": "Questions I often get",
+      "items": [
+        {
+          "q": "What’s the difference between an AI agent and a chatbot?",
+          "a": "A chatbot converses. An agent acts: it checks your systems, prepares an entry, a reply or a document, and fits into the process. A customer service chatbot can in fact be an agent, if it answers from your documents and hands off to the right person."
+        },
+        {
+          "q": "Can an AI agent make mistakes?",
+          "a": "Yes, like a new employee. That’s why it answers from your sources, flags when it isn’t sure, and a person approves any action that commits the business."
+        },
+        {
+          "q": "Isn’t ChatGPT Enterprise or Copilot enough?",
+          "a": "To help each employee write or summarise, often yes. For a task to get done without anyone thinking about it — as soon as an email arrives, for example — AI has to be connected to your systems and your rules. That’s what an agent does."
+        },
+        {
+          "q": "What happens to our data?",
+          "a": "We define precisely what the agent can read and write. Personal information is handled according to your obligations (Quebec’s Law 25): providers chosen accordingly, limited access, and none of your data used to train a public model."
+        },
+        {
+          "q": "How long before an agent is useful?",
+          "a": "A first narrow agent goes live under supervision in 2 to 3 weeks. The value shows up as soon as it correctly prepares most cases, even if your team still approves every proposal."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Free review",
+      "title": "What task would you hand to one more employee?",
+      "lead": "Describe it. Within 24 hours I’ll tell you whether an AI agent can take it on, with which data and how much effort — whether or not we end up working together."
+    },
+    "related": {
+      "label": "Go further",
+      "links": [
+        "AI consultant for SMBs",
+        "Invoice and document processing",
+        "Business process automation",
+        "Test: ready for AI?"
+      ]
+    }
+  },
+  "documents": {
+    "meta": {
+      "title": "AI Invoice and Document Processing | Gabriel Nadon",
+      "description": "Invoices, purchase orders, price lists: read by AI, checked and entered into your accounting software or ERP. Exceptions go to a person. Quebec SMBs.",
+      "ogTitle": "AI Invoice and Document Processing"
+    },
+    "breadcrumb": "AI document processing",
+    "service": {
+      "name": "Automated invoice and document processing with AI",
+      "type": "Automated document extraction and data entry (OCR and AI)",
+      "description": "Automated reading of supplier invoices, purchase orders, delivery slips and price lists with OCR and artificial intelligence; rule-based validation; entry into the accounting software, ERP or Excel; exceptions sent to a person. For Quebec SMBs."
+    },
+    "eyebrow": "Invoices and documents · Quebec SMBs",
+    "title": "Are your invoices and purchase orders still keyed in by hand?",
+    "lead": "Every document that arrives as a PDF, a photo or an email attachment ends up being read and re-typed by someone. AI can now read these documents reliably: it extracts the fields, checks them against your rules and sends them into your software. Your team only handles the exceptions.",
+    "box": {
+      "kicker": "The documents we process",
+      "items": [
+        "Supplier invoices: number, date, amounts, taxes, product lines.",
+        "Purchase orders and delivery slips, matched against each other.",
+        "Supplier price lists, in PDF, Excel or CSV, each in a different format.",
+        "Forms, timesheets and job-site documents."
+      ]
+    },
+    "pains": {
+      "eyebrow": "The signs",
+      "title": "Someone on your payroll is copying out what’s already written.",
+      "intro": "Document data entry doesn’t appear on any financial statement. It hides in payroll, in billing delays and in errors discovered too late.",
+      "items": [
+        "Invoices pile up at month-end, and accounting scrambles to catch up.",
+        "Every supplier sends a different format; no off-the-shelf tool reads them all.",
+        "A data entry error on a price or a quantity costs more than the data entry itself.",
+        "Delivery slips are never matched against orders.",
+        "You tried OCR software: it read the text, but didn’t understand the document."
+      ]
+    },
+    "approach": {
+      "eyebrow": "How it works",
+      "quote": "OCR reads the characters. AI understands the document. Rules check it. A person settles the exceptions.",
+      "body": "<dropcap>A</dropcap> document goes through four steps: it is captured (email, shared folder, scan), read and structured by AI, checked against rules specific to your business — known supplier, totals that add up, matching order — then entered into your system. Anything that fails the checks lands in a review queue, with the reason.",
+      "principles": [
+        {
+          "title": "Tested on your real documents",
+          "text": "Before any commitment, we run a sample of your invoices through and measure what comes out correctly."
+        },
+        {
+          "title": "Checks, not blind trust",
+          "text": "A total that doesn’t add up, an unknown supplier, an unusual price: the document is held back and flagged."
+        },
+        {
+          "title": "Connected to your software",
+          "text": "QuickBooks, Acomba, Sage, your ERP or Excel — through import, API or export, depending on what the software allows."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works, in five steps",
+      "items": [
+        {
+          "title": "Document inventory",
+          "text": "Which documents, how many per month, from how many suppliers, and where they need to end up."
+        },
+        {
+          "title": "Test on a sample",
+          "text": "Around fifty real documents go through the system. We see exactly what is reliable and what isn’t."
+        },
+        {
+          "title": "Validation rules",
+          "text": "Together we write the checks that matter: thresholds, matching, approved suppliers."
+        },
+        {
+          "title": "Software connection",
+          "text": "Validated data is entered automatically; exceptions land in a queue that’s simple to work through."
+        },
+        {
+          "title": "Exception follow-up",
+          "text": "We look at what falls into exceptions and improve the rules until the queue becomes marginal."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Real results",
+      "body": "<muted>An independent grocery store received price lists from all its suppliers, each in its own format, and re-typed them into its point-of-sale system: close to $56,000 a year. The system now reads those lists, compares about 37,000 prices each cycle and prepares the update — without replacing the POS, and the team approves before it’s applied. </muted><a>Read the full case study →</a>"
+    },
+    "price": {
+      "label": "Pricing",
+      "body": "<muted>Sample test included in the first sprint: from $4,500, fixed scope, 2 to 3 weeks for one document type. On top of that come per-use processing fees, estimated on your real volumes before building. </muted><a>Calculate what data entry costs you →</a>"
+    },
+    "faq": {
+      "eyebrow": "Questions I often get",
+      "items": [
+        {
+          "q": "What’s the difference between OCR and AI processing?",
+          "a": "OCR turns an image into text. AI understands that text: it knows a number is a pre-tax total, a line is a product, a document is a credit note. That’s what makes it possible to read different formats without a template per supplier."
+        },
+        {
+          "q": "What accuracy can we expect?",
+          "a": "It depends on your documents: scan quality, variety of formats, handwriting. That’s why we start with a test on your real documents, and why rules hold back anything doubtful instead of entering it."
+        },
+        {
+          "q": "Does it work with QuickBooks, Acomba or Sage?",
+          "a": "Yes, depending on the access the software offers: API, file import or structured export. We confirm the integration path during the review, before any commitment."
+        },
+        {
+          "q": "What about handwritten or poorly scanned documents?",
+          "a": "They are read when possible, and sent for review when the reading isn’t reliable enough. The goal isn’t zero human involvement, it’s zero pointless data entry."
+        },
+        {
+          "q": "Our documents contain personal information. Is that a problem?",
+          "a": "Not if it’s governed: we choose providers and settings compatible with your obligations (Quebec’s Law 25), limit access and keep only what’s necessary."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Free review",
+      "title": "How many documents does your team re-type every month?",
+      "lead": "Tell me which ones and roughly how many. I’ll reply within 24 hours with what can be automated and an honest idea of the effort."
+    },
+    "related": {
+      "label": "Go further",
+      "links": [
+        "Updating supplier prices: 4 methods",
+        "AI agents for business",
+        "Business process automation",
+        "AI consultant for SMBs"
+      ]
+    }
+  },
+  "automatisation": {
+    "meta": {
+      "title": "Business Process Automation for Quebec SMBs | Gabriel Nadon",
+      "description": "Double data entry, copy-paste between apps, reports rebuilt every week: I automate your processes (Make, n8n, Power Automate). Quebec SMBs.",
+      "ogTitle": "Business Process Automation for Quebec SMBs"
+    },
+    "breadcrumb": "Process automation",
+    "service": {
+      "name": "Business process automation",
+      "type": "Process and workflow automation",
+      "description": "Automation of repetitive tasks for Quebec SMBs — double data entry, transfers between software, reports, follow-ups — with Make, n8n, Power Automate, Zapier or code, and artificial intelligence when text or documents are involved."
+    },
+    "eyebrow": "Process automation · Quebec SMBs",
+    "title": "The tasks your team redoes every week can run on their own.",
+    "lead": "Copying an order from an email into the software. Rebuilding the same report every Monday. Chasing the same customers by hand. One by one, they’re small irritants; added up, they’re often a part-time position. I automate these processes end to end, connected to your current tools — and I add AI only where text needs to be read or written.",
+    "box": {
+      "kicker": "What we automate most often",
+      "items": [
+        "Double data entry between email, Excel and the accounting software.",
+        "Weekly reports put together by hand from three exports.",
+        "Follow-ups: unanswered quotes, overdue invoices, missing documents.",
+        "Routing a customer request to the right file and the right person."
+      ]
+    },
+    "pains": {
+      "eyebrow": "The signs",
+      "title": "If someone “bridges the gap” between two pieces of software, it can be automated.",
+      "intro": "The most reliable symptom: a person whose job partly consists of moving information from one place to another. That’s paid time that creates nothing.",
+      "items": [
+        "The same data is typed twice, into two different systems.",
+        "A spreadsheet serves as a database, and only one person knows how to keep it up to date.",
+        "Reports arrive late because they have to be rebuilt every time.",
+        "Follow-ups fall through the cracks when someone is on vacation.",
+        "You already pay for Microsoft 365, Zapier or an ERP without using their automations."
+      ]
+    },
+    "approach": {
+      "eyebrow": "How I work",
+      "quote": "You don’t automate a messy process. You simplify it, put a number on it, then hand it to the machine.",
+      "body": "<dropcap>T</dropcap>he tool comes last. Make, n8n, Power Automate, Zapier or a few lines of code: we choose based on your software, your volumes and the long-term subscription cost — not my preferences. When a step requires understanding an email or a PDF, an AI model handles it, with control rules and human approval.",
+      "principles": [
+        {
+          "title": "The math first",
+          "text": "Hours per week × people × hourly rate × 50 weeks: if the number doesn’t justify automating, I’ll tell you."
+        },
+        {
+          "title": "Monitored, not forgotten",
+          "text": "Every automation reports its own errors. If a supplier changes its format, you know the same day."
+        },
+        {
+          "title": "Documented for you",
+          "text": "You know what runs, where, and how to stop it. No black box that depends on a single person."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works, in five steps",
+      "items": [
+        {
+          "title": "Price the chore",
+          "text": "We measure what the process really costs today — in hours, errors and delays."
+        },
+        {
+          "title": "Map the process",
+          "text": "Who does what, in which tool, with which exceptions. That’s often where half the work already gets simplified."
+        },
+        {
+          "title": "Build",
+          "text": "The connections between your tools, the control rules and, if needed, the AI step that reads or drafts."
+        },
+        {
+          "title": "Run in parallel",
+          "text": "The automation runs alongside the current method for a few days. We compare, fix, and earn the team’s trust."
+        },
+        {
+          "title": "Go live",
+          "text": "The old method is retired, monitoring is in place, and we look at the next process."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Real results",
+      "body": "<muted>Updating supplier prices at an independent grocery store took the equivalent of a part-time position — close to $56,000 a year. Automated end to end and connected to the existing point-of-sale system, it now happens without manual data entry — the team only approves — and the business buys at the best price on every order. </muted><a>Read the full case study →</a>"
+    },
+    "price": {
+      "label": "Pricing",
+      "body": "<muted>Automation sprint: from $4,500, fixed scope, 2 to 3 weeks. In Quebec, published prices range from about $2,500 to $10,000 for a first process. </muted><a>Price ranges and grants in detail →</a>"
+    },
+    "faq": {
+      "eyebrow": "Questions I often get",
+      "items": [
+        {
+          "q": "Make, n8n, Power Automate or Zapier: which one should we choose?",
+          "a": "If the whole company is on Microsoft 365, Power Automate is often the natural choice. Make and Zapier are quick to set up for connecting web apps. n8n can be hosted on your own infrastructure, useful when data control matters. I recommend based on your tools and your volumes."
+        },
+        {
+          "q": "Which process should we start with?",
+          "a": "The one that combines three things: it comes back every week, it always follows the same steps and it costs the most hours. The free calculator on this site gives you a first number in 30 seconds."
+        },
+        {
+          "q": "What happens if an automation breaks?",
+          "a": "It warns you. Every flow has its alerts and a recovery procedure. Format changes at a supplier or in a piece of software are the most frequent cause — and the simplest to fix."
+        },
+        {
+          "q": "Do we need a technical employee in-house?",
+          "a": "No. Your team knows the process; I handle the technical side. A sprint usually takes a few hours of your time, mostly at the start, to validate the rules."
+        },
+        {
+          "q": "Where does AI come into an automation?",
+          "a": "Wherever text needs to be understood: reading an order received by email, extracting the fields from an invoice, classifying a request, drafting a reply. The rest is classic automation, more reliable and less costly."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Free review",
+      "title": "What task does your team redo every week?",
+      "lead": "Describe it in two lines. I’ll reply within 24 hours with what can be automated, and at what price — whether or not we end up working together."
+    },
+    "related": {
+      "label": "Go further",
+      "links": [
+        "Manual work cost calculator",
+        "Guide: automating your SMB",
+        "Invoice and document processing",
+        "AI consultant for SMBs"
+      ]
+    }
+  },
+  "logiciel": {
+    "meta": {
+      "title": "Custom Software for Quebec SMBs | Gabriel Nadon",
+      "description": "Quotes, work orders, timesheets, inventory: when a spreadsheet has become your management software, I build you a real system. Quebec SMBs.",
+      "ogTitle": "Custom Software for Quebec SMBs — replace spreadsheets with a real system"
+    },
+    "breadcrumb": "Custom software",
+    "service": {
+      "name": "Custom software development for SMBs",
+      "type": "Custom software and internal systems development",
+      "description": "Custom internal systems for Quebec SMBs — quotes, work orders, timesheets, inventory, project tracking, customer portals — built in increments and connected to existing software (accounting, ERP, Excel)."
+    },
+    "eyebrow": "Custom software · Quebec SMBs",
+    "title": "When Excel has become your management software, it’s time for a real one.",
+    "lead": "Your business has grown faster than its tools. Quotes live in one file, hours in another, projects in email — and no off-the-shelf software fits the way you work. I build the internal system that’s missing, piece by piece, connected to what you already use.",
+    "box": {
+      "kicker": "What SMBs ask me to build",
+      "items": [
+        "Quotes and estimates from your prices and templates.",
+        "Work orders, timesheets and job-site or production tracking.",
+        "Inventory, supplier orders and receiving.",
+        "A dashboard that finally brings together the numbers from all your software."
+      ]
+    },
+    "pains": {
+      "eyebrow": "The signs",
+      "title": "Your real management software is a file nobody dares to touch.",
+      "intro": "Excel is an excellent tool to start with. It becomes a risk when the whole company depends on it and only one person knows how it works.",
+      "items": [
+        "Several versions of the same file are going around, and nobody knows which one is right.",
+        "You pay for three or four subscriptions that each cover part of the need.",
+        "Off-the-shelf software forces you to change a way of working that works.",
+        "The numbers you need to make decisions arrive at month-end — too late.",
+        "Your old in-house software is no longer maintained by anyone."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Buy or build?",
+      "quote": "If off-the-shelf software does 80% of the job, buy it. Custom is worth it when the way you work is your advantage.",
+      "body": "<dropcap>I</dropcap>’ll tell you frankly during the review: often, the right answer is existing software, properly configured. Custom becomes worthwhile when you’re juggling several tools that don’t talk to each other, when your process is unusual, or when the combined cost of licences exceeds that of a system built for you.",
+      "refonte": "Is your current system getting old? <a>See how I replace it without stopping your operations →</a>",
+      "principles": [
+        {
+          "title": "In increments",
+          "text": "Each increment is delivered, used and pays for itself before the next one. No eighteen-month project."
+        },
+        {
+          "title": "Connected to what exists",
+          "text": "The system plugs into your accounting, your ERP or your files instead of replacing everything at once."
+        },
+        {
+          "title": "Built for AI",
+          "text": "Clean, centralized data: that’s the prerequisite for automating next, with or without AI."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works, in five steps",
+      "items": [
+        {
+          "title": "Review",
+          "text": "We look at how information really flows in your business, and where it gets lost."
+        },
+        {
+          "title": "Split into increments",
+          "text": "The system is split into pieces that are useful on their own; we start with the one that costs you the most today."
+        },
+        {
+          "title": "First increment",
+          "text": "Built and put into service within a few weeks, on your real data, with your team."
+        },
+        {
+          "title": "Data migration",
+          "text": "Your files and history are imported, checked and reconciled — the totals have to match."
+        },
+        {
+          "title": "Next increment",
+          "text": "At the pace of your operations and your budget, until the system covers what matters."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Real results",
+      "body": "<muted>Rather than replacing an independent grocery store’s point-of-sale system, I built a system alongside it that reads supplier price lists, compares about 37,000 prices each cycle and feeds the existing POS: close to $56,000 a year of data entry eliminated, with no interruption to operations. </muted><a>Read the full case study →</a>"
+    },
+    "price": {
+      "label": "Pricing",
+      "body": "<muted>In increments of about $6,000; most systems total between $12,000 and $30,000. Quebec’s C3I tax credit and the ESSOR program can cover part of the investment. </muted><a>Market rates and grants →</a>"
+    },
+    "faq": {
+      "eyebrow": "Questions I often get",
+      "items": [
+        {
+          "q": "How much does custom software cost for an SMB?",
+          "a": "With me, in increments of about $6,000, and most systems total between $12,000 and $30,000. Broader integrated platforms can exceed $100,000; at that level, insist on a step-by-step breakdown."
+        },
+        {
+          "q": "How long before we have something usable?",
+          "a": "The first increment is in service within a few weeks. That’s the principle: you use the system while it grows, instead of waiting for a final delivery."
+        },
+        {
+          "q": "Why not off-the-shelf software?",
+          "a": "It’s often the right answer, and I’ll tell you so. Custom is worth it when no product fits your process, when you pay for several partial subscriptions, or when the way you work is a competitive advantage."
+        },
+        {
+          "q": "Does the system connect to our accounting software?",
+          "a": "Yes, depending on the access your software offers: API, file import or structured export. We confirm that path during the review."
+        },
+        {
+          "q": "What happens after delivery?",
+          "a": "The system is handed over to you documented, with its access credentials. Support and changes are agreed together — per increment or under a monthly arrangement."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Free review",
+      "title": "Which Excel file runs your business?",
+      "lead": "Describe it, or what’s not working in your current tools. I’ll reply within 24 hours with a first breakdown and an honest idea of the effort."
+    },
+    "related": {
+      "label": "Go further",
+      "links": [
+        "Replacing an existing system",
+        "Business process automation",
+        "Grocery store management software",
+        "AI consultant for SMBs"
+      ]
+    }
+  }
+}

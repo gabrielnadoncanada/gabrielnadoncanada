@@ -1,0 +1,260 @@
+{
+  "shared": {
+    "nav": {
+      "epicerie": "Épicerie",
+      "approche": "Approche",
+      "methode": "Méthode",
+      "cas": "Cas concrets",
+      "contact": "Contact"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "epicerie": "Logiciel de gestion pour épicerie et dépanneur",
+      "guides": "Guides"
+    },
+    "book": "Réserver mes 20 minutes",
+    "sectorLabel": "Épicerie ou dépanneur ?",
+    "sectorText": "La page dédiée à votre commerce"
+  },
+  "inventaire": {
+    "meta": {
+      "title": "Inventaire d’épicerie dans Excel : gabarit gratuit, méthode — et ses limites | Gabriel Nadon",
+      "description": "Un gabarit Excel gratuit d’inventaire pour épicerie et dépanneur (300 produits, valeur du stock, marge, alertes de commande), la méthode du comptage cyclique — et les trois signes qu’Excel ne suffit plus.",
+      "ogTitle": "Inventaire d’épicerie dans Excel : gabarit gratuit et méthode",
+      "ogDescription": "Gabarit gratuit (300 produits, valeur du stock, marges, alertes), la méthode du comptage cyclique — et quand Excel ne suffit plus.",
+      "twitterTitle": "Inventaire d’épicerie dans Excel : gabarit gratuit et méthode",
+      "twitterDescription": "Gabarit gratuit, comptage cyclique — et les trois signes qu’Excel ne suffit plus."
+    },
+    "jsonld": {
+      "headline": "Inventaire d’épicerie dans Excel : gabarit gratuit, méthode — et ses limites",
+      "description": "Comment tenir l’inventaire d’une épicerie ou d’un dépanneur dans Excel : structure du fichier, comptage cyclique, gabarit gratuit — et les signes qu’il est temps de brancher l’inventaire sur la caisse.",
+      "faq": [
+        {
+          "q": "Comment faire l’inventaire d’une épicerie dans Excel ?",
+          "a": "Un produit par ligne avec au minimum : code CUP, description, département, fournisseur principal, coût unitaire, prix de vente, quantité en stock et seuil de commande. Trois colonnes calculées font le travail : valeur du stock (coût × quantité), marge ((vente − coût) ÷ vente) et alerte de commande (stock ≤ seuil). Comptez par section, une par semaine (comptage cyclique), plutôt que tout le magasin d’un coup."
+        },
+        {
+          "q": "Qu’est-ce que le comptage cyclique en épicerie ?",
+          "a": "Au lieu de fermer pour compter tout le magasin une fois par année, on compte une section différente chaque semaine (laitier, boulangerie, congelé…) et on fait le tour complet en continu. Le stock reste fiable toute l’année, l’effort est réparti, et les écarts (pertes, vols, erreurs de réception) se détectent en semaines plutôt qu’en mois."
+        },
+        {
+          "q": "Quand Excel ne suffit-il plus pour l’inventaire d’un commerce ?",
+          "a": "Trois signes : plus d’une personne doit modifier le fichier (les versions divergent), les coûts fournisseurs changent plus vite que le fichier (la marge affichée devient fausse), et le fichier ne parle pas à la caisse (les ventes ne décrémentent rien — tout se recompte à la main). À ce stade, la solution n’est pas un plus gros fichier Excel : c’est de brancher l’inventaire sur la caisse existante."
+        }
+      ],
+      "breadcrumb": "Inventaire d’épicerie dans Excel"
+    },
+    "hero": {
+      "eyebrow": "Guide pratique · Épicerie & dépanneur · gabarit inclus",
+      "title": "L’inventaire d’épicerie dans Excel : bien le faire —",
+      "titleItalic": "et savoir quand arrêter.",
+      "lead": "La plupart des épiceries et dépanneurs indépendants tiennent leur « vrai » inventaire dans un fichier Excel que personne d’autre n’ose toucher. Ce n’est pas un défaut — c’est un point de départ. Voici comment structurer ce fichier pour qu’il travaille (valeur du stock, marges, alertes de commande), la méthode de comptage qui le garde fiable, et les trois signes qu’il est temps de passer à autre chose.",
+      "download": "Télécharger le gabarit (.xlsx, gratuit)",
+      "downloadNote": "300 produits, sans courriel, sans inscription. Valeur du stock, marge par produit et alertes « à commander » calculées automatiquement."
+    },
+    "box": {
+      "kicker": "Ce que le gabarit calcule tout seul",
+      "num": "3",
+      "cur": "colonnes clés",
+      "sub": "Valeur du stock au coût (coût × quantité), marge par produit ((vente − coût) ÷ vente) et alerte de commande quand le stock passe sous votre seuil — surlignée automatiquement.",
+      "plus": "Un produit par ligne, un seul fichier maître. C’est la règle."
+    },
+    "method": {
+      "eyebrow": "La méthode, en trois habitudes",
+      "steps": [
+        {
+          "title": "Un produit par ligne, un fichier maître",
+          "text": "Code CUP, description, département, fournisseur principal, coût, prix de vente, quantité, seuil de commande. Pas de cellules fusionnées, pas d’onglet par mois, pas de copies « inventaire-final-v2 » : un seul fichier, que le gabarit structure d’avance."
+        },
+        {
+          "title": "Le comptage cyclique : une section par semaine",
+          "text": "Plutôt que le grand inventaire annuel qui mobilise tout le monde, comptez une section différente chaque semaine — laitier, boulangerie, congelé… Le tour complet se fait en continu, le stock reste fiable toute l’année, et les écarts (pertes, erreurs de réception) se voient en semaines, pas en mois."
+        },
+        {
+          "title": "Le coût à jour, sinon la marge ment",
+          "text": "La colonne « marge » ne vaut que ce que vaut la colonne « coût ». Si les listes de prix fournisseurs ne sont pas reportées dans le fichier, votre marge affichée est une fiction. C’est le maillon faible de tout inventaire Excel — et la raison pour laquelle la <prix>mise à jour des prix fournisseurs</prix> est la première chose à automatiser, avant même l’inventaire."
+        }
+      ]
+    },
+    "limits": {
+      "eyebrow": "Les limites d’Excel",
+      "title": "Trois signes qu’il est temps d’arrêter d’agrandir le fichier.",
+      "p1": "<strong>Plus d’une personne doit y toucher.</strong> Dès que le fichier se partage, les versions divergent et « le vrai chiffre » redevient une question d’opinion. <strong>Les coûts changent plus vite que le fichier.</strong> Chaque liste de fournisseur non reportée fausse la marge de dizaines de produits. <strong>Le fichier ne parle pas à la caisse.</strong> Les ventes ne décrémentent rien : tout ce qui sort du magasin devra être recompté à la main.",
+      "p2": "À ce stade, la réponse n’est pas un plus gros Excel — ni nécessairement une nouvelle caisse. Un système intermédiaire peut lire vos ventes et vos listes de fournisseurs et tenir l’inventaire à jour dans ce que vous avez déjà. C’est l’approche du <cas>cas de l’épicerie (56 000 $/an récupérés)</cas>, appliquée aux stocks plutôt qu’aux prix."
+    },
+    "more": {
+      "label": "Pour aller plus loin",
+      "lead1": "Vous magasinez plutôt un vrai système ?",
+      "link1": "Le comparatif québécois des logiciels d’épicerie →",
+      "lead2": "Et pour savoir ce que la saisie manuelle vous coûte vraiment :",
+      "link2": "le calculateur du travail manuel →"
+    },
+    "cta": {
+      "eyebrow": "Votre commerce, vos chiffres",
+      "title": "Excel déborde ?",
+      "titleItalic": "Voyons ça en 20 minutes.",
+      "lead": "Décrivez-moi comment votre inventaire se tient aujourd’hui — je vous dis quoi brancher en premier, ce que ça coûte et ce que ça rapporte. Gratuit, sans obligation, et sans vous vendre de nouvelle caisse."
+    }
+  },
+  "prixFournisseurs": {
+    "meta": {
+      "title": "Mise à jour des prix fournisseurs : les 4 méthodes comparées | Gabriel Nadon",
+      "description": "Saisie manuelle, import CSV, portail fournisseur ou synchronisation automatisée : les 4 façons de tenir vos prix fournisseurs à jour, leurs coûts réels et leurs pièges. Avec gabarit Excel gratuit de comparaison de prix.",
+      "ogTitle": "Mise à jour des prix fournisseurs : les 4 méthodes comparées",
+      "ogDescription": "Saisie manuelle, import CSV, portail fournisseur ou synchronisation automatisée — coûts réels et pièges de chaque méthode.",
+      "twitterTitle": "Mise à jour des prix fournisseurs : les 4 méthodes comparées",
+      "twitterDescription": "Coûts réels et pièges de chaque méthode, avec gabarit Excel gratuit."
+    },
+    "jsonld": {
+      "headline": "Mise à jour des prix fournisseurs : les 4 méthodes comparées",
+      "description": "Saisie manuelle, import CSV, portail fournisseur ou synchronisation automatisée : coûts réels, pièges et critères de choix pour un commerce ou une PME.",
+      "faq": [
+        {
+          "q": "Combien coûte la mise à jour manuelle des prix fournisseurs ?",
+          "a": "Calculez : heures par semaine × personnes × coût horaire chargé × 50 semaines. Dans un cas réel documenté, une épicerie indépendante du Québec y consacrait l’équivalent de près de 56 000 $ par année — l’équivalent d’un poste à temps partiel passé à retaper des listes de prix."
+        },
+        {
+          "q": "Qu’est-ce qu’un fichier de prix fournisseur ?",
+          "a": "La liste de prix qu’un fournisseur transmet à ses clients commerçants : codes de produits (souvent UPC/CUP), descriptions, formats de caisse, prix coûtants et parfois prix suggérés. Le format varie d’un fournisseur à l’autre — Excel, CSV, PDF, parfois papier — et c’est cette disparité qui rend la mise à jour pénible."
+        },
+        {
+          "q": "Peut-on automatiser les prix fournisseurs sans changer de caisse ?",
+          "a": "Oui, dans la plupart des cas : un système intermédiaire lit les fichiers de chaque fournisseur, normalise les codes de produits, compare les prix, puis alimente la caisse existante par son mécanisme d’import. Une épicerie du Québec l’a fait sans remplacer sa caisse et sans une seule journée d’interruption."
+        }
+      ],
+      "breadcrumb": "Mise à jour des prix fournisseurs : les 4 méthodes"
+    },
+    "hero": {
+      "eyebrow": "Guide pratique · Commerce & PME",
+      "title": "Mise à jour des prix fournisseurs : les 4 méthodes,",
+      "titleItalic": "et ce qu’elles coûtent vraiment.",
+      "lead": "Chaque commerce qui achète chez plusieurs fournisseurs vit le même cycle : des listes de prix qui arrivent dans tous les formats, une caisse ou un système à tenir à jour, et des heures qui disparaissent entre les deux. Il n’existe que quatre façons de faire ce travail. Voici chacune, avec son coût réel et ses pièges — pour choisir en connaissance de cause."
+    },
+    "box": {
+      "kicker": "Le coût de la méthode nº 1, dans un cas réel",
+      "num": "56 000 $",
+      "cur": "/ an",
+      "sub": "C’est ce que la saisie manuelle des prix coûtait à une épicerie indépendante du Québec — 37 000 prix à tenir à jour, retapés semaine après semaine.",
+      "link": "Lire le cas complet →"
+    },
+    "method": {
+      "eyebrow": "Les quatre méthodes",
+      "steps": [
+        {
+          "title": "La saisie manuelle",
+          "text": "Quelqu’un ouvre la liste du fournisseur et retape les prix dans la caisse ou le système, ligne par ligne. Aucun coût d’outil, mais le vrai prix est sur la paie : heures × personnes × coût horaire × 50 semaines, chaque année, plus les erreurs de frappe qui finissent sur l’étiquette. C’est la méthode par défaut de la plupart des commerces — parce qu’elle ne paraît nulle part dans les états financiers."
+        },
+        {
+          "title": "L’import natif de la caisse (CSV/Excel)",
+          "text": "La plupart des systèmes de caisse et de gestion offrent un import de fichier. Quand le fournisseur envoie un fichier propre et que les codes de produits correspondent, ça fonctionne. Les pièges : chaque fournisseur a son format (colonnes, formats de caisse, codes différents), les PDF ne s’importent pas, et il faut encore préparer chaque fichier à la main — on déplace la corvée, on ne l’élimine pas."
+        },
+        {
+          "title": "Le portail ou l’EDI du fournisseur",
+          "text": "Certains grands distributeurs offrent un portail, un catalogue électronique ou un lien EDI qui pousse les prix directement. Excellent quand il existe — mais il couvre un seul fournisseur. Un commerce indépendant qui achète chez huit fournisseurs se retrouve avec deux portails, trois fichiers Excel et trois listes PDF : la comparaison de prix entre fournisseurs, elle, reste à faire à la main."
+        },
+        {
+          "title": "La synchronisation automatisée multi-fournisseurs",
+          "text": "Un système intermédiaire lit les fichiers de tous les fournisseurs — peu importe le format —, normalise les codes de produits, compare les prix produit par produit, puis alimente la caisse existante. L’équipe approuve en un écran au lieu de retaper pendant des jours. C’est un projet sur mesure (les formats de vos fournisseurs ne sont pas ceux du voisin), mais il élimine la corvée au lieu de la déplacer — et il révèle au passage chez qui chaque produit est le moins cher."
+        }
+      ]
+    },
+    "choose": {
+      "eyebrow": "Comment choisir",
+      "title": "La bonne méthode dépend d’un seul chiffre : ce que la corvée vous coûte.",
+      "p1": "Sous quelques heures par mois, la saisie manuelle ou l’import natif suffisent — automatiser coûterait plus cher que la corvée. À partir de plusieurs heures par semaine, chaque méthode « gratuite » devient la plus chère des quatre : une demi-journée hebdomadaire à 25 $/h dépasse 5 000 $ par année, et le calcul empire avec le nombre de fournisseurs.",
+      "p2": "Commencez donc par chiffrer : <calc>le calculateur du coût du travail manuel</calc> vous donne le montant en 30 secondes. Si le résultat dépasse le coût d’un projet qui l’élimine, la méthode 04 se rembourse en mois, pas en années — c’est exactement l’arithmétique du <cas>cas de l’épicerie</cas>."
+    },
+    "template": {
+      "label": "Gabarit Excel gratuit",
+      "text": "En attendant d’automatiser : un gabarit de comparaison de prix fournisseurs. Collez les listes de jusqu’à trois fournisseurs, le fichier aligne les produits, calcule l’écart et surligne le meilleur prix.",
+      "download": "Télécharger le gabarit (.xlsx, gratuit, sans courriel) →"
+    },
+    "cta": {
+      "eyebrow": "Votre situation précise",
+      "title": "Combien de fournisseurs,",
+      "titleItalic": "combien d’heures ?",
+      "lead": "En 20 minutes au téléphone, on chiffre votre mise à jour de prix et je vous dis laquelle des quatre méthodes s’applique chez vous — même si la réponse est « restez comme vous êtes »."
+    }
+  },
+  "marge": {
+    "meta": {
+      "title": "Calculer sa marge en épicerie : formules, pièges et méthode | Gabriel Nadon",
+      "description": "Marge ou majoration ? Marge brute, marge en dollars, marge pondérée par département : les formules exactes, les trois pièges qui faussent le calcul (coûts périmés, freinte, formats), et comment regagner de la marge sur les achats.",
+      "ogTitle": "Calculer sa marge en épicerie : formules, pièges et méthode",
+      "ogDescription": "Marge ou majoration ? Les formules exactes, les pièges qui faussent le calcul, et comment regagner de la marge sur les achats.",
+      "twitterTitle": "Calculer sa marge en épicerie : formules et pièges",
+      "twitterDescription": "Marge ou majoration ? Les formules exactes et les pièges qui faussent le calcul."
+    },
+    "jsonld": {
+      "headline": "Calculer sa marge en épicerie : formules, pièges et méthode",
+      "description": "Les formules exactes de la marge en commerce d’alimentation (marge brute, marge en dollars, marge pondérée), la différence marge/majoration, et les pièges qui faussent le calcul.",
+      "faq": [
+        {
+          "q": "Comment calculer la marge d’un produit en épicerie ?",
+          "a": "Marge brute (%) = (prix de vente − coût) ÷ prix de vente × 100. Exemple : un produit acheté 4,25 $ et vendu 5,49 $ donne (5,49 − 4,25) ÷ 5,49 = 22,6 % de marge. À ne pas confondre avec la majoration, qui divise par le coût : le même produit a une majoration de 29,2 %. Confondre les deux fait vendre trop bas."
+        },
+        {
+          "q": "Quelle est la différence entre marge et majoration (markup) ?",
+          "a": "La marge se calcule sur le prix de vente ((vente − coût) ÷ vente) ; la majoration se calcule sur le coût ((vente − coût) ÷ coût). Une majoration de 50 % ne donne que 33 % de marge : un produit acheté 2 $ majoré de 50 % se vend 3 $, et (3 − 2) ÷ 3 = 33,3 %. Pour viser une marge précise, la formule est : prix de vente = coût ÷ (1 − marge visée). Exemple : pour 25 % de marge sur un coût de 3 $ → 3 ÷ 0,75 = 4 $."
+        },
+        {
+          "q": "Pourquoi la marge affichée dans mon système est-elle fausse ?",
+          "a": "Trois causes dominent : des coûts périmés (les listes de prix des fournisseurs ne sont pas reportées dans le système, donc la marge se calcule sur un coût qui n’existe plus), la freinte ignorée (pertes, casse, vol et péremption réduisent la marge réelle sans toucher la marge théorique), et des formats mélangés (comparer le coût à la caisse au prix à l’unité). Le premier réflexe est de fiabiliser les coûts — c’est exactement la mise à jour des prix fournisseurs."
+        }
+      ],
+      "breadcrumb": "Calculer sa marge en épicerie"
+    },
+    "hero": {
+      "eyebrow": "Guide pratique · Épicerie & dépanneur",
+      "title": "Calculer sa marge en épicerie — sans se",
+      "titleItalic": "mentir à soi-même.",
+      "lead": "La marge est le chiffre le plus important d’un commerce d’alimentation — et l’un des plus souvent mal calculés. Confondre marge et majoration fait vendre trop bas ; des coûts périmés font croire à une marge qui n’existe plus. Ce guide donne les formules exactes, les trois pièges classiques, et la seule vraie façon de regagner de la marge sans monter les prix : mieux acheter. Vous ne trouverez pas ici de « marge moyenne de l’industrie » : le seul chiffre qui compte est le vôtre, calculé sur des coûts à jour."
+    },
+    "box": {
+      "kicker": "La formule qui évite de vendre trop bas",
+      "num": "coût ÷ (1 − marge)",
+      "sub": "Pour viser 25 % de marge sur un produit qui coûte 3,00 $ : 3,00 ÷ 0,75 = 4,00 $. Majorer le coût de 25 % (3,75 $) n’aurait donné que 20 % de marge.",
+      "plus": "Marge et majoration, ce n’est pas pareil — le détail ci-dessous."
+    },
+    "formulas": {
+      "eyebrow": "Les formules, avec exemples",
+      "steps": [
+        {
+          "title": "Marge brute (%)",
+          "text": "(Prix de vente − coût) ÷ prix de vente × 100. Un produit acheté 4,25 $ et vendu 5,49 $ : (5,49 − 4,25) ÷ 5,49 = 22,6 %. C’est le pourcentage de chaque dollar de vente qui reste pour payer le loyer, la paie — et vous."
+        },
+        {
+          "title": "Majoration (markup) — l’autre calcul",
+          "text": "(Prix de vente − coût) ÷ coût × 100. Le même produit : (5,49 − 4,25) ÷ 4,25 = 29,2 %. La majoration est toujours plus grosse que la marge — c’est pour ça qu’on se pense « à 30 % » alors qu’on est à 22 %. Pour viser une marge précise : prix = coût ÷ (1 − marge visée)."
+        },
+        {
+          "title": "Marge en dollars — celle qui paie le loyer",
+          "text": "Marge % × prix × volume vendu. Un produit à 40 % de marge qui se vend deux fois par semaine rapporte moins qu’un produit à 20 % qui part vingt fois. Classez vos produits par marge en dollars par semaine, pas par pourcentage — le palmarès change complètement."
+        },
+        {
+          "title": "Marge pondérée par département",
+          "text": "(Ventes totales du département − coût des produits vendus) ÷ ventes totales. C’est la seule marge comparable d’une période à l’autre : elle absorbe le panier réel — les produits d’appel à faible marge comme les produits payants. Calculez-la par département, chaque mois, sur des coûts à jour."
+        }
+      ]
+    },
+    "traps": {
+      "eyebrow": "Les trois pièges",
+      "title": "Une marge calculée sur un coût périmé n’est pas une marge. C’est un souvenir.",
+      "p1": "<strong>Les coûts périmés.</strong> Chaque liste de prix fournisseur non reportée dans la caisse fausse la marge de dizaines de produits d’un coup — dans le mauvais sens, puisque les coûts montent plus souvent qu’ils ne baissent. C’est le piège nº 1, et il se règle : <prix>les 4 méthodes de mise à jour des prix fournisseurs</prix>. <strong>La freinte ignorée.</strong> Casse, vol, péremption : la marge réelle est toujours sous la marge théorique — suivez l’écart entre les deux plutôt que de l’ignorer. <strong>Les formats mélangés.</strong> Un coût à la caisse de 12 comparé à un prix à l’unité : l’erreur classique qui fait « vendre à perte » sans le savoir. Toujours ramener coût et prix au même format.",
+      "p2": "Et le levier oublié : la marge se gagne aussi <strong>à l’achat</strong>. Commander chaque produit chez le fournisseur le moins cher — parce qu’on peut enfin comparer — a redonné de la marge sur chaque commande à <cas>l’épicerie du cas</cas>, en plus des 56 000 $ de temps récupérés."
+    },
+    "templates": {
+      "label": "Les gabarits qui vont avec",
+      "lead1": "La marge par produit se calcule toute seule dans le",
+      "link1": "gabarit d’inventaire (.xlsx gratuit) →",
+      "lead2": "et le meilleur prix d’achat se repère avec le",
+      "link2": "gabarit de comparaison de prix fournisseurs →"
+    },
+    "cta": {
+      "eyebrow": "Vos vrais chiffres",
+      "title": "Votre marge réelle,",
+      "titleItalic": "sur des coûts à jour.",
+      "lead": "En 20 minutes, on regarde comment vos coûts entrent dans votre caisse et ce que ça fausse dans vos marges — et je vous dis quoi fiabiliser en premier. Gratuit, sans obligation."
+    }
+  }
+}

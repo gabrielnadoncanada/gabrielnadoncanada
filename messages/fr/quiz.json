@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Test : votre PME est-elle prête pour l’IA ? (10 questions) | Gabriel Nadon",
+    "description": "52 % des Québécois utilisent l’IA générative — mais à peine 12,7 % des entreprises. Où en est la vôtre ? 10 questions, résultat immédiat avec vos trois prochains gestes. Gratuit, sans courriel.",
+    "ogTitle": "Votre PME est-elle prête pour l’IA ? — Test en 10 questions",
+    "ogDescription": "52 % des Québécois utilisent l’IA générative, mais à peine 12,7 % des entreprises. 10 questions, résultat immédiat, gratuit."
+  },
+  "jsonld": {
+    "name": "Votre PME est-elle prête pour l’IA ?",
+    "description": "Auto-diagnostic en 10 questions : données, processus, équipe et budget. Résultat immédiat avec recommandations concrètes pour PME québécoises.",
+    "crumb": "Test : votre PME est-elle prête pour l’IA ?",
+    "faq": [
+      {
+        "q": "Combien d’entreprises québécoises utilisent l’intelligence artificielle ?",
+        "a": "Selon l’Institut de la statistique du Québec (2024-2025), environ 12,7 % des entreprises québécoises utilisent l’intelligence artificielle — alors que 52 % des adultes québécois utilisent déjà l’IA générative à titre personnel (NETendances 2025). L’écart entre l’usage personnel et l’usage en entreprise est l’une des plus grandes occasions d’affaires actuelles pour les PME."
+      },
+      {
+        "q": "Qu’est-ce qu’une PME doit avoir en place avant d’adopter l’IA ?",
+        "a": "Trois fondations : des données accessibles (dans des logiciels ou des fichiers structurés, pas dans les courriels), des processus répétitifs connus et décrits, et une personne qui porte le dossier. Sans ces fondations, l’IA amplifie le désordre au lieu de le régler."
+      },
+      {
+        "q": "Faut-il un gros budget pour commencer avec l’IA en PME ?",
+        "a": "Non. Le bon premier projet est petit et se rembourse en moins de douze mois : une tâche répétitive chiffrée, puis éliminée. Un sprint d’automatisation ciblé débute autour de 4 500 $ — bien loin des projets « transformation numérique » à six chiffres."
+      }
+    ]
+  },
+  "page": {
+    "eyebrow": "Auto-diagnostic · 10 questions · résultat immédiat",
+    "title": "Votre PME est-elle prête pour l’IA — <italic>ou juste curieuse ?</italic>",
+    "lead": "52 % des Québécois utilisent déjà l’IA générative à titre personnel. Du côté des entreprises : à peine 12,7 %. L’écart n’est pas une question de technologie — c’est une question de fondations : où vivent vos données, qui connaît vos processus, qui porte le dossier. Dix questions pour situer votre entreprise, avec vos trois prochains gestes selon le résultat.",
+    "cta": "Faire le test",
+    "ctaNote": "Gratuit, sans courriel — le résultat s’affiche sur cette page.",
+    "gap": {
+      "kicker": "L’écart québécois, en chiffres",
+      "num": "52 %",
+      "cur": "vs 12,7 %",
+      "sub": "52 % des adultes québécois utilisent l’IA générative (NETendances 2025) ; 12,7 % des entreprises québécoises l’utilisent (Institut de la statistique du Québec, 2024-2025).",
+      "plus": "Vos employés sont probablement déjà dans le premier groupe. Votre entreprise, dans le deuxième."
+    },
+    "testEyebrow": "Le test — 10 questions",
+    "next": {
+      "label": "L’étape d’après",
+      "text": "Peu importe votre score, la démarche commence au même endroit : mettre un montant sur la tâche manuelle la plus lourde.",
+      "link": "Chiffrez-la en 30 secondes avec le calculateur →"
+    },
+    "impl": {
+      "label": "Passer à l’implantation",
+      "text": "Vous préférez qu’on regarde ensemble où l’IA rapporterait chez vous — factures, courriels, soumissions, suivis ?",
+      "consultant": "Consultant IA pour PME : la démarche et les prix →",
+      "or": "Ou directement :",
+      "agents": "agents IA →",
+      "documents": "traitement de factures et documents →"
+    }
+  },
+  "tool": {
+    "questions": [
+      {
+        "q": "Vos données clients, produits ou commandes vivent surtout…",
+        "options": [
+          "Dans des courriels, du papier ou la mémoire de quelqu’un",
+          "Dans des fichiers Excel que chacun tient à sa façon",
+          "Dans un ou des logiciels (caisse, CRM, comptabilité)"
+        ]
+      },
+      {
+        "q": "Combien de fois la même information est-elle retapée d’un système à l’autre ?",
+        "options": [
+          "Tout le temps — c’est le quotidien",
+          "Pour quelques processus seulement",
+          "Presque jamais, nos systèmes se parlent"
+        ]
+      },
+      {
+        "q": "Si la personne « qui comprend le système » partait demain…",
+        "options": [
+          "On serait sérieusement dans le trouble",
+          "On s’en sortirait, mais au ralenti",
+          "Tout est documenté, quelqu’un d’autre prendrait le relais"
+        ]
+      },
+      {
+        "q": "Vos processus répétitifs (facturation, commandes, rapports) sont…",
+        "options": [
+          "Dans la tête des gens, différents selon qui les fait",
+          "Connus, mais jamais écrits noir sur blanc",
+          "Écrits quelque part, au moins pour les principaux"
+        ]
+      },
+      {
+        "q": "Quelqu’un dans l’équipe utilise-t-il déjà ChatGPT, Claude ou un autre outil d’IA au travail ?",
+        "options": [
+          "Non, et il y a de la méfiance",
+          "Oui, en cachette ou chacun pour soi",
+          "Oui, ouvertement, on s’échange des trucs"
+        ]
+      },
+      {
+        "q": "Savez-vous combien d’heures par semaine partent en tâches manuelles répétitives ?",
+        "options": [
+          "Aucune idée, on n’a jamais compté",
+          "Une intuition, mais pas de chiffre",
+          "Oui, on l’a déjà mesuré au moins une fois"
+        ]
+      },
+      {
+        "q": "Vos fichiers importants (listes de prix, soumissions, contrats) arrivent-ils dans des formats utilisables ?",
+        "options": [
+          "Non — PDF, photos, papier qu’il faut retaper",
+          "Un mélange : certains propres, d’autres à ressaisir",
+          "Oui, surtout de l’Excel/CSV ou des données de logiciel"
+        ]
+      },
+      {
+        "q": "Quand une erreur de saisie se glisse (prix, quantité, adresse), on s’en aperçoit…",
+        "options": [
+          "Quand un client ou un fournisseur nous le dit",
+          "Lors d’une vérification, parfois des semaines après",
+          "Vite — il y a une validation quelque part"
+        ]
+      },
+      {
+        "q": "Qui déciderait d’un projet d’automatisation ou d’IA chez vous ?",
+        "options": [
+          "Personne — ce n’est le dossier de personne",
+          "La direction, mais ce n’est pas une priorité claire",
+          "C’est identifié : quelqu’un porte le dossier"
+        ]
+      },
+      {
+        "q": "Votre budget pour régler une corvée qui coûte 10 000 $ par année serait…",
+        "options": [
+          "Zéro — pas de budget pour ça cette année",
+          "Quelques milliers de dollars si le retour est démontré",
+          "Le montant qu’il faut, si ça se rembourse en moins d’un an"
+        ]
+      }
+    ],
+    "tiers": [
+      {
+        "titre": "Prête pour l’IA — et probablement déjà en retard",
+        "verdict": "Vos données existent, vos processus sont connus et quelqu’un peut porter le dossier. À ce stade, chaque mois d’attente est une corvée payée pour rien : le travail n’est pas de « se préparer », mais de choisir la première tâche à éliminer et de la chiffrer.",
+        "gestes": [
+          "Choisissez UNE tâche répétitive et chiffrez-la avec le calculateur (heures × personnes × coût horaire).",
+          "Commencez par la donnée la plus propre que vous avez déjà (caisse, comptabilité) — pas par le projet le plus excitant.",
+          "Exigez d’un premier projet qu’il se rembourse en moins de douze mois, sinon refusez-le."
+        ]
+      },
+      {
+        "titre": "Presque prête — un ménage ciblé d’abord",
+        "verdict": "Le potentiel est réel, mais l’IA amplifierait autant le désordre que l’ordre : des données éparpillées ou des processus qui changent selon la personne donneront des automatisations fragiles. La bonne nouvelle : le ménage nécessaire est ciblé, pas total.",
+        "gestes": [
+          "Écrivez noir sur blanc UN processus répétitif, tel qu’il se fait vraiment (pas tel qu’il devrait se faire).",
+          "Rapatriez la donnée de ce processus dans UN seul endroit — un seul fichier maître ou le logiciel existant.",
+          "Ensuite seulement, automatisez ce processus-là. Un seul. Le reste suivra sur le même modèle."
+        ]
+      },
+      {
+        "titre": "Pas encore — et c’est correct",
+        "verdict": "Brancher de l’IA sur des opérations qui vivent dans les courriels et la mémoire des gens, c’est mettre un moteur neuf dans une voiture sans roues. Rien de grave : les fondations se posent en semaines, pas en années, et chaque étape rapporte par elle-même — avec ou sans IA ensuite.",
+        "gestes": [
+          "Sortez les informations critiques de la tête des gens : une liste de prix, une liste de clients, une procédure — dans un fichier partagé.",
+          "Comptez une seule chose : les heures par semaine passées à retaper de l’information. Ce chiffre décidera de la suite.",
+          "Ne signez rien de « clé en main IA » pour l’instant — au diagnostic, on établit l’ordre des fondations, gratuitement."
+        ]
+      }
+    ],
+    "missing": "Il reste {n} question(s) sans réponse.",
+    "submit": "Voir mon résultat",
+    "submitNote": "Résultat immédiat, sur cette page. Aucun courriel requis.",
+    "result": "Votre résultat — {score} / 20",
+    "gestesLabel": "Vos trois prochains gestes :",
+    "cta": "Valider ce résultat en 20 min (gratuit)",
+    "ctaNote": "On passe vos réponses en revue au téléphone et vous repartez avec un ordre de priorité — que l’on travaille ensemble ou non. Ou <a>chiffrez d’abord votre tâche la plus lourde</a>."
+  }
+}

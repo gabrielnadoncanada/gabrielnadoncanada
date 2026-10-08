@@ -18,7 +18,6 @@
 - [Traitement automatique des factures et documents par IA](https://gabrielnadon.com/traitement-documents-ia/) : factures, bons de commande, listes de prix ; OCR + IA + règles de validation ; QuickBooks, Acomba, Sage, ERP, Excel
 - [Automatisation des processus d'affaires](https://gabrielnadon.com/automatisation-processus/) : Make, n8n, Power Automate, Zapier ou code ; sprint dès 4 500 $
 - [Logiciel sur mesure pour PME](https://gabrielnadon.com/logiciel-sur-mesure/) : remplacer Excel par un système interne, par tranches d'environ 6 000 $
-- [AI consultant in Montreal & Quebec (English)](https://gabrielnadon.com/en/ai-consultant/) : English version of the AI consulting offer
 - [Cas : synchronisation des prix fournisseurs](https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/) : 56 000 $/an récupérés, 37 000 prix synchronisés, caisse conservée
 - [Refonte de système](https://gabrielnadon.com/refonte-de-systeme/) : remplacer un vieux système par tranches, sans big bang
 - [Logiciel de gestion pour épicerie et dépanneur](https://gabrielnadon.com/logiciel-gestion-epicerie/) : automatiser la caisse existante d'un commerce d'alimentation au Québec
@@ -38,3 +37,22 @@
 - [Test : votre PME est-elle prête pour l'IA ?](https://gabrielnadon.com/diagnostic-ia/) : 10 questions, résultat immédiat (52 % des Québécois utilisent l'IA générative, 12,7 % des entreprises — NETendances 2025 / ISQ)
 - [Baromètre IA & automatisation des PME du Québec](https://gabrielnadon.com/barometre/) : enquête annuelle, résultats compilés publiés
 - Gabarits Excel gratuits, sans inscription : [coût du travail manuel](https://gabrielnadon.com/gabarits/cout-travail-manuel.xlsx), [comparaison de prix fournisseurs](https://gabrielnadon.com/gabarits/comparaison-prix-fournisseurs.xlsx), [matrice de priorisation](https://gabrielnadon.com/gabarits/matrice-priorisation-automatisations.xlsx), [inventaire épicerie](https://gabrielnadon.com/gabarits/inventaire-epicerie.xlsx)
+
+## English
+
+The whole site is available in English under /en/ (same content, translated).
+
+- [Home (English)](https://gabrielnadon.com/en/): services, approach, case study, contact
+- [AI consultant for Quebec SMBs](https://gabrielnadon.com/en/ai-consultant/)
+- [AI agents for business](https://gabrielnadon.com/en/ai-agents/)
+- [AI invoice and document processing](https://gabrielnadon.com/en/ai-document-processing/)
+- [Business process automation](https://gabrielnadon.com/en/process-automation/)
+- [Custom software for SMBs](https://gabrielnadon.com/en/custom-software/)
+- [Legacy system replacement](https://gabrielnadon.com/en/system-replacement/)
+- [Case study: supplier price sync](https://gabrielnadon.com/en/case-studies/supplier-price-sync/): about $56,000 a year recovered, 37,000 prices synced, existing POS kept
+- [Grocery store management software](https://gabrielnadon.com/en/grocery-management-software/)
+- [Guide: automating an SMB in Quebec](https://gabrielnadon.com/en/guides/sme-automation-quebec/)
+- [Guide: what automation costs in Quebec](https://gabrielnadon.com/en/guides/automation-cost-quebec/)
+- [Grocery software comparison, Quebec](https://gabrielnadon.com/en/guides/grocery-software-comparison-quebec/)
+- [Manual work cost calculator](https://gabrielnadon.com/en/calculator/)
+- [AI readiness test](https://gabrielnadon.com/en/ai-readiness-test/)

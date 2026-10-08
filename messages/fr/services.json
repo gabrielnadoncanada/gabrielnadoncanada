@@ -1,0 +1,672 @@
+{
+  "consultantIa": {
+    "meta": {
+      "title": "Consultant IA pour PME au Québec | Gabriel Nadon",
+      "description": "Consultant IA pour PME au Québec : je trouve où l’IA enlève du travail (factures, courriels, soumissions) et je l’implante dans vos outils.",
+      "ogTitle": "Consultant IA pour PME au Québec"
+    },
+    "breadcrumb": "Consultant IA",
+    "service": {
+      "name": "Consultant IA pour PME",
+      "type": "Consultation et implantation en intelligence artificielle",
+      "description": "Diagnostic des processus d’une PME québécoise, choix des tâches où l’intelligence artificielle rapporte, puis implantation dans les outils existants : traitement de documents, agents IA, automatisation et systèmes internes."
+    },
+    "eyebrow": "Consultant IA · PME du Québec",
+    "title": "L’IA dans votre PME : moins de démos, plus de travail enlevé.",
+    "lead": "Vous savez que l’intelligence artificielle peut aider. Ce qui manque, c’est de savoir où, avec quelles données, et qui va l’installer pour que ça tienne. Je suis consultant IA indépendant, basé à Montréal : je regarde comment votre entreprise travaille vraiment, je trouve les deux ou trois tâches où l’IA rapporte, puis je les implante — branchées sur vos outils actuels, avec une validation humaine.",
+    "box": {
+      "kicker": "Où l’IA rapporte d’abord dans une PME",
+      "items": [
+        "Lire les factures, bons de commande et listes de prix — et les saisir à votre place.",
+        "Trier les courriels de demandes et préparer la réponse ou la fiche client.",
+        "Monter une soumission ou un rapport à partir de vos propres données.",
+        "Retrouver l’information dans les documents d’un projet en quelques secondes."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Vous vous reconnaissez ?",
+      "title": "Tout le monde parle d’IA. Chez vous, rien n’a encore changé.",
+      "intro": "Ce n’est pas un manque de volonté. C’est qu’entre un abonnement ChatGPT et un processus qui roule tout seul, il manque une étape : relier l’IA à vos données et à votre façon de travailler.",
+      "items": [
+        "Quelques employés utilisent ChatGPT dans leur coin, mais les opérations, elles, n’ont pas bougé.",
+        "Chaque fournisseur vous vend sa plateforme « avec IA » — sans jamais avoir regardé comment vous travaillez.",
+        "Vos données vivent dans Excel, les courriels et un logiciel qui ne parle à personne.",
+        "Vous hésitez à mettre des données clients dans un outil d’IA, à cause de la Loi 25.",
+        "Personne à l’interne n’a le temps de piloter un projet de plus."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Ma façon de faire",
+      "quote": "L’IA n’est pas le projet. Le projet, c’est la tâche qui coûte cher — l’IA est un des outils pour l’enlever.",
+      "body": "<dropcap>J</dropcap>e commence par vos opérations, pas par la technologie : où le temps se perd, combien ça coûte, quelles données existent déjà. Ensuite seulement on choisit l’outil — parfois un modèle d’IA, parfois une simple automatisation, parfois un petit logiciel interne. Vous parlez à celui qui analyse et qui construit : pas d’intermédiaire, pas de jargon.",
+      "principles": [
+        {
+          "title": "Chiffré avant d’être construit",
+          "text": "Chaque cas d’usage part d’un calcul simple : heures par semaine × personnes × taux horaire. Pas de chiffre, pas de projet."
+        },
+        {
+          "title": "Vos données restent encadrées",
+          "text": "Les données sensibles ne vont pas dans un outil grand public sans encadrement ; on choisit hébergement, accès et réglages en fonction de vos obligations."
+        },
+        {
+          "title": "Un humain valide",
+          "text": "L’IA prépare, résume, propose. Les décisions qui engagent l’entreprise restent à vos gens."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Diagnostic de 20 minutes",
+          "text": "Gratuit. Vous me décrivez où l’équipe perd le plus de temps ; je vous dis si l’IA est la bonne réponse — ou non."
+        },
+        {
+          "title": "Cartographie et priorisation",
+          "text": "On liste les tâches répétitives, on les chiffre, et on retient celle qui rapporte le plus pour le moins d’effort."
+        },
+        {
+          "title": "Prototype sur vos vrais fichiers",
+          "text": "Pas de démo générique : le premier essai roule sur vos factures, vos courriels, vos exports. On voit tout de suite si ça tient."
+        },
+        {
+          "title": "Implantation dans vos outils",
+          "text": "Le système se branche sur ce que vous utilisez déjà — Outlook, Excel, QuickBooks, votre ERP — selon les accès disponibles."
+        },
+        {
+          "title": "Mesure, puis cas suivant",
+          "text": "On compare le temps avant et après. Quand le premier cas est rentable, on passe au suivant, au rythme de vos opérations."
+        }
+      ]
+    },
+    "services": {
+      "title": "Ce que j’implante, concrètement.",
+      "items": [
+        {
+          "kind": "Agents IA",
+          "title": "Agents IA pour entreprise",
+          "text": "Un agent qui lit une demande, consulte vos données et prépare l’action — réponse, soumission, saisie — pour validation."
+        },
+        {
+          "kind": "Documents",
+          "title": "Traitement de factures et documents",
+          "text": "Factures, bons de commande, listes de prix : lus, vérifiés et saisis automatiquement, les exceptions envoyées à un humain."
+        },
+        {
+          "kind": "Automatisation",
+          "title": "Automatisation des processus",
+          "text": "Les copier-coller entre logiciels, rapports et relances qui se refont chaque semaine — faits par la machine."
+        },
+        {
+          "kind": "Systèmes",
+          "title": "Logiciel sur mesure",
+          "text": "Quand Excel est devenu votre logiciel de gestion : un vrai système interne, construit par tranches."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "body": "<muted>Une épicerie indépendante du Québec retapait à la main les prix de ses fournisseurs : près de 56 000 $ par année en temps de saisie. Le système lit maintenant les listes de tous ses fournisseurs, compare quelque 37 000 prix à chaque cycle et prépare la mise à jour de la caisse — que l’équipe approuve. </muted><a>Lire le cas complet →</a> <muted>Et je fais rouler mes propres agents : mon système de prospection cherche des entreprises, analyse leur site et rédige un premier courriel personnalisé — rien ne part sans ma validation.</muted>"
+    },
+    "price": {
+      "label": "Prix",
+      "body": "<muted>Diagnostic : 20 minutes, gratuit. Premier sprint d’implantation : dès 4 500 $, portée fixe, 2 à 3 semaines — une tâche éliminée, pas un abonnement. Des programmes peuvent rembourser une partie des honoraires (ESSOR d’Investissement Québec, PME MTL) : </muted><a>prix du marché et subventions détaillés →</a>"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "Combien coûte un consultant IA au Québec ?",
+          "a": "Les grilles publiées au Canada vont d’environ 150 à 350 $ de l’heure pour la consultation en IA et en automatisation, mais la plupart des projets se vendent à forfait. Chez moi : diagnostic gratuit de 20 minutes, puis des sprints à portée fixe dès 4 500 $."
+        },
+        {
+          "q": "Faut-il changer nos logiciels pour utiliser l’IA ?",
+          "a": "Non, dans la grande majorité des cas. L’IA se branche sur vos outils actuels par leurs API, leurs exports ou les courriels. On ne remplace que ce qui bloque vraiment."
+        },
+        {
+          "q": "Nos données sont-elles en sécurité (Loi 25) ?",
+          "a": "On décide ensemble quelles données l’IA peut voir, où elles sont traitées et qui y a accès. Les renseignements personnels ne vont pas dans un outil grand public sans encadrement, et chaque accès est documenté."
+        },
+        {
+          "q": "Quelle différence avec une agence IA ?",
+          "a": "Vous parlez directement à la personne qui analyse vos opérations et qui construit le système. Pas de vendeur, pas de sous-traitance, pas de plateforme imposée."
+        },
+        {
+          "q": "Et si l’IA n’est pas la bonne solution chez nous ?",
+          "a": "Je vous le dis pendant le diagnostic. Souvent, une simple automatisation ou un meilleur fichier règle le problème pour moins cher — et c’est ce que je recommande alors."
+        },
+        {
+          "q": "Travaillez-vous en anglais ?",
+          "a": "Oui. Je travaille en français et en anglais, depuis Montréal et à distance partout au Québec."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Vingt minutes pour savoir où l’IA vous ferait gagner du temps.",
+      "lead": "Décrivez la tâche qui vous coûte le plus d’heures. Je vous réponds sous 24 h avec une première piste honnête — que l’on travaille ensemble ou non."
+    },
+    "related": {
+      "label": "Pour aller plus loin",
+      "links": [
+        "Test : votre PME est-elle prête pour l’IA ?",
+        "Calculer le coût d’une tâche manuelle",
+        "Guide : automatiser sa PME",
+        "English: AI consultant in Quebec"
+      ]
+    }
+  },
+  "agentsIa": {
+    "meta": {
+      "title": "Agents IA pour entreprise au Québec | Gabriel Nadon",
+      "description": "Agents IA pour PME du Québec : un assistant qui traite vos demandes et prépare soumissions et réponses, branché sur vos données, avec validation humaine.",
+      "ogTitle": "Agents IA pour entreprise au Québec"
+    },
+    "breadcrumb": "Agents IA",
+    "service": {
+      "name": "Agents IA pour entreprise",
+      "type": "Conception et implantation d’agents d’intelligence artificielle",
+      "description": "Agents IA pour PME québécoises : réception et tri des demandes, préparation de soumissions, réponses aux questions répétitives à partir des documents de l’entreprise, suivi des dossiers — branchés sur les outils existants, avec validation humaine."
+    },
+    "eyebrow": "Agents IA · PME du Québec",
+    "title": "Un agent IA qui fait une vraie tâche — et qui demande avant d’agir.",
+    "lead": "Un agent IA, concrètement, c’est un assistant logiciel qui reçoit une demande, va chercher l’information dans vos systèmes, prépare l’action — une réponse, une soumission, une saisie — et vous la soumet. Pas un gadget de conversation : un employé virtuel affecté à une tâche précise, qui travaille avec vos données et sous vos règles.",
+    "box": {
+      "kicker": "Des agents qui rapportent dans une PME",
+      "items": [
+        "Réception : lit chaque demande reçue par courriel, crée la fiche et prépare la réponse.",
+        "Soumission : monte un premier jet à partir de vos prix, gabarits et projets passés.",
+        "Service client : répond aux questions répétitives à partir de vos documents, et passe la main à un humain.",
+        "Suivi : repère les dossiers en retard et prépare les relances."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Pourquoi un agent, et pas juste ChatGPT",
+      "title": "ChatGPT aide une personne. Un agent enlève une tâche à l’entreprise.",
+      "intro": "Un abonnement ChatGPT rend chaque employé un peu plus rapide, à condition qu’il pense à s’en servir. Un agent est branché sur le processus lui-même : il démarre seul quand une demande arrive, et il connaît vos données.",
+      "items": [
+        "Les mêmes questions de clients reviennent chaque jour, et quelqu’un répond chaque fois à la main.",
+        "Les demandes arrivent par courriel, par formulaire, par téléphone — et se perdent entre les trois.",
+        "Une soumission prend des heures alors que l’essentiel du contenu existe déjà quelque part.",
+        "L’information d’un dossier est dispersée entre courriels, PDF et logiciels.",
+        "Vous avez essayé un chatbot générique : il inventait des réponses."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Ma façon de faire",
+      "quote": "Un bon agent a une seule tâche, accès aux bonnes données, et une limite claire de ce qu’il peut faire seul.",
+      "body": "<dropcap>L</dropcap>es agents qui échouent sont ceux à qui on demande de « tout faire ». Je conçois des agents étroits : une tâche, des sources d’information définies, des règles écrites, et un point de validation humaine avant toute action qui engage l’entreprise — envoi, paiement, engagement auprès d’un client.",
+      "principles": [
+        {
+          "title": "Il répond à partir de vos données",
+          "text": "L’agent cite vos documents, vos prix, vos dossiers. S’il ne trouve pas, il le dit et transfère — il n’invente pas."
+        },
+        {
+          "title": "Il demande avant d’agir",
+          "text": "Brouillon, proposition, saisie en attente : la décision finale reste à une personne tant que la confiance n’est pas établie."
+        },
+        {
+          "title": "Il laisse une trace",
+          "text": "Chaque action est journalisée : ce qu’il a lu, ce qu’il a proposé, qui a approuvé."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Choisir la tâche",
+          "text": "Une tâche fréquente, répétitive et coûteuse. On la chiffre avant d’écrire une seule ligne."
+        },
+        {
+          "title": "Rassembler les sources",
+          "text": "Documents, gabarits, prix, historique : ce que l’agent doit connaître, et ce qu’il ne doit jamais voir."
+        },
+        {
+          "title": "Prototype sur des cas réels",
+          "text": "On rejoue des demandes passées. Vous comparez ce que l’agent propose à ce que votre équipe a réellement fait."
+        },
+        {
+          "title": "Mise en service supervisée",
+          "text": "L’agent prépare, votre équipe approuve. On mesure le temps gagné et les corrections nécessaires."
+        },
+        {
+          "title": "Élargir prudemment",
+          "text": "Quand les propositions sont fiables, on lui confie plus d’autonomie — ou une deuxième tâche."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "body": "<muted>Je fais rouler mes propres agents avant de vous en vendre : mon système de prospection cherche des entreprises, analyse leur site et rédige un premier courriel personnalisé — rien ne part sans ma validation. Côté clients, le système de prix fournisseurs d’une épicerie indépendante lit les listes de tous ses fournisseurs et prépare la mise à jour de la caisse, que l’équipe approuve : près de 56 000 $ par année de saisie éliminée. </muted><a>Lire le cas complet →</a>"
+    },
+    "price": {
+      "label": "Prix",
+      "body": "<muted>Premier agent : sprint à portée fixe dès 4 500 $, 2 à 3 semaines. S’ajoutent les frais d’utilisation du modèle d’IA, facturés à l’usage par le fournisseur — je les estime sur vos volumes réels avant de construire, pour qu’il n’y ait pas de surprise.</muted>"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "Quelle différence entre un agent IA et un chatbot ?",
+          "a": "Un chatbot converse. Un agent agit : il consulte vos systèmes, prépare une saisie, une réponse ou un document, et s’intègre au processus. Un chatbot de service client peut d’ailleurs être un agent, s’il répond à partir de vos documents et transfère au bon humain."
+        },
+        {
+          "q": "Un agent IA peut-il se tromper ?",
+          "a": "Oui, comme un nouvel employé. C’est pour ça qu’il répond à partir de vos sources, qu’il signale quand il n’est pas sûr, et qu’une personne valide toute action qui engage l’entreprise."
+        },
+        {
+          "q": "ChatGPT Entreprise ou Copilot ne suffisent-ils pas ?",
+          "a": "Pour aider chaque employé à écrire ou résumer, souvent oui. Pour qu’une tâche se fasse sans qu’on y pense — dès qu’un courriel arrive, par exemple — il faut relier l’IA à vos systèmes et à vos règles. C’est ce que fait un agent."
+        },
+        {
+          "q": "Qu’advient-il de nos données ?",
+          "a": "On définit précisément ce que l’agent peut lire et écrire. Les renseignements personnels sont traités selon vos obligations (Loi 25) : fournisseurs choisis en conséquence, accès limités, aucune utilisation de vos données pour entraîner un modèle public."
+        },
+        {
+          "q": "Combien de temps avant qu’un agent soit utile ?",
+          "a": "Un premier agent étroit se met en service supervisé en 2 à 3 semaines. La valeur apparaît dès qu’il prépare correctement la majorité des cas, même si votre équipe approuve encore chaque proposition."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Quelle tâche confieriez-vous à un employé de plus ?",
+      "lead": "Décrivez-la. Je vous dis sous 24 h si un agent IA peut s’en charger, avec quelles données et pour quel effort — que l’on travaille ensemble ou non."
+    },
+    "related": {
+      "label": "Pour aller plus loin",
+      "links": [
+        "Consultant IA pour PME",
+        "Traitement de factures et documents",
+        "Automatisation des processus",
+        "Test : prête pour l’IA ?"
+      ]
+    }
+  },
+  "documents": {
+    "meta": {
+      "title": "Traitement de factures et documents par IA | Gabriel Nadon",
+      "description": "Factures, bons de commande, listes de prix : lus par l’IA, vérifiés et saisis dans votre logiciel comptable ou ERP. Exceptions à un humain. PME du Québec.",
+      "ogTitle": "Traitement de factures et documents par IA"
+    },
+    "breadcrumb": "Traitement de documents par IA",
+    "service": {
+      "name": "Traitement automatique de factures et documents par IA",
+      "type": "Extraction et saisie automatisée de documents (OCR et IA)",
+      "description": "Lecture automatique des factures fournisseurs, bons de commande, bons de livraison et listes de prix par OCR et intelligence artificielle ; validation par règles ; saisie dans le logiciel comptable, l’ERP ou Excel ; exceptions transmises à un humain. Pour PME du Québec."
+    },
+    "eyebrow": "Factures et documents · PME du Québec",
+    "title": "Vos factures et bons de commande se saisissent encore à la main ?",
+    "lead": "Chaque document qui arrive en PDF, en photo ou dans un courriel finit par être relu et retapé par quelqu’un. L’IA sait maintenant lire ces documents de façon fiable : elle extrait les champs, les vérifie contre vos règles et les envoie dans votre logiciel. Votre équipe ne traite plus que les exceptions.",
+    "box": {
+      "kicker": "Les documents qu’on traite",
+      "items": [
+        "Factures fournisseurs : numéro, date, montants, taxes, lignes de produits.",
+        "Bons de commande et bons de livraison, rapprochés entre eux.",
+        "Listes de prix fournisseurs, en PDF, Excel ou CSV, aux formats tous différents.",
+        "Formulaires, feuilles de temps et documents de chantier."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Les signes",
+      "title": "Quelqu’un chez vous est payé pour recopier ce qui est déjà écrit.",
+      "intro": "La saisie de documents ne figure sur aucun état financier. Elle se cache dans la paie, dans les retards de facturation et dans les erreurs qu’on découvre trop tard.",
+      "items": [
+        "Les factures s’empilent en fin de mois, et la comptabilité court après.",
+        "Chaque fournisseur envoie un format différent ; aucun outil standard ne les lit tous.",
+        "Une erreur de saisie sur un prix ou une quantité coûte plus cher que la saisie elle-même.",
+        "Les bons de livraison ne sont jamais rapprochés des commandes.",
+        "Vous avez essayé un logiciel d’OCR : il lisait le texte, mais ne comprenait pas le document."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Comment ça fonctionne",
+      "quote": "L’OCR lit les caractères. L’IA comprend le document. Les règles vérifient. L’humain tranche les exceptions.",
+      "body": "<dropcap>U</dropcap>n document passe par quatre étapes : il est capté (courriel, dossier partagé, numérisation), lu et structuré par l’IA, vérifié par des règles propres à votre entreprise — fournisseur connu, totaux qui balancent, commande correspondante — puis saisi dans votre système. Ce qui ne passe pas les contrôles arrive dans une file de révision, avec la raison.",
+      "principles": [
+        {
+          "title": "Testé sur vos vrais documents",
+          "text": "Avant tout engagement, on fait passer un échantillon de vos factures et on mesure ce qui sort correctement."
+        },
+        {
+          "title": "Des contrôles, pas de la confiance aveugle",
+          "text": "Un total qui ne balance pas, un fournisseur inconnu, un prix anormal : le document est retenu et signalé."
+        },
+        {
+          "title": "Branché sur votre logiciel",
+          "text": "QuickBooks, Acomba, Sage, votre ERP ou Excel — par import, API ou export, selon ce que le logiciel permet."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Inventaire des documents",
+          "text": "Quels documents, combien par mois, de combien de fournisseurs, et où ils doivent aboutir."
+        },
+        {
+          "title": "Essai sur un échantillon",
+          "text": "Une cinquantaine de vrais documents passent dans le système. On voit précisément ce qui est fiable et ce qui ne l’est pas."
+        },
+        {
+          "title": "Règles de validation",
+          "text": "On écrit avec vous les contrôles qui comptent : seuils, rapprochements, fournisseurs autorisés."
+        },
+        {
+          "title": "Connexion au logiciel",
+          "text": "Les données validées sont saisies automatiquement ; les exceptions arrivent dans une file simple à traiter."
+        },
+        {
+          "title": "Suivi des exceptions",
+          "text": "On regarde ce qui tombe en exception et on améliore les règles jusqu’à ce que la file devienne marginale."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "body": "<muted>Une épicerie indépendante recevait les listes de prix de tous ses fournisseurs, chacune dans son format, et les retapait dans sa caisse : près de 56 000 $ par année. Le système lit maintenant ces listes, compare quelque 37 000 prix à chaque cycle et prépare la mise à jour — sans remplacer la caisse, et l’équipe approuve avant application. </muted><a>Lire le cas complet →</a>"
+    },
+    "price": {
+      "label": "Prix",
+      "body": "<muted>Essai sur échantillon compris dans le premier sprint : dès 4 500 $, portée fixe, 2 à 3 semaines pour un type de document. S’ajoutent les frais de traitement à l’usage, estimés sur vos volumes réels avant de construire. </muted><a>Calculer ce que la saisie vous coûte →</a>"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "Quelle différence entre l’OCR et le traitement par IA ?",
+          "a": "L’OCR transforme une image en texte. L’IA comprend ce texte : elle sait qu’un nombre est un total avant taxes, qu’une ligne est un produit, qu’un document est une note de crédit. C’est ce qui permet de lire des formats différents sans gabarit par fournisseur."
+        },
+        {
+          "q": "Quel taux de précision peut-on attendre ?",
+          "a": "Ça dépend de vos documents : qualité des numérisations, variété des formats, écriture manuscrite. C’est pour ça qu’on commence par un essai sur vos vrais documents, et que des règles retiennent tout ce qui est douteux au lieu de le saisir."
+        },
+        {
+          "q": "Fonctionne-t-il avec QuickBooks, Acomba ou Sage ?",
+          "a": "Oui, selon les accès que le logiciel offre : API, import de fichiers ou export structuré. On valide le chemin d’intégration pendant le diagnostic, avant tout engagement."
+        },
+        {
+          "q": "Et les documents manuscrits ou mal numérisés ?",
+          "a": "Ils sont lus quand c’est possible, et envoyés en révision quand la lecture n’est pas assez sûre. L’objectif n’est pas zéro intervention humaine, c’est zéro saisie inutile."
+        },
+        {
+          "q": "Nos documents contiennent des renseignements personnels. Est-ce un problème ?",
+          "a": "Non, si c’est encadré : on choisit des fournisseurs et des réglages compatibles avec vos obligations (Loi 25), on limite les accès et on ne conserve que ce qui est nécessaire."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Combien de documents votre équipe retape-t-elle chaque mois ?",
+      "lead": "Dites-moi lesquels et à peu près combien. Je vous réponds sous 24 h avec ce qui est automatisable et une idée honnête de l’effort."
+    },
+    "related": {
+      "label": "Pour aller plus loin",
+      "links": [
+        "Mise à jour des prix fournisseurs : 4 méthodes",
+        "Agents IA pour entreprise",
+        "Automatisation des processus",
+        "Consultant IA pour PME"
+      ]
+    }
+  },
+  "automatisation": {
+    "meta": {
+      "title": "Automatisation des processus pour PME au Québec | Gabriel Nadon",
+      "description": "Double saisie, copier-coller entre logiciels, rapports refaits chaque semaine : j’automatise vos processus (Make, n8n, Power Automate). PME du Québec.",
+      "ogTitle": "Automatisation des processus pour PME au Québec"
+    },
+    "breadcrumb": "Automatisation des processus",
+    "service": {
+      "name": "Automatisation des processus d’affaires",
+      "type": "Automatisation de processus et de flux de travail",
+      "description": "Automatisation des tâches répétitives des PME québécoises — double saisie, transferts entre logiciels, rapports, relances — avec Make, n8n, Power Automate, Zapier ou du code, et de l’intelligence artificielle lorsque du texte ou des documents sont en jeu."
+    },
+    "eyebrow": "Automatisation des processus · PME du Québec",
+    "title": "Les tâches que votre équipe refait chaque semaine peuvent se faire seules.",
+    "lead": "Recopier une commande d’un courriel vers le logiciel. Rebâtir le même rapport chaque lundi. Relancer les mêmes clients à la main. Pris un à un, ce sont des petits irritants ; additionnés, c’est souvent un poste à temps partiel. J’automatise ces processus de bout en bout, branchés sur vos outils actuels — et j’ajoute de l’IA seulement là où il faut lire ou écrire du texte.",
+    "box": {
+      "kicker": "Ce qu’on automatise le plus souvent",
+      "items": [
+        "La double saisie entre le courriel, Excel et le logiciel comptable.",
+        "Les rapports hebdomadaires montés à la main à partir de trois exports.",
+        "Les relances : soumissions sans réponse, factures en retard, documents manquants.",
+        "Le transfert d’une demande client vers le bon dossier et la bonne personne."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Les signes",
+      "title": "Si quelqu’un « fait le pont » entre deux logiciels, c’est automatisable.",
+      "intro": "Le symptôme le plus fiable : une personne dont une partie du travail consiste à déplacer de l’information d’un endroit à un autre. C’est du temps payé qui ne crée rien.",
+      "items": [
+        "Les mêmes données sont tapées deux fois, dans deux systèmes différents.",
+        "Un fichier Excel sert de base de données, et une seule personne sait le tenir à jour.",
+        "Les rapports arrivent en retard parce qu’il faut les reconstruire chaque fois.",
+        "Des suivis tombent entre deux chaises quand quelqu’un est en vacances.",
+        "Vous payez déjà Microsoft 365, Zapier ou un ERP sans en exploiter les automatisations."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Ma façon de faire",
+      "quote": "On n’automatise pas un processus confus. On le simplifie, on le chiffre, puis on le confie à la machine.",
+      "body": "<dropcap>L</dropcap>’outil vient en dernier. Make, n8n, Power Automate, Zapier ou quelques lignes de code : on choisit selon vos logiciels, vos volumes et le coût d’abonnement à long terme — pas selon mes préférences. Quand une étape demande de comprendre un courriel ou un PDF, un modèle d’IA s’en charge, avec des règles de contrôle et une validation humaine.",
+      "principles": [
+        {
+          "title": "Le calcul d’abord",
+          "text": "Heures par semaine × personnes × taux horaire × 50 semaines : si le chiffre ne justifie pas l’automatisation, je vous le dis."
+        },
+        {
+          "title": "Surveillé, pas oublié",
+          "text": "Chaque automatisation signale ses propres erreurs. Si un fournisseur change son format, vous le savez le jour même."
+        },
+        {
+          "title": "Documenté pour vous",
+          "text": "Vous savez ce qui roule, où, et comment l’arrêter. Pas de boîte noire qui dépend d’une seule personne."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Chiffrer la corvée",
+          "text": "On mesure ce que le processus coûte réellement aujourd’hui — en heures, en erreurs et en délais."
+        },
+        {
+          "title": "Cartographier le processus",
+          "text": "Qui fait quoi, dans quel outil, avec quelles exceptions. C’est souvent là qu’on simplifie déjà la moitié du travail."
+        },
+        {
+          "title": "Construire",
+          "text": "Les connexions entre vos outils, les règles de contrôle et, au besoin, l’étape d’IA qui lit ou rédige."
+        },
+        {
+          "title": "Rouler en parallèle",
+          "text": "L’automatisation tourne à côté de la méthode actuelle quelques jours. On compare, on corrige, on gagne la confiance de l’équipe."
+        },
+        {
+          "title": "Mettre en service",
+          "text": "L’ancienne méthode est retirée, la surveillance est en place, et on regarde le processus suivant."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "body": "<muted>La mise à jour des prix fournisseurs d’une épicerie indépendante prenait l’équivalent d’un poste à temps partiel — près de 56 000 $ par année. Automatisée de bout en bout et branchée sur la caisse existante, elle se fait maintenant sans saisie manuelle — l’équipe ne fait qu’approuver — et l’entreprise achète au meilleur prix à chaque commande. </muted><a>Lire le cas complet →</a>"
+    },
+    "price": {
+      "label": "Prix",
+      "body": "<muted>Sprint d’automatisation : dès 4 500 $, portée fixe, 2 à 3 semaines. Au Québec, les prix publiés vont d’environ 2 500 $ à 10 000 $ pour un premier processus. </muted><a>Fourchettes et subventions détaillées →</a>"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "Make, n8n, Power Automate ou Zapier : lequel choisir ?",
+          "a": "Si toute l’entreprise est sur Microsoft 365, Power Automate est souvent le choix naturel. Make et Zapier sont rapides à mettre en place pour relier des applications web. n8n peut être hébergé chez vous, utile quand le contrôle des données compte. Je recommande selon vos outils et vos volumes."
+        },
+        {
+          "q": "Par quel processus commencer ?",
+          "a": "Par celui qui combine trois choses : il revient chaque semaine, il suit toujours les mêmes étapes et il coûte le plus d’heures. Le calculateur gratuit du site vous donne un premier chiffre en 30 secondes."
+        },
+        {
+          "q": "Qu’arrive-t-il si une automatisation brise ?",
+          "a": "Elle vous avertit. Chaque flux a ses alertes et une procédure de reprise. Les changements de format chez un fournisseur ou un logiciel sont la cause la plus fréquente — et la plus simple à corriger."
+        },
+        {
+          "q": "Faut-il un employé technique à l’interne ?",
+          "a": "Non. Votre équipe connaît le processus ; je m’occupe de la technique. Un sprint demande en général quelques heures de votre temps, surtout au début, pour valider les règles."
+        },
+        {
+          "q": "Où l’IA intervient-elle dans une automatisation ?",
+          "a": "Là où il faut comprendre du texte : lire une commande reçue par courriel, extraire les champs d’une facture, classer une demande, rédiger un brouillon de réponse. Le reste est de l’automatisation classique, plus fiable et moins coûteuse."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Quelle tâche votre équipe refait-elle chaque semaine ?",
+      "lead": "Décrivez-la en deux lignes. Je vous réponds sous 24 h avec ce qu’on peut automatiser, et à quel prix — que l’on travaille ensemble ou non."
+    },
+    "related": {
+      "label": "Pour aller plus loin",
+      "links": [
+        "Calculateur du coût du travail manuel",
+        "Guide : automatiser sa PME",
+        "Traitement de factures et documents",
+        "Consultant IA pour PME"
+      ]
+    }
+  },
+  "logiciel": {
+    "meta": {
+      "title": "Logiciel sur mesure pour PME au Québec | Gabriel Nadon",
+      "description": "Soumissions, bons de travail, feuilles de temps, inventaire : quand Excel est devenu votre logiciel de gestion, je bâtis un vrai système. PME du Québec.",
+      "ogTitle": "Logiciel sur mesure pour PME au Québec — remplacer Excel par un vrai système"
+    },
+    "breadcrumb": "Logiciel sur mesure",
+    "service": {
+      "name": "Développement de logiciel sur mesure pour PME",
+      "type": "Développement de logiciels et systèmes internes sur mesure",
+      "description": "Systèmes internes sur mesure pour PME québécoises — soumissions, bons de travail, feuilles de temps, inventaire, suivi de projets, portails clients — construits par tranches et reliés aux logiciels existants (comptabilité, ERP, Excel)."
+    },
+    "eyebrow": "Logiciel sur mesure · PME du Québec",
+    "title": "Quand Excel est devenu votre logiciel de gestion, il est temps d’en avoir un vrai.",
+    "lead": "Votre entreprise a grandi plus vite que ses outils. Les soumissions vivent dans un fichier, les heures dans un autre, les projets dans les courriels — et aucun logiciel du marché ne colle à votre façon de travailler. Je construis le système interne qui manque, morceau par morceau, relié à ce que vous utilisez déjà.",
+    "box": {
+      "kicker": "Ce que les PME me demandent de construire",
+      "items": [
+        "Soumissions et estimations à partir de vos prix et gabarits.",
+        "Bons de travail, feuilles de temps et suivi de chantier ou de production.",
+        "Inventaire, commandes fournisseurs et réceptions.",
+        "Tableau de bord qui réunit enfin les chiffres de tous vos logiciels."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Les signes",
+      "title": "Votre vrai logiciel de gestion, c’est un fichier que personne n’ose toucher.",
+      "intro": "Excel est un excellent outil pour commencer. Il devient un risque quand l’entreprise entière en dépend et qu’une seule personne sait comment il fonctionne.",
+      "items": [
+        "Plusieurs versions du même fichier circulent, et personne ne sait laquelle est la bonne.",
+        "Vous payez trois ou quatre abonnements qui couvrent chacun une partie du besoin.",
+        "Les logiciels du marché vous obligent à changer une façon de faire qui fonctionne.",
+        "Les chiffres pour décider arrivent en fin de mois — trop tard.",
+        "Votre ancien logiciel maison n’est plus entretenu par personne."
+      ]
+    },
+    "approach": {
+      "eyebrow": "Acheter ou construire ?",
+      "quote": "Si un logiciel du marché fait 80 % du travail, achetez-le. Le sur mesure se justifie quand votre façon de travailler est votre avantage.",
+      "body": "<dropcap>J</dropcap>e vous le dis franchement pendant le diagnostic : souvent, la bonne réponse est un logiciel existant, bien configuré. Le sur mesure devient rentable quand vous jonglez entre plusieurs outils qui ne se parlent pas, quand votre processus est particulier, ou quand le coût cumulé des licences dépasse celui d’un système fait pour vous.",
+      "refonte": "Votre système actuel est vieillissant ? <a>Voyez comment je le remplace sans arrêter vos opérations →</a>",
+      "principles": [
+        {
+          "title": "Par tranches",
+          "text": "Chaque tranche est livrée, utilisée et rentabilisée avant la suivante. Pas de projet de dix-huit mois."
+        },
+        {
+          "title": "Relié à l’existant",
+          "text": "Le système se branche sur votre comptabilité, votre ERP ou vos fichiers au lieu de tout remplacer d’un coup."
+        },
+        {
+          "title": "Pensé pour l’IA",
+          "text": "Des données propres et centralisées : c’est la condition pour automatiser ensuite, avec ou sans IA."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Diagnostic",
+          "text": "On regarde comment l’information circule vraiment chez vous, et où elle se perd."
+        },
+        {
+          "title": "Découpage en tranches",
+          "text": "Le système est découpé en morceaux utiles par eux-mêmes ; on commence par celui qui coûte le plus cher aujourd’hui."
+        },
+        {
+          "title": "Première tranche",
+          "text": "Construite et mise en service en quelques semaines, sur vos vraies données, avec votre équipe."
+        },
+        {
+          "title": "Migration des données",
+          "text": "Vos fichiers et historiques sont importés, vérifiés et rapprochés — les totaux doivent balancer."
+        },
+        {
+          "title": "Tranche suivante",
+          "text": "Au rythme de vos opérations et de votre budget, jusqu’à ce que le système couvre ce qui compte."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "body": "<muted>Plutôt que de remplacer la caisse d’une épicerie indépendante, j’ai construit à côté un système qui lit les listes de prix des fournisseurs, compare quelque 37 000 prix à chaque cycle et alimente la caisse existante : près de 56 000 $ par année de saisie éliminée, sans interruption des opérations. </muted><a>Lire le cas complet →</a>"
+    },
+    "price": {
+      "label": "Prix",
+      "body": "<muted>Par tranches d’environ 6 000 $ ; la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Le crédit d’impôt C3I et ESSOR peuvent couvrir une partie de l’investissement. </muted><a>Prix du marché et subventions →</a>"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "Combien coûte un logiciel sur mesure pour une PME ?",
+          "a": "Chez moi, par tranches d’environ 6 000 $, et la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Les plateformes intégrées plus larges peuvent dépasser 100 000 $ ; à ce niveau, exigez un découpage par étapes."
+        },
+        {
+          "q": "Combien de temps avant d’avoir quelque chose d’utilisable ?",
+          "a": "La première tranche est en service en quelques semaines. C’est le principe : vous utilisez le système pendant qu’il grandit, au lieu d’attendre une livraison finale."
+        },
+        {
+          "q": "Pourquoi pas un logiciel du marché ?",
+          "a": "C’est souvent la bonne réponse, et je vous le dirai. Le sur mesure se justifie quand aucun produit ne colle à votre processus, quand vous payez plusieurs abonnements partiels, ou quand votre façon de travailler est un avantage concurrentiel."
+        },
+        {
+          "q": "Le système se connecte-t-il à notre comptabilité ?",
+          "a": "Oui, selon les accès offerts par votre logiciel : API, import de fichiers ou export structuré. On valide ce chemin dès le diagnostic."
+        },
+        {
+          "q": "Qu’arrive-t-il après la livraison ?",
+          "a": "Le système vous est remis documenté, avec ses accès. Le soutien et les évolutions se conviennent ensemble — à la tranche ou selon une entente mensuelle."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Quel fichier Excel fait rouler votre entreprise ?",
+      "lead": "Décrivez-le, ou ce qui coince dans vos outils actuels. Je vous réponds sous 24 h avec un premier découpage et une idée honnête de l’effort."
+    },
+    "related": {
+      "label": "Pour aller plus loin",
+      "links": [
+        "Refonte d’un système existant",
+        "Automatisation des processus",
+        "Logiciel de gestion pour épicerie",
+        "Consultant IA pour PME"
+      ]
+    }
+  }
+}

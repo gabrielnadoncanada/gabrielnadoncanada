@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Request received | Gabriel Nadon",
+    "description": "Your request has been received. Reply within 24 hours — or book your 20-minute assessment directly.",
+    "ogTitle": "Request received",
+    "ogDescription": "Your request has been received. Reply within 24 hours."
+  },
+  "hero": {
+    "eyebrow": "Request received",
+    "title": "Got it. I’ll get back to you <italic>within 24 hours.</italic>",
+    "lead": "A confirmation is on its way to your inbox (check your spam folder if needed). I read every request myself and get back to you with a few first ideas — not one more automated email.",
+    "otherLang": "Merci — votre demande est bien reçue. Je vous réponds sous 24 heures, en français."
+  },
+  "card": {
+    "label": "Want to move faster?",
+    "text": "Pick your 20-minute slot right now",
+    "cta": "Book my 20 minutes",
+    "note": "Free, no obligation. You leave with the first steps to take — whether we end up working together or not."
+  },
+  "wait": {
+    "label": "In the meantime",
+    "text": "See how a Quebec grocery store recovered $56,000 a year by eliminating a single manual task.",
+    "cta": "Read the case study →"
+  }
+}

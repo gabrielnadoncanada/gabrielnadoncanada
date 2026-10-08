@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Gabriel Nadon — AI and automation for Quebec SMBs",
+    "description": "AI and automation consultant in Montreal: I replace spreadsheets, double data entry and scattered tools in Quebec SMBs with a system that does the work.",
+    "ogTitle": "Gabriel Nadon — Operations systems for SMBs",
+    "ogDescription": "Replace manual tracking, spreadsheets and email with a system that keeps information in one place and does part of the work. Quebec SMBs."
+  },
+  "jsonld": {
+    "siteName": "Gabriel Nadon — Operations systems for SMBs",
+    "jobTitle": "AI and operations systems consultant",
+    "personDescription": "Gabriel Nadon, an AI and automation consultant in Montreal, helps Quebec SMBs with complex operations replace manual tracking, spreadsheets, email and ill-fitting software with systems that centralize information and automate part of the work.",
+    "knowsAbout": [
+      "Operations systems",
+      "Operations automation",
+      "Systems integration",
+      "Custom software for SMBs",
+      "Process automation",
+      "Artificial intelligence",
+      "AI agents",
+      "Automated document processing"
+    ],
+    "businessName": "Gabriel Nadon — AI, automation and systems for SMBs",
+    "businessDescription": "AI consulting and implementation for Quebec SMBs: AI agents, automated invoice and document processing, process automation, custom software and replacement of aging systems.",
+    "catalog": "Services",
+    "offers": {
+      "consultantIa": "AI consultant for SMBs",
+      "agentsIa": "AI agents for business",
+      "documents": "Automated invoice and document processing",
+      "automatisation": "Business process automation",
+      "logiciel": "Custom software for SMBs",
+      "refonte": "Legacy system replacement"
+    }
+  },
+  "hero": {
+    "kicker": "AI, automation and custom systems for Quebec SMBs",
+    "title": "Your operations shouldn’t live in 12 different apps.",
+    "lead": "I turn manual tracking, spreadsheets, email threads and ill-fitting software into one simple operations system: information in one place, and part of the work done for you.",
+    "cta": "Show me how you work",
+    "ctaShort": "Review my operations",
+    "ctaCase": "See a real case",
+    "who": "<strong>Gabriel Nadon</strong>, independent consultant in Montreal. You talk to the person who builds it, and you get an answer within 24 hours."
+  },
+  "sys": {
+    "aria": "Illustration: a typical morning once the system is in place",
+    "sources": [
+      "Excel",
+      "Outlook",
+      "QuickBooks",
+      "Texts",
+      "PDFs"
+    ],
+    "title": "Your system, this morning",
+    "time": "8:02 AM",
+    "queue": [
+      {
+        "title": "Price lists from 3 suppliers imported",
+        "meta": "1,284 prices compared, 37 gaps flagged",
+        "done": true
+      },
+      {
+        "title": "Invoice #4821 read and entered",
+        "meta": "Matched to its purchase order",
+        "done": true
+      },
+      {
+        "title": "Late delivery detected",
+        "meta": "Supplier chased, job site notified",
+        "done": true
+      },
+      {
+        "title": "Quote drafted from the standard template",
+        "meta": "Waiting for your OK before it goes out",
+        "done": false
+      }
+    ],
+    "done": "Done",
+    "wait": "To approve",
+    "footDone": "3 tasks done with no re-keying",
+    "footWait": "1 decision for you",
+    "caption": "Illustration: a typical morning, once the system is in place."
+  },
+  "pains": {
+    "title": "Your information is everywhere. Except in one place.",
+    "items": [
+      "Some of the information lives in spreadsheets. The rest, in email.",
+      "Employees text each other just to get work unblocked.",
+      "Accounting runs in one app, projects in another — and the two don’t talk.",
+      "Someone is constantly gluing the pieces back together: searching, re-keying, chasing, checking."
+    ],
+    "costLabel": "What it costs you",
+    "cost": "Double data entry, information nobody can find, forgotten follow-ups, errors, decisions made too late — and money left on the table."
+  },
+  "method": {
+    "title": "How I work",
+    "sub": "Three steps, in this order. Nothing gets built until we understand where the work is being lost.",
+    "steps": [
+      {
+        "when": "Week 1",
+        "title": "Operations review",
+        "text": "We look at how your business really runs — and find where time, information or money is being lost."
+      },
+      {
+        "when": "Next",
+        "title": "Operations system",
+        "text": "We centralize your most expensive process around the way you work. Not the other way around."
+      },
+      {
+        "when": "After that",
+        "title": "Smart automation",
+        "text": "Once the data and the process are reliable, the system starts doing part of the work."
+      }
+    ],
+    "note": "When artificial intelligence speeds up a step, it works on structured data, with guardrails and human approval. It’s a mechanism, not the product."
+  },
+  "caps": {
+    "title": "Software gives you screens. A system does part of the work.",
+    "sub": "The system prepares, flags and follows up. Your people stay in control and make the calls.",
+    "items": [
+      {
+        "verb": "Gather",
+        "rest": "information scattered across your systems"
+      },
+      {
+        "verb": "Prepare",
+        "rest": "documents from the data you already have"
+      },
+      {
+        "verb": "Detect",
+        "rest": "a missing follow-up or action"
+      },
+      {
+        "verb": "Chase",
+        "rest": "the right person at the right time"
+      },
+      {
+        "verb": "Compare",
+        "rest": "planned versus actual, and flag the gaps"
+      },
+      {
+        "verb": "Search",
+        "rest": "across every document in a project"
+      },
+      {
+        "verb": "Convert",
+        "rest": "emails, PDFs and messages into usable data"
+      },
+      {
+        "verb": "Propose",
+        "rest": "the next action, approved by a person"
+      }
+    ]
+  },
+  "services": {
+    "title": "What I put in place, depending on where the work is lost.",
+    "items": {
+      "consultantIa": {
+        "kind": "Getting started",
+        "title": "AI consultant for SMBs",
+        "text": "Find the two or three tasks where AI really pays off in your business, then implement them."
+      },
+      "documents": {
+        "kind": "Documents",
+        "title": "AI invoice and document processing",
+        "text": "Invoices, purchase orders, price lists: read, checked and entered without anyone re-typing them."
+      },
+      "agentsIa": {
+        "kind": "Agents",
+        "title": "AI agents",
+        "text": "An assistant that handles requests, drafts quotes and replies, and asks before it acts."
+      },
+      "automatisation": {
+        "kind": "Processes",
+        "title": "Process automation",
+        "text": "The double entry, reports and follow-ups redone every week, handed to the machine."
+      },
+      "logiciel": {
+        "kind": "Systems",
+        "title": "Custom software",
+        "text": "When a spreadsheet has become your management system. Or <refonte>when the old system needs replacing</refonte>."
+      }
+    },
+    "toolsLead": "<strong>Your tools stay in place.</strong> The system replaces what no longer works and connects to what already does, depending on the access available.",
+    "tools": [
+      "ERP",
+      "QuickBooks",
+      "Procore",
+      "Outlook",
+      "Excel",
+      "Files and exports",
+      "API"
+    ]
+  },
+  "proof": {
+    "kicker": "Case study: independent grocery store, Quebec",
+    "num": "$56,000",
+    "txt": "a year, recovered from a single manual task.",
+    "cta": "Read the full case",
+    "steps": [
+      {
+        "label": "The problem",
+        "title": "Re-typing thousands of prices, every week",
+        "text": "The team keyed their suppliers’ prices into the point-of-sale system by hand: the equivalent of a part-time job, not counting typing errors or the margin lost by ordering without comparing."
+      },
+      {
+        "label": "The system",
+        "title": "The machine copies, the team approves",
+        "text": "It imports every supplier’s price list, compares prices product by product and prepares the update — connected to the existing point-of-sale system, without stopping operations."
+      },
+      {
+        "label": "The result",
+        "title": "Time recovered, margin as a bonus",
+        "text": "Manual entry is gone, and the business now buys at the best price on every order."
+      }
+    ],
+    "stats": [
+      {
+        "num": "12 h+",
+        "label": "recovered every week, on average"
+      },
+      {
+        "num": "20+",
+        "label": "SMBs supported in Quebec"
+      },
+      {
+        "num": "37,000",
+        "label": "prices compared every cycle, with no manual effort"
+      },
+      {
+        "num": "30 min",
+        "label": "for a first review of your operations"
+      }
+    ]
+  },
+  "me": {
+    "photoAlt": "Portrait of Gabriel Nadon, consultant",
+    "quote": "I don’t sell technology. I solve business problems.",
+    "body": "Every project starts with how your operations really run — where time is lost, where information gets stuck, where money leaks out without anyone noticing — and ends with a system that does part of the work. No middlemen, no jargon, no surprises.",
+    "principles": [
+      "<strong>Understand before building.</strong> We map your real operations and tools before proposing anything.",
+      "<strong>One point of contact.</strong> You talk to the person who analyzes your operations and builds the system.",
+      "<strong>Visible progress.</strong> The system is delivered in steps: you see each piece working before we go further."
+    ],
+    "role": "Consultant, operations systems"
+  },
+  "for": {
+    "title": "Who it’s for",
+    "text": "Businesses whose operations have outgrown spreadsheets, email and disconnected tools.",
+    "sectors": [
+      "Construction",
+      "Industrial",
+      "Manufacturing",
+      "Distribution and logistics",
+      "Field operations"
+    ]
+  },
+  "free": {
+    "title": "Free tools and guides",
+    "items": {
+      "calculateur": {
+        "kind": "Calculator",
+        "title": "What manual work really costs you"
+      },
+      "quiz": {
+        "kind": "10-question test",
+        "title": "Is your business ready for AI?"
+      },
+      "guide": {
+        "kind": "Guide",
+        "title": "Automating an SMB in Quebec"
+      },
+      "comparatif": {
+        "kind": "Comparison",
+        "title": "Grocery store software in Quebec"
+      },
+      "barometre": {
+        "kind": "Barometer",
+        "title": "2026 SMB barometer"
+      }
+    }
+  },
+  "contact": {
+    "title": "Show me how you work.",
+    "lead": "In 30 minutes, we look at your current process and pinpoint where a system could genuinely remove work or recover value — whether or not we end up working together.",
+    "points": [
+      "Free, no commitment",
+      "Reply within 24 hours",
+      "Directly with Gabriel, not a salesperson"
+    ]
+  }
+}

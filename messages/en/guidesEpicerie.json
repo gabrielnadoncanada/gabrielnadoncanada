@@ -1,0 +1,260 @@
+{
+  "shared": {
+    "nav": {
+      "epicerie": "Grocery",
+      "approche": "Approach",
+      "methode": "Method",
+      "cas": "Case studies",
+      "contact": "Contact"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "epicerie": "Management software for grocery and convenience stores",
+      "guides": "Guides"
+    },
+    "book": "Book my 20 minutes",
+    "sectorLabel": "Grocery or convenience store?",
+    "sectorText": "The page for your type of store"
+  },
+  "inventaire": {
+    "meta": {
+      "title": "Grocery Inventory in Excel: Free Template, Method — and Its Limits | Gabriel Nadon",
+      "description": "A free Excel inventory template for grocery and convenience stores (300 products, stock value, margin, reorder alerts; in French), the cycle counting method — and three signs Excel is no longer enough.",
+      "ogTitle": "Grocery Inventory in Excel: Free Template and Method",
+      "ogDescription": "Free template (300 products, stock value, margins, alerts), the cycle counting method — and when Excel is no longer enough.",
+      "twitterTitle": "Grocery Inventory in Excel: Free Template and Method",
+      "twitterDescription": "Free template, cycle counting — and three signs Excel is no longer enough."
+    },
+    "jsonld": {
+      "headline": "Grocery Inventory in Excel: Free Template, Method — and Its Limits",
+      "description": "How to keep a grocery or convenience store’s inventory in Excel: file structure, cycle counting, a free template — and the signs it’s time to connect inventory to the point-of-sale (POS) system.",
+      "faq": [
+        {
+          "q": "How do you keep a grocery store’s inventory in Excel?",
+          "a": "One product per row with at least: UPC code, description, department, main supplier, unit cost, selling price, quantity in stock and reorder point. Three calculated columns do the work: stock value (cost × quantity), margin ((selling price − cost) ÷ selling price) and reorder alert (stock ≤ reorder point). Count by section, one per week (cycle counting), rather than the whole store at once."
+        },
+        {
+          "q": "What is cycle counting in a grocery store?",
+          "a": "Instead of closing once a year to count the whole store, you count a different section each week (dairy, bakery, frozen…) and work through the full store on a rolling basis. Stock stays reliable all year, the effort is spread out, and discrepancies (shrink, theft, receiving errors) show up within weeks rather than months."
+        },
+        {
+          "q": "When is Excel no longer enough for a store’s inventory?",
+          "a": "Three signs: more than one person needs to edit the file (versions drift apart), supplier costs change faster than the file (the displayed margin becomes wrong), and the file doesn’t talk to the point-of-sale system (sales don’t deduct anything — everything gets recounted by hand). At that point, the answer isn’t a bigger Excel file: it’s connecting inventory to the POS system you already have."
+        }
+      ],
+      "breadcrumb": "Grocery inventory in Excel"
+    },
+    "hero": {
+      "eyebrow": "Practical guide · Grocery & convenience stores · template included",
+      "title": "Grocery inventory in Excel: doing it right —",
+      "titleItalic": "and knowing when to stop.",
+      "lead": "Most independent grocery and convenience stores keep their “real” inventory in an Excel file nobody else dares to touch. That’s not a flaw — it’s a starting point. Here’s how to structure that file so it actually works for you (stock value, margins, reorder alerts), the counting method that keeps it reliable, and three signs it’s time to move on.",
+      "download": "Download the template (.xlsx, free, in French)",
+      "downloadNote": "300 products, no email, no sign-up. Stock value, per-product margin and “to order” alerts calculated automatically. The template is in French."
+    },
+    "box": {
+      "kicker": "What the template calculates on its own",
+      "num": "3",
+      "cur": "key columns",
+      "sub": "Stock value at cost (cost × quantity), per-product margin ((selling price − cost) ÷ selling price) and a reorder alert when stock drops below your threshold — highlighted automatically.",
+      "plus": "One product per row, one master file. That’s the rule."
+    },
+    "method": {
+      "eyebrow": "The method, in three habits",
+      "steps": [
+        {
+          "title": "One product per row, one master file",
+          "text": "UPC code, description, department, main supplier, cost, selling price, quantity, reorder point. No merged cells, no tab per month, no “inventory-final-v2” copies: one single file, which the template structures for you in advance."
+        },
+        {
+          "title": "Cycle counting: one section per week",
+          "text": "Instead of the big annual count that ties up everyone, count a different section each week — dairy, bakery, frozen… The full round happens on a rolling basis, stock stays reliable all year, and discrepancies (shrink, receiving errors) show up in weeks, not months."
+        },
+        {
+          "title": "Keep costs current, or the margin lies",
+          "text": "The “margin” column is only as good as the “cost” column. If supplier price lists aren’t carried over into the file, your displayed margin is fiction. It’s the weak link of every Excel inventory — and the reason <prix>supplier price updates</prix> are the first thing to automate, even before inventory."
+        }
+      ]
+    },
+    "limits": {
+      "eyebrow": "Excel’s limits",
+      "title": "Three signs it’s time to stop growing the file.",
+      "p1": "<strong>More than one person needs to touch it.</strong> As soon as the file is shared, versions drift apart and “the real number” becomes a matter of opinion again. <strong>Costs change faster than the file.</strong> Every supplier list that isn’t carried over skews the margin on dozens of products. <strong>The file doesn’t talk to the point-of-sale system.</strong> Sales don’t deduct anything: everything that leaves the store has to be recounted by hand.",
+      "p2": "At that point, the answer isn’t a bigger Excel file — nor necessarily a new POS system. An in-between system can read your sales and your supplier lists and keep inventory up to date in what you already have. That’s the approach from the <cas>grocery store case ($56,000/year recovered)</cas>, applied to stock instead of prices."
+    },
+    "more": {
+      "label": "Going further",
+      "lead1": "Shopping for a real system instead?",
+      "link1": "The Quebec comparison of grocery store software →",
+      "lead2": "And to find out what manual data entry really costs you:",
+      "link2": "the manual work calculator →"
+    },
+    "cta": {
+      "eyebrow": "Your store, your numbers",
+      "title": "Outgrowing Excel?",
+      "titleItalic": "Let’s look at it in 20 minutes.",
+      "lead": "Tell me how your inventory is kept today — I’ll tell you what to connect first, what it costs and what it pays back. Free, no obligation, and no pitch for a new POS system."
+    }
+  },
+  "prixFournisseurs": {
+    "meta": {
+      "title": "Supplier Price Updates: The 4 Methods Compared | Gabriel Nadon",
+      "description": "Manual entry, CSV import, supplier portal or automated sync: the 4 ways to keep supplier prices up to date, their real costs and their pitfalls. With a free Excel price comparison template (in French).",
+      "ogTitle": "Supplier Price Updates: The 4 Methods Compared",
+      "ogDescription": "Manual entry, CSV import, supplier portal or automated sync — the real costs and pitfalls of each method.",
+      "twitterTitle": "Supplier Price Updates: The 4 Methods Compared",
+      "twitterDescription": "The real costs and pitfalls of each method, with a free Excel template."
+    },
+    "jsonld": {
+      "headline": "Supplier Price Updates: The 4 Methods Compared",
+      "description": "Manual entry, CSV import, supplier portal or automated sync: real costs, pitfalls and selection criteria for a store or SMB.",
+      "faq": [
+        {
+          "q": "How much does updating supplier prices by hand cost?",
+          "a": "Calculate: hours per week × people × loaded hourly cost × 50 weeks. In a documented real case, an independent grocery store in Quebec was spending the equivalent of nearly $56,000 a year on it — the equivalent of a part-time position spent retyping price lists."
+        },
+        {
+          "q": "What is a supplier price file?",
+          "a": "The price list a supplier sends to its retail customers: product codes (often UPC), descriptions, case sizes, cost prices and sometimes suggested retail prices. The format varies from one supplier to the next — Excel, CSV, PDF, sometimes paper — and that inconsistency is what makes updating so painful."
+        },
+        {
+          "q": "Can supplier prices be automated without changing the point-of-sale system?",
+          "a": "Yes, in most cases: an in-between system reads each supplier’s files, normalizes product codes, compares prices, then feeds the existing POS system through its import mechanism. A grocery store in Quebec did it without replacing its POS system and without a single day of downtime."
+        }
+      ],
+      "breadcrumb": "Supplier price updates: the 4 methods"
+    },
+    "hero": {
+      "eyebrow": "Practical guide · Retail & SMBs",
+      "title": "Supplier price updates: the 4 methods,",
+      "titleItalic": "and what they really cost.",
+      "lead": "Every store that buys from several suppliers lives the same cycle: price lists arriving in every format, a POS or management system to keep up to date, and hours disappearing in between. There are only four ways to do this work. Here is each one, with its real cost and its pitfalls — so you can choose with your eyes open."
+    },
+    "box": {
+      "kicker": "The cost of method No. 1, in a real case",
+      "num": "$56,000",
+      "cur": "/ year",
+      "sub": "That’s what manual price entry cost an independent grocery store in Quebec — 37,000 prices to keep up to date, retyped week after week.",
+      "link": "Read the full case →"
+    },
+    "method": {
+      "eyebrow": "The four methods",
+      "steps": [
+        {
+          "title": "Manual entry",
+          "text": "Someone opens the supplier’s list and retypes the prices into the POS or management system, line by line. No tool cost, but the real price is on the payroll: hours × people × hourly cost × 50 weeks, every year, plus the typos that end up on the shelf label. It’s the default method for most stores — because it never shows up anywhere in the financial statements."
+        },
+        {
+          "title": "The POS system’s built-in import (CSV/Excel)",
+          "text": "Most POS and management systems offer a file import. When the supplier sends a clean file and the product codes match, it works. The pitfalls: every supplier has its own format (columns, case sizes, different codes), PDFs can’t be imported, and each file still has to be prepared by hand — the chore moves, it doesn’t go away."
+        },
+        {
+          "title": "The supplier’s portal or EDI",
+          "text": "Some large distributors offer a portal, an electronic catalogue or an EDI link that pushes prices directly. Excellent when it exists — but it covers a single supplier. An independent store buying from eight suppliers ends up with two portals, three Excel files and three PDF lists: comparing prices across suppliers is still done by hand."
+        },
+        {
+          "title": "Automated multi-supplier sync",
+          "text": "An in-between system reads every supplier’s files (whatever the format), normalizes product codes, compares prices product by product, then feeds the existing POS system. The team approves on one screen instead of retyping for days. It’s a custom project (your suppliers’ formats aren’t your neighbour’s), but it eliminates the chore instead of moving it — and along the way it shows which supplier is cheapest for each product."
+        }
+      ]
+    },
+    "choose": {
+      "eyebrow": "How to choose",
+      "title": "The right method depends on one number: what the chore costs you.",
+      "p1": "Under a few hours a month, manual entry or the built-in import is enough — automating would cost more than the chore. From several hours a week on, every “free” method becomes the most expensive of the four: half a day a week at $25/h is over $5,000 a year, and the math gets worse with every additional supplier.",
+      "p2": "So start by putting a number on it: <calc>the manual work cost calculator</calc> gives you the amount in 30 seconds. If the result exceeds the cost of a project that eliminates the chore, method 04 pays for itself in months, not years — that’s exactly the arithmetic of the <cas>grocery store case</cas>."
+    },
+    "template": {
+      "label": "Free Excel template",
+      "text": "Until you automate: a supplier price comparison template (in French). Paste the lists of up to three suppliers; the file lines up the products, calculates the difference and highlights the best price.",
+      "download": "Download the template (.xlsx, free, no email, in French) →"
+    },
+    "cta": {
+      "eyebrow": "Your specific situation",
+      "title": "How many suppliers,",
+      "titleItalic": "how many hours?",
+      "lead": "In 20 minutes on the phone, we put a number on your price updates and I tell you which of the four methods fits your store — even if the answer is “stay as you are.”"
+    }
+  },
+  "marge": {
+    "meta": {
+      "title": "Calculating Grocery Store Margin: Formulas, Pitfalls, Method | Gabriel Nadon",
+      "description": "Margin or markup? Gross margin, dollar margin, weighted margin by department: the exact formulas, the three pitfalls that skew the math (outdated costs, shrink, pack sizes), and how to win back margin when buying.",
+      "ogTitle": "Calculating Grocery Store Margin: Formulas, Pitfalls and Method",
+      "ogDescription": "Margin or markup? The exact formulas, the pitfalls that skew the math, and how to win back margin when buying.",
+      "twitterTitle": "Calculating Grocery Store Margin: Formulas and Pitfalls",
+      "twitterDescription": "Margin or markup? The exact formulas and the pitfalls that skew the math."
+    },
+    "jsonld": {
+      "headline": "Calculating Grocery Store Margin: Formulas, Pitfalls and Method",
+      "description": "The exact margin formulas for food retail (gross margin, dollar margin, weighted margin), the difference between margin and markup, and the pitfalls that skew the math.",
+      "faq": [
+        {
+          "q": "How do you calculate a product’s margin in a grocery store?",
+          "a": "Gross margin (%) = (selling price − cost) ÷ selling price × 100. Example: a product bought at $4.25 and sold at $5.49 gives (5.49 − 4.25) ÷ 5.49 = 22.6% margin. Not to be confused with markup, which divides by cost: the same product has a 29.2% markup. Mixing up the two leads to pricing too low."
+        },
+        {
+          "q": "What is the difference between margin and markup?",
+          "a": "Margin is calculated on the selling price ((selling price − cost) ÷ selling price); markup is calculated on cost ((selling price − cost) ÷ cost). A 50% markup gives only a 33% margin: a product bought at $2 and marked up 50% sells for $3, and (3 − 2) ÷ 3 = 33.3%. To hit a specific margin, the formula is: selling price = cost ÷ (1 − target margin). Example: for a 25% margin on a $3 cost → 3 ÷ 0.75 = $4."
+        },
+        {
+          "q": "Why is the margin shown in my system wrong?",
+          "a": "Three causes dominate: outdated costs (supplier price lists aren’t carried over into the system, so the margin is calculated on a cost that no longer exists), ignored shrink (losses, breakage, theft and spoilage reduce actual margin without touching theoretical margin), and mixed pack sizes (comparing the cost per case to the price per unit). The first move is to make costs reliable — which is exactly what supplier price updates are for."
+        }
+      ],
+      "breadcrumb": "Calculating grocery store margin"
+    },
+    "hero": {
+      "eyebrow": "Practical guide · Grocery & convenience stores",
+      "title": "Calculating grocery store margin — without",
+      "titleItalic": "fooling yourself.",
+      "lead": "Margin is the most important number in a food store — and one of the most often miscalculated. Confusing margin with markup leads to pricing too low; outdated costs make you believe in a margin that no longer exists. This guide gives the exact formulas, the three classic pitfalls, and the only real way to win back margin without raising prices: buying better. You won’t find an “industry average margin” here: the only number that matters is yours, calculated on current costs."
+    },
+    "box": {
+      "kicker": "The formula that keeps you from pricing too low",
+      "num": "cost ÷ (1 − margin)",
+      "sub": "To hit a 25% margin on a product that costs $3.00: 3.00 ÷ 0.75 = $4.00. Marking up the cost by 25% ($3.75) would have given only a 20% margin.",
+      "plus": "Margin and markup aren’t the same thing — details below."
+    },
+    "formulas": {
+      "eyebrow": "The formulas, with examples",
+      "steps": [
+        {
+          "title": "Gross margin (%)",
+          "text": "(Selling price − cost) ÷ selling price × 100. A product bought at $4.25 and sold at $5.49: (5.49 − 4.25) ÷ 5.49 = 22.6%. It’s the share of every sales dollar left over to pay the rent, the payroll — and you."
+        },
+        {
+          "title": "Markup — the other calculation",
+          "text": "(Selling price − cost) ÷ cost × 100. The same product: (5.49 − 4.25) ÷ 4.25 = 29.2%. Markup is always bigger than margin — which is why owners think they’re “at 30%” when they’re at 22%. To hit a specific margin: price = cost ÷ (1 − target margin)."
+        },
+        {
+          "title": "Dollar margin — the one that pays the rent",
+          "text": "Margin % × price × units sold. A product with a 40% margin that sells twice a week brings in less than a 20% product that sells twenty times. Rank your products by dollar margin per week, not by percentage — the ranking changes completely."
+        },
+        {
+          "title": "Weighted margin by department",
+          "text": "(Department’s total sales − cost of goods sold) ÷ total sales. It’s the only margin you can compare from one period to the next: it absorbs the real basket — low-margin loss leaders as well as the profitable products. Calculate it by department, every month, on current costs."
+        }
+      ]
+    },
+    "traps": {
+      "eyebrow": "The three pitfalls",
+      "title": "A margin calculated on an outdated cost isn’t a margin. It’s a memory.",
+      "p1": "<strong>Outdated costs.</strong> Every supplier price list not carried over into the POS system skews the margin on dozens of products at once — in the wrong direction, since costs go up more often than they go down. It’s pitfall No. 1, and it can be fixed: <prix>the 4 methods for updating supplier prices</prix>. <strong>Ignored shrink.</strong> Breakage, theft, spoilage: actual margin is always below theoretical margin — track the gap between the two instead of ignoring it. <strong>Mixed pack sizes.</strong> A cost per case of 12 compared with a unit price: the classic mistake that has you “selling at a loss” without knowing it. Always bring cost and price back to the same pack size.",
+      "p2": "And the forgotten lever: margin is also won <strong>when buying</strong>. Ordering each product from the cheapest supplier — because you can finally compare — brought margin back on every order at <cas>the grocery store in the case study</cas>, on top of the $56,000 in time recovered."
+    },
+    "templates": {
+      "label": "The matching templates",
+      "lead1": "Per-product margin calculates itself in the",
+      "link1": "inventory template (free .xlsx, in French) →",
+      "lead2": "and the best purchase price stands out in the",
+      "link2": "supplier price comparison template (in French) →"
+    },
+    "cta": {
+      "eyebrow": "Your real numbers",
+      "title": "Your actual margin,",
+      "titleItalic": "on current costs.",
+      "lead": "In 20 minutes, we look at how your costs get into your POS system and what that skews in your margins — and I tell you what to make reliable first. Free, no obligation."
+    }
+  }
+}

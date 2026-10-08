@@ -1,18 +1,27 @@
 "use client";
 
 import { useEffect } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { href, otherLocale } from "@/i18n/navigation";
+import type { Locale, Pathname } from "@/i18n/routing";
 
 type NavItem = { href: string; label: string };
 
 type Props = {
-  brandHref: string;
+  /** Chemin interne de la page courante : sert au lien vers l'autre langue. */
+  pathname: Pathname;
+  /** Liens déjà localisés (passer par href() de @/i18n/navigation). */
   navItems: NavItem[];
   ctaHref: string;
-  lang?: "fr" | "en";
+  /** Lien de la marque ; par défaut l'accueil de la langue courante. */
+  brandHref?: string;
 };
 
-export function SiteHeader({ brandHref, navItems, ctaHref, lang = "fr" }: Props) {
-  const en = lang === "en";
+export function SiteHeader({ pathname, navItems, ctaHref, brandHref }: Props) {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("common.header");
+  const other = otherLocale(locale);
+
   // Header rétractable au défilement (ajoute .is-scrolled après 8px).
   useEffect(() => {
     const header = document.querySelector(".cab-header");
@@ -29,18 +38,16 @@ export function SiteHeader({ brandHref, navItems, ctaHref, lang = "fr" }: Props)
       <div className="cab-headinner header-inner">
         <div className="flex-center">
           <a
-            href={brandHref}
-            aria-label="Gabriel Nadon — Systèmes opérationnels pour PME"
+            href={brandHref ?? href(locale, "/")}
+            aria-label={t("brandLabel")}
             className="cab-brand brand"
           >
             <span className="mark">
-              <span className="mark-corner-tl" aria-hidden="true"></span>
-              <span className="mark-corner-br" aria-hidden="true"></span>
               <span className="mark-gn">GN</span>
             </span>
             <span className="cab-brandname brand-text">
               <span className="brand-name">Gabriel Nadon</span>
-              <span className="brand-sub">{en ? "AI & operations systems" : "Systèmes opérationnels"}</span>
+              <span className="brand-sub">{t("brandSub")}</span>
             </span>
           </a>
         </div>
@@ -56,9 +63,18 @@ export function SiteHeader({ brandHref, navItems, ctaHref, lang = "fr" }: Props)
               </a>
             ))}
           </span>
+          <a
+            href={href(other, pathname)}
+            hrefLang={other}
+            lang={other}
+            className="lang-switch"
+            aria-label={t("switchAria")}
+          >
+            {other.toUpperCase()}
+          </a>
           <a href={ctaHref} className="btn-sm">
-            <span className="btn-cta-full">{en ? "Review my operations" : "Analyser mes opérations"}</span>
-            <span className="btn-cta-short">{en ? "Let’s talk" : "Parlons-en"}</span>
+            <span className="btn-cta-full">{t("cta")}</span>
+            <span className="btn-cta-short">{t("ctaShort")}</span>
           </a>
         </nav>
       </div>

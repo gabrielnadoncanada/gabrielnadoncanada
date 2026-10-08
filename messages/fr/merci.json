@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Demande reçue | Gabriel Nadon",
+    "description": "Votre demande est bien reçue. Réponse sous 24 h — ou réservez directement vos 20 minutes de diagnostic.",
+    "ogTitle": "Demande reçue",
+    "ogDescription": "Votre demande est bien reçue. Réponse sous 24 h."
+  },
+  "hero": {
+    "eyebrow": "Demande reçue",
+    "title": "C’est noté. Je vous réponds <italic>sous 24 heures.</italic>",
+    "lead": "Une confirmation vient de partir dans votre boîte courriel (vérifiez vos indésirables au besoin). Je lis chaque demande moi-même et je reviens vers vous avec de premières pistes — pas un courriel automatique de plus.",
+    "otherLang": "Thank you — your request is in. I’ll reply within 24 hours, in English."
+  },
+  "card": {
+    "label": "Envie d’aller plus vite ?",
+    "text": "Choisissez votre plage de 20 minutes tout de suite",
+    "cta": "Réserver mes 20 minutes",
+    "note": "Gratuit, sans obligation. Vous repartez avec les gestes à poser en premier — que l’on travaille ensemble ou non."
+  },
+  "wait": {
+    "label": "En attendant",
+    "text": "Voyez comment une épicerie du Québec a récupéré 56 000 $ par année en éliminant une seule tâche manuelle.",
+    "cta": "Lire le cas →"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "ticker": {
+    "available": "Available · 2 projects · {quarter}",
+    "quarter": "Q{q} {year}",
+    "practice": "Independent practice · Montreal"
+  },
+  "header": {
+    "brandLabel": "Gabriel Nadon — Operations systems for SMBs",
+    "brandSub": "Operations systems",
+    "cta": "Review my operations",
+    "ctaShort": "Let’s talk",
+    "switchLabel": "Français",
+    "switchAria": "Lire cette page en français",
+    "nav": {
+      "situation": "The problem",
+      "method": "Method",
+      "services": "Services",
+      "case": "Case study",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "sub": "Operations systems · SMBs",
+    "desc": "I replace the manual tracking SMBs live with — spreadsheets, email, ill-fitting software — with systems that keep information in one place and do part of the work.",
+    "contact": "Contact",
+    "available": "2 projects available · {quarter}",
+    "location": "Montreal, Quebec · remote",
+    "social": "Social",
+    "navigation": "Navigation",
+    "services": "Services",
+    "free": "Free guides and tools",
+    "freeShort": "Free",
+    "cases": "Case studies",
+    "rights": "All rights reserved",
+    "toTop": "Back to top",
+    "home": "Back to home",
+    "language": "Version française"
+  },
+  "links": {
+    "consultantIa": "AI consultant for SMBs",
+    "agentsIa": "AI agents",
+    "documents": "Invoice and document processing",
+    "documentsShort": "Document processing",
+    "automatisation": "Process automation",
+    "logiciel": "Custom software",
+    "refonte": "System replacement",
+    "calculateur": "Manual work cost calculator",
+    "quiz": "“Is my business AI-ready?” test",
+    "guideAutomatisation": "Guide: automating your SMB",
+    "guideAutomatisationShort": "SMB automation guide",
+    "comparatifEpicerie": "Grocery software comparison",
+    "barometre": "2026 SMB barometer"
+  },
+  "service": {
+    "ctaPrimary": "Describe your process",
+    "ctaProof": "See a real case",
+    "who": "<strong>Gabriel Nadon</strong>, independent consultant in Montreal. You talk to the person who builds it.",
+    "calendly": "Or book your 20 minutes now",
+    "home": "Home"
+  },
+  "notFound": {
+    "title": "Page not found | Gabriel Nadon",
+    "kicker": "Error 404",
+    "heading": "This page doesn’t exist (anymore).",
+    "lead": "The link may be outdated. Here are the most useful pages:",
+    "home": "Back to home",
+    "english": "English website"
+  }
+}

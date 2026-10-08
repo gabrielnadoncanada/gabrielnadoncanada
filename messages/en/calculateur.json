@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Calculator: what does manual work really cost you? | Gabriel Nadon",
+    "description": "Prices retyped by hand, double data entry, reports rebuilt every week: find out in 30 seconds what your manual tasks cost per year. Free, with a downloadable Excel template. Quebec SMBs.",
+    "ogTitle": "What does manual work cost you? — Free calculator",
+    "ogDescription": "Find out in 30 seconds what your manual tasks cost per year. A Quebec grocery store found $56,000/year in a single task."
+  },
+  "jsonld": {
+    "appName": "Manual work cost calculator",
+    "appDescription": "Calculates the annual cost of a repetitive manual task (hours × people × hourly cost) for an SMB.",
+    "faq": [
+      {
+        "q": "How do you calculate the cost of a manual task in an SMB?",
+        "a": "Multiply the hours spent per week by the number of people doing it, by the loaded hourly cost (wages + payroll costs), then by 50 weeks. Example: 8 hours × 1 person × $25/h × 50 weeks = $10,000 per year, for a single task."
+      },
+      {
+        "q": "Which hourly cost should I use in the calculation?",
+        "a": "The “loaded” cost: the hourly wage plus payroll taxes and benefits, roughly 1.2 to 1.4 times the gross wage. For an employee paid $20/h, count $24 to $28/h in real cost."
+      },
+      {
+        "q": "At what amount is automation worth it?",
+        "a": "Simple rule: if the task costs more per year than the project that eliminates it, it pays for itself in under twelve months. An automation sprint starts at $4,500; a task costing $10,000/year pays it back in about six months. Below that threshold, doing nothing is often the better call — and I’ll tell you so."
+      }
+    ]
+  },
+  "page": {
+    "eyebrow": "Free tool · 30 seconds · no email required",
+    "title": "What does the work <italic>nobody has put a number on cost you?</italic>",
+    "lead": "Supplier prices retyped by hand. Invoicing that eats up two days. The Monday report pieced together from three files. None of those hours shows up in your financial statements — but every one of them is on the payroll. Enter three numbers: the calculator gives you the annual amount, and how long it would take to get it back.",
+    "proof": "This is exactly the calculation that uncovered <a>$56,000 a year in a single task at a Quebec grocery store →</a>",
+    "excel": {
+      "label": "Free Excel version",
+      "text": "Prefer to work through it as a team, task by task? The same calculation as an Excel template: list up to 15 manual tasks, and the totals and ranking take care of themselves.",
+      "link": "Download the template (.xlsx, free, no email; in French) →"
+    },
+    "read": {
+      "eyebrow": "How to read your result",
+      "steps": [
+        {
+          "title": "Under $4,500 a year",
+          "text": "Automating probably isn’t worth it — the project would cost more than the chore. Keep the template and run the numbers again when volume grows."
+        },
+        {
+          "title": "Between $4,500 and $15,000",
+          "text": "Sprint territory: one chore eliminated in 2 to 3 weeks, fixed scope, fixed price (from $4,500). The project pays for itself within the first year."
+        },
+        {
+          "title": "Above $15,000",
+          "text": "There are probably several tasks — or an entire system — to rethink. That’s where a phased system replacement fits: each phase delivered and paid back before the next one starts."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "The logical next step",
+      "title": "You have a number. <italic>Let’s check it together.</italic>",
+      "lead": "In 20 minutes on the phone, we validate your calculation, look at what’s behind the task, and I tell you honestly whether it’s worth a project — or not. Free, no obligation.",
+      "book": "Book my 20 minutes",
+      "writeLabel": "Or in writing",
+      "write": "Describe my situation"
+    }
+  },
+  "tool": {
+    "tache": "The manual task",
+    "presets": [
+      "Supplier prices retyped by hand",
+      "Invoicing / quotes",
+      "Double data entry between two systems",
+      "Reports rebuilt every week"
+    ],
+    "other": "Other repetitive task",
+    "heures": "Hours per week",
+    "personnes": "People doing it",
+    "taux": "Loaded hourly cost",
+    "tauxOpt": "(wages + payroll costs, $/h)",
+    "calculer": "Calculate what it costs me",
+    "money": "${amount}",
+    "kicker": "What this task costs you",
+    "perYear": "/ year",
+    "sub": "{heures} h/week × {personnes, plural, one {# person} other {# people}} × ${taux}/h × {semaines} weeks. Over 5 years: {total} — not counting data-entry errors.",
+    "payback": "An automation sprint at {sprint} would pay for itself in about {weeks, plural, one {# week} other {# weeks}}.",
+    "below": "Under {sprint}/year, a sprint probably isn’t justified — and I’d tell you so on the phone.",
+    "failedTitle": "Something went wrong on our end.",
+    "failedText": "Your calculation wasn’t sent. <mail>Send it by email</mail> (already written), or <cal>book 20 minutes</cal>.",
+    "intro": "Get this detailed calculation + 2-3 concrete ideas for this task, by email. A real person replies within 24 hours.",
+    "nom": "Name",
+    "email": "Email",
+    "required": "Your name and a valid email are required.",
+    "sending": "Sending…",
+    "submit": "Get my calculation and ideas",
+    "note": "Or <cal>book 20 minutes directly</cal> to go over it together.",
+    "mail": {
+      "header": "[Manual work cost calculator]",
+      "tache": "Task: {tache}",
+      "calc": "{heures} h/week × {personnes} person(s) × ${taux}/h × {semaines} weeks = {annuel}/year ({total} over 5 years)",
+      "subject": "My calculation — {tache} ({nom})",
+      "nom": "Name: {nom}",
+      "email": "Email: {email}",
+      "from": "(Sent from gabrielnadon.com/en/calculator/)"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "systeme": {
+    "meta": {
+      "title": "Refonte de système informatique pour PME au Québec | Gabriel Nadon",
+      "description": "Votre logiciel maison, votre vieux système ou vos fichiers Excel vous ralentissent ? Refonte par étapes, sans perte de données ni interruption d'opérations. Diagnostic gratuit de 20 minutes, au Québec.",
+      "ogTitle": "Refonte de système : moderniser sans arrêter vos opérations",
+      "ogDescription": "Refonte par étapes de logiciels maison, vieux systèmes et processus Excel : données migrées, zéro interruption. PME du Québec.",
+      "twitterDescription": "Refonte par étapes de logiciels maison, vieux systèmes et processus Excel : données migrées, zéro interruption."
+    },
+    "jsonld": {
+      "name": "Refonte de système informatique",
+      "serviceType": "Refonte et modernisation de systèmes",
+      "description": "Refonte par étapes de logiciels maison, systèmes vieillissants et processus Excel pour PME : cartographie, migration des données, bascule sans interruption d'opérations.",
+      "home": "Accueil",
+      "crumb": "Refonte de système"
+    },
+    "nav": {
+      "approach": "Approche",
+      "method": "Méthode",
+      "cases": "Cas concrets",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Refonte de système · PME du Québec",
+      "title": "Votre entreprise roule sur un système que <em>plus personne n’ose toucher.</em>",
+      "lead": "Il a été programmé il y a quinze ans par quelqu’un qui est parti depuis longtemps. Chaque bogue devient une prière. Chaque nouveau besoin finit dans un Excel de plus, une double saisie de plus. Vous avancez sur des œufs — et au fond, vous attendez le jour où ça va lâcher. On remplace ce système morceau par morceau, sans big bang, sans perdre une seule donnée, sans arrêter vos opérations une seule journée."
+    },
+    "risks": {
+      "kicker": "Le coût de ne rien faire",
+      "items": [
+        "Un seul ordinateur qui meurt, et des années de données parties avec lui.",
+        "La personne qui « comprend le système » qui tombe malade, ou prend sa retraite.",
+        "Des contrats refusés parce que le système ne suit plus la croissance.",
+        "Des heures de double saisie, payées chaque semaine, sans que ça paraisse nulle part."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Vous vous reconnaissez ?",
+      "title": "Ce ne sont pas des inconvénients. Ce sont des risques.",
+      "text": "Aucun n’est assez grave pour tout arrêter aujourd’hui. C’est exactement le piège : on repousse, on contourne, on s’habitue — jusqu’au jour où l’un d’eux se transforme en crise.",
+      "items": [
+        "Un bogue apparaît, et toute l’équipe retient son souffle en espérant qu’il se règle tout seul.",
+        "Une seule personne sait comment le système fonctionne vraiment. Quand elle est absente, tout ralentit.",
+        "Vous payez encore la licence d’un logiciel que le fournisseur n’entretient plus depuis des années.",
+        "La « vraie » base de données, c’est trois fichiers Excel que quelqu’un met à jour à la main, chaque semaine.",
+        "Vous avez déjà dit non à un projet parce que « le système ne peut pas faire ça »."
+      ]
+    },
+    "why": {
+      "eyebrow": "Pourquoi tant de refontes échouent",
+      "quote": "Le « big bang » — tout remplacer d’un coup — est la première cause d’échec.",
+      "body": "Dix-huit mois de développement, une bascule un vendredi soir, et le lundi matin rien ne fonctionne comme avant. C’est le scénario qui fait peur, avec raison. Notre démarche prend le contre-pied : l’ancien système reste en service, et on le remplace tranche par tranche, en commençant par ce qui vous fait le plus mal.",
+      "principles": [
+        {
+          "title": "Jamais de big bang",
+          "text": "Chaque tranche livrée est utilisée avant d’attaquer la suivante. Vous voyez la valeur en semaines, pas en années."
+        },
+        {
+          "title": "Vos données d’abord",
+          "text": "Migration testée et validée avec vos chiffres réels avant toute bascule. Rien ne se perd en chemin."
+        },
+        {
+          "title": "Réversible à chaque étape",
+          "text": "Tant que la tranche n’est pas éprouvée, l’ancien chemin reste disponible. On avance sans brûler les ponts."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "La démarche, en cinq étapes",
+      "items": [
+        {
+          "title": "Cartographie de l’existant",
+          "text": "On documente ce que fait vraiment votre système — y compris les contournements Excel et les règles que seule une personne connaît."
+        },
+        {
+          "title": "Priorisation par la douleur",
+          "text": "On découpe la refonte en tranches et on commence par celle qui vous coûte le plus d’heures ou de risques."
+        },
+        {
+          "title": "Refonte de la première tranche",
+          "text": "Le nouveau module est construit et branché à l’ancien système, qui reste en service. Votre équipe valide sur du réel."
+        },
+        {
+          "title": "Migration des données",
+          "text": "Vos historiques sont transférés, testés et rapprochés — les totaux doivent balancer avant d’aller plus loin."
+        },
+        {
+          "title": "Bascule et tranche suivante",
+          "text": "Quand la tranche est éprouvée, l’ancien morceau est retiré. On enchaîne sur la suivante, au rythme de vos opérations."
+        }
+      ]
+    },
+    "proof": {
+      "label": "Sur le terrain",
+      "case": "Une épicerie du Québec a branché son vieux système de caisse à un moteur moderne de synchronisation des prix — sans le remplacer, sans interruption.",
+      "caseLink": "Lire le cas →",
+      "custom": "Pas de système à remplacer, mais un Excel devenu ingérable ?",
+      "customLink": "Logiciel sur mesure pour PME →"
+    },
+    "cta": {
+      "eyebrow": "Premier pas",
+      "title": "Vingt minutes pour cadrer <em>votre refonte.</em>",
+      "lead": "Décrivez-moi votre système actuel et où il coince : vous repartez avec un premier découpage en tranches et une idée honnête de l’effort — que l’on travaille ensemble ou non.",
+      "button": "Discuter de votre refonte",
+      "direct": "Ou directement",
+      "calendly": "Réserver 20 min (Calendly)"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function track(name: string) {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
@@ -8,17 +9,14 @@ function track(name: string) {
   }
 }
 
-type Champ = {
-  key: string;
-  label: string;
-  options: string[];
-};
-
-const CHAMPS: Champ[] = [
+// Valeurs envoyées à functions/api/barometre.js : toujours les libellés
+// français, quelle que soit la langue de la page (les réponses EN et FR se
+// compilent ensemble). Le libellé affiché vient des messages
+// (barometre.tool.fields.<clé>.options, même ordre, même longueur).
+const CHAMPS: Array<{ key: string; valeurs: string[] }> = [
   {
     key: "secteur",
-    label: "Votre secteur d’activité",
-    options: [
+    valeurs: [
       "Commerce de détail / alimentation",
       "Construction",
       "Manufacturier",
@@ -31,13 +29,11 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "employes",
-    label: "Nombre d’employés",
-    options: ["1 à 4", "5 à 19", "20 à 49", "50 à 99", "100 et plus"],
+    valeurs: ["1 à 4", "5 à 19", "20 à 49", "50 à 99", "100 et plus"],
   },
   {
     key: "region",
-    label: "Votre région",
-    options: [
+    valeurs: [
       "Montréal",
       "Montérégie",
       "Capitale-Nationale (Québec)",
@@ -52,8 +48,7 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "donnees",
-    label: "Vos données d’entreprise (clients, produits, commandes) vivent surtout…",
-    options: [
+    valeurs: [
       "Dans les courriels, le papier ou la mémoire des gens",
       "Dans des fichiers Excel",
       "Dans un ou des logiciels (caisse, CRM, comptabilité)",
@@ -62,9 +57,7 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "heures",
-    label:
-      "Heures par semaine passées en tâches manuelles répétitives (saisie, recopiage, rapports), dans toute l’entreprise",
-    options: [
+    valeurs: [
       "Moins de 2 h",
       "2 à 5 h",
       "6 à 10 h",
@@ -75,8 +68,7 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "ia_usage",
-    label: "L’IA générative (ChatGPT, Claude, Copilot…) dans votre entreprise, c’est…",
-    options: [
+    valeurs: [
       "Pas utilisée du tout",
       "Des essais individuels, sans cadre",
       "Un usage régulier pour certaines tâches",
@@ -85,13 +77,11 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "automatisation",
-    label: "Avez-vous automatisé au moins un processus dans les 12 derniers mois ?",
-    options: ["Oui", "Non", "En cours / en projet"],
+    valeurs: ["Oui", "Non", "En cours / en projet"],
   },
   {
     key: "obstacle",
-    label: "Votre principal frein à l’automatisation ou à l’IA",
-    options: [
+    valeurs: [
       "Manque de temps pour s’en occuper",
       "Coût / budget",
       "On ne sait pas par où commencer",
@@ -102,8 +92,7 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "budget",
-    label: "Budget prévu pour l’automatisation ou l’IA dans les 12 prochains mois",
-    options: [
+    valeurs: [
       "0 $",
       "Moins de 5 000 $",
       "5 000 $ à 15 000 $",
@@ -114,13 +103,11 @@ const CHAMPS: Champ[] = [
   },
   {
     key: "penurie",
-    label: "La difficulté à recruter vous pousse-t-elle vers l’automatisation ?",
-    options: ["Oui, fortement", "Un peu", "Non", "On ne recrute pas"],
+    valeurs: ["Oui, fortement", "Un peu", "Non", "On ne recrute pas"],
   },
   {
     key: "loi25",
-    label: "La Loi 25 (protection des renseignements personnels), chez vous…",
-    options: [
+    valeurs: [
       "On est conformes",
       "On connaît, mais on n’est pas conformes",
       "On en a entendu parler, sans plus",
@@ -130,6 +117,7 @@ const CHAMPS: Champ[] = [
 ];
 
 export function BarometreForm() {
+  const t = useTranslations("barometre.tool");
   const [values, setValues] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -141,13 +129,16 @@ export function BarometreForm() {
     const manquants = CHAMPS.filter((c) => !values[c.key]);
     if (manquants.length > 0) {
       setError(
-        `Il reste ${manquants.length} question(s) sans réponse — la première : « ${manquants[0].label} »`,
+        t("missing", {
+          n: manquants.length,
+          label: t(`fields.${manquants[0].key}.label`),
+        }),
       );
       return;
     }
     const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
     if (email && !/.+@.+\..+/.test(email)) {
-      setError("Le courriel entré n’est pas valide (il est facultatif — vous pouvez le laisser vide).");
+      setError(t("invalidEmail"));
       return;
     }
     setError(null);
@@ -178,12 +169,8 @@ export function BarometreForm() {
   if (state === "sent") {
     return (
       <div className="form-done">
-        <p className="form-done-title">Merci — votre réponse est enregistrée.</p>
-        <p className="form-done-text">
-          Les résultats compilés seront publiés sur cette page. Si vous avez
-          laissé votre courriel, vous les recevrez en primeur, avec les chiffres
-          par secteur.
-        </p>
+        <p className="form-done-title">{t("sentTitle")}</p>
+        <p className="form-done-text">{t("sentText")}</p>
       </div>
     );
   }
@@ -191,11 +178,11 @@ export function BarometreForm() {
   if (state === "failed") {
     return (
       <div className="form-done">
-        <p className="form-done-title">Un pépin technique est survenu.</p>
+        <p className="form-done-title">{t("failedTitle")}</p>
         <p className="form-done-text">
-          Votre réponse n’est pas partie. Réessayez dans quelques minutes, ou
-          écrivez à{" "}
-          <a href="mailto:bonjour@gabrielnadon.com">bonjour@gabrielnadon.com</a>.
+          {t.rich("failedText", {
+            mail: (chunks) => <a href="mailto:bonjour@gabrielnadon.com">{chunks}</a>,
+          })}
         </p>
       </div>
     );
@@ -203,48 +190,49 @@ export function BarometreForm() {
 
   return (
     <form noValidate onSubmit={onSubmit}>
-      {CHAMPS.map((c) => (
-        <div className="form-field" key={c.key}>
-          <label className="form-label" htmlFor={`bar-${c.key}`}>
-            {c.label}
-          </label>
-          <select
-            className="form-input"
-            id={`bar-${c.key}`}
-            value={values[c.key] ?? ""}
-            onChange={(e) =>
-              setValues((prev) => ({ ...prev, [c.key]: e.target.value }))
-            }
-          >
-            <option value="" disabled>
-              Choisir…
-            </option>
-            {c.options.map((o) => (
-              <option key={o}>{o}</option>
-            ))}
-          </select>
-        </div>
-      ))}
+      {CHAMPS.map((c) => {
+        const libelles = t.raw(`fields.${c.key}.options`) as string[];
+        return (
+          <div className="form-field" key={c.key}>
+            <label className="form-label" htmlFor={`bar-${c.key}`}>
+              {t(`fields.${c.key}.label`)}
+            </label>
+            <select
+              className="form-input"
+              id={`bar-${c.key}`}
+              value={values[c.key] ?? ""}
+              onChange={(e) =>
+                setValues((prev) => ({ ...prev, [c.key]: e.target.value }))
+              }
+            >
+              <option value="" disabled>
+                {t("choose")}
+              </option>
+              {c.valeurs.map((v, i) => (
+                <option key={v} value={v}>
+                  {libelles[i] ?? v}
+                </option>
+              ))}
+            </select>
+          </div>
+        );
+      })}
 
       <div className="form-field">
         <label className="form-label" htmlFor="bar-commentaire">
-          La tâche manuelle qui vous pèse le plus{" "}
-          <span className="form-opt">(facultatif, en vos mots)</span>
+          {t("commentaire")} <span className="form-opt">{t("commentaireOpt")}</span>
         </label>
         <textarea
           className="form-input form-textarea"
           id="bar-commentaire"
           name="commentaire"
-          placeholder="Ex. : retaper les prix des fournisseurs chaque semaine…"
+          placeholder={t("placeholder")}
         ></textarea>
       </div>
 
       <div className="form-field">
         <label className="form-label" htmlFor="bar-email">
-          Courriel{" "}
-          <span className="form-opt">
-            (facultatif — pour recevoir les résultats en primeur)
-          </span>
+          {t("email")} <span className="form-opt">{t("emailOpt")}</span>
         </label>
         <input
           className="form-input"
@@ -273,13 +261,10 @@ export function BarometreForm() {
 
       {error ? <p className="form-error">{error}</p> : null}
       <button type="submit" className="btn-block" disabled={submitting}>
-        {submitting ? "Envoi en cours…" : "Envoyer mes réponses "}
+        {submitting ? t("sending") : `${t("submit")} `}
         {submitting ? null : <span>→</span>}
       </button>
-      <p className="form-note">
-        2 minutes, 11 questions. Réponses anonymes — le courriel est facultatif
-        et sert uniquement à vous envoyer les résultats.
-      </p>
+      <p className="form-note">{t("note")}</p>
     </form>
   );
 }

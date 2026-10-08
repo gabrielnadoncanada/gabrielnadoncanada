@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Baromètre IA & automatisation des PME du Québec — édition 2026 | Gabriel Nadon",
+    "description": "Où en sont vraiment les PME québécoises avec l’IA et l’automatisation ? Participez au baromètre 2026 : 11 questions, 2 minutes, réponses anonymes. Recevez les résultats compilés par secteur en primeur.",
+    "ogTitle": "Baromètre IA & automatisation des PME du Québec — édition 2026",
+    "ogDescription": "11 questions, 2 minutes. Où en sont vraiment les PME québécoises avec l’IA ? Participez et recevez les résultats par secteur."
+  },
+  "jsonld": {
+    "name": "Baromètre IA & automatisation des PME du Québec — édition 2026",
+    "description": "Enquête annuelle sur l’adoption de l’IA et de l’automatisation dans les PME québécoises : usage réel, heures perdues en tâches manuelles, freins et budgets.",
+    "crumb": "Baromètre IA & automatisation des PME du Québec"
+  },
+  "page": {
+    "eyebrow": "Enquête annuelle · édition 2026 · 2 minutes",
+    "title": "Où en sont <italic>vraiment</italic> les PME du Québec avec l’IA ?",
+    "lead": "Les grandes enquêtes mesurent l’adoption. Personne ne mesure le terrain : combien d’heures par semaine partent encore en saisie manuelle, qui utilise l’IA en cachette de son patron, et ce qui bloque réellement les projets. Ce baromètre pose ces questions-là, à des dirigeants de PME comme vous. Les résultats compilés — par secteur et par taille — seront publiés ici, gratuitement.",
+    "cta": "Participer — 11 questions",
+    "ctaNote": "Anonyme. Le courriel est facultatif et sert uniquement à vous envoyer les résultats en primeur.",
+    "known": {
+      "kicker": "Ce qu’on sait déjà — et le trou",
+      "num": "12,7 %",
+      "cur": "seulement",
+      "sub": "des entreprises québécoises utilisent l’IA (Institut de la statistique du Québec, 2024-2025), alors que 52 % des adultes québécois l’utilisent à titre personnel (NETendances 2025).",
+      "plus": "Pourquoi l’écart ? C’est exactement ce que ce baromètre mesure."
+    },
+    "how": {
+      "eyebrow": "Comment ça fonctionne",
+      "steps": [
+        {
+          "title": "Vous répondez — 2 minutes",
+          "text": "Onze questions à choix de réponses : vos données, vos heures manuelles, votre usage de l’IA, vos freins, votre budget. Aucune bonne ou mauvaise réponse."
+        },
+        {
+          "title": "Je compile — anonymement",
+          "text": "Les réponses sont agrégées par secteur et par taille d’entreprise. Aucune réponse individuelle n’est publiée ni partagée — jamais."
+        },
+        {
+          "title": "Tout le monde reçoit les résultats",
+          "text": "Les chiffres compilés sont publiés sur cette page et envoyés en primeur aux participants qui ont laissé leur courriel — avec le détail par secteur, pour vous comparer à vos pairs."
+        }
+      ]
+    },
+    "survey": {
+      "eyebrow": "Le baromètre — édition 2026",
+      "title": "Onze questions. <italic>Vos pairs veulent vos réponses.</italic>",
+      "lead": "Chaque réponse rend le portrait plus fidèle — surtout si votre entreprise n’a encore « rien fait » avec l’IA : c’est précisément la réalité que les enquêtes officielles peinent à capter."
+    }
+  },
+  "tool": {
+    "fields": {
+      "secteur": {
+        "label": "Votre secteur d’activité",
+        "options": [
+          "Commerce de détail / alimentation",
+          "Construction",
+          "Manufacturier",
+          "Services professionnels",
+          "Restauration / hôtellerie",
+          "Transport / logistique",
+          "Santé / services à la personne",
+          "Autre"
+        ]
+      },
+      "employes": {
+        "label": "Nombre d’employés",
+        "options": ["1 à 4", "5 à 19", "20 à 49", "50 à 99", "100 et plus"]
+      },
+      "region": {
+        "label": "Votre région",
+        "options": [
+          "Montréal",
+          "Montérégie",
+          "Capitale-Nationale (Québec)",
+          "Laurentides / Lanaudière",
+          "Estrie / Centre-du-Québec",
+          "Mauricie",
+          "Outaouais",
+          "Saguenay–Lac-Saint-Jean",
+          "Autre région du Québec",
+          "Hors Québec"
+        ]
+      },
+      "donnees": {
+        "label": "Vos données d’entreprise (clients, produits, commandes) vivent surtout…",
+        "options": [
+          "Dans les courriels, le papier ou la mémoire des gens",
+          "Dans des fichiers Excel",
+          "Dans un ou des logiciels (caisse, CRM, comptabilité)",
+          "Un mélange de tout ça"
+        ]
+      },
+      "heures": {
+        "label": "Heures par semaine passées en tâches manuelles répétitives (saisie, recopiage, rapports), dans toute l’entreprise",
+        "options": [
+          "Moins de 2 h",
+          "2 à 5 h",
+          "6 à 10 h",
+          "11 à 20 h",
+          "Plus de 20 h",
+          "Aucune idée"
+        ]
+      },
+      "ia_usage": {
+        "label": "L’IA générative (ChatGPT, Claude, Copilot…) dans votre entreprise, c’est…",
+        "options": [
+          "Pas utilisée du tout",
+          "Des essais individuels, sans cadre",
+          "Un usage régulier pour certaines tâches",
+          "Intégrée à au moins un processus d’affaires"
+        ]
+      },
+      "automatisation": {
+        "label": "Avez-vous automatisé au moins un processus dans les 12 derniers mois ?",
+        "options": ["Oui", "Non", "En cours / en projet"]
+      },
+      "obstacle": {
+        "label": "Votre principal frein à l’automatisation ou à l’IA",
+        "options": [
+          "Manque de temps pour s’en occuper",
+          "Coût / budget",
+          "On ne sait pas par où commencer",
+          "Confidentialité et sécurité des données",
+          "Pas convaincu du retour sur investissement",
+          "Manque de compétences à l’interne"
+        ]
+      },
+      "budget": {
+        "label": "Budget prévu pour l’automatisation ou l’IA dans les 12 prochains mois",
+        "options": [
+          "0 $",
+          "Moins de 5 000 $",
+          "5 000 $ à 15 000 $",
+          "15 000 $ à 50 000 $",
+          "Plus de 50 000 $",
+          "Pas encore décidé"
+        ]
+      },
+      "penurie": {
+        "label": "La difficulté à recruter vous pousse-t-elle vers l’automatisation ?",
+        "options": ["Oui, fortement", "Un peu", "Non", "On ne recrute pas"]
+      },
+      "loi25": {
+        "label": "La Loi 25 (protection des renseignements personnels), chez vous…",
+        "options": [
+          "On est conformes",
+          "On connaît, mais on n’est pas conformes",
+          "On en a entendu parler, sans plus",
+          "Jamais entendu parler"
+        ]
+      }
+    },
+    "choose": "Choisir…",
+    "commentaire": "La tâche manuelle qui vous pèse le plus",
+    "commentaireOpt": "(facultatif, en vos mots)",
+    "placeholder": "Ex. : retaper les prix des fournisseurs chaque semaine…",
+    "email": "Courriel",
+    "emailOpt": "(facultatif — pour recevoir les résultats en primeur)",
+    "missing": "Il reste {n} question(s) sans réponse — la première : « {label} »",
+    "invalidEmail": "Le courriel entré n’est pas valide (il est facultatif — vous pouvez le laisser vide).",
+    "sending": "Envoi en cours…",
+    "submit": "Envoyer mes réponses",
+    "note": "2 minutes, 11 questions. Réponses anonymes — le courriel est facultatif et sert uniquement à vous envoyer les résultats.",
+    "sentTitle": "Merci — votre réponse est enregistrée.",
+    "sentText": "Les résultats compilés seront publiés sur cette page. Si vous avez laissé votre courriel, vous les recevrez en primeur, avec les chiffres par secteur.",
+    "failedTitle": "Un pépin technique est survenu.",
+    "failedText": "Votre réponse n’est pas partie. Réessayez dans quelques minutes, ou écrivez à <mail>bonjour@gabrielnadon.com</mail>."
+  }
+}

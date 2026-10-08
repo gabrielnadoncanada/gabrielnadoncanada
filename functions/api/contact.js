@@ -20,6 +20,18 @@ const SUJETS = new Set([
   "Site web",
   "Autre sujet",
 ]);
+// Libellés anglais des sujets, pour l'auto-réponse au prospect anglophone
+// (la valeur reçue reste le libellé français, cf. SUJETS).
+const SUJETS_EN = {
+  "Diagnostic de mes opérations": "Review of my operations",
+  "Projet d’IA ou d’agent IA": "AI project or AI agent",
+  "Automatiser un processus": "Automate a process",
+  "Traitement de documents ou de factures": "Document or invoice processing",
+  "Système opérationnel sur mesure": "Custom software / internal system",
+  "Refonte d’un système existant": "Replace an existing system",
+  "Site web": "Website",
+  "Autre sujet": "Something else",
+};
 // Clés d'attribution acceptées telles quelles depuis le client.
 const ATTR_KEYS = [
   "utm_source",
@@ -106,6 +118,8 @@ export async function onRequestPost({ request, env }) {
   const tel = String(data.tel || "").trim().slice(0, 40);
   const page = String(data.page || "").trim().slice(0, 200);
   const attribution = cleanAttribution(data.attribution);
+  // Langue du prospect : envoyée par le formulaire, sinon déduite de la page.
+  const lang = data.lang === "en" || page.startsWith("/en/") ? "en" : "fr";
 
   if (!nom || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return Response.json({ ok: false, error: "invalid_fields" }, { status: 400 });
@@ -131,6 +145,7 @@ export async function onRequestPost({ request, env }) {
     `<p><strong>Nom :</strong> ${esc(nom)}<br><strong>Courriel :</strong> ${esc(email)}` +
     (tel ? `<br><strong>Téléphone :</strong> ${esc(tel)}` : "") +
     (page ? `<br><strong>Page :</strong> ${esc(page)}` : "") +
+    `<br><strong>Langue :</strong> ${lang}` +
     `</p>` +
     (attrLines.length
       ? `<p style="color:#555;font-size:13px"><strong>Provenance</strong><br>${attrLines
@@ -143,7 +158,7 @@ export async function onRequestPost({ request, env }) {
     from: FROM,
     to: [DEST],
     reply_to: email,
-    subject: `🟢 Nouveau lead [${canal}] — ${sujet} (${email})`,
+    subject: `🟢 Nouveau lead [${canal}]${lang === "en" ? " [EN]" : ""} — ${sujet} (${email})`,
     text,
     html,
   });
@@ -155,24 +170,66 @@ export async function onRequestPost({ request, env }) {
   // Auto-réponse au prospect : confirme la réception et pousse vers Calendly
   // pendant que l'intérêt est chaud. Toute erreur ici est ignorée.
   const prenom = nom.split(" ")[0];
+  const reply =
+    lang === "en"
+      ? {
+          subject: "Got it — I’ll reply within 24 hours",
+          text:
+            `Hi ${prenom},
+
+` +
+            `Your request (“${SUJETS_EN[sujet]}”) came through. I read it myself and will get back to you within 24 hours.
+
+` +
+            `If you’d like to move faster, book your free 20-minute review directly (no commitment):
+${CAL}
+
+` +
+            `You’ll leave the call knowing what to tackle first and with an honest sense of the effort involved — whether or not we work together.
+
+` +
+            `Gabriel Nadon
+Consultant · Systems & AI — gabrielnadon.com/en/
+bonjour@gabrielnadon.com`,
+          html:
+            `<p>Hi ${esc(prenom)},</p>` +
+            `<p>Your request (“${esc(SUJETS_EN[sujet])}”) came through. I read it myself and will get back to you within 24&nbsp;hours.</p>` +
+            `<p>If you’d like to move faster: <a href="${CAL}">book your free 20-minute review directly</a> (no commitment).</p>` +
+            `<p>You’ll leave the call knowing what to tackle first and with an honest sense of the effort involved — whether or not we work together.</p>` +
+            `<p>Gabriel Nadon<br>Consultant · Systems &amp; AI — <a href="https://gabrielnadon.com/en/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
+        }
+      : {
+          subject: "Bien reçu — je vous réponds sous 24 h",
+          text:
+            `Bonjour ${prenom},
+
+` +
+            `Votre demande (« ${sujet} ») est bien reçue. Je la lis moi-même et je vous réponds d'ici 24 h.
+
+` +
+            `Si vous voulez aller plus vite : réservez directement vos 20 minutes de diagnostic (gratuit, sans obligation) :
+${CAL}
+
+` +
+            `Vous repartez de l'appel avec les gestes à poser en premier et une idée honnête de l'effort — que l'on travaille ensemble ou non.
+
+` +
+            `Gabriel Nadon
+Conseiller · Systèmes & IA — gabrielnadon.com
+bonjour@gabrielnadon.com`,
+          html:
+            `<p>Bonjour ${esc(prenom)},</p>` +
+            `<p>Votre demande (« ${esc(sujet)} ») est bien reçue. Je la lis moi-même et je vous réponds d'ici 24&nbsp;h.</p>` +
+            `<p>Si vous voulez aller plus vite&nbsp;: <a href="${CAL}">réservez directement vos 20&nbsp;minutes de diagnostic</a> (gratuit, sans obligation).</p>` +
+            `<p>Vous repartez de l'appel avec les gestes à poser en premier et une idée honnête de l'effort — que l'on travaille ensemble ou non.</p>` +
+            `<p>Gabriel Nadon<br>Conseiller · Systèmes &amp; IA — <a href="https://gabrielnadon.com/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
+        };
   try {
     await sendResend(env, {
       from: FROM_REPLY,
       to: [email],
       reply_to: DEST,
-      subject: "Bien reçu — je vous réponds sous 24 h",
-      text:
-        `Bonjour ${prenom},\n\n` +
-        `Votre demande (« ${sujet} ») est bien reçue. Je la lis moi-même et je vous réponds d'ici 24 h.\n\n` +
-        `Si vous voulez aller plus vite : réservez directement vos 20 minutes de diagnostic (gratuit, sans obligation) :\n${CAL}\n\n` +
-        `Vous repartez de l'appel avec les gestes à poser en premier et une idée honnête de l'effort — que l'on travaille ensemble ou non.\n\n` +
-        `Gabriel Nadon\nConseiller · Systèmes & IA — gabrielnadon.com\nbonjour@gabrielnadon.com`,
-      html:
-        `<p>Bonjour ${esc(prenom)},</p>` +
-        `<p>Votre demande (« ${esc(sujet)} ») est bien reçue. Je la lis moi-même et je vous réponds d'ici 24&nbsp;h.</p>` +
-        `<p>Si vous voulez aller plus vite&nbsp;: <a href="${CAL}">réservez directement vos 20&nbsp;minutes de diagnostic</a> (gratuit, sans obligation).</p>` +
-        `<p>Vous repartez de l'appel avec les gestes à poser en premier et une idée honnête de l'effort — que l'on travaille ensemble ou non.</p>` +
-        `<p>Gabriel Nadon<br>Conseiller · Systèmes &amp; IA — <a href="https://gabrielnadon.com/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
+      ...reply,
     });
   } catch {
     /* l'auto-réponse ne doit jamais faire échouer la soumission */

@@ -1,18 +1,28 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { getAttribution } from "@/components/AttributionTracker";
+import { href } from "@/i18n/navigation";
+import type { Locale } from "@/i18n/routing";
 
 const EMAIL = "bonjour@gabrielnadon.com";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 const SEMAINES = 50; // semaines travaillées par année (2 semaines de vacances)
 const SPRINT = 4500; // prix plancher publié du sprint d'automatisation
 
-const PRESETS = [
-  { label: "Prix fournisseurs retapés à la main", h: 8 },
-  { label: "Facturation / soumissions", h: 6 },
-  { label: "Double saisie entre deux systèmes", h: 5 },
-  { label: "Rapports refaits chaque semaine", h: 4 },
+// Heures par défaut de chaque tâche type (libellés : calculateur.tool.presets).
+const PRESET_HEURES = [8, 6, 5, 4];
+const AUTRE = PRESET_HEURES.length; // index de « Autre tâche répétitive »
+
+// Libellés envoyés au serveur dans le résumé (`detail`) : toujours en français,
+// quelle que soit la langue de la page — seul l'affichage est traduit.
+const TACHES_FR = [
+  "Prix fournisseurs retapés à la main",
+  "Facturation / soumissions",
+  "Double saisie entre deux systèmes",
+  "Rapports refaits chaque semaine",
+  "Autre tâche répétitive",
 ];
 
 function track(name: string) {
@@ -21,10 +31,22 @@ function track(name: string) {
   }
 }
 
-const fmt = new Intl.NumberFormat("fr-CA", { maximumFractionDigits: 0 });
+const fmtFr = new Intl.NumberFormat("fr-CA", { maximumFractionDigits: 0 });
 
 export function Calculateur() {
-  const [tache, setTache] = useState(PRESETS[0].label);
+  const t = useTranslations("calculateur.tool");
+  const locale = useLocale() as Locale;
+  const fmt = useMemo(
+    () =>
+      new Intl.NumberFormat(locale === "fr" ? "fr-CA" : "en-CA", {
+        maximumFractionDigits: 0,
+      }),
+    [locale],
+  );
+  const money = (n: number) => t("money", { amount: fmt.format(n) });
+  const presets = t.raw("presets") as string[];
+
+  const [tache, setTache] = useState(0);
   const [heures, setHeures] = useState(8);
   const [personnes, setPersonnes] = useState(1);
   const [taux, setTaux] = useState(25);
@@ -33,6 +55,8 @@ export function Calculateur() {
   const [submitting, setSubmitting] = useState(false);
   const [failed, setFailed] = useState<string | null>(null);
   const tracked = useRef(false);
+
+  const tacheLabel = tache < presets.length ? presets[tache] : t("other");
 
   const annuel = useMemo(
     () => Math.round(heures * personnes * taux * SEMAINES),
@@ -50,12 +74,29 @@ export function Calculateur() {
     }
   }
 
+  // Résumé envoyé au serveur : format historique, en français, inchangé.
   function resume() {
     return (
       `[Calculateur du coût du travail manuel]\n` +
-      `Tâche : ${tache}\n` +
+      `Tâche : ${TACHES_FR[tache]}\n` +
       `${heures} h/sem × ${personnes} personne(s) × ${taux} $/h × ${SEMAINES} sem` +
-      ` = ${fmt.format(annuel)} $/an (${fmt.format(cinqAns)} $ sur 5 ans)`
+      ` = ${fmtFr.format(annuel)} $/an (${fmtFr.format(cinqAns)} $ sur 5 ans)`
+    );
+  }
+
+  // Même résumé dans la langue de la page (courriel prérédigé du visiteur).
+  function resumeLocal() {
+    return (
+      `${t("mail.header")}\n` +
+      `${t("mail.tache", { tache: tacheLabel })}\n` +
+      t("mail.calc", {
+        heures,
+        personnes,
+        taux,
+        semaines: SEMAINES,
+        annuel: money(annuel),
+        total: money(cinqAns),
+      })
     );
   }
 
@@ -66,7 +107,7 @@ export function Calculateur() {
     const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
     const website = (form.elements.namedItem("website") as HTMLInputElement).value;
     if (!nom || !/.+@.+\..+/.test(email)) {
-      setError("Votre nom et un courriel valide sont requis.");
+      setError(t("required"));
       return;
     }
     setError(null);
@@ -91,10 +132,12 @@ export function Calculateur() {
       if (!r.ok) throw new Error("send_failed");
       await r.json();
       track("form_sent");
-      window.location.assign("/merci/");
+      window.location.assign(href(locale, "/merci"));
     } catch {
-      const subject = `Mon calcul — ${tache} (${nom})`;
-      const body = `${resume()}\n\nNom : ${nom}\nCourriel : ${email}\n\n(Envoyé depuis gabrielnadon.com/calculateur/)`;
+      const subject = t("mail.subject", { tache: tacheLabel, nom });
+      const body =
+        `${resumeLocal()}\n\n${t("mail.nom", { nom })}\n` +
+        `${t("mail.email", { email })}\n\n${t("mail.from")}`;
       setFailed(
         `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
       );
@@ -106,28 +149,30 @@ export function Calculateur() {
     <div className="cab-paper contact-card">
       <div className="form-field">
         <label className="form-label" htmlFor="calc-tache">
-          La tâche manuelle
+          {t("tache")}
         </label>
         <select
           className="form-input"
           id="calc-tache"
           value={tache}
           onChange={(e) => {
-            const p = PRESETS.find((x) => x.label === e.target.value);
-            setTache(e.target.value);
-            if (p) setHeures(p.h);
+            const i = Number(e.target.value);
+            setTache(i);
+            if (i < PRESET_HEURES.length) setHeures(PRESET_HEURES[i]);
           }}
         >
-          {PRESETS.map((p) => (
-            <option key={p.label}>{p.label}</option>
+          {presets.map((label, i) => (
+            <option key={label} value={i}>
+              {label}
+            </option>
           ))}
-          <option>Autre tâche répétitive</option>
+          <option value={AUTRE}>{t("other")}</option>
         </select>
       </div>
       <div className="form-row">
         <div className="form-field">
           <label className="form-label" htmlFor="calc-heures">
-            Heures par semaine
+            {t("heures")}
           </label>
           <input
             className="form-input"
@@ -142,7 +187,7 @@ export function Calculateur() {
         </div>
         <div className="form-field">
           <label className="form-label" htmlFor="calc-personnes">
-            Personnes qui la font
+            {t("personnes")}
           </label>
           <input
             className="form-input"
@@ -157,7 +202,7 @@ export function Calculateur() {
       </div>
       <div className="form-field">
         <label className="form-label" htmlFor="calc-taux">
-          Coût horaire chargé <span className="form-opt">(salaire + charges, $/h)</span>
+          {t("taux")} <span className="form-opt">{t("tauxOpt")}</span>
         </label>
         <input
           className="form-input"
@@ -170,58 +215,56 @@ export function Calculateur() {
         />
       </div>
       <button type="button" className="btn-block" onClick={calculer}>
-        Calculer ce que ça me coûte <span>→</span>
+        {t("calculer")} <span>→</span>
       </button>
 
       {computed ? (
         <div aria-live="polite">
           <div className="money-box u-mt-lg">
-            <div className="money-kicker">Ce que cette tâche vous coûte</div>
+            <div className="money-kicker">{t("kicker")}</div>
             <div className="money-fig">
-              <span className="num">{fmt.format(annuel)} $</span>
-              <span className="cur">/ an</span>
+              <span className="num">{money(annuel)}</span>
+              <span className="cur">{t("perYear")}</span>
             </div>
             <p className="money-sub">
-              {heures} h/sem × {personnes} personne{personnes > 1 ? "s" : ""} ×{" "}
-              {taux} $/h × {SEMAINES} semaines. Sur 5 ans :{" "}
-              {fmt.format(cinqAns)} $ — sans compter les erreurs de saisie.
+              {t("sub", {
+                heures,
+                personnes,
+                taux,
+                semaines: SEMAINES,
+                total: money(cinqAns),
+              })}
             </p>
             {annuel >= SPRINT ? (
               <p className="money-plus">
-                Un sprint d’automatisation à {fmt.format(SPRINT)} $ se
-                rembourserait en ± {paybackSemaines} semaine
-                {paybackSemaines > 1 ? "s" : ""}.
+                {t("payback", { sprint: money(SPRINT), weeks: paybackSemaines })}
               </p>
             ) : (
-              <p className="money-plus">
-                Sous {fmt.format(SPRINT)} $/an, un sprint ne se justifie
-                probablement pas — je vous le dirais tel quel au téléphone.
-              </p>
+              <p className="money-plus">{t("below", { sprint: money(SPRINT) })}</p>
             )}
           </div>
 
           {failed ? (
             <div className="form-done">
-              <p className="form-done-title">Un pépin technique est survenu.</p>
+              <p className="form-done-title">{t("failedTitle")}</p>
               <p className="form-done-text">
-                Votre calcul n’est pas parti.{" "}
-                <a href={failed}>Envoyez-le par courriel</a> (déjà rédigé), ou{" "}
-                <a href={CAL} target="_blank" rel="noopener">
-                  réservez 20 minutes
-                </a>
-                .
+                {t.rich("failedText", {
+                  mail: (chunks) => <a href={failed}>{chunks}</a>,
+                  cal: (chunks) => (
+                    <a href={CAL} target="_blank" rel="noopener">
+                      {chunks}
+                    </a>
+                  ),
+                })}
               </p>
             </div>
           ) : (
             <form noValidate onSubmit={onSubmit} className="u-mt-lg">
-              <p className="form-label">
-                Recevez ce calcul détaillé + 2-3 pistes concrètes pour cette
-                tâche, par courriel. Réponse humaine sous 24 h.
-              </p>
+              <p className="form-label">{t("intro")}</p>
               <div className="form-row">
                 <div className="form-field">
                   <label className="form-label" htmlFor="calc-nom">
-                    Nom
+                    {t("nom")}
                   </label>
                   <input
                     className="form-input"
@@ -233,7 +276,7 @@ export function Calculateur() {
                 </div>
                 <div className="form-field">
                   <label className="form-label" htmlFor="calc-email">
-                    Courriel
+                    {t("email")}
                   </label>
                   <input
                     className="form-input"
@@ -260,20 +303,22 @@ export function Calculateur() {
               />
               {error ? <p className="form-error">{error}</p> : null}
               <button type="submit" className="btn-block" disabled={submitting}>
-                {submitting ? "Envoi en cours…" : "Recevoir mon calcul et mes pistes "}
+                {submitting ? t("sending") : `${t("submit")} `}
                 {submitting ? null : <span>→</span>}
               </button>
               <p className="form-note">
-                Ou{" "}
-                <a
-                  href={CAL}
-                  target="_blank"
-                  rel="noopener"
-                  onClick={() => track("clic_audit")}
-                >
-                  réservez directement 20 minutes
-                </a>{" "}
-                pour le passer en revue ensemble.
+                {t.rich("note", {
+                  cal: (chunks) => (
+                    <a
+                      href={CAL}
+                      target="_blank"
+                      rel="noopener"
+                      onClick={() => track("clic_audit")}
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                })}
               </p>
             </form>
           )}

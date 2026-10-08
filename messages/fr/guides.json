@@ -1,0 +1,355 @@
+{
+  "automatisationPme": {
+    "meta": {
+      "title": "Automatiser ses processus : le guide pour PME québécoises (2026) | Gabriel Nadon",
+      "description": "Quoi automatiser en premier, dans quel ordre, à quel prix, avec quelles subventions (ESSOR, C3I, PME MTL) : le guide complet pour PME du Québec, appuyé sur un cas réel à 56 000 $/an. Avec calculateur et gabarit de priorisation gratuits.",
+      "ogTitle": "Automatiser ses processus : le guide pour PME québécoises (2026)",
+      "ogDescription": "Quoi automatiser en premier, à quel prix, avec quelles subventions — appuyé sur un cas réel à 56 000 $/an."
+    },
+    "jsonld": {
+      "headline": "Automatiser ses processus : le guide pour PME québécoises (2026)",
+      "description": "Guide complet : quels processus automatiser en premier, dans quel ordre, à quel coût, et avec quelles aides gouvernementales québécoises (ESSOR, C3I, PME MTL, MFOR).",
+      "breadcrumb": "Automatiser ses processus : le guide PME Québec",
+      "faq": [
+        {
+          "q": "Quels processus une PME devrait-elle automatiser en premier ?",
+          "a": "Ceux qui combinent trois traits : répétitifs (chaque semaine ou plus), fondés sur des règles claires (pas de jugement complexe), et coûteux en heures. En pratique : la mise à jour de prix et de catalogues, la facturation et les soumissions, la double saisie entre deux systèmes, les rapports hebdomadaires, les relances clients et le traitement de documents (PDF vers données). Commencez par UN seul processus — le plus coûteux — et chiffrez-le avant de commencer."
+        },
+        {
+          "q": "Quelles subventions existent au Québec pour automatiser en 2026 ?",
+          "a": "Les principales aides actives : ESSOR volet 1 d’Investissement Québec (ouvert jusqu’au 31 mars 2027) — 50 % des honoraires jusqu’à 20 000 $ pour un diagnostic numérique (1B) et jusqu’à 50 000 $ pour l’implantation du plan (1C), réservé aux entreprises de 250 employés ou moins avec un chiffre d’affaires d’au moins 2,5 M$ ; le crédit d’impôt C3I (15 à 25 % sur le matériel et les progiciels de gestion, jusqu’à fin 2029) ; le fonds innovation et productivité de PME MTL (jusqu’à 50 000 $, 80 % du projet, île de Montréal) ; et les subventions de formation de Services Québec (MFOR). Le PCAN fédéral est fermé aux nouvelles demandes depuis février 2024."
+        },
+        {
+          "q": "Combien coûte l’automatisation d’un processus dans une PME ?",
+          "a": "Au Québec, les fourchettes publiées par les fournisseurs vont d’environ 2 500 à 5 000 $ pour un premier processus simple, et de 8 000 à 18 000 $ pour un chantier de 3 à 5 processus. Mes propres prix publiés : sprint d’automatisation dès 4 500 $ (une corvée éliminée en 2-3 semaines), refonte de système par tranches d’environ 6 000 $, la plupart des refontes entre 12 000 et 30 000 $. La règle de décision : le projet doit se rembourser en moins de douze mois."
+        },
+        {
+          "q": "L’automatisation est-elle rentable pour une petite entreprise ?",
+          "a": "Oui, quand on choisit le bon processus : dans un cas documenté, une épicerie indépendante du Québec a récupéré près de 56 000 $ par année en éliminant la seule mise à jour manuelle de ses prix fournisseurs. Le test est simple : (heures par semaine × personnes × coût horaire × 50 semaines) — si ce montant dépasse le coût du projet, l’automatisation se rembourse en moins d’un an."
+        }
+      ]
+    },
+    "nav": {
+      "approach": "Approche",
+      "calculator": "Calculateur",
+      "cases": "Cas concrets",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Guide complet · PME du Québec · mis à jour août 2026",
+      "title": "Automatiser ses processus : par où commencer",
+      "titleItalic": "quand on est une PME d’ici.",
+      "lead": "Selon l’enquête FCEI × Investissement Québec (2025), la productivité est devenue la première motivation d’automatisation des PME québécoises — citée par 81 % des répondants — et la difficulté à recruter en pousse 59 % de plus. Le problème n’est plus « pourquoi », c’est « par quoi commencer, à quel prix, sans se tromper ». Ce guide répond dans cet ordre : quoi, dans quel ordre, combien, avec quelles aides — appuyé sur un cas réel, pas sur des promesses.",
+      "moneyKicker": "Le résultat d’UN processus bien choisi",
+      "moneyNum": "56 000 $",
+      "moneyCur": "/ an",
+      "moneySub": "récupérés par une épicerie indépendante du Québec en éliminant une seule tâche manuelle : la mise à jour des prix fournisseurs.",
+      "moneyLink": "Le cas complet, chiffres à l’appui →"
+    },
+    "step1": {
+      "eyebrow": "Étape 1 — Chiffrer avant tout",
+      "title": "Pas de chiffre, pas de projet.",
+      "p1": "La plupart des projets d’automatisation échouent avant de commencer : on choisit le processus le plus excitant au lieu du plus coûteux. La formule qui remet tout en ordre tient en une ligne : <strong>heures par semaine × personnes × coût horaire chargé × 50 semaines</strong>. Appliquez-la à chaque corvée récurrente. Les résultats surprennent toujours — la tâche « anodine » de 8 heures par semaine à 25 $/h coûte 10 000 $ par année.",
+      "p2": "Deux outils gratuits pour le faire proprement : <calc>le calculateur en ligne</calc> (30 secondes, une tâche) et <gabarit>le gabarit Excel de priorisation</gabarit> (jusqu’à 15 tâches, classement automatique par rendement et simplicité)."
+    },
+    "step2": {
+      "eyebrow": "Étape 2 — Les six processus au meilleur rendement",
+      "items": [
+        {
+          "title": "Prix et catalogues fournisseurs",
+          "text": "Des listes qui arrivent dans tous les formats et qu’on retape dans la caisse ou l’ERP. Le champion du rendement dans le commerce — c’est le processus du cas à 56 000 $. <guide>Les 4 méthodes comparées →</guide>"
+        },
+        {
+          "title": "Facturation et soumissions",
+          "text": "Refaire dans le logiciel comptable ce que le bon de travail dit déjà, assembler chaque soumission à la main. Règles claires, volume élevé : un candidat d’école pour l’automatisation."
+        },
+        {
+          "title": "La double saisie entre deux systèmes",
+          "text": "Caisse → comptabilité, CRM → facturation, boutique en ligne → inventaire. Chaque recopie est une erreur qui attend son tour. Se règle par connexion directe ou par un pont automatisé entre les deux."
+        },
+        {
+          "title": "Les rapports du lundi",
+          "text": "Le fichier réassemblé chaque semaine à partir de trois sources. Une fois automatisé, il arrive tout seul, à l’heure, sans erreur de copier-coller — et l’équipe reprend sa demi-journée."
+        },
+        {
+          "title": "Relances et suivis clients",
+          "text": "Confirmations, rappels de rendez-vous, suivis de soumissions, comptes en souffrance : des messages à déclencheur évident qui partent en retard ou pas du tout quand tout est manuel."
+        },
+        {
+          "title": "Documents entrants (PDF, photos, papier)",
+          "text": "Factures de fournisseurs, bons de livraison, formulaires : l’IA actuelle lit ces documents et en extrait les données de façon fiable — c’est le chantier que l’IA générative a réellement débloqué pour les PME depuis deux ans."
+        }
+      ]
+    },
+    "step3": {
+      "eyebrow": "Étape 3 — Combien ça coûte",
+      "quote": "La règle : remboursé en moins de douze mois, ou pas de projet.",
+      "body": "Les fourchettes du marché québécois et mes propres prix, sans détour — le détail complet, avec sources, est dans la page <cout>« Combien coûte l’automatisation ? »</cout>",
+      "tiers": [
+        {
+          "num": "0 $",
+          "title": "Diagnostic — 20 minutes",
+          "text": "L’appel, les pistes, l’ordre de priorité. Gratuit, sans obligation."
+        },
+        {
+          "num": "dès 4 500 $",
+          "title": "Sprint — un processus éliminé",
+          "text": "2 à 3 semaines, portée fixe, prix fixe. Le marché québécois publie des fourchettes comparables (2 500–5 000 $ pour un premier processus)."
+        },
+        {
+          "num": "12–30 k$",
+          "title": "Refonte — par tranches de ~6 000 $",
+          "text": "Le vieux système remplacé morceau par morceau, chaque tranche livrée et rentabilisée avant la suivante. Jamais de « big bang »."
+        }
+      ]
+    },
+    "step4": {
+      "eyebrow": "Étape 4 — Les aides actives (vérifiées en août 2026)",
+      "items": [
+        {
+          "num": "1B",
+          "title": "ESSOR volet 1B — diagnostic numérique",
+          "text": "Investissement Québec rembourse 50 % des honoraires d’un diagnostic numérique ou d’un plan (incluant l’intégration de l’IA), jusqu’à 20 000 $. Admissibilité : 250 employés ou moins ET chiffre d’affaires d’au moins 2,5 M$. Ouvert jusqu’au 31 mars 2027."
+        },
+        {
+          "num": "1C",
+          "title": "ESSOR volet 1C — implantation du plan",
+          "text": "La suite du 1B : 50 % des dépenses d’implantation du plan numérique, jusqu’à 50 000 $ (le plan doit dater de moins de 24 mois). Le volet 1A finance aussi 50 % d’une étude de faisabilité, jusqu’à 50 000 $."
+        },
+        {
+          "num": "C3I",
+          "title": "Crédit d’impôt investissement et innovation",
+          "text": "15 à 25 % (selon la région) sur le matériel de fabrication, le matériel informatique et les progiciels de gestion. En vigueur pour les frais engagés avant le 1ᵉʳ janvier 2030. C’est le successeur du défunt crédit « intégration des TI »."
+        },
+        {
+          "num": "MTL",
+          "title": "PME MTL + formation (Services Québec)",
+          "text": "Sur l’île de Montréal : fonds innovation et productivité de PME MTL, subvention jusqu’à 50 000 $ couvrant jusqu’à 80 % d’un projet d’automatisation. Partout au Québec : les mesures de formation de Services Québec (MFOR) remboursent généralement jusqu’à 50 % des dépenses de formation liées aux nouveaux outils. Attention aux pages périmées ailleurs : le PCAN fédéral est fermé depuis février 2024, et « PME en action » ne prend plus de demandes."
+        }
+      ]
+    },
+    "ai": {
+      "label": "Et l’IA là-dedans ?",
+      "text": "Seulement 12,7 % des entreprises québécoises utilisent l’IA (ISQ, 2024-2025) — pas par manque d’outils, mais par manque de fondations : données accessibles, processus décrits, dossier porté par quelqu’un. Situez votre entreprise en 10 questions.",
+      "link": "Faire le test « prête pour l’IA ? » →"
+    },
+    "services": {
+      "label": "Faire implanter"
+    },
+    "cta": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Vingt minutes pour trouver",
+      "titleItalic": "votre premier processus.",
+      "lead": "Vous me décrivez vos opérations, je vous dis quoi automatiser en premier, l’effort réaliste et le rendement attendu — et si rien ne vaut la peine, je vous le dis aussi. Gratuit, sans obligation.",
+      "book": "Réserver mes 20 minutes",
+      "altLabel": "Pas prêt à appeler ?",
+      "altText": "Chiffrez d’abord votre corvée"
+    }
+  },
+  "coutAutomatisation": {
+    "meta": {
+      "title": "Combien coûte l’automatisation d’un processus dans une PME au Québec ? (prix 2026) | Gabriel Nadon",
+      "description": "Réponse directe : de 2 500 $ à 18 000 $ selon l’ampleur, d’après les prix publiés par les fournisseurs québécois — et mes propres prix affichés (sprint dès 4 500 $). Fourchettes détaillées, subventions applicables et règle de décision.",
+      "ogTitle": "Combien coûte l’automatisation d’un processus dans une PME au Québec ?",
+      "ogDescription": "De 2 500 $ à 18 000 $ selon l’ampleur — fourchettes vérifiées du marché québécois, subventions et règle de décision."
+    },
+    "jsonld": {
+      "headline": "Combien coûte l’automatisation d’un processus dans une PME au Québec ?",
+      "description": "Fourchettes de prix vérifiées du marché québécois de l’automatisation pour PME : premier processus, chantiers multi-processus, taux horaires et subventions applicables.",
+      "breadcrumbGuide": "Guide : automatiser ses processus (PME Québec)",
+      "breadcrumb": "Combien coûte l’automatisation ?",
+      "faq": [
+        {
+          "q": "Combien coûte l’automatisation d’un premier processus dans une PME au Québec ?",
+          "a": "Entre 2 500 $ et 10 000 $ selon la complexité, d’après les prix publiés par les fournisseurs québécois en 2026. Exemples vérifiés : un fournisseur de Québec affiche 2 500 à 5 000 $ pour un premier processus simple (2 à 4 semaines) ; une firme de Sherbrooke évoque environ 10 000 $ pour une automatisation ciblée ; mes propres sprints débutent à 4 500 $ (portée fixe, 2 à 3 semaines)."
+        },
+        {
+          "q": "Combien coûte un chantier d’automatisation de plusieurs processus ?",
+          "a": "Les fourchettes publiées au Québec vont de 8 000 à 18 000 $ pour 3 à 5 processus (2 à 3 mois). Pour remplacer un système entier, mes refontes publiées se font par tranches d’environ 6 000 $, la plupart totalisant entre 12 000 et 30 000 $. Les plateformes intégrées sur mesure peuvent dépasser 100 000 $."
+        },
+        {
+          "q": "Quel est le taux horaire d’un consultant en automatisation ou en IA au Canada ?",
+          "a": "Les grilles publiées au Canada vont de 150 à 350 $ de l’heure pour la consultation en automatisation et en IA. À titre comparatif, le développement web se situe entre 60 et 120 $/h en pigiste et 120 à 250 $/h en agence, selon les guides de prix québécois publiés. La plupart des projets se vendent toutefois à forfait, pas à l’heure."
+        },
+        {
+          "q": "Des subventions peuvent-elles réduire le coût d’un projet d’automatisation au Québec ?",
+          "a": "Oui. En 2026 : ESSOR volet 1B d’Investissement Québec rembourse 50 % des honoraires d’un diagnostic numérique (max 20 000 $) et le volet 1C, 50 % de l’implantation (max 50 000 $) — pour les entreprises de 250 employés ou moins avec 2,5 M$ et plus de chiffre d’affaires ; le crédit d’impôt C3I couvre 15 à 25 % du matériel et des progiciels de gestion jusqu’à fin 2029 ; PME MTL offre jusqu’à 50 000 $ (80 % du projet) sur l’île de Montréal. Le PCAN fédéral est fermé depuis février 2024."
+        }
+      ]
+    },
+    "nav": {
+      "guide": "Le guide complet",
+      "calculator": "Calculateur",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Prix vérifiés · marché québécois · mis à jour le 21 août 2026",
+      "title": "Combien coûte l’automatisation d’un processus",
+      "titleItalic": "dans une PME au Québec ?",
+      "lead": "Réponse courte : <strong>de 2 500 $ à 10 000 $ pour un premier processus</strong>, de <strong>8 000 $ à 18 000 $ pour un chantier de 3 à 5 processus</strong>, et de 12 000 $ à 30 000 $ et plus pour refondre un système entier. Ces fourchettes viennent des prix réellement publiés par les fournisseurs québécois en 2026 — y compris les miens —, pas d’un sondage anonyme. Le détail, les sources et la règle de décision, ci-dessous.",
+      "moneyKicker": "La seule règle qui compte",
+      "moneyCur": "mois",
+      "moneySub": "Un projet d’automatisation doit se rembourser en moins de douze mois avec les heures qu’il élimine. Sinon, refusez-le — peu importe qui le vend.",
+      "moneyLink": "Chiffrez votre corvée en 30 secondes →"
+    },
+    "ranges": {
+      "eyebrow": "Les fourchettes, avec leurs sources",
+      "items": [
+        {
+          "title": "Premier processus simple : 2 500 $ – 10 000 $",
+          "text": "Prix publiés vérifiés en août 2026 : un fournisseur de Québec affiche 2 500–5 000 $ pour un premier processus (2 à 4 semaines, outils comme Make ou Zapier) ; une firme de Sherbrooke évoque environ 10 000 $ pour une automatisation ciblée. Mes sprints : dès 4 500 $, portée fixe, 2 à 3 semaines — une corvée éliminée, pas un abonnement."
+        },
+        {
+          "title": "Chantier de 3 à 5 processus : 8 000 $ – 18 000 $",
+          "text": "Fourchette publiée par le marché québécois pour 2 à 3 mois de travail sur plusieurs processus connectés. C’est la zone où les subventions commencent à compter : un diagnostic ESSOR 1B peut couvrir la moitié des honoraires de la phase d’analyse."
+        },
+        {
+          "title": "Refonte d’un système : 12 000 $ – 30 000 $ et plus",
+          "text": "Mes refontes publiées se font par tranches d’environ 6 000 $ — chacune livrée, utilisée et rentabilisée avant la suivante — et la plupart totalisent entre 12 000 $ et 30 000 $. Les plateformes intégrées sur mesure du marché dépassent parfois 100 000 $ : à ce niveau, exigez un découpage en tranches, jamais un « big bang »."
+        },
+        {
+          "title": "À l’heure : 150 $ – 350 $ (consultation)",
+          "text": "Les grilles horaires publiées au Canada pour la consultation en automatisation et en IA vont de 150 à 350 $/h. Repère croisé : le développement web québécois publié se situe à 60–120 $/h en pigiste et 120–250 $/h en agence. Méfiez-vous du taux horaire sans portée définie — le forfait à résultat protège les deux parties."
+        }
+      ]
+    },
+    "factors": {
+      "eyebrow": "Ce qui fait varier la facture",
+      "title": "Trois facteurs — et deux rabais gouvernementaux.",
+      "p1": "<strong>Le nombre de systèmes touchés</strong> (connecter deux logiciels coûte moins cher qu’en connecter cinq), <strong>la propreté des données</strong> (des PDF et du papier à interpréter ajoutent une couche), et <strong>l’exception humaine</strong> (plus il y a de « ça dépend » dans le processus, plus le projet grossit). C’est pourquoi tout devis sérieux commence par regarder vos fichiers réels, pas par un prix au pied carré.",
+      "p2": "Côté aides : <strong>ESSOR volet 1B/1C</strong> (50 % du diagnostic jusqu’à 20 000 $, 50 % de l’implantation jusqu’à 50 000 $ — entreprises de 250 employés ou moins, chiffre d’affaires de 2,5 M$ et plus) et le <strong>crédit d’impôt C3I</strong> (15 à 25 % sur matériel et progiciels de gestion, jusqu’à fin 2029). Le détail des programmes actifs est dans <guide>le guide complet</guide>."
+    },
+    "proof": {
+      "label": "L’autre côté de l’équation",
+      "text": "Le coût du projet n’est que la moitié du calcul — l’autre moitié, c’est ce que la corvée coûte déjà. Une épicerie du Québec payait 56 000 $ par année pour une seule tâche manuelle, sans le savoir.",
+      "link": "Lire le cas complet →"
+    },
+    "services": {
+      "label": "Les services, et leurs prix"
+    },
+    "cta": {
+      "eyebrow": "Votre chiffre à vous",
+      "title": "Un prix, ça se confirme",
+      "titleItalic": "sur vos vrais fichiers.",
+      "lead": "En 20 minutes au téléphone, on chiffre votre corvée, je vous donne une fourchette honnête pour l’éliminer — et si le calcul ne tient pas, je vous le dis et on n’en parle plus.",
+      "book": "Réserver mes 20 minutes",
+      "altLabel": "D’abord un chiffre ?",
+      "altText": "Le calculateur gratuit"
+    }
+  },
+  "comparatifEpicerie": {
+    "meta": {
+      "title": "Logiciel d’épicerie au Québec : comparatif des systèmes de caisse et de gestion (2026) | Gabriel Nadon",
+      "description": "SIR Solutions, LOC Software, Panza, Logivision, Square : le comparatif québécois des systèmes pour épicerie et dépanneur indépendant — balances, inventaire, prix publiés quand ils existent, et ce qu’aucun d’eux ne règle : la mise à jour des prix fournisseurs.",
+      "ogTitle": "Logiciel d’épicerie au Québec : le comparatif des systèmes (2026)",
+      "ogDescription": "SIR, LOC, Panza, Logivision, Square — comparés pour l’épicerie indépendante québécoise, par quelqu’un qui a travaillé dans les systèmes d’une épicerie."
+    },
+    "jsonld": {
+      "headline": "Logiciel d’épicerie au Québec : le comparatif des systèmes de caisse et de gestion (2026)",
+      "description": "Comparatif des systèmes POS et de gestion pour épiceries et dépanneurs indépendants au Québec : SIR Solutions, LOC Software, Panza, ACCEO Logivision, Square — et la question que ce marché ne règle pas, la synchronisation des prix fournisseurs.",
+      "listName": "Systèmes de caisse et de gestion pour épicerie indépendante au Québec",
+      "listItems": [
+        "SIR Solutions (Montréal)",
+        "LOC Software — Store Management Suite (Laval)",
+        "Panza (Québec)",
+        "ACCEO Logivision — L-POS / L-BOSS (Montréal)",
+        "Square (généraliste)"
+      ],
+      "breadcrumbParent": "Logiciel de gestion pour épicerie et dépanneur",
+      "breadcrumb": "Comparatif des logiciels d’épicerie au Québec",
+      "faq": [
+        {
+          "q": "Quel est le meilleur logiciel de gestion pour une épicerie indépendante au Québec ?",
+          "a": "Il n’y a pas de « meilleur » universel : SIR Solutions, LOC Software, Panza et ACCEO Logivision sont tous des systèmes québécois sérieux, avec des forces différentes. Le bon choix dépend de trois questions : avez-vous besoin de balances de rayon intégrées, combien de caisses avez-vous, et quel budget mensuel est réaliste. Panza est le seul des quatre à publier ses prix (de 59 $ à 249 $/mois)."
+        },
+        {
+          "q": "Combien coûte un logiciel d’épicerie au Québec ?",
+          "a": "La plupart des éditeurs québécois (SIR Solutions, LOC Software, ACCEO Logivision) ne publient pas leurs prix — il faut demander une soumission. Panza publie les siens : de 59 $/mois (1 caisse) à 249 $/mois (4 caisses avec vente en ligne). Square affiche 2,5 % par transaction en personne au Canada, avec un plan de base gratuit, mais ses limites en vente au poids le rendent difficile pour une épicerie complète."
+        },
+        {
+          "q": "Faut-il changer de caisse pour automatiser la mise à jour des prix fournisseurs ?",
+          "a": "Non — et c’est le point aveugle de ce marché : aucun des grands systèmes d’épicerie ne documente publiquement l’import automatique des listes de prix de vos fournisseurs. La solution éprouvée est un système intermédiaire qui lit les fichiers de tous les fournisseurs, compare les prix et alimente la caisse existante. Une épicerie du Québec l’a fait sans changer de caisse et a récupéré 56 000 $ par année."
+        }
+      ]
+    },
+    "nav": {
+      "grocery": "Épicerie",
+      "cases": "Cas concrets",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Comparatif indépendant · Québec · mis à jour août 2026",
+      "title": "Logiciel d’épicerie au Québec : le comparatif que",
+      "titleItalic": "les vendeurs n’écriront pas.",
+      "lead": "Cherchez « logiciel gestion épicerie » et vous tomberez sur des comparatifs français — certification NF525, centrales d’achat européennes, rien qui s’applique à un commerce d’ici. Voici les systèmes qui équipent réellement les épiceries et dépanneurs indépendants du Québec, ce que chacun fait bien, ce que leurs sites ne disent pas — et la corvée qu’aucun d’entre eux ne règle. Je ne vends aucun de ces logiciels ; j’ai travaillé dans les systèmes d’une épicerie indépendante, du côté de ceux qui les utilisent.",
+      "moneyKicker": "Ce que ce comparatif révèle",
+      "moneyNum": "0 / 5",
+      "moneyCur": "systèmes",
+      "moneySub": "documentent publiquement l’import automatique des listes de prix de vos fournisseurs — la tâche qui a coûté 56 000 $/an à une épicerie du Québec.",
+      "moneyPlus": "Le détail, fournisseur par fournisseur, ci-dessous."
+    },
+    "systems": {
+      "eyebrow": "Les systèmes, un par un",
+      "items": [
+        {
+          "title": "SIR Solutions — Montréal",
+          "text": "Vétéran québécois (fondé en 1994) qui se présente comme « le système PDV pour épicerie nº 1 au Canada ». Sa documentation met de l’avant l’intégration des balances de rayon — prix, ingrédients et valeurs nutritionnelles transférés d’un coup — l’envoi simultané des prix à la caisse et aux balances, et des suggestions de commandes basées sur les tendances du magasin. Sert aussi pharmacies, stations-service et détail. Prix non publiés : soumission obligatoire. Le choix « établissement complet » : boucherie, prêt-à-manger, balances partout."
+        },
+        {
+          "title": "LOC Software (Store Management Suite) — Laval",
+          "text": "Plus de 30 ans dans le POS d’alimentation, siège à Laval, plus de 40 modules (caisse, back-office, entrepôt) et — selon l’éditeur — plus de 30 000 systèmes installés. Mise à jour des prix en mobilité avec impression d’étiquettes, étiquettes électroniques de tablette, libre-service, fidélité, e-commerce (partenariat Local Express annoncé en janvier 2026). Prix non publiés. Nuance à vérifier en démo : un avis public détaillé critique justement son module achats/réception et sa documentation — posez vos questions sur ce module-là."
+        },
+        {
+          "title": "Panza — Québec",
+          "text": "Le plus récent, « conçu par un épicier, pour un épicier », ciblé épiceries de quartier, dépanneurs, boucheries et zéro-déchet. Inventaire temps réel, commandes fournisseurs assistées, lecture des factures par reconnaissance visuelle avec comparaison commandé/reçu, balances pour le vrac, vente en ligne synchronisée. Surtout : le seul acteur québécois qui publie ses prix — de 59 $/mois (1 caisse) à 249 $/mois (4 caisses + vente en ligne), 2 mois d’essai. Pour un commerce qui part de zéro ou en a assez des soumissions opaques, c’est la référence de transparence du marché."
+        },
+        {
+          "title": "ACCEO Logivision (L-POS / L-BOSS) — Montréal",
+          "text": "Éditeur québécois établi (groupe Harris), présent dans les supermarchés, dépanneurs, boucheries et magasins de spiritueux. Force documentée : les « lots de prix » programmés — des changements de prix permanents ou promotionnels qui s’activent seuls à la date voulue — et l’interface vers les logiciels comptables. Distribution par revendeurs régionaux (Dijitec en Mauricie et au Centre-du-Québec, Globe POS, STR PDV…) : vous achetez aussi la proximité du technicien qui se déplace. Prix non publiés."
+        },
+        {
+          "title": "Square — le généraliste à connaître (et ses limites)",
+          "text": "Tentant pour un petit dépanneur : plan de base gratuit, 2,5 % par transaction en personne au Canada, installation en une journée. Mais pour une vraie épicerie, ses limites documentées pèsent : seules les balances de sa courte liste de compatibilité fonctionnent, et les codes-barres à poids intégré — imprimés par les balances de rayon sur la viande et le prêt-à-manger — ne sont pas pris en charge. Correct pour un comptoir sans pesée ; sous-dimensionné dès que la balance entre en jeu."
+        }
+      ]
+    },
+    "choose": {
+      "eyebrow": "Comment choisir",
+      "title": "Trois questions décident, avant toute démo.",
+      "paragraphs": [
+        "<strong>1. Vendez-vous au poids ?</strong> Boucherie, vrac, prêt-à-manger : il vous faut des balances intégrées et les codes-barres à poids intégré. Ça élimine les généralistes et ça met SIR, LOC et Logivision en tête de liste. Sans pesée, le jeu s’ouvre — Panza, voire Square.",
+        "<strong>2. Qui vous dépannera un samedi ?</strong> Un système de caisse tombe toujours en panne un jour de pointe. Le revendeur régional qui se déplace (le modèle Logivision/Dijitec) vaut parfois plus que la liste de fonctionnalités.",
+        "<strong>3. Exigez le prix complet par écrit.</strong> Un seul acteur québécois publie ses prix. Pour les autres, demandez le coût sur 5 ans : licence, matériel, installation, formation, frais mensuels, et le prix de chaque « module » qu’on ajoutera plus tard. C’est là que les soumissions se départagent."
+      ]
+    },
+    "blind": {
+      "eyebrow": "Le point aveugle du marché",
+      "quote": "Aucune de ces caisses ne met vos prix fournisseurs à jour toute seule.",
+      "body": "Toutes gèrent les prix de vente. Mais les listes de prix qui arrivent de vos huit fournisseurs — Excel, CSV, PDF, papier — aucun de ces systèmes ne documente publiquement leur import automatique. Résultat : quelqu’un les retape, chez presque tous les indépendants. Une épicerie du Québec a chiffré cette corvée : près de 56 000 $ par année. On l’a éliminée avec un système intermédiaire branché sur sa caisse existante — sans la remplacer.",
+      "case": {
+        "title": "Le cas, en détail",
+        "text": "37 000 prix synchronisés, 56 000 $/an récupérés, zéro journée d’interruption.",
+        "link": "Lire le cas →"
+      },
+      "methods": {
+        "title": "Les 4 méthodes de mise à jour",
+        "text": "De la saisie manuelle à la synchronisation automatisée : coûts réels et pièges.",
+        "link": "Lire le guide →"
+      },
+      "template": {
+        "title": "Gabarit Excel gratuit",
+        "text": "Comparez les prix de 3 fournisseurs, produit par produit, en attendant d’automatiser.",
+        "link": "Télécharger (.xlsx) →"
+      }
+    },
+    "cta": {
+      "eyebrow": "Un avis neutre",
+      "title": "Avant de signer une soumission,",
+      "titleItalic": "parlons-en 20 minutes.",
+      "lead": "Je ne vends aucun de ces systèmes — je n’ai rien à gagner à vous orienter vers l’un ou l’autre. En 20 minutes, on regarde votre commerce, vos fournisseurs et vos soumissions, et je vous dis ce que je ferais à votre place. Gratuit.",
+      "book": "Réserver mes 20 minutes",
+      "altLabel": "Garder votre caisse ?",
+      "altText": "Automatiser sans rien remplacer"
+    }
+  }
+}

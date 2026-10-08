@@ -1,23 +1,22 @@
+import { useTranslations } from "next-intl";
+
 // Trimestre courant, calculé au build (le site est rebâti à chaque déploiement).
-export function currentQuarter() {
+export function quarterParts() {
   const d = new Date();
-  return `T${Math.floor(d.getMonth() / 3) + 1} ${d.getFullYear()}`;
+  return { q: Math.floor(d.getMonth() / 3) + 1, year: d.getFullYear() };
 }
 
-export function Ticker({ lang = "fr" }: { lang?: "fr" | "en" }) {
-  const q = currentQuarter();
+export function Ticker() {
+  const t = useTranslations("common.ticker");
+  const quarter = t("quarter", quarterParts());
   return (
     <div className="ticker">
       <div className="cab-ticker ticker-inner">
         <span className="inline-dot">
           <span className="dot-live"></span>
-          {lang === "en"
-            ? `Available · 2 projects · ${q.replace("T", "Q")}`
-            : `Disponible · 2 mandats · ${q}`}
+          {t("available", { quarter })}
         </span>
-        <span className="cab-hide-sm ticker-sub">
-          {lang === "en" ? "Independent practice · Montreal " : "Cabinet indépendant · Montréal "}
-        </span>
+        <span className="cab-hide-sm ticker-sub">{t("practice")}</span>
       </div>
     </div>
   );

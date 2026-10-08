@@ -1,0 +1,130 @@
+{
+  "logiciel": {
+    "meta": {
+      "title": "Logiciel de gestion pour épicerie et dépanneur — sans jeter votre caisse | Gabriel Nadon",
+      "description": "Épicerie ou dépanneur indépendant au Québec ? Prix fournisseurs retapés à la main, inventaire dans Excel, marges qui fondent. On automatise votre caisse existante — une épicerie a récupéré 56 000 $/an. Diagnostic gratuit de 20 minutes.",
+      "ogTitle": "Logiciel de gestion pour épicerie et dépanneur — sans jeter votre caisse",
+      "ogDescription": "Prix fournisseurs, inventaire, marges : on automatise votre caisse existante au lieu de la remplacer. Une épicerie du Québec a récupéré 56 000 $/an.",
+      "twitterTitle": "Logiciel de gestion pour épicerie et dépanneur — Québec",
+      "twitterDescription": "On automatise votre caisse existante au lieu de la remplacer. Une épicerie a récupéré 56 000 $/an."
+    },
+    "jsonld": {
+      "name": "Logiciel de gestion et automatisation pour épicerie et dépanneur",
+      "serviceType": "Automatisation des prix fournisseurs, de l’inventaire et de la caisse pour commerce d’alimentation indépendant",
+      "description": "Systèmes sur mesure pour épiceries et dépanneurs indépendants du Québec : synchronisation des prix fournisseurs, gestion d’inventaire et connexion à la caisse existante, sans la remplacer.",
+      "audience": "Épicerie et dépanneur indépendant",
+      "faq": [
+        {
+          "q": "Faut-il remplacer notre caisse pour automatiser les prix fournisseurs ?",
+          "a": "Non. Le système se branche sur la caisse déjà en place et l’alimente automatiquement. Une épicerie du Québec l’a fait sans remplacer sa caisse et sans interrompre ses opérations une seule journée."
+        },
+        {
+          "q": "Est-ce que ça vaut la peine pour un seul commerce ?",
+          "a": "La mise à jour manuelle des prix d’une seule épicerie a coûté près de 56 000 $ par année en temps de saisie. Le diagnostic gratuit de 20 minutes chiffre exactement ce que ça vous coûte, à vous."
+        },
+        {
+          "q": "On n’est pas une entreprise techno — est-ce pour nous ?",
+          "a": "Oui. Vous parlez commandes, prix, inventaire et marges ; je traduis ça en système, sans jargon, et vous gardez le contrôle des décisions."
+        }
+      ],
+      "home": "Accueil",
+      "crumb": "Logiciel de gestion pour épicerie et dépanneur"
+    },
+    "nav": {
+      "approach": "Approche",
+      "method": "Méthode",
+      "cases": "Cas concrets",
+      "diagnostic": "Diagnostic"
+    },
+    "hero": {
+      "eyebrow": "Épicerie & dépanneur indépendant · Québec",
+      "title": "Votre épicerie roule sur Excel et sur une caisse qui <em>ne parle à personne.</em>",
+      "lead": "Retaper les prix de chaque fournisseur à la main. Deviner l’inventaire réel. Regarder la marge fondre parce qu’on ne peut pas comparer les prix assez vite. Vous n’avez pas besoin d’un nouveau logiciel d’épicerie — vous avez besoin que ce que vous avez déjà arrête de vous coûter des heures. En 20 minutes au téléphone, je vous dis quoi régler en premier, ce que ça coûte et ce que ça rapporte.",
+      "button": "Obtenir mon diagnostic gratuit",
+      "book": "Ou <cal>réservez directement vos 20 minutes</cal>."
+    },
+    "money": {
+      "kicker": "Ce qu’une seule tâche manuelle a coûté",
+      "num": "56 000 $",
+      "cur": "/ an",
+      "sub": "récupérés par une épicerie du Québec en éliminant la mise à jour manuelle de ses prix fournisseurs — sans remplacer sa caisse.",
+      "plus": "Combien la vôtre vous coûte-t-elle, sans paraître nulle part ?"
+    },
+    "pains": {
+      "eyebrow": "Vous vous reconnaissez ?",
+      "title": "Ce n’est pas « normal » pour un commerce d’alimentation. C’est juste devenu invisible.",
+      "text": "Chacune de ces situations coûte des heures payées chaque semaine — et aucune n’apparaît sur vos états financiers. Le diagnostic sert exactement à ça : les rendre visibles, puis les chiffrer.",
+      "items": [
+        "Quelqu’un retape à la main les listes de prix des fournisseurs dans la caisse, semaine après semaine.",
+        "L’inventaire « vrai » vit dans un ou deux fichiers Excel que personne d’autre n’ose toucher.",
+        "Vous commandez parfois chez le fournisseur le plus cher, faute de pouvoir comparer les prix à temps.",
+        "Une seule personne « comprend le système ». Quand elle est absente, la mise à jour des prix attend.",
+        "Vous savez qu’il faudrait « regarder ça », mais personne n’a le temps de s’arrêter derrière le comptoir."
+      ]
+    },
+    "proof": {
+      "label": "Preuve sur le terrain",
+      "text": "Ce n’est pas une théorie. Une épicerie du Québec a éliminé la mise à jour manuelle de ses prix fournisseurs et récupéré 56 000 $ par année — sans remplacer sa caisse, sans une seule journée d’interruption. Le système, les chiffres et la méthode, en détail, dans le cas complet.",
+      "link": "Lire le cas complet →"
+    },
+    "pricing": {
+      "eyebrow": "Combien ça coûte",
+      "quote": "Des prix clairs, avant même le premier appel.",
+      "body": "Vous n’avez pas de temps à perdre en soumissions floues, moi non plus. Voici les ordres de grandeur réels — le diagnostic sert précisément à confirmer lequel s’applique à votre commerce, chiffres à l’appui.",
+      "tiers": [
+        {
+          "price": "0 $",
+          "title": "Diagnostic — 20 minutes",
+          "text": "L’appel, les pistes et l’ordre de priorité. Gratuit, sans obligation, sans suivi insistant."
+        },
+        {
+          "price": "dès 4 500 $",
+          "title": "Sprint d’automatisation",
+          "text": "Une corvée éliminée en 2 à 3 semaines : synchronisation des prix fournisseurs, mise à jour de la caisse, rapport d’inventaire. Portée fixe, prix fixe."
+        },
+        {
+          "price": "par tranches",
+          "title": "Refonte de système",
+          "text": "Le vieux système remplacé morceau par morceau, en tranches d’environ 6 000 $ — chacune livrée, utilisée et rentabilisée avant la suivante. La plupart des refontes se situent entre 12 000 $ et 30 000 $."
+        }
+      ]
+    },
+    "links": {
+      "label": "Vous magasinez un système ?",
+      "comparatif": "Avant de signer une soumission, lisez le comparatif québécois des systèmes d’épicerie (SIR, LOC, Panza, Logivision, Square) — écrit du côté de ceux qui les utilisent, pas de ceux qui les vendent.",
+      "comparatifLink": "Lire le comparatif →",
+      "prix": "Et pour la corvée des listes de prix :",
+      "prixLink": "les 4 méthodes de mise à jour comparées →",
+      "also": "Aussi :",
+      "inventaireLink": "gabarit d'inventaire Excel gratuit →",
+      "margeLink": "calculer sa marge sans se tromper →"
+    },
+    "faq": {
+      "eyebrow": "Les questions qu’on me pose",
+      "items": [
+        {
+          "q": "« Faut-il remplacer notre caisse ? »",
+          "a": "Non. Le système se branche sur la caisse déjà en place et l’alimente automatiquement. On garde ce qui fonctionne, on supprime la saisie."
+        },
+        {
+          "q": "« On n’est pas une entreprise techno. »",
+          "a": "Parfait — c’est exactement pour vous. Vous parlez commandes, prix, inventaire et marges. Je traduis en système, sans jargon, et vous gardez le contrôle des décisions."
+        },
+        {
+          "q": "« On n’a pas le temps pour un projet. »",
+          "a": "C’est le symptôme, pas une objection : le temps manque parce que la saisie le mange. Un sprint demande 2 à 3 heures de votre équipe au total — le reste, c’est moi."
+        },
+        {
+          "q": "« Et si ça ne vaut pas la peine chez nous ? »",
+          "a": "Alors je vous le dis pendant l’appel, en 20 minutes, et vous ne me devez rien. Je ne prends que des mandats où le rendement est démontrable."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Diagnostic gratuit",
+      "title": "Vingt minutes. Un plan. <em>Zéro engagement.</em>",
+      "lead": "Décrivez-moi où votre commerce perd le plus de temps — prix, inventaire, commandes. Je vous réponds sous 24 h avec de premières pistes — ou réservez directement votre appel dans mon calendrier.",
+      "book": "Réserver mes 20 minutes maintenant →"
+    }
+  }
+}

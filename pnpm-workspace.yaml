@@ -3,6 +3,8 @@
 # pré-exécution de pnpm (verify-deps) fait échouer `pnpm build` avec
 # ERR_PNPM_IGNORED_BUILDS.
 allowBuilds:
+  '@parcel/watcher': set this to true or false
+  '@swc/core': set this to true or false
   esbuild: true
   sharp: true
   workerd: true

@@ -1,0 +1,112 @@
+{
+  "prixFournisseurs": {
+    "meta": {
+      "title": "Case study: $56,000 a year recovered by ending manual price updates | Gabriel Nadon",
+      "description": "One manual task was costing a Quebec SMB the equivalent of a part-time position — close to $56,000 a year. Here is the system that eliminated it, and the margin regained by buying at the best price.",
+      "ogTitle": "$56,000 a year, hidden in a manual task",
+      "ogDescription": "The real cost of a manual process in an SMB — and how we got it back, with extra margin on top.",
+      "twitterDescription": "The real cost of a manual process in an SMB — and how we got it back."
+    },
+    "jsonld": {
+      "headline": "$56,000 a year, hidden in a manual task",
+      "description": "Case study: the real cost of a manual process in a Quebec SMB, and the system that eliminated it while regaining margin.",
+      "home": "Home",
+      "cases": "Case studies",
+      "crumb": "$56,000 recovered from a manual task"
+    },
+    "nav": {
+      "approach": "Approach",
+      "method": "Method",
+      "cases": "Case studies",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Case study · The real cost of a manual process",
+      "title": "Close to $56,000 a year, hidden in a task that <em>nobody had ever put a number on.</em>",
+      "lead": "Every week, a team retyped its suppliers’ prices by hand into its point-of-sale (POS) system. It looked like a small chore. Added up over the year, it was the equivalent of a part-time salary — spent retyping numbers. We built the system that does it for them. And because it compares every supplier on every order, the business now buys at the best price: margin regained, on top of the time."
+    },
+    "money": {
+      "kicker": "Time recovered, every year",
+      "num": "$56,000",
+      "cur": "",
+      "sub": "The equivalent of a part-time position, given back to the team for work that actually grows the business.",
+      "plus": "+ the margin regained on every product bought at the best price."
+    },
+    "stats": [
+      {
+        "num": "$56",
+        "unit": "k / year",
+        "label": "of data-entry time recovered, every year"
+      },
+      {
+        "num": "100",
+        "unit": "%",
+        "label": "of manual price updating, eliminated"
+      },
+      {
+        "num": "37k",
+        "unit": "prices",
+        "label": "checked and compared every cycle, with no effort"
+      },
+      {
+        "num": "+",
+        "unit": "margin",
+        "label": "on every purchase, always paying the lowest price"
+      }
+    ],
+    "problem": {
+      "eyebrow": "An expense nobody could see",
+      "title": "The task wasn’t on the books. It was on the payroll.",
+      "p1": "Nobody had ever added up the hours. Updating prices was accepted as a normal chore, a necessary evil of the trade. But every supplier list — tens of thousands of lines — was retyped by hand, week after week.",
+      "p2": "Put end to end, this invisible work cost close to <strong>$56,000 a year</strong> in time. Not counting data-entry errors, and not counting the money left on the table every time a product was ordered from the most expensive supplier because there was no way to compare."
+    },
+    "steps": {
+      "eyebrow": "How we got it back",
+      "items": [
+        {
+          "title": "We put a number on the invisible",
+          "text": "The first step was putting a dollar figure on the chore. Once the loss became a number, the decision made itself."
+        },
+        {
+          "title": "The machine copies, not the team",
+          "text": "The system imports every supplier’s list, compares prices product by product and prepares the update. All the team has to do is approve — on one screen, not over three days."
+        },
+        {
+          "title": "Plugged into the existing POS",
+          "text": "Everything connects to the point-of-sale system already in place, without replacing it and without interrupting operations. The switchover happened without the store closing for a single day."
+        }
+      ]
+    },
+    "note": {
+      "eyebrow": "This isn’t a grocery store story",
+      "quote": "Every SMB has a $56,000 task. Almost nobody has put a number on it.",
+      "body": "A weekly chore everyone accepts because “that’s how we’ve always done it.” It shows up nowhere in the financial statements, but it’s there every week, on someone’s payroll. Finding it and putting a number on it is already half the work.",
+      "principles": [
+        {
+          "title": "Double data entry",
+          "text": "Data copied from one piece of software to another because the two don’t talk to each other."
+        },
+        {
+          "title": "The Monday reports",
+          "text": "A file reassembled by hand every week, from three different sources."
+        },
+        {
+          "title": "Scattered tracking",
+          "text": "Customers, quotes or stock managed in Excel files that live a life of their own."
+        }
+      ]
+    },
+    "sectors": {
+      "label": "The same kind of system, for your business",
+      "epicerie": "Grocery store management software"
+    },
+    "cta": {
+      "eyebrow": "Let’s do the math",
+      "title": "What is <em>your $56,000 task?</em>",
+      "lead": "In twenty minutes, we pinpoint the manual process that costs you the most and put a number on it. You leave with that figure in hand — whether we work together or not.",
+      "button": "Find my $56,000 task",
+      "direct": "Or directly",
+      "calendly": "Book 20 min (Calendly)"
+    }
+  }
+}

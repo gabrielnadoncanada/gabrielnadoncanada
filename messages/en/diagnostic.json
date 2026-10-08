@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Free 20-minute systems assessment | Gabriel Nadon",
+    "description": "Losing your days to double entry, spreadsheets and fragile software? In a 20-minute phone call, I’ll tell you what to automate first, what it costs and what it pays back. Quebec SMBs.",
+    "ogTitle": "Free 20-minute systems assessment",
+    "ogDescription": "In a 20-minute phone call: what to automate first, what it costs, what it pays back. Quebec SMBs."
+  },
+  "jsonld": {
+    "name": "Systems and automation assessment",
+    "serviceType": "Operations assessment, automation and system rebuilds",
+    "description": "Free 20-minute assessment for SMBs: identify which manual tasks to automate first, the effort involved and the expected return.",
+    "areaServed": "Quebec"
+  },
+  "hero": {
+    "eyebrow": "Free assessment · 20 minutes · Quebec SMBs",
+    "title": "Your days disappear into tasks a machine would do <italic>without a single mistake.</italic>",
+    "lead": "Retyping the same data from one system to another. Keeping the “real” database in three Excel files. Holding your breath every time the old software glitches. In a 20-minute phone call, I’ll tell you what to fix first, what it costs and what it pays back — free, no obligation, whether we end up working together or not.",
+    "cta": "Get my free assessment",
+    "orCal": "Or <cal>book your 20 minutes directly</cal>."
+  },
+  "money": {
+    "kicker": "What a single manual task can cost",
+    "num": "$56,000",
+    "cur": "/ year",
+    "sub": "recovered by a Quebec grocery store by eliminating the manual updating of its supplier prices.",
+    "plus": "How much is yours costing you, without showing up anywhere?"
+  },
+  "signs": {
+    "eyebrow": "Sound familiar?",
+    "title": "It isn’t “normal.” It’s just become invisible.",
+    "prose": "Each of these situations costs paid hours every week — and none of them shows up in your financial statements. That’s exactly what the assessment is for: making them visible, then putting a number on them.",
+    "items": [
+      "Someone retypes into one system what another system already shows on screen.",
+      "Invoicing, payroll or orders take days — and an error slips through now and then.",
+      "Only one person “understands the system.” When they’re away, everything slows down.",
+      "You’ve already turned down a contract or a project because “the system can’t keep up.”",
+      "You know someone should “look into it,” but nobody has the time to stop and do it."
+    ]
+  },
+  "method": {
+    "eyebrow": "How it works",
+    "steps": [
+      {
+        "title": "20 minutes on the phone — free",
+        "text": "You walk me through your operations and where things get stuck. I ask specific questions: how many hours, how many people, what risk. No preparation needed."
+      },
+      {
+        "title": "You leave with an honest plan",
+        "text": "What to automate or rebuild first, the realistic effort, and the expected return. If it isn’t worth it, I’ll tell you during the call — and we leave it there."
+      },
+      {
+        "title": "If we move ahead: in small phases",
+        "text": "Never a “big bang.” Each phase is delivered, used and paid back before we tackle the next one. You see the value in weeks, not years."
+      }
+    ]
+  },
+  "prices": {
+    "eyebrow": "What it costs",
+    "quote": "Clear prices, before the first call.",
+    "body": "You don’t have time to waste on vague quotes, and neither do I. Here are the real ballpark figures — the assessment is precisely what confirms which one applies to your situation, with numbers to back it up.",
+    "items": [
+      {
+        "num": "$0",
+        "title": "Assessment — 20 minutes",
+        "text": "The call, the first ideas and the order of priority. Free, no obligation, no pushy follow-up."
+      },
+      {
+        "num": "from $4,500",
+        "title": "Automation sprint",
+        "text": "One painful process eliminated in 2 to 3 weeks: double entry, a manual report, data syncing. Fixed scope, fixed price."
+      },
+      {
+        "num": "in phases",
+        "title": "System rebuild",
+        "text": "The old software replaced piece by piece, in phases of about $6,000 — each one delivered, used and paid back before the next. Most complete rebuilds land between $12,000 and $30,000."
+      }
+    ]
+  },
+  "proof": {
+    "label": "In the field",
+    "text": "A Quebec grocery store eliminated the manual updating of its supplier prices — $56,000 a year recovered, without replacing its point-of-sale (POS) system, without downtime.",
+    "cta": "Read the case study →"
+  },
+  "faq": {
+    "eyebrow": "Questions I get asked",
+    "mark": "Q.",
+    "items": [
+      {
+        "q": "“We’re not a tech company.”",
+        "a": "Perfect — this is exactly for you. You talk operations: orders, invoices, inventory, payroll. I translate that into a system, without jargon, and you stay in control of the decisions."
+      },
+      {
+        "q": "“We already have an IT person.”",
+        "a": "Great: they keep your servers and workstations running. I handle what’s nobody’s job — the processes between systems, where the hours get lost."
+      },
+      {
+        "q": "“We don’t have time for a project.”",
+        "a": "That’s the symptom, not an objection: time is short because manual tasks eat it up. A sprint takes 2 to 3 hours of your team’s time in total — the rest is on me."
+      },
+      {
+        "q": "“What if it isn’t worth it for us?”",
+        "a": "Then I’ll tell you during the call, in 20 minutes, and you owe me nothing. I only take on projects where the return can be demonstrated — that’s in my interest too."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Free assessment",
+    "title": "Twenty minutes. One plan. <italic>Zero commitment.</italic>",
+    "lead": "Tell me where your team loses the most time. I’ll reply within 24 hours with a few first ideas — or book your call directly in my calendar.",
+    "cal": "Book my 20 minutes now →"
+  }
+}

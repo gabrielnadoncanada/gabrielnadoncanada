@@ -1,0 +1,130 @@
+{
+  "logiciel": {
+    "meta": {
+      "title": "Grocery & convenience store software — keep your POS | Gabriel Nadon",
+      "description": "Independent grocery or convenience store in Quebec? Supplier prices retyped by hand, inventory in Excel, shrinking margins. We automate your existing POS — one grocery store recovered $56,000/year. Free 20-minute assessment.",
+      "ogTitle": "Management software for grocery and convenience stores — without throwing out your POS",
+      "ogDescription": "Supplier prices, inventory, margins: we automate your existing point-of-sale system instead of replacing it. A Quebec grocery store recovered $56,000/year.",
+      "twitterTitle": "Management software for grocery and convenience stores — Quebec",
+      "twitterDescription": "We automate your existing POS instead of replacing it. One grocery store recovered $56,000/year."
+    },
+    "jsonld": {
+      "name": "Management software and automation for grocery and convenience stores",
+      "serviceType": "Automation of supplier prices, inventory and point-of-sale for independent food retailers",
+      "description": "Custom systems for independent grocery and convenience stores in Quebec: supplier price sync, inventory management and connection to the existing point-of-sale system, without replacing it.",
+      "audience": "Independent grocery and convenience stores",
+      "faq": [
+        {
+          "q": "Do we have to replace our POS system to automate supplier prices?",
+          "a": "No. The system plugs into the point-of-sale system already in place and feeds it automatically. A Quebec grocery store did it without replacing its POS and without interrupting operations for a single day."
+        },
+        {
+          "q": "Is it worth it for a single store?",
+          "a": "Manually updating prices at a single grocery store cost close to $56,000 a year in data-entry time. The free 20-minute assessment puts an exact number on what it costs you."
+        },
+        {
+          "q": "We’re not a tech company — is this for us?",
+          "a": "Yes. You talk orders, prices, inventory and margins; I turn that into a system, without jargon, and you stay in control of the decisions."
+        }
+      ],
+      "home": "Home",
+      "crumb": "Management software for grocery and convenience stores"
+    },
+    "nav": {
+      "approach": "Approach",
+      "method": "Method",
+      "cases": "Case studies",
+      "diagnostic": "Assessment"
+    },
+    "hero": {
+      "eyebrow": "Independent grocery & convenience stores · Quebec",
+      "title": "Your grocery store runs on Excel and a POS system that <em>talks to nobody.</em>",
+      "lead": "Retyping every supplier’s prices by hand. Guessing what’s really in inventory. Watching your margin shrink because you can’t compare prices fast enough. You don’t need new grocery software — you need what you already have to stop costing you hours. In 20 minutes on the phone, I’ll tell you what to fix first, what it costs and what it pays back.",
+      "button": "Get my free assessment",
+      "book": "Or <cal>book your 20 minutes directly</cal>."
+    },
+    "money": {
+      "kicker": "What a single manual task cost",
+      "num": "$56,000",
+      "cur": "/ year",
+      "sub": "recovered by a Quebec grocery store by eliminating manual updates of its supplier prices — without replacing its POS system.",
+      "plus": "How much is yours costing you, without showing up anywhere?"
+    },
+    "pains": {
+      "eyebrow": "Sound familiar?",
+      "title": "It’s not “normal” for a food retailer. It has just become invisible.",
+      "text": "Each of these situations costs hours paid every week — and none of them shows up in your financial statements. That’s exactly what the assessment is for: making them visible, then putting a number on them.",
+      "items": [
+        "Someone retypes supplier price lists into the POS by hand, week after week.",
+        "The “real” inventory lives in one or two Excel files nobody else dares to touch.",
+        "You sometimes order from the most expensive supplier because you can’t compare prices in time.",
+        "Only one person “understands the system.” When they’re away, price updates wait.",
+        "You know someone should “look into it,” but nobody has time to step away from the counter."
+      ]
+    },
+    "proof": {
+      "label": "Proof in the field",
+      "text": "This isn’t theory. A Quebec grocery store eliminated manual updates of its supplier prices and recovered $56,000 a year — without replacing its POS system, without a single day of downtime. The system, the numbers and the method, in detail, in the full case study.",
+      "link": "Read the full case study →"
+    },
+    "pricing": {
+      "eyebrow": "What it costs",
+      "quote": "Clear prices, before the first call.",
+      "body": "You don’t have time to waste on vague quotes, and neither do I. Here are the real orders of magnitude — the assessment is there precisely to confirm which one applies to your store, with numbers to back it up.",
+      "tiers": [
+        {
+          "price": "$0",
+          "title": "Assessment — 20 minutes",
+          "text": "The call, the leads and the order of priority. Free, no obligation, no pushy follow-up."
+        },
+        {
+          "price": "from $4,500",
+          "title": "Automation sprint",
+          "text": "One chore eliminated in 2 to 3 weeks: supplier price sync, POS updates, inventory report. Fixed scope, fixed price."
+        },
+        {
+          "price": "in slices",
+          "title": "System replacement",
+          "text": "The old system replaced piece by piece, in slices of about $6,000 — each one delivered, used and paying for itself before the next. Most replacements land between $12,000 and $30,000."
+        }
+      ]
+    },
+    "links": {
+      "label": "Shopping for a system?",
+      "comparatif": "Before you sign a quote, read the Quebec comparison of grocery store systems (SIR, LOC, Panza, Logivision, Square) — written from the side of the people who use them, not the people who sell them.",
+      "comparatifLink": "Read the comparison →",
+      "prix": "And for the price-list chore:",
+      "prixLink": "the 4 update methods compared →",
+      "also": "Also:",
+      "inventaireLink": "free Excel inventory template (in French) →",
+      "margeLink": "calculating your margin without mistakes →"
+    },
+    "faq": {
+      "eyebrow": "Questions I get asked",
+      "items": [
+        {
+          "q": "“Do we have to replace our POS?”",
+          "a": "No. The system plugs into the point-of-sale system already in place and feeds it automatically. We keep what works and remove the data entry."
+        },
+        {
+          "q": "“We’re not a tech company.”",
+          "a": "Perfect — this is exactly for you. You talk orders, prices, inventory and margins. I turn that into a system, without jargon, and you stay in control of the decisions."
+        },
+        {
+          "q": "“We don’t have time for a project.”",
+          "a": "That’s the symptom, not an objection: time is short because data entry eats it up. A sprint takes 2 to 3 hours of your team’s time in total — the rest is on me."
+        },
+        {
+          "q": "“What if it’s not worth it for us?”",
+          "a": "Then I’ll tell you during the call, in 20 minutes, and you owe me nothing. I only take on mandates where the return can be demonstrated."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Free assessment",
+      "title": "Twenty minutes. A plan. <em>Zero commitment.</em>",
+      "lead": "Tell me where your store loses the most time — prices, inventory, orders. I’ll get back to you within 24 hours with some first leads — or book your call directly in my calendar.",
+      "book": "Book my 20 minutes now →"
+    }
+  }
+}

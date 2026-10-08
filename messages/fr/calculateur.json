@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Calculateur : combien vous coûte le travail manuel ? | Gabriel Nadon",
+    "description": "Prix retapés à la main, double saisie, rapports refaits chaque semaine : calculez en 30 secondes ce que vos tâches manuelles coûtent par année. Gratuit, avec gabarit Excel téléchargeable. PME du Québec.",
+    "ogTitle": "Combien vous coûte le travail manuel ? — Calculateur gratuit",
+    "ogDescription": "Calculez en 30 secondes ce que vos tâches manuelles coûtent par année. Une épicerie du Québec a découvert 56 000 $/an dans une seule tâche."
+  },
+  "jsonld": {
+    "appName": "Calculateur du coût du travail manuel",
+    "appDescription": "Calcule le coût annuel d’une tâche manuelle répétitive (heures × personnes × coût horaire) pour une PME.",
+    "faq": [
+      {
+        "q": "Comment calculer le coût d’une tâche manuelle dans une PME ?",
+        "a": "Multipliez les heures passées par semaine par le nombre de personnes qui la font, par le coût horaire chargé (salaire + charges), puis par 50 semaines. Exemple : 8 h × 1 personne × 25 $/h × 50 semaines = 10 000 $ par année, pour une seule tâche."
+      },
+      {
+        "q": "Quel coût horaire utiliser dans le calcul ?",
+        "a": "Le coût « chargé » : le salaire horaire plus les charges sociales et avantages, soit environ 1,2 à 1,4 fois le salaire brut. Pour un employé à 20 $/h, comptez 24 à 28 $/h de coût réel."
+      },
+      {
+        "q": "À partir de quel montant l’automatisation vaut-elle la peine ?",
+        "a": "Règle simple : si la tâche coûte plus par année que le projet qui l’élimine, elle se rembourse en moins de douze mois. Un sprint d’automatisation débute à 4 500 $ ; une tâche à 10 000 $/an le rembourse en six mois environ. Sous ce seuil, mieux vaut souvent ne rien faire — et je le dis tel quel."
+      }
+    ]
+  },
+  "page": {
+    "eyebrow": "Outil gratuit · 30 secondes · aucun courriel requis",
+    "title": "Combien vous coûte le travail <italic>que personne n’a chiffré ?</italic>",
+    "lead": "Les prix fournisseurs retapés à la main. La facturation qui mange deux jours. Le rapport du lundi réassemblé depuis trois fichiers. Aucune de ces heures ne paraît dans vos états financiers — mais elles sont toutes sur la paie. Entrez trois chiffres : le calculateur vous donne le montant annuel, et le temps qu’il faudrait pour le récupérer.",
+    "proof": "C’est exactement ce calcul qui a révélé <a>56 000 $ par année dans une seule tâche d’une épicerie du Québec →</a>",
+    "excel": {
+      "label": "Version Excel gratuite",
+      "text": "Vous préférez le faire en équipe, tâche par tâche ? Le même calcul, en gabarit Excel : listez jusqu’à 15 tâches manuelles, les totaux et le classement se font tout seuls.",
+      "link": "Télécharger le gabarit (.xlsx, gratuit, sans courriel) →"
+    },
+    "read": {
+      "eyebrow": "Comment lire votre résultat",
+      "steps": [
+        {
+          "title": "Sous 4 500 $ par année",
+          "text": "Automatiser ne vaut probablement pas la peine — le projet coûterait plus cher que la corvée. Gardez le gabarit, refaites le calcul quand le volume grossit."
+        },
+        {
+          "title": "Entre 4 500 $ et 15 000 $",
+          "text": "La zone du sprint : une corvée éliminée en 2 à 3 semaines, portée fixe, prix fixe (dès 4 500 $). Le projet se rembourse à l’intérieur de la première année."
+        },
+        {
+          "title": "Au-dessus de 15 000 $",
+          "text": "Il y a probablement plusieurs tâches — ou un système entier — à revoir. C’est le territoire de la refonte par tranches : chaque tranche livrée et rentabilisée avant la suivante."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "La suite logique",
+      "title": "Vous avez un chiffre. <italic>Vérifions-le ensemble.</italic>",
+      "lead": "En 20 minutes au téléphone, on valide votre calcul, on regarde ce qui se cache derrière la tâche, et je vous dis honnêtement si ça vaut un projet — ou non. Gratuit, sans obligation.",
+      "book": "Réserver mes 20 minutes",
+      "writeLabel": "Ou par écrit",
+      "write": "Décrire ma situation"
+    }
+  },
+  "tool": {
+    "tache": "La tâche manuelle",
+    "presets": [
+      "Prix fournisseurs retapés à la main",
+      "Facturation / soumissions",
+      "Double saisie entre deux systèmes",
+      "Rapports refaits chaque semaine"
+    ],
+    "other": "Autre tâche répétitive",
+    "heures": "Heures par semaine",
+    "personnes": "Personnes qui la font",
+    "taux": "Coût horaire chargé",
+    "tauxOpt": "(salaire + charges, $/h)",
+    "calculer": "Calculer ce que ça me coûte",
+    "money": "{amount} $",
+    "kicker": "Ce que cette tâche vous coûte",
+    "perYear": "/ an",
+    "sub": "{heures} h/sem × {personnes, plural, one {# personne} other {# personnes}} × {taux} $/h × {semaines} semaines. Sur 5 ans : {total} — sans compter les erreurs de saisie.",
+    "payback": "Un sprint d’automatisation à {sprint} se rembourserait en ± {weeks, plural, one {# semaine} other {# semaines}}.",
+    "below": "Sous {sprint}/an, un sprint ne se justifie probablement pas — je vous le dirais tel quel au téléphone.",
+    "failedTitle": "Un pépin technique est survenu.",
+    "failedText": "Votre calcul n’est pas parti. <mail>Envoyez-le par courriel</mail> (déjà rédigé), ou <cal>réservez 20 minutes</cal>.",
+    "intro": "Recevez ce calcul détaillé + 2-3 pistes concrètes pour cette tâche, par courriel. Réponse humaine sous 24 h.",
+    "nom": "Nom",
+    "email": "Courriel",
+    "required": "Votre nom et un courriel valide sont requis.",
+    "sending": "Envoi en cours…",
+    "submit": "Recevoir mon calcul et mes pistes",
+    "note": "Ou <cal>réservez directement 20 minutes</cal> pour le passer en revue ensemble.",
+    "mail": {
+      "header": "[Calculateur du coût du travail manuel]",
+      "tache": "Tâche : {tache}",
+      "calc": "{heures} h/sem × {personnes} personne(s) × {taux} $/h × {semaines} sem = {annuel}/an ({total} sur 5 ans)",
+      "subject": "Mon calcul — {tache} ({nom})",
+      "nom": "Nom : {nom}",
+      "email": "Courriel : {email}",
+      "from": "(Envoyé depuis gabrielnadon.com/calculateur/)"
+    }
+  }
+}

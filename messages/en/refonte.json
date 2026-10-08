@@ -1,0 +1,109 @@
+{
+  "systeme": {
+    "meta": {
+      "title": "Legacy system replacement for Quebec SMBs | Gabriel Nadon",
+      "description": "Is your in-house software, aging system or pile of Excel files slowing you down? Step-by-step replacement, with no data loss and no downtime. Free 20-minute assessment, in Quebec.",
+      "ogTitle": "System replacement: modernize without stopping your operations",
+      "ogDescription": "Step-by-step replacement of in-house software, aging systems and Excel processes: data migrated, zero downtime. Quebec SMBs.",
+      "twitterDescription": "Step-by-step replacement of in-house software, aging systems and Excel processes: data migrated, zero downtime."
+    },
+    "jsonld": {
+      "name": "IT system replacement",
+      "serviceType": "System replacement and modernization",
+      "description": "Step-by-step replacement of in-house software, aging systems and Excel processes for SMBs: mapping, data migration, switchover with no interruption to operations.",
+      "home": "Home",
+      "crumb": "System replacement"
+    },
+    "nav": {
+      "approach": "Approach",
+      "method": "Method",
+      "cases": "Case studies",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "System replacement · Quebec SMBs",
+      "title": "Your business runs on a system <em>nobody dares to touch anymore.</em>",
+      "lead": "It was programmed fifteen years ago by someone who left long ago. Every bug becomes a prayer. Every new need ends up in one more Excel file, one more round of double data entry. You’re walking on eggshells — and deep down, you’re waiting for the day it gives out. We replace that system piece by piece: no big bang, without losing a single record, without stopping your operations for a single day."
+    },
+    "risks": {
+      "kicker": "The cost of doing nothing",
+      "items": [
+        "One computer dies, and years of data go with it.",
+        "The one person who “understands the system” gets sick, or retires.",
+        "Contracts turned down because the system can’t keep up with growth.",
+        "Hours of double data entry, paid every week, without it showing up anywhere."
+      ]
+    },
+    "pains": {
+      "eyebrow": "Sound familiar?",
+      "title": "These aren’t inconveniences. They’re risks.",
+      "text": "None of them is serious enough to stop everything today. That’s exactly the trap: you put it off, you work around it, you get used to it — until the day one of them turns into a crisis.",
+      "items": [
+        "A bug shows up, and the whole team holds its breath hoping it will fix itself.",
+        "Only one person really knows how the system works. When they’re away, everything slows down.",
+        "You still pay the licence for software the vendor stopped maintaining years ago.",
+        "The “real” database is three Excel files someone updates by hand, every week.",
+        "You’ve already said no to a project because “the system can’t do that.”"
+      ]
+    },
+    "why": {
+      "eyebrow": "Why so many system replacements fail",
+      "quote": "The “big bang” — replacing everything at once — is the leading cause of failure.",
+      "body": "Eighteen months of development, a switchover on a Friday night, and on Monday morning nothing works the way it used to. It’s the scenario everyone fears, and rightly so. Our approach does the opposite: the old system stays in service, and we replace it slice by slice, starting with what hurts you most.",
+      "principles": [
+        {
+          "title": "Never a big bang",
+          "text": "Each slice delivered is in use before we tackle the next. You see the value in weeks, not years."
+        },
+        {
+          "title": "Your data first",
+          "text": "Migration tested and validated against your real numbers before any switchover. Nothing gets lost along the way."
+        },
+        {
+          "title": "Reversible at every step",
+          "text": "Until a slice has proven itself, the old path stays available. We move forward without burning bridges."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "The approach, in five steps",
+      "items": [
+        {
+          "title": "Mapping what exists",
+          "text": "We document what your system really does — including the Excel workarounds and the rules only one person knows."
+        },
+        {
+          "title": "Prioritizing by pain",
+          "text": "We break the replacement into slices and start with the one that costs you the most hours or risk."
+        },
+        {
+          "title": "Rebuilding the first slice",
+          "text": "The new module is built and connected to the old system, which stays in service. Your team validates it on real work."
+        },
+        {
+          "title": "Data migration",
+          "text": "Your history is transferred, tested and reconciled — the totals have to balance before we go any further."
+        },
+        {
+          "title": "Switchover and next slice",
+          "text": "Once the slice has proven itself, the old piece is retired. We move on to the next one, at the pace of your operations."
+        }
+      ]
+    },
+    "proof": {
+      "label": "In the field",
+      "case": "A Quebec grocery store connected its old point-of-sale (POS) system to a modern price-sync engine — without replacing it, without any downtime.",
+      "caseLink": "Read the case →",
+      "custom": "No system to replace, but an Excel file that’s become unmanageable?",
+      "customLink": "Custom software for SMBs →"
+    },
+    "cta": {
+      "eyebrow": "First step",
+      "title": "Twenty minutes to scope <em>your system replacement.</em>",
+      "lead": "Tell me about your current system and where it gets stuck: you leave with a first breakdown into slices and an honest idea of the effort — whether we work together or not.",
+      "button": "Discuss your system replacement",
+      "direct": "Or directly",
+      "calendly": "Book 20 min (Calendly)"
+    }
+  }
+}

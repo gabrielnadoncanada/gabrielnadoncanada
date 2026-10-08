@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/postbuild.mjs && next-sitemap",
+    "postbuild": "node scripts/postbuild.mjs",
     "start": "next start",
     "lint": "next lint",
     "verify": "node scripts/verify.mjs",
-    "deploy": "next build && node scripts/postbuild.mjs && next-sitemap && node scripts/verify.mjs && wrangler pages deploy out --project-name=gabrielnadon --branch=main"
+    "deploy": "next build && node scripts/postbuild.mjs && node scripts/verify.mjs && wrangler pages deploy out --project-name=gabrielnadon --branch=main"
   },
   "dependencies": {
     "next": "^15.5.0",
+    "next-intl": "^4.14.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -21,7 +22,6 @@
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "next-sitemap": "^4.2.3",
     "typescript": "^5.7.0",
     "wrangler": "^4.0.0"
   }

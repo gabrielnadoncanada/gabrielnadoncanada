@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Test: is your SMB ready for AI? (10 questions) | Gabriel Nadon",
+    "description": "52% of Quebecers use generative AI — but barely 12.7% of businesses do. Where does yours stand? 10 questions, instant result with your next three steps. Free, no email.",
+    "ogTitle": "Is your SMB ready for AI? — 10-question test",
+    "ogDescription": "52% of Quebecers use generative AI, but barely 12.7% of businesses do. 10 questions, instant result, free."
+  },
+  "jsonld": {
+    "name": "Is your SMB ready for AI?",
+    "description": "A 10-question self-assessment: data, processes, team and budget. Instant result with concrete recommendations for Quebec SMBs.",
+    "crumb": "Test: is your SMB ready for AI?",
+    "faq": [
+      {
+        "q": "How many Quebec businesses use artificial intelligence?",
+        "a": "According to the Institut de la statistique du Québec (2024-2025), about 12.7% of Quebec businesses use artificial intelligence — while 52% of Quebec adults already use generative AI personally (NETendances 2025). The gap between personal use and business use is one of the biggest business opportunities for SMBs right now."
+      },
+      {
+        "q": "What does an SMB need in place before adopting AI?",
+        "a": "Three foundations: accessible data (in software or structured files, not in email), repetitive processes that are known and written down, and one person who owns the project. Without those foundations, AI amplifies the mess instead of fixing it."
+      },
+      {
+        "q": "Do you need a big budget to get started with AI in an SMB?",
+        "a": "No. The right first project is small and pays for itself in under twelve months: one repetitive task, measured, then eliminated. A targeted automation sprint starts at around $4,500 — a far cry from six-figure “digital transformation” projects."
+      }
+    ]
+  },
+  "page": {
+    "eyebrow": "Self-assessment · 10 questions · instant result",
+    "title": "Is your SMB ready for AI — <italic>or just curious?</italic>",
+    "lead": "52% of Quebecers already use generative AI in their personal lives. On the business side: barely 12.7%. The gap isn’t about technology — it’s about foundations: where your data lives, who knows your processes, who owns the project. Ten questions to see where your business stands, with your next three steps based on the result.",
+    "cta": "Take the test",
+    "ctaNote": "Free, no email — the result appears right on this page.",
+    "gap": {
+      "kicker": "The Quebec gap, in numbers",
+      "num": "52%",
+      "cur": "vs 12.7%",
+      "sub": "52% of Quebec adults use generative AI (NETendances 2025); 12.7% of Quebec businesses use it (Institut de la statistique du Québec, 2024-2025).",
+      "plus": "Your employees are probably already in the first group. Your business, in the second."
+    },
+    "testEyebrow": "The test — 10 questions",
+    "next": {
+      "label": "The next step",
+      "text": "Whatever your score, the process starts in the same place: putting a dollar figure on your heaviest manual task.",
+      "link": "Put a number on it in 30 seconds with the calculator →"
+    },
+    "impl": {
+      "label": "Moving to implementation",
+      "text": "Would you rather look together at where AI would pay off for you — invoices, email, quotes, follow-ups?",
+      "consultant": "AI consultant for SMBs: the approach and pricing →",
+      "or": "Or go straight to:",
+      "agents": "AI agents →",
+      "documents": "invoice and document processing →"
+    }
+  },
+  "tool": {
+    "questions": [
+      {
+        "q": "Your customer, product or order data mostly lives…",
+        "options": [
+          "In emails, on paper or in someone’s head",
+          "In Excel files that everyone keeps their own way",
+          "In one or more software tools (POS, CRM, accounting)"
+        ]
+      },
+      {
+        "q": "How often is the same information retyped from one system to another?",
+        "options": [
+          "All the time — it’s daily life",
+          "For a few processes only",
+          "Almost never, our systems talk to each other"
+        ]
+      },
+      {
+        "q": "If the person “who understands the system” left tomorrow…",
+        "options": [
+          "We’d be in serious trouble",
+          "We’d manage, but slowly",
+          "Everything is documented, someone else would take over"
+        ]
+      },
+      {
+        "q": "Your repetitive processes (invoicing, orders, reports) are…",
+        "options": [
+          "In people’s heads, different depending on who does them",
+          "Known, but never written down",
+          "Written down somewhere, at least the main ones"
+        ]
+      },
+      {
+        "q": "Is anyone on the team already using ChatGPT, Claude or another AI tool at work?",
+        "options": [
+          "No, and there’s some distrust",
+          "Yes, on the quiet or each on their own",
+          "Yes, openly, we share tips"
+        ]
+      },
+      {
+        "q": "Do you know how many hours a week go to repetitive manual tasks?",
+        "options": [
+          "No idea, we’ve never counted",
+          "A gut feeling, but no number",
+          "Yes, we’ve measured it at least once"
+        ]
+      },
+      {
+        "q": "Do your important files (price lists, quotes, contracts) arrive in usable formats?",
+        "options": [
+          "No — PDFs, photos, paper that has to be retyped",
+          "A mix: some clean, others to re-enter",
+          "Yes, mostly Excel/CSV or software data"
+        ]
+      },
+      {
+        "q": "When a data-entry error slips in (price, quantity, address), we notice it…",
+        "options": [
+          "When a customer or supplier tells us",
+          "During a check, sometimes weeks later",
+          "Quickly — there’s a validation step somewhere"
+        ]
+      },
+      {
+        "q": "Who would decide on an automation or AI project at your company?",
+        "options": [
+          "Nobody — it’s nobody’s file",
+          "Management, but it’s not a clear priority",
+          "It’s settled: someone owns the project"
+        ]
+      },
+      {
+        "q": "Your budget to fix a chore that costs $10,000 a year would be…",
+        "options": [
+          "Zero — no budget for that this year",
+          "A few thousand dollars if the return is proven",
+          "Whatever it takes, if it pays for itself in under a year"
+        ]
+      }
+    ],
+    "tiers": [
+      {
+        "titre": "Ready for AI — and probably already behind",
+        "verdict": "Your data exists, your processes are known and someone can own the project. At this stage, every month of waiting is a chore paid for nothing: the work isn’t to “get ready”, it’s to pick the first task to eliminate and put a number on it.",
+        "gestes": [
+          "Pick ONE repetitive task and put a number on it with the calculator (hours × people × hourly cost).",
+          "Start with the cleanest data you already have (POS, accounting) — not with the most exciting project.",
+          "Require a first project to pay for itself in under twelve months; otherwise, turn it down."
+        ]
+      },
+      {
+        "titre": "Almost ready — targeted cleanup first",
+        "verdict": "The potential is real, but AI would amplify the mess as much as the order: scattered data or processes that change depending on who does them will produce fragile automations. The good news: the cleanup needed is targeted, not total.",
+        "gestes": [
+          "Write down ONE repetitive process, the way it’s actually done (not the way it should be done).",
+          "Bring that process’s data into ONE single place — one master file or the existing software.",
+          "Only then, automate that process. Just one. The rest will follow the same model."
+        ]
+      },
+      {
+        "titre": "Not yet — and that’s fine",
+        "verdict": "Plugging AI into operations that live in email and people’s memory is like putting a new engine in a car with no wheels. Nothing serious: the foundations take weeks, not years, and every step pays off on its own — with or without AI afterwards.",
+        "gestes": [
+          "Get the critical information out of people’s heads: a price list, a customer list, a procedure — into a shared file.",
+          "Count just one thing: the hours per week spent retyping information. That number will decide what comes next.",
+          "Don’t sign anything “turnkey AI” for now — in the assessment, we set the order of the foundations, free of charge."
+        ]
+      }
+    ],
+    "missing": "{n, plural, one {# question is} other {# questions are}} still unanswered.",
+    "submit": "See my result",
+    "submitNote": "Instant result, right on this page. No email required.",
+    "result": "Your result — {score} / 20",
+    "gestesLabel": "Your next three steps:",
+    "cta": "Validate this result in 20 min (free)",
+    "ctaNote": "We go over your answers on the phone and you leave with a priority order — whether we work together or not. Or <a>put a number on your heaviest task first</a>."
+  }
+}

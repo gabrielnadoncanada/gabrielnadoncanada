@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Gabriel Nadon — IA et automatisation pour PME au Québec",
+    "description": "Consultant IA et automatisation à Montréal : je remplace Excel, la double saisie et les outils dispersés des PME du Québec par un système qui travaille.",
+    "ogTitle": "Gabriel Nadon — Systèmes opérationnels pour PME",
+    "ogDescription": "Remplacer les suivis manuels, Excel et courriels par un système qui centralise l'information et fait une partie du travail. PME du Québec."
+  },
+  "jsonld": {
+    "siteName": "Gabriel Nadon — Systèmes opérationnels pour PME",
+    "jobTitle": "Consultant en IA et en systèmes opérationnels",
+    "personDescription": "Gabriel Nadon, consultant IA et automatisation à Montréal, aide les PME québécoises aux opérations complexes à remplacer les suivis manuels, Excel, courriels et logiciels mal adaptés par des systèmes qui centralisent l'information et automatisent une partie du travail.",
+    "knowsAbout": [
+      "Systèmes opérationnels",
+      "Automatisation des opérations",
+      "Intégration de systèmes",
+      "Logiciels sur mesure pour PME",
+      "Automatisation de processus",
+      "Intelligence artificielle",
+      "Agents IA",
+      "Traitement automatique de documents"
+    ],
+    "businessName": "Gabriel Nadon — IA, automatisation et systèmes pour PME",
+    "businessDescription": "Consultation et implantation en IA pour les PME du Québec : agents IA, traitement automatique de factures et documents, automatisation des processus, logiciels sur mesure et refonte de systèmes vieillissants.",
+    "catalog": "Mandats",
+    "offers": {
+      "consultantIa": "Consultant IA pour PME",
+      "agentsIa": "Agents IA pour entreprise",
+      "documents": "Traitement automatique de factures et documents",
+      "automatisation": "Automatisation des processus d’affaires",
+      "logiciel": "Logiciel sur mesure pour PME",
+      "refonte": "Refonte de systèmes existants"
+    }
+  },
+  "hero": {
+    "kicker": "IA, automatisation et systèmes sur mesure pour les PME du Québec",
+    "title": "Vos opérations ne devraient pas vivre dans 12 logiciels.",
+    "lead": "Je transforme les suivis manuels, fichiers Excel, courriels et logiciels mal adaptés en un système opérationnel simple : l’information au même endroit, une partie du travail qui se fait seule.",
+    "cta": "Me montrer comment vous travaillez",
+    "ctaShort": "Analyser mes opérations",
+    "ctaCase": "Voir un cas concret",
+    "who": "<strong>Gabriel Nadon</strong>, conseiller indépendant à Montréal. Vous parlez à celui qui construit, et vous avez une réponse sous 24 h."
+  },
+  "sys": {
+    "aria": "Illustration : une matinée type une fois le système en place",
+    "sources": [
+      "Excel",
+      "Outlook",
+      "QuickBooks",
+      "Textos",
+      "PDF"
+    ],
+    "title": "Votre système, ce matin",
+    "time": "8 h 02",
+    "queue": [
+      {
+        "title": "Listes de prix de 3 fournisseurs importées",
+        "meta": "1 284 prix comparés, 37 écarts signalés",
+        "done": true
+      },
+      {
+        "title": "Facture n° 4821 lue et saisie",
+        "meta": "Rapprochée du bon de commande",
+        "done": true
+      },
+      {
+        "title": "Livraison en retard détectée",
+        "meta": "Fournisseur relancé, chantier avisé",
+        "done": true
+      },
+      {
+        "title": "Soumission préparée à partir du devis type",
+        "meta": "Attend votre accord avant l’envoi",
+        "done": false
+      }
+    ],
+    "done": "Fait",
+    "wait": "À valider",
+    "footDone": "3 tâches faites sans ressaisie",
+    "footWait": "1 décision pour vous",
+    "caption": "Illustration : une matinée type, une fois le système en place."
+  },
+  "pains": {
+    "title": "Votre information est partout. Sauf au même endroit.",
+    "items": [
+      "Une partie de l’information vit dans Excel. Une autre, dans les courriels.",
+      "Les employés s’écrivent par texto pour débloquer le travail.",
+      "La comptabilité roule dans un logiciel, les projets dans un autre — et les deux ne se parlent pas.",
+      "Quelqu’un doit constamment recoller les morceaux : chercher, retranscrire, relancer, vérifier."
+    ],
+    "costLabel": "Ce que ça coûte",
+    "cost": "Des doubles saisies, de l’information introuvable, des suivis oubliés, des erreurs, des décisions prises trop tard — et de l’argent laissé sur la table."
+  },
+  "method": {
+    "title": "Comment je travaille",
+    "sub": "Trois étapes, dans cet ordre. On ne construit rien avant d’avoir compris où le travail se perd.",
+    "steps": [
+      {
+        "when": "Semaine 1",
+        "title": "Diagnostic opérationnel",
+        "text": "On regarde comment votre entreprise fonctionne réellement — et on trouve où le temps, l’information ou l’argent se perd."
+      },
+      {
+        "when": "Ensuite",
+        "title": "Système opérationnel",
+        "text": "On centralise le processus le plus coûteux autour de votre façon de travailler. Pas l’inverse."
+      },
+      {
+        "when": "Par la suite",
+        "title": "Automatisation intelligente",
+        "text": "Une fois les données et le processus fiables, le système commence à faire une partie du travail."
+      }
+    ],
+    "note": "Quand l’intelligence artificielle accélère une étape, elle travaille sur des données structurées, avec des garde-fous et une validation humaine. C’est un mécanisme, pas le produit."
+  },
+  "caps": {
+    "title": "Un logiciel vous donne des écrans. Un système fait une partie du travail.",
+    "sub": "Le système prépare, signale et relance. Vos gens gardent le contrôle et décident.",
+    "items": [
+      {
+        "verb": "Réunir",
+        "rest": "l’information dispersée dans vos systèmes"
+      },
+      {
+        "verb": "Préparer",
+        "rest": "les documents à partir des données existantes"
+      },
+      {
+        "verb": "Détecter",
+        "rest": "un suivi ou une action qui manque"
+      },
+      {
+        "verb": "Relancer",
+        "rest": "la bonne personne au bon moment"
+      },
+      {
+        "verb": "Comparer",
+        "rest": "le prévu et le réel, et signaler les écarts"
+      },
+      {
+        "verb": "Chercher",
+        "rest": "dans tous les documents d’un projet"
+      },
+      {
+        "verb": "Transformer",
+        "rest": "courriels, PDF et messages en données utilisables"
+      },
+      {
+        "verb": "Proposer",
+        "rest": "la prochaine action, validée par un humain"
+      }
+    ]
+  },
+  "services": {
+    "title": "Ce que je mets en place, selon où le travail se perd.",
+    "items": {
+      "consultantIa": {
+        "kind": "Pour démarrer",
+        "title": "Consultant IA pour PME",
+        "text": "Trouver les deux ou trois tâches où l’IA rapporte vraiment chez vous, puis les implanter."
+      },
+      "documents": {
+        "kind": "Documents",
+        "title": "Factures et documents traités par l’IA",
+        "text": "Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu’on les retape."
+      },
+      "agentsIa": {
+        "kind": "Agents",
+        "title": "Agents IA",
+        "text": "Un assistant qui traite les demandes, prépare soumissions et réponses, et demande avant d’agir."
+      },
+      "automatisation": {
+        "kind": "Processus",
+        "title": "Automatisation des processus",
+        "text": "La double saisie, les rapports et les relances qui se refont chaque semaine, confiés à la machine."
+      },
+      "logiciel": {
+        "kind": "Systèmes",
+        "title": "Logiciel sur mesure",
+        "text": "Quand Excel est devenu votre logiciel de gestion. Ou <refonte>quand le vieux système doit être remplacé</refonte>."
+      }
+    },
+    "toolsLead": "<strong>Vos outils restent en place.</strong> Le système remplace ce qui ne fonctionne plus et se connecte à ce qui fonctionne déjà, selon les accès disponibles.",
+    "tools": [
+      "ERP",
+      "QuickBooks",
+      "Procore",
+      "Outlook",
+      "Excel",
+      "Fichiers et exports",
+      "API"
+    ]
+  },
+  "proof": {
+    "kicker": "Cas concret : épicerie indépendante, Québec",
+    "num": "56 000 $",
+    "txt": "par année, récupérés sur une seule tâche manuelle.",
+    "cta": "Lire le cas complet",
+    "steps": [
+      {
+        "label": "Le problème",
+        "title": "Recopier des milliers de prix, chaque semaine",
+        "text": "L’équipe retapait à la main les prix de ses fournisseurs dans sa caisse : l’équivalent d’un poste à temps partiel, sans compter les erreurs de saisie ni la marge perdue en commandant sans comparer."
+      },
+      {
+        "label": "Le système",
+        "title": "La machine recopie, l’équipe approuve",
+        "text": "Il importe les listes de tous les fournisseurs, compare les prix produit par produit et prépare la mise à jour — branché sur la caisse déjà en place, sans arrêter les opérations."
+      },
+      {
+        "label": "Le résultat",
+        "title": "Le temps repris, la marge en prime",
+        "text": "La saisie manuelle est éliminée et l’entreprise achète désormais au meilleur prix, à chaque commande."
+      }
+    ],
+    "stats": [
+      {
+        "num": "12 h+",
+        "label": "récupérées chaque semaine, en moyenne"
+      },
+      {
+        "num": "20+",
+        "label": "PME accompagnées au Québec"
+      },
+      {
+        "num": "37 000",
+        "label": "prix comparés à chaque cycle, sans effort humain"
+      },
+      {
+        "num": "30 min",
+        "label": "pour une première analyse de vos opérations"
+      }
+    ]
+  },
+  "me": {
+    "photoAlt": "Portrait de Gabriel Nadon, conseiller",
+    "quote": "Je ne vends pas de la technologie. Je règle des problèmes d’affaires.",
+    "body": "Chaque mandat commence par vos opérations réelles — où le temps se perd, où l’information circule mal, où l’argent sort sans que personne ne le voie — et se termine par un système qui fait une partie du travail. Pas d’intermédiaire, pas de jargon, pas de surprise.",
+    "principles": [
+      "<strong>Comprendre avant de construire.</strong> On cartographie vos opérations et vos outils réels avant de proposer quoi que ce soit.",
+      "<strong>Un seul interlocuteur.</strong> Vous parlez à celui qui analyse vos opérations et qui construit le système.",
+      "<strong>Des livraisons visibles.</strong> Le système avance par étapes : vous voyez chaque morceau fonctionner avant d’aller plus loin."
+    ],
+    "role": "Conseiller, systèmes opérationnels"
+  },
+  "for": {
+    "title": "Pour qui",
+    "text": "Les entreprises où les opérations sont devenues trop complexes pour Excel, les courriels et les outils séparés.",
+    "sectors": [
+      "Construction",
+      "Industriel",
+      "Manufacturier",
+      "Distribution et logistique",
+      "Opérations terrain"
+    ]
+  },
+  "free": {
+    "title": "Outils et guides gratuits",
+    "items": {
+      "calculateur": {
+        "kind": "Calculateur",
+        "title": "Combien vous coûte le travail manuel"
+      },
+      "quiz": {
+        "kind": "Test en 10 questions",
+        "title": "Votre PME est-elle prête pour l’IA ?"
+      },
+      "guide": {
+        "kind": "Guide",
+        "title": "Automatiser sa PME au Québec"
+      },
+      "comparatif": {
+        "kind": "Comparatif",
+        "title": "Logiciels d’épicerie au Québec"
+      },
+      "barometre": {
+        "kind": "Baromètre",
+        "title": "Baromètre PME 2026"
+      }
+    }
+  },
+  "contact": {
+    "title": "Montrez-moi comment vous travaillez.",
+    "lead": "En 30 minutes, on regarde votre processus actuel et on identifie où un système pourrait réellement enlever du travail ou récupérer de la valeur — que l’on travaille ensemble ou non.",
+    "points": [
+      "Gratuit et sans engagement",
+      "Réponse sous 24 h",
+      "Directement avec Gabriel, pas un vendeur"
+    ]
+  }
+}

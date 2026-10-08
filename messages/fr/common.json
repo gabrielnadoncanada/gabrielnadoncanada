@@ -1,0 +1,69 @@
+{
+  "ticker": {
+    "available": "Disponible · 2 mandats · {quarter}",
+    "quarter": "T{q} {year}",
+    "practice": "Cabinet indépendant · Montréal"
+  },
+  "header": {
+    "brandLabel": "Gabriel Nadon — Systèmes opérationnels pour PME",
+    "brandSub": "Systèmes opérationnels",
+    "cta": "Analyser mes opérations",
+    "ctaShort": "Parlons-en",
+    "switchLabel": "English",
+    "switchAria": "Read this page in English",
+    "nav": {
+      "situation": "La situation",
+      "method": "Méthode",
+      "services": "Services",
+      "case": "Cas concret",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "sub": "Systèmes opérationnels · PME",
+    "desc": "Je remplace les suivis manuels des PME — Excel, courriels, logiciels mal adaptés — par des systèmes qui centralisent l’information et font une partie du travail.",
+    "contact": "Contact",
+    "available": "2 mandats disponibles · {quarter}",
+    "location": "Montréal, Québec · à distance",
+    "social": "Réseaux",
+    "navigation": "Navigation",
+    "services": "Services",
+    "free": "Guides et outils gratuits",
+    "freeShort": "Gratuit",
+    "cases": "Cas concrets",
+    "rights": "Tous droits réservés",
+    "toTop": "Haut de page",
+    "home": "Retour à l’accueil",
+    "language": "English version"
+  },
+  "links": {
+    "consultantIa": "Consultant IA pour PME",
+    "agentsIa": "Agents IA",
+    "documents": "Traitement de factures et documents",
+    "documentsShort": "Traitement de documents",
+    "automatisation": "Automatisation des processus",
+    "logiciel": "Logiciel sur mesure",
+    "refonte": "Refonte de système",
+    "calculateur": "Calculateur du travail manuel",
+    "quiz": "Test « prête pour l’IA ? »",
+    "guideAutomatisation": "Guide : automatiser sa PME",
+    "guideAutomatisationShort": "Guide automatisation PME",
+    "comparatifEpicerie": "Comparatif logiciels d’épicerie",
+    "barometre": "Baromètre PME 2026"
+  },
+  "service": {
+    "ctaPrimary": "Décrire mon processus",
+    "ctaProof": "Voir un cas réel",
+    "who": "<strong>Gabriel Nadon</strong>, consultant indépendant à Montréal. Vous parlez à celui qui construit.",
+    "calendly": "Ou réservez vos 20 minutes maintenant",
+    "home": "Accueil"
+  },
+  "notFound": {
+    "title": "Page introuvable | Gabriel Nadon",
+    "kicker": "Erreur 404",
+    "heading": "Cette page n’existe pas (ou plus).",
+    "lead": "Le lien est peut-être ancien. Voici les pages qui servent le plus :",
+    "home": "Retour à l’accueil",
+    "english": "English website"
+  }
+}

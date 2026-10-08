@@ -72,7 +72,12 @@ for (const file of htmlFiles) {
   pages.push({ rel, html, is404, noindex });
 
   check(html.includes(GA4_ID), `${rel} : identifiant GA4 ${GA4_ID} absent.`);
-  check(/<html[^>]*lang="fr"/.test(html), `${rel} : attribut lang="fr" absent.`);
+  // Langue : /en/** en anglais, tout le reste (racine + 404) en français.
+  const lang = rel.startsWith("en/") ? "en" : "fr";
+  check(
+    new RegExp(`<html[^>]*lang="${lang}"`).test(html),
+    `${rel} : attribut lang="${lang}" absent.`
+  );
   check(/<title>[^<]+<\/title>/.test(html), `${rel} : <title> vide ou absent.`);
   check(!MOJIBAKE.test(html), `${rel} : encodage corrompu détecté (accents cassés).`);
   for (const re of FORBIDDEN) {
@@ -126,7 +131,8 @@ for (const { rel, html } of pages) {
   const targets = new Set();
   for (const m of html.matchAll(/(?:href|src)="(\/[^"]*)"/g)) targets.add(m[1]);
   for (const raw of targets) {
-    const clean = raw.split(/[?#]/)[0];
+    // Les chunks Next contiennent [locale] encodé (%5Blocale%5D) : décoder.
+    const clean = decodeURIComponent(raw.split(/[?#]/)[0]);
     if (!clean || clean === "/") continue;
     if (clean.startsWith("/api/")) {
       check(
@@ -141,6 +147,46 @@ for (const { rel, html } of pages) {
       (await exists(path.join(p, "index.html"))) ||
       (await exists(p + ".html"));
     check(ok, `${rel} : lien interne mort → ${clean}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 2 bis. Bilinguisme : hreflang réciproques, pas de lien FR sur une page EN
+// ---------------------------------------------------------------------------
+const ASSET = /^\/(_next|fonts|gabarits|api)\/|^\/[^/]+\.(webp|png|svg|ico|txt|xml|xlsx|pdf)$/;
+for (const { rel, html, is404, noindex } of pages) {
+  if (is404) continue;
+  if (!noindex) {
+    const alts = Object.fromEntries(
+      [...html.matchAll(/<link rel="alternate" hrefLang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1], m[2]])
+    );
+    for (const hl of ["fr-CA", "en-CA", "x-default"]) {
+      check(!!alts[hl], `${rel} : hreflang ${hl} absent.`);
+    }
+    for (const [hl, url] of Object.entries(alts)) {
+      const p = url.replace(SITE, "").replace(/^\//, "");
+      const file = path.join(OUT, p, "index.html");
+      check(await exists(file), `${rel} : hreflang ${hl} pointe vers une page inexistante (${url}).`);
+    }
+  }
+  if (rel.startsWith("en/")) {
+    // Sur une page anglaise, tout lien interne reste en anglais, sauf le
+    // sélecteur de langue (marqué hrefLang="fr").
+    for (const m of html.matchAll(/<a [^>]*href="(\/[^"#?]*)[^"]*"[^>]*>/g)) {
+      const target = m[1];
+      if (target.startsWith("/en/") || ASSET.test(target)) continue;
+      if (/hrefLang="fr"/.test(m[0])) continue;
+      fail(`${rel} : lien vers une page française sans hrefLang="fr" → ${target}`);
+    }
+    // Indice de texte non traduit : mots français fréquents dans le corps visible.
+    const body = html
+      .replace(/<script[\s\S]*?<\/script>/g, "")
+      .replace(/<[^>]+>/g, " ");
+    const fr = body.match(/(votre|vous|nous|entreprise|courriel|réservez|gratuit|données)/gi) || [];
+    checks += 1;
+    if (fr.length > 3) {
+      fail(`${rel} : ${fr.length} mots français dans une page anglaise (ex. « ${[...new Set(fr)].slice(0, 4).join(" », « ")} »).`);
+    }
   }
 }
 
@@ -181,6 +227,20 @@ if (diag) {
   check(diag.html.includes('id="diagnostic"'), "/diagnostic/ : ancre #diagnostic absente.");
 }
 
+const diagEn = pages.find((p) => p.rel === "en/assessment/index.html");
+check(!!diagEn, "Landing anglaise /en/assessment/ absente du build.");
+if (diagEn) {
+  check(diagEn.noindex, "/en/assessment/ devrait être noindex (landing payante).");
+  check(diagEn.html.includes("cf-tel"), "/en/assessment/ : champ téléphone absent.");
+  check(diagEn.html.includes('id="diagnostic"'), "/en/assessment/ : ancre #diagnostic absente.");
+}
+const merciEn = pages.find((p) => p.rel === "en/thank-you/index.html");
+check(!!merciEn, "Page de conversion anglaise /en/thank-you/ absente du build.");
+if (merciEn) {
+  check(merciEn.noindex, "/en/thank-you/ devrait être noindex.");
+  check(merciEn.html.includes(CAL), "/en/thank-you/ : lien Calendly absent.");
+}
+
 const merci = pages.find((p) => p.rel === "merci/index.html");
 check(!!merci, "Page de conversion /merci/ absente du build.");
 if (merci) {
@@ -194,7 +254,7 @@ if (await exists(jsDir)) {
   const jsFiles = await walk(jsDir, ".js");
   let bundle = "";
   for (const f of jsFiles) bundle += await readFile(f, "utf8");
-  for (const needle of ["generate_lead", "gn_attribution", "form_sent", "form_submit", "/merci/", "/api/contact"]) {
+  for (const needle of ["generate_lead", "gn_attribution", "form_sent", "form_submit", "/merci", "/thank-you", "/api/contact"]) {
     check(bundle.includes(needle), `Code client : « ${needle} » absent des bundles JS.`);
   }
 } else {
@@ -300,6 +360,16 @@ const LEAD = {
   const paid = mockFetch([true, true]);
   await onRequestPost(fakeRequest(LEAD));
   check(paid[0]?.body.subject.includes("[payant]"), "Function : un lead gclid n'est pas étiqueté [payant].");
+}
+{
+  // Prospect anglophone → auto-réponse en anglais, lead marqué [EN].
+  const calls = mockFetch([true, true]);
+  await onRequestPost(fakeRequest({ ...LEAD, page: "/en/ai-consultant/", lang: "en" }));
+  check(calls[0]?.body.subject.includes("[EN]"), "Function : un lead anglais n'est pas marqué [EN].");
+  check(
+    /^Got it/.test(calls[1]?.body.subject || "") && calls[1]?.body.text.includes(CAL),
+    "Function : l'auto-réponse d'un prospect anglophone n'est pas en anglais."
+  );
 }
 {
   // Resend en panne → 502 (le client bascule sur mailto:).

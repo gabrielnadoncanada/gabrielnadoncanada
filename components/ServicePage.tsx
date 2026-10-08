@@ -1,12 +1,15 @@
 import type { ReactNode } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
 import { MinimalFooter } from "@/components/MinimalFooter";
-import { ContactForm } from "@/components/ContactForm";
+import { ContactForm, type SujetKey } from "@/components/ContactForm";
 import { TrackedLink } from "@/components/TrackedLink";
+import { absUrl, href } from "@/i18n/navigation";
+import type { Locale, Pathname } from "@/i18n/routing";
+import { jsonLdLang } from "@/lib/seo";
 import "@/app/home.css";
 
-const SITE = "https://gabrielnadon.com";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 
 type Item = { title: string; text: string };
@@ -14,8 +17,8 @@ type Link = { href: string; label: string };
 type ServiceItem = { kind: string; title: string; text: string; href?: string };
 
 export type ServicePageProps = {
-  lang?: "fr" | "en";
-  path: string;
+  /** Chemin interne (clé de routing.pathnames), ex. "/consultant-ia". */
+  pathname: Pathname;
   breadcrumb: string;
   service: { name: string; type: string; description: string };
   eyebrow: string;
@@ -30,23 +33,10 @@ export type ServicePageProps = {
   proof: { label: string; body: ReactNode };
   price: { label: string; body: ReactNode };
   faq: { eyebrow: string; items: Array<{ q: string; a: string }> };
-  cta: { eyebrow: string; title: ReactNode; lead: string; sujet: string };
+  cta: { eyebrow: string; title: ReactNode; lead: string; sujet: SujetKey };
+  /** Liens déjà localisés (href() de @/i18n/navigation). */
   related: { label: string; links: Link[] };
 };
-
-const NAV_FR = [
-  { href: "/#methode", label: "Méthode" },
-  { href: "/#services", label: "Services" },
-  { href: "/cas/synchronisation-prix-fournisseurs/", label: "Cas concret" },
-  { href: "#contact", label: "Contact" },
-];
-
-const NAV_EN = [
-  { href: "#how", label: "How it works" },
-  { href: "#proof", label: "Proof" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
-];
 
 function Arrow() {
   return (
@@ -84,8 +74,20 @@ function Check() {
 // les mêmes données structurées (Service + FAQPage + BreadcrumbList).
 // Styles : système .hm-* de app/home.css, partagé avec l'accueil.
 export function ServicePage(p: ServicePageProps) {
-  const en = p.lang === "en";
-  const url = `${SITE}${p.path}`;
+  const locale = useLocale() as Locale;
+  const t = useTranslations("common");
+  const url = absUrl(locale, p.pathname);
+  // Un lien connexe vers l'autre langue est marqué hrefLang (exigé par verify).
+  const linkLang = (h: string) => {
+    const target = h.startsWith("/en/") ? "en" : "fr";
+    return target === locale ? undefined : target;
+  };
+  const nav = [
+    { href: href(locale, "/", "methode"), label: t("header.nav.method") },
+    { href: href(locale, "/", "services"), label: t("header.nav.services") },
+    { href: href(locale, "/cas/synchronisation-prix-fournisseurs"), label: t("header.nav.case") },
+    { href: "#contact", label: t("header.nav.contact") },
+  ];
   const jsonld = {
     "@context": "https://schema.org",
     "@graph": [
@@ -96,8 +98,8 @@ export function ServicePage(p: ServicePageProps) {
         serviceType: p.service.type,
         description: p.service.description,
         url,
-        inLanguage: en ? "en-CA" : "fr-CA",
-        provider: { "@id": `${SITE}/#gabriel` },
+        inLanguage: jsonLdLang(locale),
+        provider: { "@id": "https://gabrielnadon.com/#gabriel" },
         areaServed: { "@type": "AdministrativeArea", name: "Québec" },
         availableLanguage: ["fr-CA", "en-CA"],
       },
@@ -112,7 +114,7 @@ export function ServicePage(p: ServicePageProps) {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: en ? "Home" : "Accueil", item: `${SITE}/` },
+          { "@type": "ListItem", position: 1, name: t("service.home"), item: absUrl(locale, "/") },
           { "@type": "ListItem", position: 2, name: p.breadcrumb, item: url },
         ],
       },
@@ -120,15 +122,15 @@ export function ServicePage(p: ServicePageProps) {
   };
 
   return (
-    <div id="dc-root" lang={en ? "en" : undefined}>
+    <div id="dc-root">
       <div className="page hm svc">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }}
         />
 
-        <Ticker lang={p.lang} />
-        <SiteHeader brandHref="/" navItems={en ? NAV_EN : NAV_FR} ctaHref="#contact" lang={p.lang} />
+        <Ticker />
+        <SiteHeader pathname={p.pathname} navItems={nav} ctaHref="#contact" />
 
         {/* Hero : reprend les mots de la recherche, puis la promesse */}
         <section className="hm-hero">
@@ -139,11 +141,11 @@ export function ServicePage(p: ServicePageProps) {
               <p className="hm-lead">{p.lead}</p>
               <div className="hm-cta">
                 <a href="#contact" className="btn">
-                  {en ? "Describe your process" : "Décrire mon processus"}
+                  {t("service.ctaPrimary")}
                   <Arrow />
                 </a>
                 <a href="#preuve" className="btn-link">
-                  {en ? "See a real case" : "Voir un cas réel"}
+                  {t("service.ctaProof")}
                 </a>
               </div>
               <div className="hm-who">
@@ -156,17 +158,9 @@ export function ServicePage(p: ServicePageProps) {
                   className="hm-who-img"
                 />
                 <p>
-                  {en ? (
-                    <>
-                      <strong>Gabriel Nadon</strong>, independent consultant in
-                      Montreal. You talk to the person who builds it.
-                    </>
-                  ) : (
-                    <>
-                      <strong>Gabriel Nadon</strong>, consultant indépendant à
-                      Montréal. Vous parlez à celui qui construit.
-                    </>
-                  )}
+                  {t.rich("service.who", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
               </div>
             </div>
@@ -317,7 +311,7 @@ export function ServicePage(p: ServicePageProps) {
             <h2 className="hm-h3">{p.related.label}</h2>
             <div className="svc-related-links">
               {p.related.links.map((l) => (
-                <a key={l.href} href={l.href} hrefLang={l.href.startsWith("/en/") ? "en" : undefined}>
+                <a key={l.href} href={l.href} hrefLang={linkLang(l.href)}>
                   {l.label}
                   <Arrow />
                 </a>
@@ -335,17 +329,17 @@ export function ServicePage(p: ServicePageProps) {
               <p className="hm-lead">{p.cta.lead}</p>
               <p className="svc-cal">
                 <TrackedLink event="clic_audit" href={CAL} target="_blank" rel="noopener">
-                  {en ? "Or book your 20 minutes now" : "Ou réservez vos 20 minutes maintenant"}
+                  {t("service.calendly")}
                 </TrackedLink>
               </p>
             </div>
             <div className="contact-card hm-form">
-              <ContactForm withPhone lang={p.lang} defaultSujet={p.cta.sujet} />
+              <ContactForm withPhone defaultSujet={p.cta.sujet} />
             </div>
           </div>
         </section>
 
-        <MinimalFooter lang={p.lang} />
+        <MinimalFooter />
       </div>
     </div>
   );

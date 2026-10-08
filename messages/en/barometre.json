@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Quebec SMB AI & Automation Barometer — 2026 edition | Gabriel Nadon",
+    "description": "Where do Quebec SMBs really stand with AI and automation? Take part in the 2026 barometer: 11 questions, 2 minutes, anonymous answers. Get the results compiled by sector before anyone else.",
+    "ogTitle": "Quebec SMB AI & Automation Barometer — 2026 edition",
+    "ogDescription": "11 questions, 2 minutes. Where do Quebec SMBs really stand with AI? Take part and get the results by sector."
+  },
+  "jsonld": {
+    "name": "Quebec SMB AI & Automation Barometer — 2026 edition",
+    "description": "Annual survey on AI and automation adoption in Quebec SMBs: actual use, hours lost to manual tasks, obstacles and budgets.",
+    "crumb": "Quebec SMB AI & Automation Barometer"
+  },
+  "page": {
+    "eyebrow": "Annual survey · 2026 edition · 2 minutes",
+    "title": "Where do Quebec SMBs <italic>really</italic> stand with AI?",
+    "lead": "The big surveys measure adoption. Nobody measures what happens on the ground: how many hours a week still go to manual data entry, who uses AI behind the boss’s back, and what actually blocks projects. This barometer asks those questions, to SMB owners and managers like you. The compiled results — by sector and by size — will be published here, free of charge.",
+    "cta": "Take part — 11 questions",
+    "ctaNote": "Anonymous. Email is optional and only used to send you the results first.",
+    "known": {
+      "kicker": "What we already know — and the gap",
+      "num": "12.7%",
+      "cur": "only",
+      "sub": "of Quebec businesses use AI (Institut de la statistique du Québec, 2024-2025), while 52% of Quebec adults use it in their personal lives (NETendances 2025).",
+      "plus": "Why the gap? That’s exactly what this barometer measures."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "steps": [
+        {
+          "title": "You answer — 2 minutes",
+          "text": "Eleven multiple-choice questions: your data, your manual hours, your use of AI, your obstacles, your budget. No right or wrong answers."
+        },
+        {
+          "title": "I compile — anonymously",
+          "text": "Answers are aggregated by sector and by company size. No individual answer is ever published or shared — ever."
+        },
+        {
+          "title": "Everyone gets the results",
+          "text": "The compiled figures are published on this page and sent first to participants who left their email — with the breakdown by sector, so you can compare yourself to your peers."
+        }
+      ]
+    },
+    "survey": {
+      "eyebrow": "The barometer — 2026 edition",
+      "title": "Eleven questions. <italic>Your peers want your answers.</italic>",
+      "lead": "Every answer makes the picture more accurate — especially if your business hasn’t “done anything” with AI yet: that’s precisely the reality official surveys struggle to capture."
+    }
+  },
+  "tool": {
+    "fields": {
+      "secteur": {
+        "label": "Your industry",
+        "options": [
+          "Retail / food",
+          "Construction",
+          "Manufacturing",
+          "Professional services",
+          "Restaurants / hospitality",
+          "Transportation / logistics",
+          "Health / personal services",
+          "Other"
+        ]
+      },
+      "employes": {
+        "label": "Number of employees",
+        "options": ["1 to 4", "5 to 19", "20 to 49", "50 to 99", "100 or more"]
+      },
+      "region": {
+        "label": "Your region",
+        "options": [
+          "Montreal",
+          "Montérégie",
+          "Capitale-Nationale (Quebec City)",
+          "Laurentides / Lanaudière",
+          "Estrie / Centre-du-Québec",
+          "Mauricie",
+          "Outaouais",
+          "Saguenay–Lac-Saint-Jean",
+          "Other Quebec region",
+          "Outside Quebec"
+        ]
+      },
+      "donnees": {
+        "label": "Your business data (customers, products, orders) mostly lives…",
+        "options": [
+          "In emails, on paper or in people’s heads",
+          "In Excel files",
+          "In one or more software tools (POS, CRM, accounting)",
+          "A mix of all of the above"
+        ]
+      },
+      "heures": {
+        "label": "Hours per week spent on repetitive manual tasks (data entry, copying, reports), across the whole company",
+        "options": [
+          "Under 2 hours",
+          "2 to 5 hours",
+          "6 to 10 hours",
+          "11 to 20 hours",
+          "Over 20 hours",
+          "No idea"
+        ]
+      },
+      "ia_usage": {
+        "label": "Generative AI (ChatGPT, Claude, Copilot…) at your company is…",
+        "options": [
+          "Not used at all",
+          "Individual experiments, with no framework",
+          "Used regularly for some tasks",
+          "Built into at least one business process"
+        ]
+      },
+      "automatisation": {
+        "label": "Have you automated at least one process in the last 12 months?",
+        "options": ["Yes", "No", "In progress / planned"]
+      },
+      "obstacle": {
+        "label": "Your main obstacle to automation or AI",
+        "options": [
+          "No time to deal with it",
+          "Cost / budget",
+          "We don’t know where to start",
+          "Data privacy and security",
+          "Not convinced of the return on investment",
+          "Lack of in-house skills"
+        ]
+      },
+      "budget": {
+        "label": "Planned budget for automation or AI over the next 12 months",
+        "options": [
+          "$0",
+          "Under $5,000",
+          "$5,000 to $15,000",
+          "$15,000 to $50,000",
+          "Over $50,000",
+          "Not decided yet"
+        ]
+      },
+      "penurie": {
+        "label": "Is the difficulty hiring pushing you toward automation?",
+        "options": ["Yes, strongly", "A little", "No", "We’re not hiring"]
+      },
+      "loi25": {
+        "label": "Quebec’s Law 25 (personal information protection), at your company…",
+        "options": [
+          "We’re compliant",
+          "We know about it, but we’re not compliant",
+          "We’ve heard of it, nothing more",
+          "Never heard of it"
+        ]
+      }
+    },
+    "choose": "Choose…",
+    "commentaire": "The manual task that weighs on you the most",
+    "commentaireOpt": "(optional, in your own words)",
+    "placeholder": "E.g. retyping supplier prices every week…",
+    "email": "Email",
+    "emailOpt": "(optional — to get the results first)",
+    "missing": "{n, plural, one {# question is} other {# questions are}} still unanswered — the first one: “{label}”",
+    "invalidEmail": "The email you entered isn’t valid (it’s optional — you can leave it blank).",
+    "sending": "Sending…",
+    "submit": "Send my answers",
+    "note": "2 minutes, 11 questions. Anonymous answers — email is optional and only used to send you the results.",
+    "sentTitle": "Thank you — your answer has been recorded.",
+    "sentText": "The compiled results will be published on this page. If you left your email, you’ll get them first, with the figures by sector.",
+    "failedTitle": "Something went wrong on our end.",
+    "failedText": "Your answer wasn’t sent. Try again in a few minutes, or write to <mail>bonjour@gabrielnadon.com</mail>."
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "automatisationPme": {
+    "meta": {
+      "title": "Automating your processes: the guide for Quebec SMBs (2026) | Gabriel Nadon",
+      "description": "What to automate first, in what order, at what price, with which grants (ESSOR, C3I, PME MTL): the complete guide for Quebec SMBs, built on a real $56,000/year case. With a free calculator and prioritization template.",
+      "ogTitle": "Automating your processes: the guide for Quebec SMBs (2026)",
+      "ogDescription": "What to automate first, at what price, with which grants — built on a real $56,000/year case."
+    },
+    "jsonld": {
+      "headline": "Automating your processes: the guide for Quebec SMBs (2026)",
+      "description": "Complete guide: which processes to automate first, in what order, at what cost, and with which Quebec government programs (ESSOR, C3I, PME MTL, MFOR).",
+      "breadcrumb": "Automating your processes: the Quebec SMB guide",
+      "faq": [
+        {
+          "q": "Which processes should an SMB automate first?",
+          "a": "The ones that combine three traits: repetitive (weekly or more often), rule-based (no complex judgment calls), and expensive in hours. In practice: price and catalogue updates, invoicing and quotes, double data entry between two systems, weekly reports, customer follow-ups and document processing (PDF to data). Start with ONE process — the most expensive one — and put a number on it before you begin."
+        },
+        {
+          "q": "What grants are available in Quebec for automation in 2026?",
+          "a": "The main active programs: Investissement Québec’s ESSOR component 1 (open until March 31, 2027) — 50% of fees up to $20,000 for a digital assessment (1B) and up to $50,000 to implement the plan (1C), limited to businesses with 250 employees or fewer and annual revenue of at least $2.5M; the C3I tax credit (15 to 25% on equipment and management software, until the end of 2029); PME MTL’s innovation and productivity fund (up to $50,000, 80% of the project, Island of Montreal); and Services Québec training grants (MFOR). The federal CDAP (Canada Digital Adoption Program) has been closed to new applications since February 2024."
+        },
+        {
+          "q": "How much does it cost to automate a process in an SMB?",
+          "a": "In Quebec, the ranges published by providers run from about $2,500 to $5,000 for a simple first process, and from $8,000 to $18,000 for a project covering 3 to 5 processes. My own published prices: automation sprint from $4,500 (one chore eliminated in 2–3 weeks), system replacement in phases of about $6,000, with most replacements between $12,000 and $30,000. The decision rule: the project must pay for itself in less than twelve months."
+        },
+        {
+          "q": "Is automation worth it for a small business?",
+          "a": "Yes, when you pick the right process: in one documented case, an independent grocery store in Quebec recovered close to $56,000 a year by eliminating nothing more than the manual update of its supplier prices. The test is simple: (hours per week × people × hourly cost × 50 weeks) — if that amount exceeds the cost of the project, the automation pays for itself in less than a year."
+        }
+      ]
+    },
+    "nav": {
+      "approach": "Approach",
+      "calculator": "Calculator",
+      "cases": "Case studies",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Complete guide · Quebec SMBs · updated August 2026",
+      "title": "Automating your processes: where to start",
+      "titleItalic": "when you’re a local SMB.",
+      "lead": "According to the CFIB × Investissement Québec survey (2025), productivity has become the top reason Quebec SMBs automate — cited by 81% of respondents — and hiring difficulties push 59% of them as well. The question is no longer “why”, it’s “where to start, at what price, without getting it wrong”. This guide answers in that order: what, in what order, how much, with which programs — built on a real case, not on promises.",
+      "moneyKicker": "The result of ONE well-chosen process",
+      "moneyNum": "$56,000",
+      "moneyCur": "/ year",
+      "moneySub": "recovered by an independent grocery store in Quebec by eliminating a single manual task: updating supplier prices.",
+      "moneyLink": "The full case, numbers included →"
+    },
+    "step1": {
+      "eyebrow": "Step 1 — Put a number on it first",
+      "title": "No number, no project.",
+      "p1": "Most automation projects fail before they start: people pick the most exciting process instead of the most expensive one. The formula that puts everything back in order fits on one line: <strong>hours per week × people × loaded hourly cost × 50 weeks</strong>. Apply it to every recurring chore. The results always surprise — the “minor” 8-hour-a-week task at $25/h costs $10,000 a year.",
+      "p2": "Two free tools to do it properly: <calc>the online calculator</calc> (30 seconds, one task) and <gabarit>the Excel prioritization template</gabarit> (in French; up to 15 tasks, ranked automatically by return and simplicity)."
+    },
+    "step2": {
+      "eyebrow": "Step 2 — The six processes with the best return",
+      "items": [
+        {
+          "title": "Supplier prices and catalogues",
+          "text": "Lists that arrive in every format and get retyped into the point-of-sale (POS) system or the ERP. The return champion in retail — it’s the process behind the $56,000 case. <guide>The 4 methods compared →</guide>"
+        },
+        {
+          "title": "Invoicing and quotes",
+          "text": "Re-entering into the accounting software what the work order already says, assembling every quote by hand. Clear rules, high volume: a textbook candidate for automation."
+        },
+        {
+          "title": "Double data entry between two systems",
+          "text": "POS → accounting, CRM → invoicing, online store → inventory. Every re-keying is an error waiting its turn. Fixed with a direct connection or an automated bridge between the two."
+        },
+        {
+          "title": "The Monday reports",
+          "text": "The file rebuilt every week from three sources. Once automated, it shows up on its own, on time, with no copy-paste errors — and the team gets its half-day back."
+        },
+        {
+          "title": "Customer follow-ups and reminders",
+          "text": "Confirmations, appointment reminders, quote follow-ups, overdue accounts: messages with an obvious trigger that go out late or not at all when everything is manual."
+        },
+        {
+          "title": "Incoming documents (PDFs, photos, paper)",
+          "text": "Supplier invoices, delivery slips, forms: today’s AI reads these documents and extracts the data reliably — it’s the work generative AI has genuinely unlocked for SMBs over the past two years."
+        }
+      ]
+    },
+    "step3": {
+      "eyebrow": "Step 3 — What it costs",
+      "quote": "The rule: paid back in under twelve months, or no project.",
+      "body": "Quebec market ranges and my own prices, straight up — the full breakdown, with sources, is on the page <cout>“How much does automation cost?”</cout>",
+      "tiers": [
+        {
+          "num": "$0",
+          "title": "Assessment — 20 minutes",
+          "text": "The call, the leads, the order of priority. Free, no obligation."
+        },
+        {
+          "num": "from $4,500",
+          "title": "Sprint — one process eliminated",
+          "text": "2 to 3 weeks, fixed scope, fixed price. The Quebec market publishes comparable ranges ($2,500–5,000 for a first process)."
+        },
+        {
+          "num": "$12–30K",
+          "title": "Replacement — in phases of ~$6,000",
+          "text": "The old system replaced piece by piece, each phase delivered and paid back before the next. Never a “big bang”."
+        }
+      ]
+    },
+    "step4": {
+      "eyebrow": "Step 4 — Active programs (checked in August 2026)",
+      "items": [
+        {
+          "num": "1B",
+          "title": "ESSOR component 1B — digital assessment",
+          "text": "Investissement Québec reimburses 50% of the fees for a digital assessment or plan (including AI integration), up to $20,000. Eligibility: 250 employees or fewer AND annual revenue of at least $2.5M. Open until March 31, 2027."
+        },
+        {
+          "num": "1C",
+          "title": "ESSOR component 1C — implementing the plan",
+          "text": "The follow-up to 1B: 50% of the costs of implementing the digital plan, up to $50,000 (the plan must be less than 24 months old). Component 1A also funds 50% of a feasibility study, up to $50,000."
+        },
+        {
+          "num": "C3I",
+          "title": "Investment and innovation tax credit",
+          "text": "15 to 25% (depending on the region) on manufacturing equipment, computer hardware and management software. In effect for expenses incurred before January 1, 2030. It’s the successor to the defunct “IT integration” credit."
+        },
+        {
+          "num": "MTL",
+          "title": "PME MTL + training (Services Québec)",
+          "text": "On the Island of Montreal: PME MTL’s innovation and productivity fund, a grant of up to $50,000 covering up to 80% of an automation project. Anywhere in Quebec: Services Québec’s training measures (MFOR) generally reimburse up to 50% of training costs related to new tools. Watch out for outdated pages elsewhere: the federal CDAP (Canada Digital Adoption Program) has been closed since February 2024, and “PME en action” no longer accepts applications."
+        }
+      ]
+    },
+    "ai": {
+      "label": "And where does AI fit in?",
+      "text": "Only 12.7% of Quebec businesses use AI (ISQ, 2024-2025) — not for lack of tools, but for lack of foundations: accessible data, documented processes, someone who owns the project. See where your business stands in 10 questions.",
+      "link": "Take the “ready for AI?” test →"
+    },
+    "services": {
+      "label": "Get it implemented"
+    },
+    "cta": {
+      "eyebrow": "Free assessment",
+      "title": "Twenty minutes to find",
+      "titleItalic": "your first process.",
+      "lead": "You describe your operations, I tell you what to automate first, the realistic effort and the expected return — and if nothing is worth it, I’ll tell you that too. Free, no obligation.",
+      "book": "Book my 20 minutes",
+      "altLabel": "Not ready to call?",
+      "altText": "Put a number on your chore first"
+    }
+  },
+  "coutAutomatisation": {
+    "meta": {
+      "title": "How much does it cost to automate a process in a Quebec SMB? (2026 prices) | Gabriel Nadon",
+      "description": "Straight answer: $2,500 to $18,000 depending on scope, based on prices published by Quebec providers — and my own posted prices (sprint from $4,500). Detailed ranges, applicable grants and a decision rule.",
+      "ogTitle": "How much does it cost to automate a process in a Quebec SMB?",
+      "ogDescription": "$2,500 to $18,000 depending on scope — verified Quebec market ranges, grants and a decision rule."
+    },
+    "jsonld": {
+      "headline": "How much does it cost to automate a process in a Quebec SMB?",
+      "description": "Verified price ranges from the Quebec SMB automation market: first process, multi-process projects, hourly rates and applicable grants.",
+      "breadcrumbGuide": "Guide: automating your processes (Quebec SMBs)",
+      "breadcrumb": "How much does automation cost?",
+      "faq": [
+        {
+          "q": "How much does it cost to automate a first process in a Quebec SMB?",
+          "a": "Between $2,500 and $10,000 depending on complexity, based on prices published by Quebec providers in 2026. Verified examples: a Quebec City provider lists $2,500 to $5,000 for a simple first process (2 to 4 weeks); a Sherbrooke firm cites about $10,000 for a targeted automation; my own sprints start at $4,500 (fixed scope, 2 to 3 weeks)."
+        },
+        {
+          "q": "How much does a multi-process automation project cost?",
+          "a": "Published ranges in Quebec run from $8,000 to $18,000 for 3 to 5 processes (2 to 3 months). To replace an entire system, my published replacements are done in phases of about $6,000, with most totalling between $12,000 and $30,000. Custom integrated platforms can exceed $100,000."
+        },
+        {
+          "q": "What is the hourly rate of an automation or AI consultant in Canada?",
+          "a": "Published rate cards in Canada range from $150 to $350 an hour for automation and AI consulting. For comparison, web development runs between $60 and $120/h for freelancers and $120 to $250/h for agencies, according to published Quebec pricing guides. Most projects, however, are sold at a fixed price, not by the hour."
+        },
+        {
+          "q": "Can grants reduce the cost of an automation project in Quebec?",
+          "a": "Yes. In 2026: Investissement Québec’s ESSOR component 1B reimburses 50% of the fees for a digital assessment (max $20,000) and component 1C, 50% of implementation (max $50,000) — for businesses with 250 employees or fewer and $2.5M or more in revenue; the C3I tax credit covers 15 to 25% of equipment and management software until the end of 2029; PME MTL offers up to $50,000 (80% of the project) on the Island of Montreal. The federal CDAP (Canada Digital Adoption Program) has been closed since February 2024."
+        }
+      ]
+    },
+    "nav": {
+      "guide": "The complete guide",
+      "calculator": "Calculator",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Verified prices · Quebec market · updated August 21, 2026",
+      "title": "How much does it cost to automate a process",
+      "titleItalic": "in a Quebec SMB?",
+      "lead": "Short answer: <strong>$2,500 to $10,000 for a first process</strong>, <strong>$8,000 to $18,000 for a project covering 3 to 5 processes</strong>, and $12,000 to $30,000 and up to replace an entire system. These ranges come from prices actually published by Quebec providers in 2026 — mine included — not from an anonymous survey. The details, the sources and the decision rule are below.",
+      "moneyKicker": "The only rule that matters",
+      "moneyCur": "months",
+      "moneySub": "An automation project should pay for itself in under twelve months with the hours it eliminates. Otherwise, turn it down — no matter who’s selling it.",
+      "moneyLink": "Put a number on your chore in 30 seconds →"
+    },
+    "ranges": {
+      "eyebrow": "The ranges, with their sources",
+      "items": [
+        {
+          "title": "Simple first process: $2,500 – $10,000",
+          "text": "Published prices checked in August 2026: a Quebec City provider lists $2,500–5,000 for a first process (2 to 4 weeks, tools like Make or Zapier); a Sherbrooke firm cites about $10,000 for a targeted automation. My sprints: from $4,500, fixed scope, 2 to 3 weeks — one chore eliminated, not a subscription."
+        },
+        {
+          "title": "Project covering 3 to 5 processes: $8,000 – $18,000",
+          "text": "The range published by the Quebec market for 2 to 3 months of work on several connected processes. This is where grants start to matter: an ESSOR 1B assessment can cover half the fees for the analysis phase."
+        },
+        {
+          "title": "Replacing a system: $12,000 – $30,000 and up",
+          "text": "My published replacements are done in phases of about $6,000 — each one delivered, used and paid back before the next — and most total between $12,000 and $30,000. Custom integrated platforms on the market sometimes exceed $100,000: at that level, insist on a phased breakdown, never a “big bang”."
+        },
+        {
+          "title": "By the hour: $150 – $350 (consulting)",
+          "text": "Published hourly rate cards in Canada for automation and AI consulting range from $150 to $350/h. Cross-check: published Quebec web development rates sit at $60–120/h for freelancers and $120–250/h for agencies. Be wary of an hourly rate with no defined scope — a fixed price tied to an outcome protects both sides."
+        }
+      ]
+    },
+    "factors": {
+      "eyebrow": "What drives the bill",
+      "title": "Three factors — and two government discounts.",
+      "p1": "<strong>The number of systems involved</strong> (connecting two pieces of software costs less than connecting five), <strong>how clean the data is</strong> (PDFs and paper that need interpreting add a layer), and <strong>the human exception</strong> (the more “it depends” there is in the process, the bigger the project). That’s why any serious quote starts by looking at your real files, not with a price per square foot.",
+      "p2": "On the grants side: <strong>ESSOR component 1B/1C</strong> (50% of the assessment up to $20,000, 50% of implementation up to $50,000 — businesses with 250 employees or fewer and $2.5M or more in revenue) and the <strong>C3I tax credit</strong> (15 to 25% on equipment and management software, until the end of 2029). The details of the active programs are in <guide>the complete guide</guide>."
+    },
+    "proof": {
+      "label": "The other side of the equation",
+      "text": "The cost of the project is only half the calculation — the other half is what the chore already costs you. A Quebec grocery store was paying $56,000 a year for a single manual task, without knowing it.",
+      "link": "Read the full case →"
+    },
+    "services": {
+      "label": "The services, and their prices"
+    },
+    "cta": {
+      "eyebrow": "Your own number",
+      "title": "A price gets confirmed",
+      "titleItalic": "on your real files.",
+      "lead": "In 20 minutes on the phone, we put a number on your chore, I give you an honest range for eliminating it — and if the math doesn’t hold up, I’ll tell you and we’ll leave it there.",
+      "book": "Book my 20 minutes",
+      "altLabel": "A number first?",
+      "altText": "The free calculator"
+    }
+  },
+  "comparatifEpicerie": {
+    "meta": {
+      "title": "Grocery store software in Quebec: POS and management systems compared (2026) | Gabriel Nadon",
+      "description": "SIR Solutions, LOC Software, Panza, Logivision, Square: the Quebec comparison of systems for independent grocery and convenience stores — scales, inventory, published prices where they exist, and what none of them solves: updating supplier prices.",
+      "ogTitle": "Grocery store software in Quebec: the systems compared (2026)",
+      "ogDescription": "SIR, LOC, Panza, Logivision, Square — compared for independent Quebec grocery stores, by someone who has worked inside a grocery store’s systems."
+    },
+    "jsonld": {
+      "headline": "Grocery store software in Quebec: POS and management systems compared (2026)",
+      "description": "Comparison of POS and management systems for independent grocery and convenience stores in Quebec: SIR Solutions, LOC Software, Panza, ACCEO Logivision, Square — and the issue this market doesn’t solve, supplier price synchronization.",
+      "listName": "POS and management systems for independent grocery stores in Quebec",
+      "listItems": [
+        "SIR Solutions (Montreal)",
+        "LOC Software — Store Management Suite (Laval)",
+        "Panza (Quebec City)",
+        "ACCEO Logivision — L-POS / L-BOSS (Montreal)",
+        "Square (general-purpose)"
+      ],
+      "breadcrumbParent": "Management software for grocery and convenience stores",
+      "breadcrumb": "Grocery store software in Quebec compared",
+      "faq": [
+        {
+          "q": "What is the best management software for an independent grocery store in Quebec?",
+          "a": "There is no universal “best”: SIR Solutions, LOC Software, Panza and ACCEO Logivision are all serious Quebec systems, with different strengths. The right choice depends on three questions: do you need integrated department scales, how many checkouts do you have, and what monthly budget is realistic. Panza is the only one of the four that publishes its prices ($59 to $249/month)."
+        },
+        {
+          "q": "How much does grocery store software cost in Quebec?",
+          "a": "Most Quebec vendors (SIR Solutions, LOC Software, ACCEO Logivision) don’t publish their prices — you have to ask for a quote. Panza publishes its own: from $59/month (1 checkout) to $249/month (4 checkouts with online sales). Square lists 2.5% per in-person transaction in Canada, with a free basic plan, but its limits on selling by weight make it a hard fit for a full grocery store."
+        },
+        {
+          "q": "Do you have to change your POS system to automate supplier price updates?",
+          "a": "No — and that’s this market’s blind spot: none of the major grocery systems publicly documents automatic import of your suppliers’ price lists. The proven solution is an intermediate system that reads every supplier’s files, compares the prices and feeds the existing POS. A Quebec grocery store did it without changing its POS and recovered $56,000 a year."
+        }
+      ]
+    },
+    "nav": {
+      "grocery": "Grocery",
+      "cases": "Case studies",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "Independent comparison · Quebec · updated August 2026",
+      "title": "Grocery store software in Quebec: the comparison",
+      "titleItalic": "the vendors won’t write.",
+      "lead": "Search for “grocery store management software” in French and you’ll land on comparisons from France — NF525 certification, European buying groups, nothing that applies to a business here. Here are the systems that actually run Quebec’s independent grocery and convenience stores, what each one does well, what their websites don’t say — and the chore none of them solves. I don’t sell any of this software; I’ve worked inside an independent grocery store’s systems, on the side of the people who use them.",
+      "moneyKicker": "What this comparison reveals",
+      "moneyNum": "0 / 5",
+      "moneyCur": "systems",
+      "moneySub": "publicly document automatic import of your suppliers’ price lists — the task that cost a Quebec grocery store $56,000/year.",
+      "moneyPlus": "The details, vendor by vendor, below."
+    },
+    "systems": {
+      "eyebrow": "The systems, one by one",
+      "items": [
+        {
+          "title": "SIR Solutions — Montreal",
+          "text": "A Quebec veteran (founded in 1994) that bills itself as “the No. 1 grocery POS system in Canada”. Its documentation highlights department scale integration — prices, ingredients and nutrition facts transferred in one go — sending prices to the POS and the scales at the same time, and order suggestions based on store trends. Also serves pharmacies, gas stations and retail. Prices not published: a quote is required. The “full-service store” choice: butcher counter, ready-to-eat, scales everywhere."
+        },
+        {
+          "title": "LOC Software (Store Management Suite) — Laval",
+          "text": "Over 30 years in food retail POS, headquartered in Laval, more than 40 modules (POS, back office, warehouse) and — according to the vendor — more than 30,000 systems installed. Mobile price updates with label printing, electronic shelf labels, self-checkout, loyalty, e-commerce (Local Express partnership announced in January 2026). Prices not published. A caveat to check during the demo: a detailed public review specifically criticizes its purchasing/receiving module and its documentation — ask your questions about that module."
+        },
+        {
+          "title": "Panza — Quebec City",
+          "text": "The newest, “designed by a grocer, for a grocer”, aimed at neighbourhood grocers, convenience stores, butcher shops and zero-waste stores. Real-time inventory, assisted supplier ordering, invoice reading through visual recognition with ordered/received comparison, scales for bulk, synchronized online sales. Above all: the only Quebec player that publishes its prices — from $59/month (1 checkout) to $249/month (4 checkouts + online sales), 2-month trial. For a business starting from scratch, or one that’s had enough of opaque quotes, it’s the market’s benchmark for transparency."
+        },
+        {
+          "title": "ACCEO Logivision (L-POS / L-BOSS) — Montreal",
+          "text": "An established Quebec vendor (Harris group), found in supermarkets, convenience stores, butcher shops and liquor stores. Documented strength: scheduled “price batches” — permanent or promotional price changes that activate on their own on the chosen date — and the interface to accounting software. Sold through regional resellers (Dijitec in Mauricie and Centre-du-Québec, Globe POS, STR PDV…): you’re also buying the proximity of a technician who comes on site. Prices not published."
+        },
+        {
+          "title": "Square — the generalist worth knowing (and its limits)",
+          "text": "Tempting for a small convenience store: free basic plan, 2.5% per in-person transaction in Canada, set up in a day. But for a real grocery store, its documented limits weigh heavily: only the scales on its short compatibility list work, and embedded-weight barcodes — printed by department scales on meat and ready-to-eat items — aren’t supported. Fine for a counter with no weighing; undersized as soon as a scale comes into play."
+        }
+      ]
+    },
+    "choose": {
+      "eyebrow": "How to choose",
+      "title": "Three questions decide it, before any demo.",
+      "paragraphs": [
+        "<strong>1. Do you sell by weight?</strong> Butcher counter, bulk, ready-to-eat: you need integrated scales and embedded-weight barcodes. That rules out the generalists and puts SIR, LOC and Logivision at the top of the list. Without weighing, the field opens up — Panza, or even Square.",
+        "<strong>2. Who will fix it on a Saturday?</strong> A POS system always breaks down on a peak day. A regional reseller who comes on site (the Logivision/Dijitec model) is sometimes worth more than the feature list.",
+        "<strong>3. Get the full price in writing.</strong> Only one Quebec player publishes its prices. For the others, ask for the 5-year cost: licence, hardware, installation, training, monthly fees, and the price of every “module” that will be added later. That’s where quotes really differ."
+      ]
+    },
+    "blind": {
+      "eyebrow": "The market’s blind spot",
+      "quote": "None of these POS systems updates your supplier prices on its own.",
+      "body": "They all manage selling prices. But the price lists that come in from your eight suppliers — Excel, CSV, PDF, paper — none of these systems publicly documents importing them automatically. The result: someone retypes them, at almost every independent store. One Quebec grocery store put a number on that chore: close to $56,000 a year. We eliminated it with an intermediate system plugged into its existing POS — without replacing it.",
+      "case": {
+        "title": "The case, in detail",
+        "text": "37,000 prices synchronized, $56,000/year recovered, zero days of downtime.",
+        "link": "Read the case →"
+      },
+      "methods": {
+        "title": "The 4 ways to update prices",
+        "text": "From manual entry to automated synchronization: real costs and pitfalls.",
+        "link": "Read the guide →"
+      },
+      "template": {
+        "title": "Free Excel template",
+        "text": "Compare prices from 3 suppliers, product by product, until you automate (template in French).",
+        "link": "Download (.xlsx) →"
+      }
+    },
+    "cta": {
+      "eyebrow": "A neutral opinion",
+      "title": "Before you sign a quote,",
+      "titleItalic": "let’s talk for 20 minutes.",
+      "lead": "I don’t sell any of these systems — I have nothing to gain by steering you toward one or another. In 20 minutes, we look at your store, your suppliers and your quotes, and I tell you what I would do in your place. Free.",
+      "book": "Book my 20 minutes",
+      "altLabel": "Keep your POS?",
+      "altText": "Automate without replacing anything"
+    }
+  }
+}
