@@ -146,64 +146,31 @@ export default function AIConsultantPage() {
           },
         ],
       }}
-      extra={
-        <section className="section-tight">
-          <div className="mandats-head">
-            <h2 className="h2-left">What I implement.</h2>
-            <span className="eyebrow">Services</span>
-          </div>
-          <div className="case-steps">
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>AI AGENTS</span>
-              </div>
-              <h3 className="mandat-title">
-                <span>AI agents for business</span>
-              </h3>
-              <p className="mandat-text">
-                An agent reads a request, checks your data and prepares the
-                action — reply, quote, data entry — for approval.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>DOCUMENTS</span>
-              </div>
-              <h3 className="mandat-title">
-                <span>Invoice and document processing</span>
-              </h3>
-              <p className="mandat-text">
-                Invoices, purchase orders, price lists: read, checked and keyed
-                in automatically; exceptions go to a person.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>AUTOMATION</span>
-              </div>
-              <h3 className="mandat-title">
-                <span>Business process automation</span>
-              </h3>
-              <p className="mandat-text">
-                The copy-paste between apps, weekly reports and follow-ups —
-                done by the machine, with Make, n8n, Power Automate or code.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>SYSTEMS</span>
-              </div>
-              <h3 className="mandat-title">
-                <span>Custom internal software</span>
-              </h3>
-              <p className="mandat-text">
-                When a spreadsheet has become your management system: a real
-                internal tool, built in increments.
-              </p>
-            </div>
-          </div>
-        </section>
-      }
+      services={{
+        title: "What I implement.",
+        items: [
+          {
+            kind: "AI agents",
+            title: "AI agents for business",
+            text: "An agent reads a request, checks your data and prepares the action — reply, quote, data entry — for approval.",
+          },
+          {
+            kind: "Documents",
+            title: "Invoice and document processing",
+            text: "Invoices, purchase orders, price lists: read, checked and keyed in automatically; exceptions go to a person.",
+          },
+          {
+            kind: "Automation",
+            title: "Business process automation",
+            text: "The copy-paste between apps, weekly reports and follow-ups — done by the machine, with Make, n8n, Power Automate or code.",
+          },
+          {
+            kind: "Systems",
+            title: "Custom internal software",
+            text: "When a spreadsheet has become your management system: a real internal tool, built in increments.",
+          },
+        ],
+      }}
       proof={{
         label: "Real results",
         body: (

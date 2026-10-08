@@ -145,72 +145,35 @@ export default function ConsultantIAPage() {
           },
         ],
       }}
-      extra={
-        <section className="section-tight" id="services-ia">
-          <div className="mandats-head">
-            <h2 className="h2-left">Ce que j’implante, concrètement.</h2>
-            <span className="eyebrow">Services</span>
-          </div>
-          <div className="case-steps">
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>AGENTS IA</span>
-              </div>
-              <h3 className="mandat-title">
-                <a href="/agents-ia/" className="link-serif">
-                  Agents IA pour entreprise →
-                </a>
-              </h3>
-              <p className="mandat-text">
-                Un agent qui lit une demande, consulte vos données et prépare
-                l’action — réponse, soumission, saisie — pour validation.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>DOCUMENTS</span>
-              </div>
-              <h3 className="mandat-title">
-                <a href="/traitement-documents-ia/" className="link-serif">
-                  Traitement de factures et documents →
-                </a>
-              </h3>
-              <p className="mandat-text">
-                Factures, bons de commande, listes de prix : lus, vérifiés et
-                saisis automatiquement, les exceptions envoyées à un humain.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>AUTOMATISATION</span>
-              </div>
-              <h3 className="mandat-title">
-                <a href="/automatisation-processus/" className="link-serif">
-                  Automatisation des processus →
-                </a>
-              </h3>
-              <p className="mandat-text">
-                Les copier-coller entre logiciels, rapports et relances qui se
-                refont chaque semaine — faits par la machine.
-              </p>
-            </div>
-            <div className="case-step">
-              <div className="mandat-code">
-                <span>SYSTÈMES</span>
-              </div>
-              <h3 className="mandat-title">
-                <a href="/logiciel-sur-mesure/" className="link-serif">
-                  Logiciel sur mesure →
-                </a>
-              </h3>
-              <p className="mandat-text">
-                Quand Excel est devenu votre logiciel de gestion : un vrai
-                système interne, construit par tranches.
-              </p>
-            </div>
-          </div>
-        </section>
-      }
+      services={{
+        title: "Ce que j’implante, concrètement.",
+        items: [
+          {
+            kind: "Agents IA",
+            title: "Agents IA pour entreprise",
+            text: "Un agent qui lit une demande, consulte vos données et prépare l’action — réponse, soumission, saisie — pour validation.",
+            href: "/agents-ia/",
+          },
+          {
+            kind: "Documents",
+            title: "Traitement de factures et documents",
+            text: "Factures, bons de commande, listes de prix : lus, vérifiés et saisis automatiquement, les exceptions envoyées à un humain.",
+            href: "/traitement-documents-ia/",
+          },
+          {
+            kind: "Automatisation",
+            title: "Automatisation des processus",
+            text: "Les copier-coller entre logiciels, rapports et relances qui se refont chaque semaine — faits par la machine.",
+            href: "/automatisation-processus/",
+          },
+          {
+            kind: "Systèmes",
+            title: "Logiciel sur mesure",
+            text: "Quand Excel est devenu votre logiciel de gestion : un vrai système interne, construit par tranches.",
+            href: "/logiciel-sur-mesure/",
+          },
+        ],
+      }}
       proof={{
         label: "Sur le terrain",
         body: (

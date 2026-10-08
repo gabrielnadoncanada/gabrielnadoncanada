@@ -4,12 +4,14 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { MinimalFooter } from "@/components/MinimalFooter";
 import { ContactForm } from "@/components/ContactForm";
 import { TrackedLink } from "@/components/TrackedLink";
+import "@/app/home.css";
 
 const SITE = "https://gabrielnadon.com";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 
 type Item = { title: string; text: string };
 type Link = { href: string; label: string };
+type ServiceItem = { kind: string; title: string; text: string; href?: string };
 
 export type ServicePageProps = {
   lang?: "fr" | "en";
@@ -23,6 +25,7 @@ export type ServicePageProps = {
   pains: { eyebrow: string; title: string; intro?: string; items: string[] };
   approach: { eyebrow: string; quote: string; body: ReactNode; principles: Item[] };
   steps: { eyebrow: string; items: Item[] };
+  services?: { title: string; items: ServiceItem[] };
   extra?: ReactNode;
   proof: { label: string; body: ReactNode };
   price: { label: string; body: ReactNode };
@@ -45,12 +48,41 @@ const NAV_EN = [
   { href: "#contact", label: "Contact" },
 ];
 
-const ROMAN = ["I.", "II.", "III.", "IV."];
+function Arrow() {
+  return (
+    <svg className="hm-arrow" viewBox="0 0 20 20" aria-hidden="true">
+      <path
+        d="M4 10h11M11 5l5 5-5 5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function Check() {
+  return (
+    <svg className="hm-check" viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M3.5 8.5l3 3 6-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 // Gabarit des pages de service : intention de recherche → problème →
-// solution → preuve → prix → objections → CTA. Le contenu vit dans chaque
-// page ; ce composant garantit la même structure, le même maillage et les
-// mêmes données structurées (Service + FAQPage + BreadcrumbList).
+// solution → démarche → preuve → prix → objections → CTA. Le contenu vit dans
+// chaque page ; ce composant garantit la même structure, le même maillage et
+// les mêmes données structurées (Service + FAQPage + BreadcrumbList).
+// Styles : système .hm-* de app/home.css, partagé avec l'accueil.
 export function ServicePage(p: ServicePageProps) {
   const en = p.lang === "en";
   const url = `${SITE}${p.path}`;
@@ -89,204 +121,231 @@ export function ServicePage(p: ServicePageProps) {
 
   return (
     <div id="dc-root" lang={en ? "en" : undefined}>
-      <div>
-        <div className="page">
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }}
-          />
-          <div className="cab-grain" aria-hidden="true"></div>
+      <div className="page hm svc">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }}
+        />
 
-          <Ticker lang={p.lang} />
-          <SiteHeader brandHref="/" navItems={en ? NAV_EN : NAV_FR} ctaHref="#contact" lang={p.lang} />
+        <Ticker lang={p.lang} />
+        <SiteHeader brandHref="/" navItems={en ? NAV_EN : NAV_FR} ctaHref="#contact" lang={p.lang} />
 
-          {/* Hero : reprend les mots de la recherche, puis la promesse */}
-          <section className="case-hero">
-            <div className="case-hero-grid">
-              <div>
-                <div className="eyebrow" data-rise="50">
-                  {p.eyebrow}
-                </div>
-                <h1 className="case-title u-mt-lg" data-rise="120">
-                  {p.title}
-                </h1>
-                <p className="case-lead" data-rise="200">
-                  {p.lead}
-                </p>
-                <div className="hero-cta" data-rise="260">
-                  <a href="#contact" className="btn">
-                    {en ? "Describe your process" : "Décrire mon processus"} <span>→</span>
-                  </a>
-                  <a href="#preuve" className="btn-link">
-                    {en ? "See a real case" : "Voir un cas réel"}
-                  </a>
-                </div>
+        {/* Hero : reprend les mots de la recherche, puis la promesse */}
+        <section className="hm-hero">
+          <div className="hm-wrap hm-hero-grid">
+            <div className="hm-hero-copy">
+              <p className="hm-kicker">{p.eyebrow}</p>
+              <h1 className="hm-h1 svc-h1">{p.title}</h1>
+              <p className="hm-lead">{p.lead}</p>
+              <div className="hm-cta">
+                <a href="#contact" className="btn">
+                  {en ? "Describe your process" : "Décrire mon processus"}
+                  <Arrow />
+                </a>
+                <a href="#preuve" className="btn-link">
+                  {en ? "See a real case" : "Voir un cas réel"}
+                </a>
               </div>
-              <div data-rise="280">
-                <div className="money-box">
-                  <div className="money-kicker">{p.box.kicker}</div>
-                  <div className="u-mt-md">
-                    {p.box.items.map((item) => (
-                      <div className="risk-item" key={item}>
-                        <span className="rmark">→</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="hm-who">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/portrait.webp"
+                  width={56}
+                  height={56}
+                  alt=""
+                  className="hm-who-img"
+                />
+                <p>
+                  {en ? (
+                    <>
+                      <strong>Gabriel Nadon</strong>, independent consultant in
+                      Montreal. You talk to the person who builds it.
+                    </>
+                  ) : (
+                    <>
+                      <strong>Gabriel Nadon</strong>, consultant indépendant à
+                      Montréal. Vous parlez à celui qui construit.
+                    </>
+                  )}
+                </p>
               </div>
             </div>
-          </section>
 
-          {/* Problème : faire reconnaître la situation */}
-          <section className="section u-pb-64">
-            <div className="note-grid">
-              <div>
-                <div className="eyebrow u-mb-lg">{p.pains.eyebrow}</div>
-                <h2 className="h2-left u-measure-title">{p.pains.title}</h2>
-                {p.pains.intro ? <p className="case-prose u-mt-lg">{p.pains.intro}</p> : null}
+            <div className="hm-sys-panel svc-box">
+              <div className="hm-sys-head">
+                <span className="hm-sys-title">
+                  <span className="hm-live" aria-hidden="true"></span>
+                  {p.box.kicker}
+                </span>
               </div>
-              <ul className="pain-list">
-                {p.pains.items.map((item) => (
-                  <li className="pain-item" key={item}>
-                    <span className="pain-mark" aria-hidden="true"></span>
-                    <p className="pain-text">{item}</p>
+              <ul className="svc-box-list">
+                {p.box.items.map((item) => (
+                  <li key={item}>
+                    <span className="hm-q-icon is-done" aria-hidden="true">
+                      <Check />
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Problème : faire reconnaître la situation */}
+        <section className="hm-section">
+          <div className="hm-wrap hm-split">
+            <div>
+              <p className="hm-kicker">{p.pains.eyebrow}</p>
+              <h2 className="hm-h2">{p.pains.title}</h2>
+              {p.pains.intro ? <p className="hm-sub svc-intro">{p.pains.intro}</p> : null}
+            </div>
+            <ul className="hm-pains">
+              {p.pains.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Solution : la posture, puis les principes */}
+        <section className="svc-dark">
+          <div className="hm-wrap hm-split">
+            <div>
+              <p className="svc-dark-kicker">{p.approach.eyebrow}</p>
+              <h2 className="svc-dark-quote">{p.approach.quote}</h2>
+              <div className="svc-dark-body">{p.approach.body}</div>
+            </div>
+            <ul className="svc-principles">
+              {p.approach.principles.map((pr) => (
+                <li key={pr.title}>
+                  <Check />
+                  <div>
+                    <h3>{pr.title}</h3>
+                    <p>{pr.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Démarche : une vraie séquence */}
+        <section className="hm-section" id="how">
+          <div className="hm-wrap hm-split">
+            <h2 className="hm-h2">{p.steps.eyebrow}</h2>
+            <ol className="svc-steps">
+              {p.steps.items.map((s, i) => (
+                <li key={s.title}>
+                  <span className="hm-step-n" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="hm-h3">{s.title}</h3>
+                    <p>{s.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        {/* Services liés (hub vers les pages sœurs) */}
+        {p.services ? (
+          <section className="hm-section hm-band">
+            <div className="hm-wrap">
+              <div className="hm-head">
+                <h2 className="hm-h2">{p.services.title}</h2>
+              </div>
+              <ul className="hm-svcs">
+                {p.services.items.map((s) => (
+                  <li key={s.title} className={s.href ? "hm-svc" : "hm-svc svc-static"}>
+                    <span className="hm-svc-kind">{s.kind}</span>
+                    <h3 className="hm-svc-title">
+                      {s.href ? <a href={s.href}>{s.title}</a> : s.title}
+                    </h3>
+                    <p className="hm-svc-text">{s.text}</p>
+                    {s.href ? (
+                      <span className="hm-svc-go" aria-hidden="true">
+                        <Arrow />
+                      </span>
+                    ) : null}
                   </li>
                 ))}
               </ul>
             </div>
           </section>
+        ) : null}
 
-          {/* Solution : la posture, puis les principes */}
-          <section className="note">
-            <div className="section">
-              <div className="note-grid">
-                <div>
-                  <div className="note-eyebrow">{p.approach.eyebrow}</div>
-                  <h2 className="note-quote">{p.approach.quote}</h2>
-                  <div className="note-body">{p.approach.body}</div>
-                </div>
-                <div className="principles">
-                  {p.approach.principles.map((pr, i) => (
-                    <div className="principle" key={pr.title}>
-                      <div className="principle-head">
-                        <span className="principle-num">
-                          <span>{ROMAN[i]}</span>
-                        </span>
-                        <div>
-                          <h3 className="principle-title">
-                            <span>{pr.title}</span>
-                          </h3>
-                          <p className="principle-text">
-                            <span>{pr.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
+        {p.extra}
 
-          {/* Démarche */}
-          <section className="section-method" id="how">
-            <div className="method-head">
-              <h2 className="eyebrow">{p.steps.eyebrow}</h2>
-              <span className="rule"></span>
+        {/* Preuve et prix : uniquement du vérifiable */}
+        <section className="hm-section" id="preuve">
+          <div className="hm-wrap svc-facts" id="proof">
+            <div className="svc-fact svc-fact-proof">
+              <h2 className="hm-h3">{p.proof.label}</h2>
+              <div className="svc-fact-body">{p.proof.body}</div>
             </div>
-            <div className="case-steps">
-              {p.steps.items.map((s, i) => (
-                <div className="case-step" key={s.title}>
-                  <div className="mandat-num">
-                    <span>{String(i + 1).padStart(2, "0")}</span>
-                  </div>
-                  <h3 className="mandat-title">
-                    <span>{s.title}</span>
-                  </h3>
-                  <p className="mandat-text">
-                    <span>{s.text}</span>
-                  </p>
-                </div>
-              ))}
+            <div className="svc-fact">
+              <h2 className="hm-h3">{p.price.label}</h2>
+              <div className="svc-fact-body">{p.price.body}</div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {p.extra}
-
-          {/* Preuve : uniquement du vérifiable */}
-          <section className="bb" id="preuve">
-            <div className="sectors" id="proof">
-              <span className="sectors-label">{p.proof.label}</span>
-              <div className="u-measure-prose">{p.proof.body}</div>
-            </div>
-          </section>
-
-          <section className="bb">
-            <div className="sectors">
-              <span className="sectors-label">{p.price.label}</span>
-              <div className="u-measure-prose">{p.price.body}</div>
-            </div>
-          </section>
-
-          {/* Objections */}
-          <section className="section-method" id="faq">
-            <div className="method-head">
-              <h2 className="eyebrow">{p.faq.eyebrow}</h2>
-              <span className="rule"></span>
-            </div>
-            <div className="case-steps">
-              {p.faq.items.map((f) => (
-                <div className="case-step" key={f.q}>
-                  <div className="mandat-num">
-                    <span>Q.</span>
-                  </div>
-                  <h3 className="mandat-title">
+        {/* Objections */}
+        <section className="hm-section hm-band" id="faq">
+          <div className="hm-wrap hm-split">
+            <h2 className="hm-h2">{p.faq.eyebrow}</h2>
+            <div className="svc-faq">
+              {p.faq.items.map((f, i) => (
+                <details key={f.q} open={i === 0}>
+                  <summary>
                     <span>{f.q}</span>
-                  </h3>
-                  <p className="mandat-text">
-                    <span>{f.a}</span>
-                  </p>
-                </div>
+                    <span className="svc-faq-icon" aria-hidden="true"></span>
+                  </summary>
+                  <p>{f.a}</p>
+                </details>
               ))}
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Maillage vers les pages sœurs et les ressources */}
-          <section className="bb">
-            <div className="sectors">
-              <span className="sectors-label">{p.related.label}</span>
-              <div className="sectors-list">
-                {p.related.links.map((l) => (
-                  <a key={l.href} href={l.href} className="serif-muted link-serif">
-                    <span>{l.label}</span>
-                  </a>
-                ))}
-              </div>
+        {/* Maillage vers les pages sœurs et les ressources */}
+        <section className="hm-section-tight svc-related">
+          <div className="hm-wrap">
+            <h2 className="hm-h3">{p.related.label}</h2>
+            <div className="svc-related-links">
+              {p.related.links.map((l) => (
+                <a key={l.href} href={l.href} hrefLang={l.href.startsWith("/en/") ? "en" : undefined}>
+                  {l.label}
+                  <Arrow />
+                </a>
+              ))}
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Conversion sur la page même */}
-          <section className="section" id="contact">
-            <div className="contact-grid">
-              <div>
-                <div className="contact-eyebrow">{p.cta.eyebrow}</div>
-                <h2 className="contact-title">{p.cta.title}</h2>
-                <p className="contact-lead">{p.cta.lead}</p>
-                <p className="form-note">
-                  <TrackedLink event="clic_audit" href={CAL} target="_blank" rel="noopener">
-                    {en ? "Book my 20 minutes now →" : "Réserver mes 20 minutes maintenant →"}
-                  </TrackedLink>
-                </p>
-              </div>
-              <div className="cab-paper contact-card">
-                <ContactForm withPhone lang={p.lang} defaultSujet={p.cta.sujet} />
-              </div>
+        {/* Conversion sur la page même */}
+        <section className="hm-section hm-contact" id="contact">
+          <div className="hm-wrap hm-contact-grid">
+            <div>
+              <p className="hm-kicker">{p.cta.eyebrow}</p>
+              <h2 className="hm-h2">{p.cta.title}</h2>
+              <p className="hm-lead">{p.cta.lead}</p>
+              <p className="svc-cal">
+                <TrackedLink event="clic_audit" href={CAL} target="_blank" rel="noopener">
+                  {en ? "Or book your 20 minutes now" : "Ou réservez vos 20 minutes maintenant"}
+                </TrackedLink>
+              </p>
             </div>
-          </section>
+            <div className="contact-card hm-form">
+              <ContactForm withPhone lang={p.lang} defaultSujet={p.cta.sujet} />
+            </div>
+          </div>
+        </section>
 
-          <MinimalFooter lang={p.lang} />
-        </div>
+        <MinimalFooter lang={p.lang} />
       </div>
     </div>
   );
