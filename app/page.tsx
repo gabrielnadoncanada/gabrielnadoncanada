@@ -3,6 +3,7 @@ import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HomeFooter } from "@/components/HomeFooter";
 import { ContactForm } from "@/components/ContactForm";
+import "./home.css";
 
 export const metadata: Metadata = {
   title:
@@ -127,6 +128,14 @@ const JSONLD = {
   ],
 };
 
+const OUTILS = [
+  { href: "/calculateur/", kind: "Calculateur", title: "Combien vous coûte le travail manuel" },
+  { href: "/diagnostic-ia/", kind: "Test en 10 questions", title: "Votre PME est-elle prête pour l’IA ?" },
+  { href: "/guides/automatisation-pme-quebec/", kind: "Guide", title: "Automatiser sa PME au Québec" },
+  { href: "/guides/comparatif-logiciels-epicerie-quebec/", kind: "Comparatif", title: "Logiciels d’épicerie au Québec" },
+  { href: "/barometre/", kind: "Baromètre", title: "Baromètre PME 2026" },
+];
+
 const NAV = [
   { href: "#probleme", label: "La situation" },
   { href: "#methode", label: "Méthode" },
@@ -135,744 +144,571 @@ const NAV = [
   { href: "#contact", label: "Contact" },
 ];
 
+// Visuel du hero : une matinée type une fois le système en place. C'est une
+// illustration (pas un client réel) — aucun nom de client ni de fournisseur.
+const SOURCES = ["Excel", "Outlook", "QuickBooks", "Textos", "PDF"];
+const QUEUE = [
+  {
+    title: "Listes de prix de 3 fournisseurs importées",
+    meta: "1 284 prix comparés, 37 écarts signalés",
+    done: true,
+  },
+  {
+    title: "Facture n° 4821 lue et saisie",
+    meta: "Rapprochée du bon de commande",
+    done: true,
+  },
+  {
+    title: "Livraison en retard détectée",
+    meta: "Fournisseur relancé, chantier avisé",
+    done: true,
+  },
+  {
+    title: "Soumission préparée à partir du devis type",
+    meta: "Attend votre accord avant l’envoi",
+    done: false,
+  },
+];
+
+const PAINS = [
+  "Une partie de l’information vit dans Excel. Une autre, dans les courriels.",
+  "Les employés s’écrivent par texto pour débloquer le travail.",
+  "La comptabilité roule dans un logiciel, les projets dans un autre — et les deux ne se parlent pas.",
+  "Quelqu’un doit constamment recoller les morceaux : chercher, retranscrire, relancer, vérifier.",
+];
+
+const STEPS = [
+  {
+    when: "Semaine 1",
+    title: "Diagnostic opérationnel",
+    text: "On regarde comment votre entreprise fonctionne réellement — et on trouve où le temps, l’information ou l’argent se perd.",
+  },
+  {
+    when: "Ensuite",
+    title: "Système opérationnel",
+    text: "On centralise le processus le plus coûteux autour de votre façon de travailler. Pas l’inverse.",
+  },
+  {
+    when: "Par la suite",
+    title: "Automatisation intelligente",
+    text: "Une fois les données et le processus fiables, le système commence à faire une partie du travail.",
+  },
+];
+
+const CAPACITES = [
+  { verb: "Réunir", rest: "l’information dispersée dans vos systèmes" },
+  { verb: "Préparer", rest: "les documents à partir des données existantes" },
+  { verb: "Détecter", rest: "un suivi ou une action qui manque" },
+  { verb: "Relancer", rest: "la bonne personne au bon moment" },
+  { verb: "Comparer", rest: "le prévu et le réel, et signaler les écarts" },
+  { verb: "Chercher", rest: "dans tous les documents d’un projet" },
+  { verb: "Transformer", rest: "courriels, PDF et messages en données utilisables" },
+  { verb: "Proposer", rest: "la prochaine action, validée par un humain" },
+];
+
+const SERVICES = [
+  {
+    href: "/consultant-ia/",
+    kind: "Pour démarrer",
+    title: "Consultant IA pour PME",
+    text: "Trouver les deux ou trois tâches où l’IA rapporte vraiment chez vous, puis les implanter.",
+  },
+  {
+    href: "/traitement-documents-ia/",
+    kind: "Documents",
+    title: "Factures et documents traités par l’IA",
+    text: "Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu’on les retape.",
+  },
+  {
+    href: "/agents-ia/",
+    kind: "Agents",
+    title: "Agents IA",
+    text: "Un assistant qui traite les demandes, prépare soumissions et réponses, et demande avant d’agir.",
+  },
+  {
+    href: "/automatisation-processus/",
+    kind: "Processus",
+    title: "Automatisation des processus",
+    text: "La double saisie, les rapports et les relances qui se refont chaque semaine, confiés à la machine.",
+  },
+  {
+    href: "/logiciel-sur-mesure/",
+    kind: "Systèmes",
+    title: "Logiciel sur mesure",
+    text: "Quand Excel est devenu votre logiciel de gestion.",
+  },
+];
+
+const OUTILS_EN_PLACE = ["ERP", "QuickBooks", "Procore", "Outlook", "Excel", "Fichiers et exports", "API"];
+const SECTEURS = ["Construction", "Industriel", "Manufacturier", "Distribution et logistique", "Opérations terrain"];
+
+const STATS = [
+  { num: "12 h+", label: "récupérées chaque semaine, en moyenne" },
+  { num: "20+", label: "PME accompagnées au Québec" },
+  { num: "37 000", label: "prix comparés à chaque cycle, sans effort humain" },
+  { num: "30 min", label: "pour une première analyse de vos opérations" },
+];
+
+function Arrow() {
+  return (
+    <svg className="hm-arrow" viewBox="0 0 20 20" aria-hidden="true">
+      <path
+        d="M4 10h11M11 5l5 5-5 5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function Check() {
+  return (
+    <svg className="hm-check" viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M3.5 8.5l3 3 6-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <div id="dc-root">
-      <div>
-        <div className="page">
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
-          />
+      <div className="page hm">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
+        />
 
-          <div className="cab-grain" aria-hidden="true"></div>
+        <Ticker />
+        <SiteHeader brandHref="#" navItems={NAV} ctaHref="#contact" />
 
-          <Ticker />
-          <SiteHeader brandHref="#" navItems={NAV} ctaHref="#contact" />
-
-          {/* 1 · HERO — le problème de fragmentation + la promesse opérationnelle */}
-          <section className="hero">
-            <div className="cab-hide-sm hero-ref">
-              <span className="dot-gold"></span>RÉF. 2026
-            </div>
-            <div className="hero-grid">
-              <div>
-                <div className="hero-eyebrow" data-rise="50">
-                  IA, automatisation et systèmes sur mesure · PME québécoises
-                </div>
-                <h1 className="hero-title" data-rise="120">
-                  Vos opérations ne devraient pas vivre dans{" "}
-                  <span className="italic">12 logiciels.</span>
-                </h1>
-                <p className="hero-lead" data-rise="200">
-                  Je transforme les suivis manuels, fichiers Excel, courriels
-                  et logiciels mal adaptés en un système opérationnel simple :
-                  l&apos;information au même endroit, une partie du travail qui
-                  se fait seule.
-                </p>
-                <div className="hero-cta" data-rise="280">
-                  <a href="#contact" className="btn">
-                    <span className="cta-full">
-                      Me montrer comment vous travaillez
-                    </span>
-                    <span className="cta-short">Analyser mes opérations</span>{" "}
-                    <span>→</span>
-                  </a>
-                  <a href="#cas" className="btn-link">
-                    Voir un cas concret
-                  </a>
-                </div>
-                <div className="hero-tags" data-rise="360">
-                  <div className="inline-dot">
-                    <span className="dot-gold-sm"></span>
-                    <span className="hero-tag-txt">
-                      <span>Basé au Québec</span>
-                    </span>
-                  </div>
-                  <div className="inline-dot">
-                    <span className="dot-gold-sm"></span>
-                    <span className="hero-tag-txt">
-                      <span>PME à opérations complexes</span>
-                    </span>
-                  </div>
-                  <div className="inline-dot">
-                    <span className="dot-gold-sm"></span>
-                    <span className="hero-tag-txt">
-                      <span>Réponse sous 24 h</span>
-                    </span>
-                  </div>
-                </div>
+        {/* 1 · HERO — la promesse + ce que « un système » veut dire, montré */}
+        <section className="hm-hero">
+          <div className="hm-wrap hm-hero-grid">
+            <div className="hm-hero-copy">
+              <p className="hm-kicker">
+                IA, automatisation et systèmes sur mesure pour les PME du Québec
+              </p>
+              <h1 className="hm-h1">
+                Vos opérations ne devraient pas vivre dans 12&nbsp;logiciels.
+              </h1>
+              <p className="hm-lead">
+                Je transforme les suivis manuels, fichiers Excel, courriels et
+                logiciels mal adaptés en un système opérationnel simple :
+                l&apos;information au même endroit, une partie du travail qui se
+                fait seule.
+              </p>
+              <div className="hm-cta">
+                <a href="#contact" className="btn">
+                  <span className="cta-full">Me montrer comment vous travaillez</span>
+                  <span className="cta-short">Analyser mes opérations</span>
+                  <Arrow />
+                </a>
+                <a href="#cas" className="btn-link">
+                  Voir un cas concret
+                </a>
               </div>
-
-              <div className="cab-hero-portrait portrait" data-rise="320">
+              <div className="hm-who">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  className="portrait-img"
                   src="/portrait.webp"
-                  width={982}
-                  height={941}
-                  fetchPriority="high"
-                  alt="Portrait de Gabriel Nadon, conseiller"
+                  width={56}
+                  height={56}
+                  alt=""
+                  className="hm-who-img"
                 />
-                <div className="portrait-fade" aria-hidden="true"></div>
-                <div className="portrait-cap">
-                  <span className="cap-line"></span>
-                  <span className="cap-txt">Gabriel Nadon · Conseiller</span>
-                </div>
+                <p>
+                  <strong>Gabriel Nadon</strong>, conseiller indépendant à
+                  Montréal. Vous parlez à celui qui construit, et vous avez une
+                  réponse sous 24&nbsp;h.
+                </p>
               </div>
             </div>
-          </section>
 
-          {/* 2 · PROBLÈME — faire reconnaître la situation */}
-          <section className="section" id="probleme">
-            <div className="note-grid">
-              <div>
-                <div className="eyebrow u-mb-lg">§ 01 · La situation</div>
-                <h2 className="h2-left">
-                  Votre information est partout. Sauf au même endroit.
-                </h2>
+            <figure
+              className="hm-sys"
+              aria-label="Illustration : une matinée type une fois le système en place"
+            >
+              <div className="hm-sys-sources" aria-hidden="true">
+                {SOURCES.map((s) => (
+                  <span key={s} className="hm-src">
+                    {s}
+                  </span>
+                ))}
               </div>
-              <div>
-                <ul className="pain-list">
-                  <li className="pain-item">
-                    <span className="pain-mark" aria-hidden="true"></span>
-                    <p className="pain-text">
-                      Une partie de l&apos;information vit dans Excel. Une
-                      autre, dans les courriels.
-                    </p>
-                  </li>
-                  <li className="pain-item">
-                    <span className="pain-mark" aria-hidden="true"></span>
-                    <p className="pain-text">
-                      Les employés s&apos;écrivent par texto pour débloquer le
-                      travail.
-                    </p>
-                  </li>
-                  <li className="pain-item">
-                    <span className="pain-mark" aria-hidden="true"></span>
-                    <p className="pain-text">
-                      La comptabilité roule dans un logiciel, les projets dans
-                      un autre — et les deux ne se parlent pas.
-                    </p>
-                  </li>
-                  <li className="pain-item">
-                    <span className="pain-mark" aria-hidden="true"></span>
-                    <p className="pain-text">
-                      Et quelqu&apos;un doit constamment recoller les morceaux :
-                      chercher, retranscrire, relancer, vérifier, consolider.
-                    </p>
-                  </li>
+              <svg
+                className="hm-sys-flow"
+                viewBox="0 0 500 64"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path d="M50 0 C50 38, 250 26, 250 64" pathLength={1} />
+                <path d="M150 0 C150 38, 250 26, 250 64" pathLength={1} />
+                <path d="M250 0 L250 64" pathLength={1} />
+                <path d="M350 0 C350 38, 250 26, 250 64" pathLength={1} />
+                <path d="M450 0 C450 38, 250 26, 250 64" pathLength={1} />
+              </svg>
+              <div className="hm-sys-panel">
+                <div className="hm-sys-head">
+                  <span className="hm-sys-title">
+                    <span className="hm-live" aria-hidden="true"></span>
+                    Votre système, ce matin
+                  </span>
+                  <span className="hm-sys-time">8 h 02</span>
+                </div>
+                <ul className="hm-queue">
+                  {QUEUE.map((q, i) => (
+                    <li
+                      key={q.title}
+                      className="hm-q"
+                      style={{ ["--i" as string]: i }}
+                    >
+                      <span
+                        className={q.done ? "hm-q-icon is-done" : "hm-q-icon is-wait"}
+                        aria-hidden="true"
+                      >
+                        {q.done ? <Check /> : "!"}
+                      </span>
+                      <span className="hm-q-body">
+                        <span className="hm-q-title">{q.title}</span>
+                        <span className="hm-q-meta">{q.meta}</span>
+                      </span>
+                      <span className={q.done ? "hm-q-status is-done" : "hm-q-status is-wait"}>
+                        {q.done ? "Fait" : "À valider"}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="bb">
-            <div className="sectors">
-              <span className="sectors-label">Ce que ça coûte</span>
-              <div className="sectors-list">
-                <span className="serif-muted">
-                  <span>Doubles saisies</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Information introuvable</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Suivis oubliés</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Erreurs</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Décisions tardives</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Argent laissé sur la table</span>
-                </span>
-              </div>
-            </div>
-          </section>
-
-          {/* 3 · COMMENT JE TRAVAILLE — trois étapes, pas une liste de services */}
-          <section className="section-method" id="methode">
-            <div className="method-head">
-              <span className="eyebrow">§ 02 · Comment je travaille</span>
-              <span className="rule"></span>
-            </div>
-            <div className="cab-method method-grid method-grid--three">
-              <div className="cab-step-card step">
-                <div className="cab-step-gap sec-head">
-                  <span className="step-code">
-                    <span>01</span>
-                  </span>
-                  <span className="step-week">
-                    <span>semaine 1</span>
-                  </span>
+                <div className="hm-sys-foot">
+                  <span>3 tâches faites sans ressaisie</span>
+                  <span className="hm-sys-foot-wait">1 décision pour vous</span>
                 </div>
-                <h3 className="step-title">
-                  <span>Diagnostic opérationnel</span>
-                </h3>
-                <p className="step-text">
-                  <span>
-                    On regarde comment votre entreprise fonctionne
-                    réellement — et on trouve où le temps, l&apos;information
-                    ou l&apos;argent se perd.
-                  </span>
-                </p>
               </div>
-              <div className="cab-step-card step">
-                <div className="cab-step-gap sec-head">
-                  <span className="step-code">
-                    <span>02</span>
-                  </span>
-                  <span className="step-week">
-                    <span>ensuite</span>
-                  </span>
-                </div>
-                <h3 className="step-title">
-                  <span>Système opérationnel</span>
-                </h3>
-                <p className="step-text">
-                  <span>
-                    On centralise le workflow le plus coûteux autour de votre
-                    façon de travailler. Pas l&apos;inverse.
-                  </span>
-                </p>
-              </div>
-              <div className="cab-step-card step">
-                <div className="cab-step-gap sec-head">
-                  <span className="step-code">
-                    <span>03</span>
-                  </span>
-                  <span className="step-week">
-                    <span>par la suite</span>
-                  </span>
-                </div>
-                <h3 className="step-title">
-                  <span>Automatisation intelligente</span>
-                </h3>
-                <p className="step-text">
-                  <span>
-                    Une fois les données et le processus fiables, le système
-                    commence à faire une partie du travail.
-                  </span>
-                </p>
-              </div>
-            </div>
-            <p className="case-lead u-mt-lg" style={{ maxWidth: "56ch" }}>
-              Quand l&apos;intelligence artificielle accélère une étape, elle
-              travaille sur des données structurées, avec des garde-fous et
-              une validation humaine. C&apos;est un mécanisme — pas le
-              produit.
-            </p>
-          </section>
+              <figcaption className="hm-sys-cap">
+                Illustration : une matinée type, une fois le système en place.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
 
-          {/* 4 · EXEMPLES — ce que le système peut faire, concrètement */}
-          <section className="section-tight" id="exemples">
-            <div className="mandats-head">
-              <h2 className="h2-left">
-                Un logiciel vous donne des écrans. Un système fait une partie
-                du travail.
-              </h2>
-              <span className="eyebrow">§ 03 · Ce que le système peut faire</span>
-            </div>
-            <ul className="pain-list pain-list--cols">
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Réunir l&apos;information dispersée dans vos systèmes
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Préparer les documents à partir des données existantes
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Détecter un suivi ou une action qui manque
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Relancer la bonne personne au bon moment
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Comparer prévu et réel, signaler les écarts
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Chercher dans les documents d&apos;un projet
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Transformer courriels, PDF et messages en données structurées
-                </p>
-              </li>
-              <li className="pain-item">
-                <span className="pain-mark" aria-hidden="true"></span>
-                <p className="pain-text">
-                  Préparer la prochaine action, pour validation par un humain
-                </p>
-              </li>
+        {/* 2 · PROBLÈME — faire reconnaître la situation */}
+        <section className="hm-section" id="probleme">
+          <div className="hm-wrap hm-split">
+            <h2 className="hm-h2">
+              Votre information est partout. Sauf au même endroit.
+            </h2>
+            <ul className="hm-pains">
+              {PAINS.map((p) => (
+                <li key={p}>{p}</li>
+              ))}
             </ul>
-            <p className="case-lead u-mt-lg">
-              Le système prépare, signale et relance. Vos gens gardent le
-              contrôle et décident.
+          </div>
+          <div className="hm-wrap">
+            <p className="hm-cost">
+              <span className="hm-cost-label">Ce que ça coûte</span>
+              Des doubles saisies, de l&apos;information introuvable, des suivis
+              oubliés, des erreurs, des décisions prises trop tard — et de
+              l&apos;argent laissé sur la table.
             </p>
-          </section>
+          </div>
+        </section>
 
-          {/* SERVICES — hub vers les pages commerciales (une par intention) */}
-          <section className="section-tight" id="services">
-            <div className="mandats-head">
-              <h2 className="h2-left">
+        {/* 3 · MÉTHODE — une vraie séquence */}
+        <section className="hm-section hm-band" id="methode">
+          <div className="hm-wrap">
+            <div className="hm-head">
+              <h2 className="hm-h2">Comment je travaille</h2>
+              <p className="hm-sub">
+                Trois étapes, dans cet ordre. On ne construit rien avant
+                d&apos;avoir compris où le travail se perd.
+              </p>
+            </div>
+            <ol className="hm-steps">
+              {STEPS.map((s, i) => (
+                <li key={s.title} className="hm-step">
+                  <span className="hm-step-n" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <span className="hm-step-when">{s.when}</span>
+                  <h3 className="hm-h3">{s.title}</h3>
+                  <p>{s.text}</p>
+                </li>
+              ))}
+            </ol>
+            <p className="hm-note">
+              Quand l&apos;intelligence artificielle accélère une étape, elle
+              travaille sur des données structurées, avec des garde-fous et une
+              validation humaine. C&apos;est un mécanisme, pas le produit.
+            </p>
+          </div>
+        </section>
+
+        {/* 4 · CAPACITÉS — ce que le système peut faire */}
+        <section className="hm-section" id="exemples">
+          <div className="hm-wrap">
+            <div className="hm-head">
+              <h2 className="hm-h2 hm-h2-wide">
+                Un logiciel vous donne des écrans. Un système fait une partie du
+                travail.
+              </h2>
+              <p className="hm-sub">
+                Le système prépare, signale et relance. Vos gens gardent le
+                contrôle et décident.
+              </p>
+            </div>
+            <ul className="hm-caps">
+              {CAPACITES.map((c) => (
+                <li key={c.verb}>
+                  <span className="hm-cap-verb">{c.verb}</span>
+                  <span className="hm-cap-rest">{c.rest}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* 5 · SERVICES — hub vers les pages commerciales (une par intention) */}
+        <section className="hm-section hm-band" id="services">
+          <div className="hm-wrap">
+            <div className="hm-head">
+              <h2 className="hm-h2">
                 Ce que je mets en place, selon où le travail se perd.
               </h2>
-              <span className="eyebrow">§ 04 · Services</span>
             </div>
-            <div className="case-steps">
-              <div className="case-step">
-                <div className="mandat-code">
-                  <span>DÉMARRER</span>
-                </div>
-                <h3 className="mandat-title">
-                  <a href="/consultant-ia/" className="link-serif">
-                    Consultant IA pour PME →
-                  </a>
-                </h3>
-                <p className="mandat-text">
-                  Trouver les deux ou trois tâches où l&apos;IA rapporte vraiment chez vous, puis les implanter.
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="mandat-code">
-                  <span>DOCUMENTS</span>
-                </div>
-                <h3 className="mandat-title">
-                  <a href="/traitement-documents-ia/" className="link-serif">
-                    Factures et documents traités par l&apos;IA →
-                  </a>
-                </h3>
-                <p className="mandat-text">
-                  Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu&apos;on les retape.
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="mandat-code">
-                  <span>AGENTS</span>
-                </div>
-                <h3 className="mandat-title">
-                  <a href="/agents-ia/" className="link-serif">
-                    Agents IA →
-                  </a>
-                </h3>
-                <p className="mandat-text">
-                  Un assistant qui traite les demandes, prépare soumissions et réponses, et demande avant d&apos;agir.
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="mandat-code">
-                  <span>PROCESSUS</span>
-                </div>
-                <h3 className="mandat-title">
-                  <a href="/automatisation-processus/" className="link-serif">
-                    Automatisation des processus →
-                  </a>
-                </h3>
-                <p className="mandat-text">
-                  La double saisie, les rapports et les relances qui se refont chaque semaine, confiés à la machine.
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="mandat-code">
-                  <span>SYSTÈMES</span>
-                </div>
-                <h3 className="mandat-title">
-                  <a href="/logiciel-sur-mesure/" className="link-serif">
-                    Logiciel sur mesure →
-                  </a>
-                </h3>
-                <p className="mandat-text">
-                  Quand Excel est devenu votre logiciel de gestion — ou{" "}
-                  <a href="/refonte-de-systeme/" className="link-serif">
-                    quand le vieux système doit être remplacé
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* 5 · INTÉGRATIONS — on ne demande pas de tout jeter */}
-          <section className="bb">
-            <div
-              className="sectors"
-              style={{
-                flexDirection: "column",
-                alignItems: "flex-start",
-                gap: "14px",
-              }}
-            >
-              <span className="sectors-label">
-                Vos outils restent en place
-              </span>
-              <p className="case-lead" style={{ margin: 0 }}>
-                Le système remplace ce qui ne fonctionne plus et se connecte à
-                ce qui fonctionne déjà — selon les accès disponibles (API,
-                exports, courriels).
-              </p>
-              <div className="sectors-list">
-                <span className="serif-muted">
-                  <span>ERP</span>
-                </span>
-                <span className="serif-muted">
-                  <span>QuickBooks</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Procore</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Outlook</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Excel</span>
-                </span>
-                <span className="serif-muted">
-                  <span>fichiers et exports</span>
-                </span>
-                <span className="serif-muted">
-                  <span>API</span>
-                </span>
-              </div>
-            </div>
-          </section>
-
-          {/* 6 · CAS CLIENT — problème → système → résultat */}
-          <section className="section-tight" id="cas">
-            <div className="mandats-head">
-              <h2 className="h2-left">
-                Près de 56 000 $ par année, récupérés sur une seule tâche
-                manuelle.
-              </h2>
-              <span className="eyebrow">§ 05 · Cas concret</span>
-            </div>
-            <div className="case-steps">
-              <div className="case-step">
-                <div className="pt-2">
-                  <div className="mandat-num">
-                    <span>01</span>
-                  </div>
-                  <div className="mandat-code">
-                    <span>PROBLÈME</span>
-                  </div>
-                </div>
-                <h3 className="mandat-title">
-                  <span>Recopier des milliers de prix, chaque semaine</span>
-                </h3>
-                <p className="mandat-text">
-                  <span>
-                    Une épicerie indépendante retapait à la main les prix de
-                    ses fournisseurs dans sa caisse. L&apos;équivalent
-                    d&apos;un poste à temps partiel — sans compter les erreurs
-                    de saisie, ni la marge perdue en commandant sans comparer.
-                  </span>
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="pt-2">
-                  <div className="mandat-num">
-                    <span>02</span>
-                  </div>
-                  <div className="mandat-code">
-                    <span>SYSTÈME</span>
-                  </div>
-                </div>
-                <h3 className="mandat-title">
-                  <span>La machine recopie, l&apos;équipe approuve</span>
-                </h3>
-                <p className="mandat-text">
-                  <span>
-                    Le système importe les listes de tous les fournisseurs,
-                    compare les prix produit par produit et prépare la mise à
-                    jour — branché sur la caisse déjà en place, sans la
-                    remplacer et sans arrêter les opérations.
-                  </span>
-                </p>
-              </div>
-              <div className="case-step">
-                <div className="pt-2">
-                  <div className="mandat-num">
-                    <span>03</span>
-                  </div>
-                  <div className="mandat-code">
-                    <span>RÉSULTAT</span>
-                  </div>
-                </div>
-                <h3 className="mandat-title">
-                  <span>Le temps repris, la marge en prime</span>
-                </h3>
-                <p className="mandat-text">
-                  <span>
-                    La saisie manuelle est éliminée et l&apos;entreprise achète
-                    désormais au meilleur prix, à chaque commande. Les chiffres
-                    complets sont dans le cas détaillé.
-                  </span>
-                </p>
-              </div>
-            </div>
-            <p className="u-mt-lg">
-              <a
-                href="/cas/synchronisation-prix-fournisseurs/"
-                className="link-serif"
-              >
-                Lire le cas complet →
-              </a>
-            </p>
-          </section>
-
-          <section className="band">
-            <div className="wrap">
-              <div className="cab-proof stats-grid">
-                <div className="stat">
-                  <div className="tick"></div>
-                  <div className="stat-num">
-                    <span className="tnum">12</span>
-                    <span className="stat-unit">
-                      <span>h+</span>
-                    </span>
-                  </div>
-                  <div className="stat-label">
-                    <span>récupérées chaque semaine, en moyenne</span>
-                  </div>
-                </div>
-                <div className="stat">
-                  <div className="tick"></div>
-                  <div className="stat-num">
-                    <span className="tnum">20</span>
-                    <span className="stat-unit">
-                      <span>+</span>
-                    </span>
-                  </div>
-                  <div className="stat-label">
-                    <span>PME accompagnées au Québec</span>
-                  </div>
-                </div>
-                <div className="stat">
-                  <div className="tick"></div>
-                  <div className="stat-num">
-                    <span className="tnum">37 k</span>
-                    <span className="stat-unit">
-                      <span>prix</span>
-                    </span>
-                  </div>
-                  <div className="stat-label">
-                    <span>comparés à chaque cycle, sans effort humain</span>
-                  </div>
-                </div>
-                <div className="stat">
-                  <div className="tick"></div>
-                  <div className="stat-num">
-                    <span className="tnum">30</span>
-                    <span className="stat-unit">
-                      <span>min</span>
-                    </span>
-                  </div>
-                  <div className="stat-label">
-                    <span>pour une première analyse de vos opérations</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* 7 · LA NOTE DU CONSEILLER — le positioning, signé */}
-          <section className="note" id="approche">
-            <div className="section">
-              <div className="note-grid">
-                <div>
-                  <div className="note-eyebrow">§ 06 · La note du conseiller</div>
-                  <p className="note-quote">
-                    Je ne vends pas de la technologie. Je règle des problèmes
-                    d’affaires.
+            <ul className="hm-svcs">
+              {SERVICES.map((s) => (
+                <li key={s.href} className="hm-svc">
+                  <span className="hm-svc-kind">{s.kind}</span>
+                  <h3 className="hm-svc-title">
+                    <a href={s.href}>{s.title}</a>
+                  </h3>
+                  <p className="hm-svc-text">
+                    {s.text}
+                    {s.href === "/logiciel-sur-mesure/" ? (
+                      <>
+                        {" "}Ou{" "}
+                        <a
+                          href="/refonte-de-systeme/"
+                          className="link-inline hm-svc-inner"
+                        >
+                          quand le vieux système doit être remplacé
+                        </a>
+                        .
+                      </>
+                    ) : null}
                   </p>
-                  <p className="note-body">
-                    <span className="dropcap">C</span>haque mandat commence par
-                    vos opérations réelles — où le temps se perd, où
-                    l&apos;information circule mal, où l&apos;argent sort sans
-                    que personne ne le voie — et se termine par un système qui
-                    fait une partie du travail. Vous parlez directement à
-                    celui qui analyse et construit&nbsp;: pas
-                    d&apos;intermédiaire, pas de jargon, pas de surprise.
-                  </p>
-                  <div className="mt-36">
-                    <div className="signature">Gabriel Nadon</div>
-                    <div className="sig-line"></div>
-                    <div className="sig-role">
-                      Conseiller · Systèmes opérationnels
-                    </div>
-                  </div>
-                </div>
-                <div className="principles">
-                  <div className="principle">
-                    <div className="principle-head">
-                      <span className="principle-num">
-                        <span>I.</span>
-                      </span>
-                      <div>
-                        <h3 className="principle-title">
-                          <span>Comprendre avant de construire</span>
-                        </h3>
-                        <p className="principle-text">
-                          <span>
-                            On cartographie vos opérations et vos outils réels
-                            avant de proposer quoi que ce soit.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="principle">
-                    <div className="principle-head">
-                      <span className="principle-num">
-                        <span>II.</span>
-                      </span>
-                      <div>
-                        <h3 className="principle-title">
-                          <span>Un seul interlocuteur</span>
-                        </h3>
-                        <p className="principle-text">
-                          <span>
-                            Vous parlez à celui qui analyse vos opérations et
-                            qui construit le système.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="principle">
-                    <div className="principle-head">
-                      <span className="principle-num">
-                        <span>III.</span>
-                      </span>
-                      <div>
-                        <h3 className="principle-title">
-                          <span>Des livraisons visibles</span>
-                        </h3>
-                        <p className="principle-text">
-                          <span>
-                            Le système avance par étapes&nbsp;: vous voyez
-                            chaque morceau fonctionner avant d&apos;aller plus
-                            loin.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* 8 · POUR QUI */}
-          <section className="bb">
-            <div
-              className="sectors"
-              style={{
-                flexDirection: "column",
-                alignItems: "flex-start",
-                gap: "14px",
-              }}
-            >
-              <span className="sectors-label">Pour qui</span>
-              <p className="case-lead" style={{ margin: 0 }}>
-                Pour les entreprises où les opérations sont devenues trop
-                complexes pour Excel, les courriels et les outils séparés.
+                  <span className="hm-svc-go" aria-hidden="true">
+                    <Arrow />
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="hm-tools">
+              <p>
+                <strong>Vos outils restent en place.</strong> Le système
+                remplace ce qui ne fonctionne plus et se connecte à ce qui
+                fonctionne déjà, selon les accès disponibles.
               </p>
-              <div className="sectors-list">
-                <span className="serif-muted">
-                  <span>Construction</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Industriel</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Manufacturier</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Distribution et logistique</span>
-                </span>
-                <span className="serif-muted">
-                  <span>Opérations terrain</span>
-                </span>
-              </div>
+              <ul className="hm-pills">
+                {OUTILS_EN_PLACE.map((o) => (
+                  <li key={o}>{o}</li>
+                ))}
+              </ul>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Outils et guides gratuits — maillage visible vers la grappe de
-              contenu (le footer seul ne suffit pas pour le crawl et le clic). */}
-          <section className="bb">
-            <div className="sectors">
-              <span className="sectors-label">Outils &amp; guides gratuits</span>
-              <div className="sectors-list">
-                <a href="/calculateur/" className="serif-muted link-serif">
-                  <span>Calculateur du travail manuel</span>
-                </a>
-                <a href="/diagnostic-ia/" className="serif-muted link-serif">
-                  <span>Test « prête pour l&apos;IA ? »</span>
-                </a>
-                <a
-                  href="/guides/automatisation-pme-quebec/"
-                  className="serif-muted link-serif"
-                >
-                  <span>Guide : automatiser sa PME</span>
-                </a>
-                <a
-                  href="/guides/comparatif-logiciels-epicerie-quebec/"
-                  className="serif-muted link-serif"
-                >
-                  <span>Comparatif logiciels d&apos;épicerie</span>
-                </a>
-                <a href="/barometre/" className="serif-muted link-serif">
-                  <span>Baromètre PME 2026</span>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* 9 · CTA FINAL */}
-          <section className="section" id="contact">
-            <div className="contact-grid">
+        {/* 6 · CAS CLIENT — la preuve, chiffrée */}
+        <section className="hm-proof" id="cas">
+          <div className="hm-wrap">
+            <div className="hm-proof-top">
               <div>
-                <div className="contact-eyebrow">§ 07 · Premier rendez-vous</div>
-                <h2 className="contact-title">
-                  Montrez-moi comment vous{" "}
-                  <span className="italic">travaillez.</span>
-                </h2>
-                <p className="contact-lead">
-                  En 30 minutes, on regarde votre processus actuel et on
-                  identifie où un système pourrait réellement enlever du
-                  travail ou récupérer de la valeur — que l&apos;on travaille
-                  ensemble ou non.
+                <p className="hm-proof-kicker">
+                  Cas concret : épicerie indépendante, Québec
                 </p>
+                <h2 className="hm-proof-fig">
+                  <span className="hm-proof-num">56&nbsp;000&nbsp;$</span>
+                  <span className="hm-proof-txt">
+                    par année, récupérés sur une seule tâche manuelle.
+                  </span>
+                </h2>
+                <a
+                  href="/cas/synchronisation-prix-fournisseurs/"
+                  className="hm-btn-ghost"
+                >
+                  Lire le cas complet
+                  <Arrow />
+                </a>
               </div>
-              <div className="cab-paper contact-card">
-                <ContactForm />
-              </div>
+              <ol className="hm-proof-steps">
+                <li>
+                  <span className="hm-proof-step">Le problème</span>
+                  <h3>Recopier des milliers de prix, chaque semaine</h3>
+                  <p>
+                    L&apos;équipe retapait à la main les prix de ses
+                    fournisseurs dans sa caisse : l&apos;équivalent d&apos;un
+                    poste à temps partiel, sans compter les erreurs de saisie
+                    ni la marge perdue en commandant sans comparer.
+                  </p>
+                </li>
+                <li>
+                  <span className="hm-proof-step">Le système</span>
+                  <h3>La machine recopie, l&apos;équipe approuve</h3>
+                  <p>
+                    Il importe les listes de tous les fournisseurs, compare les
+                    prix produit par produit et prépare la mise à jour —
+                    branché sur la caisse déjà en place, sans arrêter les
+                    opérations.
+                  </p>
+                </li>
+                <li>
+                  <span className="hm-proof-step">Le résultat</span>
+                  <h3>Le temps repris, la marge en prime</h3>
+                  <p>
+                    La saisie manuelle est éliminée et l&apos;entreprise achète
+                    désormais au meilleur prix, à chaque commande.
+                  </p>
+                </li>
+              </ol>
             </div>
-          </section>
+            <dl className="hm-stats">
+              {STATS.map((s) => (
+                <div key={s.label}>
+                  <dt>{s.num}</dt>
+                  <dd>{s.label}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
 
-          <HomeFooter />
-        </div>
+        {/* 7 · L'APPROCHE — la personne derrière */}
+        <section className="hm-section" id="approche">
+          <div className="hm-wrap hm-me">
+            <div className="hm-me-photo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/portrait.webp"
+                width={982}
+                height={941}
+                loading="lazy"
+                alt="Portrait de Gabriel Nadon, conseiller"
+              />
+            </div>
+            <div className="hm-me-copy">
+              <h2 className="hm-quote">
+                Je ne vends pas de la technologie. Je règle des problèmes
+                d&apos;affaires.
+              </h2>
+              <p className="hm-me-body">
+                Chaque mandat commence par vos opérations réelles — où le temps
+                se perd, où l&apos;information circule mal, où l&apos;argent
+                sort sans que personne ne le voie — et se termine par un
+                système qui fait une partie du travail. Pas
+                d&apos;intermédiaire, pas de jargon, pas de surprise.
+              </p>
+              <ul className="hm-principles">
+                <li>
+                  <Check />
+                  <span>
+                    <strong>Comprendre avant de construire.</strong> On
+                    cartographie vos opérations et vos outils réels avant de
+                    proposer quoi que ce soit.
+                  </span>
+                </li>
+                <li>
+                  <Check />
+                  <span>
+                    <strong>Un seul interlocuteur.</strong> Vous parlez à celui
+                    qui analyse vos opérations et qui construit le système.
+                  </span>
+                </li>
+                <li>
+                  <Check />
+                  <span>
+                    <strong>Des livraisons visibles.</strong> Le système avance
+                    par étapes : vous voyez chaque morceau fonctionner avant
+                    d&apos;aller plus loin.
+                  </span>
+                </li>
+              </ul>
+              <p className="hm-sign">
+                Gabriel Nadon
+                <span>Conseiller, systèmes opérationnels</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 8 · POUR QUI + OUTILS GRATUITS (maillage visible vers la grappe) */}
+        <section className="hm-section hm-band hm-section-tight">
+          <div className="hm-wrap hm-split hm-for-row">
+            <div>
+              <h2 className="hm-h3">Pour qui</h2>
+              <p className="hm-for">
+                Les entreprises où les opérations sont devenues trop complexes
+                pour Excel, les courriels et les outils séparés.
+              </p>
+            </div>
+            <ul className="hm-pills hm-pills-lg">
+              {SECTEURS.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="hm-wrap">
+            <h2 className="hm-h3 hm-free-head">Outils et guides gratuits</h2>
+            <div className="hm-free">
+              {OUTILS.map((o) => (
+                <a key={o.href} href={o.href} className="hm-free-card">
+                  <span className="hm-free-kind">{o.kind}</span>
+                  <span className="hm-free-title">{o.title}</span>
+                  <Arrow />
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 9 · CTA FINAL */}
+        <section className="hm-section hm-contact" id="contact">
+          <div className="hm-wrap hm-contact-grid">
+            <div>
+              <h2 className="hm-h2">Montrez-moi comment vous travaillez.</h2>
+              <p className="hm-lead">
+                En 30 minutes, on regarde votre processus actuel et on
+                identifie où un système pourrait réellement enlever du travail
+                ou récupérer de la valeur — que l&apos;on travaille ensemble ou
+                non.
+              </p>
+              <ul className="hm-contact-list">
+                <li>
+                  <Check /> Gratuit et sans engagement
+                </li>
+                <li>
+                  <Check /> Réponse sous 24&nbsp;h
+                </li>
+                <li>
+                  <Check /> Directement avec Gabriel, pas un vendeur
+                </li>
+              </ul>
+            </div>
+            <div className="contact-card hm-form">
+              <ContactForm />
+            </div>
+          </div>
+        </section>
+
+        <HomeFooter />
       </div>
     </div>
   );

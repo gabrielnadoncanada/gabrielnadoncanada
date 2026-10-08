@@ -4,55 +4,65 @@
    Ne pas introduire de valeur magique : passer par ces variables.
    ========================================================================= */
 :root {
-  /* ---- Couleurs : fonds ---- */
-  --color-paper: rgb(244, 241, 234);
-  --color-card: rgb(251, 250, 246);
-  --color-ink: rgb(23, 24, 27);
-  --color-ink-hover: rgb(44, 45, 49);
+  /* ---- Couleurs : fonds ----
+     Refonte 2026-10 : on quitte le crème/or « cabinet » pour un papier neutre,
+     une encre épinette et un vert épinette comme accent (les noms --color-gold*
+     sont conservés pour ne pas renommer 60+ règles : lire « accent »). */
+  --color-paper: rgb(246, 247, 244);
+  --color-card: rgb(255, 255, 255);
+  --color-tint: rgb(234, 241, 236);
+  --color-ink: rgb(18, 32, 27);
+  --color-ink-hover: rgb(31, 58, 49);
 
-  /* ---- Couleurs : accent or ---- */
-  --color-gold: rgb(155, 123, 56);
-  --color-gold-on-dark: rgb(189, 160, 95);
-  --color-gold-faint: rgb(185, 176, 154);
+  /* ---- Couleurs : accent (épinette) + signal (ambre, « à valider ») ---- */
+  --color-gold: rgb(30, 107, 82);
+  --color-gold-on-dark: rgb(142, 209, 180);
+  --color-gold-faint: rgb(169, 199, 186);
+  --color-signal: rgb(224, 155, 18);
 
   /* ---- Couleurs : bordures ---- */
-  --color-border: rgb(221, 214, 200);
-  --color-border-card: rgb(207, 199, 181);
-  --color-border-faint: rgb(233, 227, 214);
+  --color-border: rgb(222, 226, 220);
+  --color-border-card: rgb(203, 210, 202);
+  --color-border-faint: rgb(234, 237, 231);
 
   /* ---- Couleurs : texte ---- */
-  --color-muted: rgb(112, 108, 98);
-  --color-text-body: rgb(70, 71, 74);
-  --color-text-soft: rgb(91, 92, 95);
+  --color-muted: rgb(92, 103, 98);
+  --color-text-body: rgb(44, 54, 49);
+  --color-text-soft: rgb(70, 81, 75);
 
   /* ---- Couleurs : texte sur fond sombre ---- */
-  --color-on-dark: rgb(244, 241, 234); /* réservé (= paper) : titres/quote sur ink */
-  --color-on-dark-soft: rgb(172, 169, 160);
-  --color-on-dark-faint: rgb(207, 202, 187);
+  --color-on-dark: rgb(246, 247, 244); /* réservé (= paper) : titres/quote sur ink */
+  --color-on-dark-soft: rgb(168, 182, 175);
+  --color-on-dark-faint: rgb(202, 212, 206);
 
   /* ---- Couleurs : états ---- */
-  --color-live: rgb(155, 176, 122);
-  --color-danger: rgb(146, 60, 32);
+  --color-live: rgb(63, 191, 127);
+  --color-danger: rgb(179, 38, 30);
 
-  /* ---- Typographie : familles ---- */
+  /* ---- Typographie : familles ----
+     Une seule famille (Geist, variable 100–900) : titres en 600 serrés, texte
+     en 400. --font-serif / --font-mono pointent désormais sur Geist (les règles
+     existantes suivent sans renommage) ; la vraie chasse fixe reste dispo via
+     --font-code pour les données (montants, numéros). */
   --font-sans: Geist, Inter, system-ui, -apple-system, sans-serif;
-  --font-serif: Spectral, serif;
-  --font-mono: "Geist Mono", monospace;
+  --font-serif: Geist, Inter, system-ui, -apple-system, sans-serif;
+  --font-mono: Geist, Inter, system-ui, -apple-system, sans-serif;
+  --font-code: "Geist Mono", ui-monospace, monospace;
   --font-script: "Pinyon Script", cursive;
 
   /* ---- Typographie : échelle font-size ---- */
-  --fs-2xs: 10px;
-  --fs-xs: 11px;
-  --fs-sm: 13px;
-  --fs-base: 14px;
-  --fs-md: 15px;
-  --fs-lg: 18px;
-  --fs-body: clamp(15px, 1.6vw, 18px);
-  --fs-card-title: clamp(20px, 2.3vw, 27px);
-  --fs-h3: clamp(22px, 3vw, 34px);
-  --fs-h2: clamp(28px, 4vw, 44px);
-  --fs-h1: clamp(32px, 5vw, 58px);
-  --fs-display: clamp(38px, 6.4vw, 72px);
+  --fs-2xs: 12.5px;
+  --fs-xs: 13px;
+  --fs-sm: 14.5px;
+  --fs-base: 16px;
+  --fs-md: 16.5px;
+  --fs-lg: 19px;
+  --fs-body: clamp(16.5px, 1.4vw, 18.5px);
+  --fs-card-title: clamp(20px, 2.1vw, 25px);
+  --fs-h3: clamp(22px, 2.6vw, 30px);
+  --fs-h2: clamp(30px, 4vw, 50px);
+  --fs-h1: clamp(36px, 5.2vw, 64px);
+  --fs-display: clamp(42px, 6.6vw, 82px);
   /* Exceptions éditoriales (one-case légitimes) */
   --fs-stat: clamp(40px, 5vw, 58px);
   --fs-money: clamp(56px, 9vw, 92px);
@@ -76,8 +86,10 @@
   --ls-tight-2: -0.02em;
   --ls-tight-1: -0.01em;
   --ls-normal: 0;
-  --ls-label: 0.1em;
-  --ls-eyebrow: 0.14em;
+  --ls-label: 0;
+  --ls-eyebrow: 0;
+  --fw-display: 600;
+  --ls-display: -0.035em;
 
   /* ---- Espacement : échelle ---- */
   --space-1: 4px;
@@ -96,12 +108,14 @@
   --gap-hairline: 1px;
 
   /* ---- Ombres & rayons ---- */
-  --shadow-card: rgba(23, 24, 27, 0.05) 0 1px 2px,
-    rgba(23, 24, 27, 0.24) 0 24px 44px -18px;
-  --shadow-soft: rgba(23, 24, 27, 0.05) 0 1px 2px,
-    rgba(23, 24, 27, 0.16) 0 24px 44px -20px;
+  --shadow-card: rgba(18, 32, 27, 0.04) 0 1px 2px,
+    rgba(18, 32, 27, 0.12) 0 18px 40px -22px;
+  --shadow-soft: rgba(18, 32, 27, 0.04) 0 1px 2px,
+    rgba(18, 32, 27, 0.08) 0 14px 30px -20px;
   --radius-full: 50%;
-  --radius-xs: 1px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
 }
 
 @media print {
@@ -138,7 +152,7 @@
 }
 .scp4:hover {
   /* rangée mandat / ligne de cas → fond or très pâle */
-  background: rgba(155, 123, 56, 0.07);
+  background: rgba(30, 107, 82, 0.07);
 }
 .scp5:hover {
   /* lien → or */
@@ -180,8 +194,8 @@ a:focus-visible,
 .cab-header.is-scrolled {
   box-shadow:
     var(--color-border) 0px 1px 0px,
-    rgba(23, 24, 27, 0.07) 0px 10px 30px;
-  background: rgba(244, 241, 234, 0.94) !important;
+    rgba(18, 32, 27, 0.07) 0px 10px 30px;
+  background: rgba(246, 247, 244, 0.94) !important;
 }
 
 .cab-header.is-scrolled .cab-headinner {
@@ -237,7 +251,7 @@ a:focus-visible,
 }
 
 .cab-portrait-photo {
-  box-shadow: rgba(23, 24, 27, 0.1) 0px 0px 0px 1px inset;
+  box-shadow: rgba(18, 32, 27, 0.1) 0px 0px 0px 1px inset;
 }
 
 @keyframes cabRise {
@@ -470,7 +484,7 @@ a:focus-visible,
   letter-spacing: var(--ls-normal);
 }
 .stat-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   line-height: var(--lh-body);
   color: var(--color-text-soft);
   margin-top: 12px;
@@ -518,11 +532,13 @@ a.mandat {
   font-family: var(--font-serif);
   font-weight: var(--fw-medium);
   font-size: var(--fs-card-title);
+  line-height: 1.25;
   letter-spacing: var(--ls-tight-1);
   margin: 0px;
+  text-wrap: balance;
 }
 .mandat-text {
-  font-size: var(--fs-md);
+  font-size: clamp(15px, 1.3vw, 16px);
   line-height: var(--lh-body);
   color: var(--color-text-body);
   margin: 0px;
@@ -531,7 +547,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   margin-bottom: 6px;
 }
@@ -578,7 +594,7 @@ a.mandat {
   margin: 0px 0px 10px;
 }
 .step-text {
-  font-size: var(--fs-base);
+  font-size: var(--fs-md);
   line-height: var(--lh-body);
   color: var(--color-text-soft);
   margin: 0px;
@@ -633,7 +649,7 @@ a.mandat {
   color: var(--color-paper);
 }
 .principle-text {
-  font-size: var(--fs-base);
+  font-size: var(--fs-md);
   line-height: var(--lh-body);
   color: var(--color-on-dark-soft);
   margin: 0px;
@@ -650,7 +666,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
 }
 /* Utilitaires atomiques hérités : .bb/.bt = bordure bas/haut, .band = filet
@@ -662,7 +678,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   display: block;
   margin-bottom: 5px;
@@ -674,7 +690,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
   margin-bottom: 18px;
 }
@@ -702,14 +718,14 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
 }
 .dot-live {
   width: 6px;
   height: 6px;
   border-radius: var(--radius-full);
   background: var(--color-live);
-  box-shadow: rgba(155, 176, 122, 0.7) 0px 0px 8px;
+  box-shadow: rgba(63, 191, 127, 0.7) 0px 0px 8px;
 }
 .ticker-sub {
   color: var(--color-on-dark-soft);
@@ -718,7 +734,7 @@ a.mandat {
   position: sticky;
   top: 0px;
   z-index: 60;
-  background: rgba(244, 241, 234, 0.86);
+  background: rgba(246, 247, 244, 0.86);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   transition:
@@ -797,7 +813,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   white-space: nowrap;
 }
@@ -853,7 +869,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   margin-bottom: clamp(22px, 4vw, 34px);
   opacity: 1;
@@ -979,7 +995,7 @@ a.mandat {
   background: linear-gradient(
     to top,
     var(--color-paper) 5%,
-    rgba(244, 241, 234, 0)
+    rgba(246, 247, 244, 0)
   );
   pointer-events: none;
 }
@@ -1000,7 +1016,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
 }
 .band {
@@ -1025,19 +1041,19 @@ a.mandat {
 }
 .mandats-head {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-5);
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 18px;
   margin-bottom: clamp(30px, 4vw, 52px);
 }
 .h2-left {
   font-family: var(--font-serif);
   font-weight: var(--fw-regular);
   font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
   letter-spacing: var(--ls-tight-2);
   margin: 0px;
-  max-width: 18ch;
+  max-width: 22ch;
   text-wrap: balance;
 }
 .bt {
@@ -1046,7 +1062,7 @@ a.mandat {
 .section-method {
   max-width: var(--maxw-page);
   margin: 0px auto;
-  padding: clamp(40px, 5vw, 64px) var(--pad-section-x) clamp(56px, 8vw, 100px);
+  padding: clamp(40px, 5vw, 64px) var(--pad-section-x) clamp(56px, 7vw, 88px);
 }
 .method-head {
   display: flex;
@@ -1069,7 +1085,7 @@ a.mandat {
 .note {
   background: radial-gradient(
       120% 85% at 88% 0%,
-      rgba(189, 160, 95, 0.12),
+      rgba(142, 209, 180, 0.08),
       transparent 55%
     )
     var(--color-ink);
@@ -1084,7 +1100,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold-on-dark);
   margin-bottom: 26px;
 }
@@ -1139,7 +1155,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-on-dark-soft);
 }
 .principles {
@@ -1169,7 +1185,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
   margin-bottom: clamp(24px, 4vw, 40px);
 }
@@ -1188,7 +1204,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   line-height: var(--lh-body);
 }
@@ -1209,7 +1225,7 @@ a.mandat {
   font-family: var(--font-serif);
   font-size: var(--fs-quote-mark);
   line-height: var(--lh-tight);
-  color: rgb(226, 216, 194);
+  color: var(--color-on-dark-faint);
 }
 .testi-quote {
   position: relative;
@@ -1236,7 +1252,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
 }
 .sectors-list {
@@ -1254,7 +1270,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
   margin-bottom: 22px;
 }
@@ -1327,7 +1343,7 @@ a.mandat {
   border-top: 1px solid var(--color-border);
   background-image: radial-gradient(
     90% 120% at 8% 0%,
-    rgba(155, 123, 56, 0.05),
+    rgba(30, 107, 82, 0.05),
     transparent 55%
   );
 }
@@ -1392,7 +1408,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   margin-top: 7px;
 }
@@ -1441,7 +1457,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
   margin: 22px 0px 12px;
 }
@@ -1472,7 +1488,7 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
   text-decoration: none;
   transition: color 0.18s;
@@ -1503,13 +1519,13 @@ a.mandat {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
 }
 .form-opt {
   text-transform: none;
   letter-spacing: var(--ls-normal);
-  color: rgb(150, 146, 137);
+  color: rgb(124, 135, 129);
 }
 .form-input {
   font-family: var(--font-sans);
@@ -1539,7 +1555,7 @@ select.form-input {
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%239b7b38' stroke-width='1.5'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%231e6b52' stroke-width='1.5'/></svg>");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 38px;
@@ -1703,7 +1719,7 @@ select.form-input {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-gold);
 }
 .case-shot-table {
@@ -1714,7 +1730,7 @@ select.form-input {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: var(--fw-medium);
   color: var(--color-muted);
   text-align: left;
@@ -1750,7 +1766,7 @@ select.form-input {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
   margin-top: 12px;
 }
@@ -1793,7 +1809,7 @@ select.form-input {
   font-family: var(--font-mono);
   font-size: var(--fs-2xs);
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-muted);
 }
 .money-fig {
@@ -1977,12 +1993,6 @@ select.form-input {
 .link-serif:hover {
   color: var(--color-gold);
 }
-/* Footer minimal des pages internes : neutralise le liseré/haut du footer-bottom. */
-.footer--flush {
-  margin-top: 0;
-  border-top: none;
-  padding-top: 0;
-}
 
 /* Pages de service : les intertitres de section sont des <h2> (structure
    lisible par Google) mais gardent le rendu de leur classe. */
@@ -1992,4 +2002,408 @@ h2.eyebrow {
 }
 .note-body p {
   margin: 0 0 1em;
+}
+
+/* ===== Polish visuel (2026-10) ===== */
+/* Bande pleine largeur un ton plus clair, pour rythmer la page (les sections
+   sont des conteneurs max-width : le fond déborde via box-shadow + clip-path). */
+.band-alt {
+  background: var(--color-card);
+  box-shadow: 0 0 0 100vmax var(--color-card);
+  clip-path: inset(0 -100vmax);
+}
+/* Cartes de méthode : fond carte, chiffre et titre plus rapprochés. */
+.cab-step-card.step {
+  background: var(--color-card);
+}
+.cab-step-card .sec-head {
+  margin-bottom: clamp(24px, 3vw, 36px);
+}
+.cab-step-card .step-title {
+  font-size: clamp(20px, 2vw, 24px);
+}
+/* Listes de mots (coûts, outils, secteurs) : étiquettes, plus du texte flottant. */
+.sectors-list > span.serif-muted {
+  font-size: clamp(15px, 1.4vw, 17px);
+  color: var(--color-ink);
+  background: var(--color-card);
+  border: 1px solid var(--color-border-card);
+  padding: 7px 14px;
+  line-height: 1.3;
+}
+.sectors-list:has(> span.serif-muted) {
+  gap: 10px;
+}
+/* Liens connexes : rangée de liens soulignés → boutons-fiches. */
+.sectors-list > a.link-serif {
+  font-size: clamp(15px, 1.4vw, 17px);
+  text-decoration: none;
+  background: var(--color-card);
+  border: 1px solid var(--color-border-card);
+  padding: 9px 16px;
+  line-height: 1.3;
+  transition:
+    border-color 0.18s,
+    color 0.18s;
+}
+.sectors-list > a.link-serif::after {
+  content: " →";
+  color: var(--color-gold);
+}
+.sectors-list > a.link-serif:hover {
+  border-color: var(--color-gold);
+}
+.sectors-list:has(> a.link-serif) {
+  gap: 10px;
+}
+/* Lien en ligne dans un texte sans-serif (ne change pas de police). */
+.link-inline {
+  color: var(--color-ink);
+  text-decoration: underline 1px var(--color-gold-faint);
+  text-underline-offset: 3px;
+  transition: color 0.18s;
+}
+.link-inline:hover {
+  color: var(--color-gold);
+}
+/* Services : la rangée entière réagit au survol. */
+.service-row {
+  align-items: baseline;
+  transition: background 0.2s;
+}
+.service-row:hover {
+  background: rgba(30, 107, 82, 0.06);
+}
+.service-row .link-serif {
+  text-decoration-color: transparent;
+}
+.service-row:hover .link-serif {
+  color: var(--color-gold);
+}
+/* Footer des pages internes : la marque ramène à l'accueil. */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+}
+/* Mot composé à ne pas couper au trait d'union (« Montrez-moi »). */
+.u-nowrap {
+  white-space: nowrap;
+}
+/* Outils & guides gratuits : grille de fiches. */
+.tools {
+  max-width: var(--maxw-page);
+  margin: 0px auto;
+  padding: clamp(48px, 6vw, 80px) var(--pad-section-x);
+}
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px 18px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border-card);
+  color: var(--color-ink);
+  text-decoration: none;
+  transition:
+    border-color 0.18s,
+    transform 0.18s;
+}
+.tool-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+.tool-kind {
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--ls-label);
+  text-transform: none;
+  color: var(--color-gold);
+}
+.tool-title {
+  font-family: var(--font-serif);
+  font-size: clamp(17px, 1.6vw, 19px);
+  line-height: 1.3;
+  flex: 1;
+}
+.tool-arrow {
+  color: var(--color-gold);
+  transition: transform 0.18s;
+}
+.tool-card:hover .tool-arrow {
+  transform: translateX(4px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-card,
+  .tool-card:hover,
+  .tool-arrow,
+  .tool-card:hover .tool-arrow {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* =========================================================================
+   REFONTE 2026-10 — couche globale (tout le site).
+   Une seule famille (Geist) : titres en 600 serrés, étiquettes lisibles en
+   casse normale, boutons en vert épinette, coins légèrement arrondis.
+   ========================================================================= */
+.page {
+  font-feature-settings: "ss01", "cv11";
+}
+.cab-grain {
+  display: none;
+}
+
+/* ---- Titres ---- */
+.hero-title,
+.h2-left,
+.contact-title,
+.case-title {
+  font-weight: var(--fw-display);
+  letter-spacing: var(--ls-display);
+  line-height: 1.04;
+}
+.money-fig,
+.stat-num {
+  font-weight: var(--fw-display);
+  letter-spacing: -0.04em;
+}
+.mandat-title,
+.step-title,
+.principle-title,
+.testi-name,
+.brand-name,
+.footer-name,
+.form-done-title,
+.mandat-num {
+  font-weight: var(--fw-display);
+  letter-spacing: -0.02em;
+}
+.note-quote,
+.testi-quote {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+:is(h1, h2, h3, p) .italic {
+  font-style: normal;
+}
+.dropcap {
+  float: none;
+  font: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+}
+.pain-text,
+.serif-muted,
+.tool-title {
+  letter-spacing: -0.01em;
+}
+
+/* ---- Étiquettes (ex-mono capitales) ---- */
+.eyebrow,
+.hero-eyebrow,
+.contact-eyebrow,
+.note-eyebrow,
+.foot-label,
+.foot-label-social,
+.sectors-label,
+.tool-kind,
+.mandat-code,
+.step-code {
+  font-weight: 600;
+  font-size: var(--fs-xs);
+}
+.kv-label,
+.kv-label-block,
+.cap-txt,
+.brand-sub,
+.footer-sub,
+.copyright {
+  font-size: var(--fs-xs);
+}
+.ticker-inner {
+  font-size: var(--fs-xs);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* ---- Marque ---- */
+.mark,
+.mark-lg {
+  border: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-radius: var(--radius-sm);
+}
+.mark {
+  width: 38px;
+  height: 38px;
+}
+.mark-gn,
+.mark-gn-lg {
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  font-size: 16px;
+}
+.mark-gn-lg {
+  font-size: 19px;
+}
+.mark-corner-tl,
+.mark-corner-br,
+.mark-corner-tl-lg,
+.mark-corner-br-lg {
+  display: none;
+}
+.brand-name {
+  font-size: 18px;
+}
+.brand-sub {
+  margin-top: -1px;
+}
+
+/* ---- En-tête ---- */
+.header-inner {
+  height: 72px;
+}
+.cab-navlink {
+  font-size: 15px;
+  color: var(--color-text-soft);
+  font-weight: 500;
+}
+.cab-navlink::after {
+  height: 2px;
+  bottom: -6px;
+}
+
+/* ---- Boutons ---- */
+.btn,
+.btn-sm,
+.btn-block {
+  background: var(--color-gold);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-weight: 550;
+  letter-spacing: -0.005em;
+  border: 0;
+  cursor: pointer;
+}
+.btn {
+  padding: 16px 24px;
+  font-size: 16.5px;
+}
+.btn-sm {
+  padding: 11px 18px;
+  font-size: 15px;
+}
+.btn:hover,
+.btn-block:hover,
+.btn-sm:hover {
+  background: var(--color-ink);
+}
+.btn:focus-visible,
+.btn-sm:focus-visible,
+.btn-block:focus-visible {
+  outline: 3px solid var(--color-signal);
+  outline-offset: 3px;
+}
+.btn-link {
+  font-weight: 500;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-gold-faint);
+}
+.link-serif {
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* ---- Cartes, fiches, pastilles ---- */
+.contact-card,
+.tool-card,
+.case-shot,
+.money-box {
+  border-radius: var(--radius-md);
+}
+.contact-card {
+  border-color: var(--color-border);
+}
+.cab-step-card.step {
+  border-radius: 0;
+}
+.sectors-list > span.serif-muted {
+  border: 0;
+  background: var(--color-tint);
+  border-radius: 999px;
+  padding: 7px 15px;
+  font-weight: 500;
+  font-size: 15.5px;
+}
+.sectors-list > a.link-serif {
+  border-radius: 999px;
+  font-size: 15.5px;
+}
+.band-alt {
+  background: var(--color-card);
+}
+
+/* ---- Formulaire ---- */
+.form-label {
+  font-size: 14px;
+  font-weight: 550;
+  color: var(--color-text-body);
+}
+.form-opt {
+  font-weight: 400;
+}
+.form-input {
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  font-size: 16px;
+}
+.form-input:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 0;
+  border-color: var(--color-gold);
+}
+a:focus-visible,
+[data-sign]:focus-visible {
+  outline-color: var(--color-signal);
+}
+
+/* ---- Pied de page ---- */
+.footer {
+  background: var(--color-card);
+  background-image: none;
+}
+.footer-email {
+  font-weight: 600;
+}
+.footer-grid--4 {
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.2fr;
+}
+.footer-contact-label {
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.foot-nav-link {
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .footer-grid--4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .footer-grid--4 {
+    grid-template-columns: 1fr;
+  }
 }

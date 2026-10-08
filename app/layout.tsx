@@ -5,13 +5,11 @@ import "./fonts.css";
 import "./globals.css";
 
 const FAVICON =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f1ea'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='54' fill='%2317181b'%3EGN%3C/text%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2312201b'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='44' letter-spacing='-3' fill='%23f6f7f4'%3EGN%3C/text%3E%3C/svg%3E";
 
 // Polices visibles dès le premier écran (titres, marque, texte courant) :
 // préchargées pour que le premier rendu n'attende pas la découverte du CSS.
 const PRELOAD_FONTS = [
-  "/fonts/spectral-400-latin.woff2",
-  "/fonts/spectral-500-latin.woff2",
   "/fonts/geist-latin.woff2",
 ];
 
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#17181b",
+  themeColor: "#12201b",
 };
 
 export default function RootLayout({
