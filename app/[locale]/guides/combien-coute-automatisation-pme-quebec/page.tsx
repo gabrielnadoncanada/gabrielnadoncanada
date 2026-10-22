@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { PERSON_REF, BUSINESS_REF, articleDates } from "@/lib/entity";
+import { FaqSection } from "@/components/FaqSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -24,11 +26,10 @@ type Item = { title: string; text: string };
 
 // Pont vers les pages de service (libellés : common.links.*).
 const SERVICES: Array<{ key: string; pathname: Pathname }> = [
+  { key: "logiciel", pathname: "/logiciel-sur-mesure" },
+  { key: "refonte", pathname: "/refonte-de-systeme" },
   { key: "automatisation", pathname: "/automatisation-processus" },
   { key: "documents", pathname: "/traitement-documents-ia" },
-  { key: "agentsIa", pathname: "/agents-ia" },
-  { key: "logiciel", pathname: "/logiciel-sur-mesure" },
-  { key: "consultantIa", pathname: "/consultant-ia" },
 ];
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -59,19 +60,19 @@ export default async function CoutAutomatisationPage({ params }: Params) {
 
   const url = absUrl(locale, PATH);
   const home = absUrl(locale, "/");
-  const author = { "@type": "Person", name: "Gabriel Nadon", url: home };
+  const author = PERSON_REF;
 
   const JSONLD = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
+        ...articleDates("/guides/combien-coute-automatisation-pme-quebec"),
         headline: t("jsonld.headline"),
         description: t("jsonld.description"),
         inLanguage: jsonLdLang(locale),
-        dateModified: "2026-08-21",
         author,
-        publisher: author,
+        publisher: BUSINESS_REF,
         mainEntityOfPage: url,
         image: `${SITE}/og-image.png`,
       },
@@ -106,7 +107,7 @@ export default async function CoutAutomatisationPage({ params }: Params) {
 
   const NAV = [
     { href: href(locale, "/guides/automatisation-pme-quebec"), label: t("nav.guide") },
-    { href: href(locale, "/calculateur"), label: t("nav.calculator") },
+    { href: href(locale, "/guides/combien-coute-logiciel-sur-mesure-quebec"), label: t("nav.calculator") },
     { href: href(locale, "/", "contact"), label: t("nav.contact") },
   ];
 
@@ -153,7 +154,7 @@ export default async function CoutAutomatisationPage({ params }: Params) {
                   </div>
                   <p className="money-sub">{t("hero.moneySub")}</p>
                   <p className="money-plus">
-                    <a href={href(locale, "/calculateur")} className="link-serif">
+                    <a href={href(locale, "/guides/automatisation-pme-quebec")} className="link-serif">
                       {t("hero.moneyLink")}
                     </a>
                   </p>
@@ -268,7 +269,7 @@ export default async function CoutAutomatisationPage({ params }: Params) {
                     {t("cta.book")} <span>→</span>
                   </TrackedLink>
                   <a
-                    href={href(locale, "/calculateur")}
+                    href={href(locale, "/guides/automatisation-pme-quebec")}
                     className="scp5 contact-link u-mt-sm"
                   >
                     <span>
@@ -282,6 +283,7 @@ export default async function CoutAutomatisationPage({ params }: Params) {
             </div>
           </section>
 
+          <FaqSection items={t.raw("jsonld.faq") as Faq[]} />
           <MinimalFooter />
         </div>
       </div>

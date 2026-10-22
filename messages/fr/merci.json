@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Demande reçue | Gabriel Nadon",
-    "description": "Votre demande est bien reçue. Réponse sous 24 h — ou réservez directement vos 20 minutes de diagnostic.",
+    "description": "Votre demande est bien reçue. Réponse sous 24 h — ou réservez directement vos 20 minutes de diagnostic.",
     "ogTitle": "Demande reçue",
-    "ogDescription": "Votre demande est bien reçue. Réponse sous 24 h."
+    "ogDescription": "Votre demande est bien reçue. Réponse sous 24 h."
   },
   "hero": {
     "eyebrow": "Demande reçue",
@@ -19,7 +19,7 @@
   },
   "wait": {
     "label": "En attendant",
-    "text": "Voyez comment une épicerie du Québec a récupéré 56 000 $ par année en éliminant une seule tâche manuelle.",
+    "text": "Voyez comment une épicerie du Québec a récupéré 56 000 $ par année en éliminant une seule tâche manuelle.",
     "cta": "Lire le cas →"
   }
 }

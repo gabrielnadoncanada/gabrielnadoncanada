@@ -26,30 +26,31 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 const SITE = "https://gabrielnadon.com";
 
-const SAME_AS = [
-  "https://www.linkedin.com/in/gabrielnadoncanada/",
-  "https://www.facebook.com/gabriel.nadon.2025",
-];
+// Seulement des profils actifs et cohérents avec le site (le profil Facebook
+// personnel, vide, a été retiré le 2026-10-22).
+const SAME_AS = ["https://www.linkedin.com/in/gabrielnadoncanada/"];
 
 // Clé de message (home.jsonld.offers / home.services.items) → page de service.
+// L'offre est centrée sur Excel/Access et les vieux logiciels maison : ce que les
+// PME cherchent (Keyword Planner QC, oct. 2026) et ce que Gabriel a livré.
 const OFFRES: Array<{ key: string; pathname: Pathname }> = [
-  { key: "consultantIa", pathname: "/consultant-ia" },
-  { key: "agentsIa", pathname: "/agents-ia" },
-  { key: "documents", pathname: "/traitement-documents-ia" },
-  { key: "automatisation", pathname: "/automatisation-processus" },
   { key: "logiciel", pathname: "/logiciel-sur-mesure" },
   { key: "refonte", pathname: "/refonte-de-systeme" },
+  { key: "automatisation", pathname: "/automatisation-processus" },
+  { key: "documents", pathname: "/traitement-documents-ia" },
 ];
 
-// Ordre d'affichage des services sur la home (la refonte est un lien dans « logiciel »).
-const SERVICES = ["consultantIa", "documents", "agentsIa", "automatisation", "logiciel"];
+// Ordre d'affichage des services sur la home : l'offre d'entrée d'abord.
+const SERVICES = ["logiciel", "refonte", "automatisation", "documents"];
 
+// Guides « réponse d'abord » : les questions d'achat réelles (Google, oct. 2026).
 const OUTILS: Array<{ key: string; pathname: Pathname }> = [
-  { key: "calculateur", pathname: "/calculateur" },
-  { key: "quiz", pathname: "/diagnostic-ia" },
+  { key: "excel", pathname: "/guides/remplacer-excel-logiciel-gestion" },
+  { key: "coutLogiciel", pathname: "/guides/combien-coute-logiciel-sur-mesure-quebec" },
+  { key: "access", pathname: "/guides/remplacer-base-access" },
+  { key: "reprise", pathname: "/guides/reprendre-vieux-logiciel" },
+  { key: "coutAuto", pathname: "/guides/combien-coute-automatisation-pme-quebec" },
   { key: "guide", pathname: "/guides/automatisation-pme-quebec" },
-  { key: "comparatif", pathname: "/guides/comparatif-logiciels-epicerie-quebec" },
-  { key: "barometre", pathname: "/barometre" },
 ];
 
 type QueueItem = { title: string; meta: string; done: boolean };
@@ -127,7 +128,7 @@ export default async function Home({ params }: Params) {
         description: t("jsonld.personDescription"),
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Montréal",
+          addressLocality: "Saint-Eustache",
           addressRegion: "QC",
           addressCountry: "CA",
         },
@@ -143,15 +144,15 @@ export default async function Home({ params }: Params) {
         name: t("jsonld.businessName"),
         url: home,
         image: `${SITE}/og-image.png`,
-        logo: `${SITE}/portrait.png`,
+        logo: `${SITE}/logo.png`,
         description: t("jsonld.businessDescription"),
         founder: { "@id": `${SITE}/#gabriel` },
         email: "bonjour@gabrielnadon.com",
-        priceRange: "$$",
+        priceRange: "4 500 $ – 30 000 $ CA",
         areaServed: { "@type": "AdministrativeArea", name: "Québec" },
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Montréal",
+          addressLocality: "Saint-Eustache",
           addressRegion: "QC",
           addressCountry: "CA",
         },
@@ -191,6 +192,8 @@ export default async function Home({ params }: Params) {
 
         <Ticker />
         <SiteHeader pathname="/" brandHref="#" navItems={nav} ctaHref="#contact" />
+
+        <main>
 
         {/* 1 · HERO — la promesse + ce que « un système » veut dire, montré */}
         <section className="hm-hero">
@@ -458,7 +461,7 @@ export default async function Home({ params }: Params) {
           </div>
         </section>
 
-        {/* 8 · POUR QUI + OUTILS GRATUITS (maillage visible vers la grappe) */}
+        {/* 8 · POUR QUI + GUIDES (maillage visible vers les réponses) */}
         <section className="hm-section hm-band hm-section-tight">
           <div className="hm-wrap hm-split hm-for-row">
             <div>
@@ -504,6 +507,7 @@ export default async function Home({ params }: Params) {
             </div>
           </div>
         </section>
+        </main>
 
         <HomeFooter />
       </div>

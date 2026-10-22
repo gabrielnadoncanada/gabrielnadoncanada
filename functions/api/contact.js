@@ -11,27 +11,32 @@ const FROM_REPLY = "Gabriel Nadon <formulaire@send.gabrielnadon.com>";
 const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 // Synchronisé avec components/ContactForm.tsx (SUJETS) — modifier les deux.
 const SUJETS = new Set([
+  "Remplacer Excel ou Access par un logiciel",
+  "Reprendre ou maintenir un logiciel existant",
+  "Automatiser une tâche manuelle",
   "Diagnostic de mes opérations",
-  "Projet d’IA ou d’agent IA",
-  "Automatiser un processus",
   "Traitement de documents ou de factures",
-  "Système opérationnel sur mesure",
-  "Refonte d’un système existant",
+  "Projet d’IA ou d’agent IA",
   "Site web",
   "Autre sujet",
 ]);
 // Libellés anglais des sujets, pour l'auto-réponse au prospect anglophone
 // (la valeur reçue reste le libellé français, cf. SUJETS).
 const SUJETS_EN = {
+  "Remplacer Excel ou Access par un logiciel": "Replace spreadsheets or Access with software",
+  "Reprendre ou maintenir un logiciel existant": "Take over or maintain existing software",
+  "Automatiser une tâche manuelle": "Automate a manual task",
   "Diagnostic de mes opérations": "Review of my operations",
-  "Projet d’IA ou d’agent IA": "AI project or AI agent",
-  "Automatiser un processus": "Automate a process",
   "Traitement de documents ou de factures": "Document or invoice processing",
-  "Système opérationnel sur mesure": "Custom software / internal system",
-  "Refonte d’un système existant": "Replace an existing system",
+  "Projet d’IA ou d’agent IA": "AI project or AI agent",
   "Site web": "Website",
   "Autre sujet": "Something else",
 };
+// Taille de l'entreprise (facultative) — synchronisé avec ContactForm.tsx (TAILLES).
+const TAILLES = new Set(["1-9", "10-49", "50-199", "200+"]);
+// Un humain met plus de 2 s entre l'affichage du formulaire et l'envoi ;
+// en dessous, c'est un robot (anti-pourriel, en plus du honeypot).
+const MIN_ELAPSED_MS = 2000;
 // Clés d'attribution acceptées telles quelles depuis le client.
 const ATTR_KEYS = [
   "utm_source",
@@ -108,14 +113,19 @@ export async function onRequestPost({ request, env }) {
     return Response.json({ ok: false, error: "invalid_json" }, { status: 400 });
   }
 
-  // Honeypot : un humain ne remplit jamais ce champ.
+  // Honeypot : un humain ne remplit jamais ce champ. Même réponse silencieuse
+  // pour une soumission trop rapide (le formulaire envoie le délai écoulé).
   if (data.website) return Response.json({ ok: true });
+  if (typeof data.elapsed === "number" && data.elapsed < MIN_ELAPSED_MS) {
+    return Response.json({ ok: true });
+  }
 
   const sujet = SUJETS.has(data.sujet) ? data.sujet : "Autre sujet";
   const nom = String(data.nom || "").trim().slice(0, 120);
   const email = String(data.email || "").trim().slice(0, 200);
   const detail = String(data.detail || "").trim().slice(0, 2000);
   const tel = String(data.tel || "").trim().slice(0, 40);
+  const taille = TAILLES.has(data.taille) ? data.taille : "";
   const page = String(data.page || "").trim().slice(0, 200);
   const attribution = cleanAttribution(data.attribution);
   // Langue du prospect : envoyée par le formulaire, sinon déduite de la page.
@@ -135,6 +145,7 @@ export async function onRequestPost({ request, env }) {
     (detail ? `Contexte : ${detail}\n` : "") +
     `Nom : ${nom}\nCourriel : ${email}\n` +
     (tel ? `Téléphone : ${tel}\n` : "") +
+    (taille ? `Taille : ${taille} employés\n` : "") +
     (page ? `Page : ${page}\n` : "") +
     (attrLines.length ? `\n— Provenance —\n${attrLines.join("\n")}\n` : "") +
     `\n(Formulaire — gabrielnadon.com)`;
@@ -144,6 +155,7 @@ export async function onRequestPost({ request, env }) {
     (detail ? `<p><strong>Contexte :</strong> ${esc(detail)}</p>` : "") +
     `<p><strong>Nom :</strong> ${esc(nom)}<br><strong>Courriel :</strong> ${esc(email)}` +
     (tel ? `<br><strong>Téléphone :</strong> ${esc(tel)}` : "") +
+    (taille ? `<br><strong>Taille :</strong> ${esc(taille)} employés` : "") +
     (page ? `<br><strong>Page :</strong> ${esc(page)}` : "") +
     `<br><strong>Langue :</strong> ${lang}` +
     `</p>` +
@@ -158,7 +170,7 @@ export async function onRequestPost({ request, env }) {
     from: FROM,
     to: [DEST],
     reply_to: email,
-    subject: `🟢 Nouveau lead [${canal}]${lang === "en" ? " [EN]" : ""} — ${sujet} (${email})`,
+    subject: `🟢 Nouveau lead [${canal}]${taille ? ` [${taille}]` : ""}${lang === "en" ? " [EN]" : ""} — ${sujet} (${email})`,
     text,
     html,
   });
@@ -189,14 +201,14 @@ ${CAL}
 
 ` +
             `Gabriel Nadon
-Consultant · Systems & AI — gabrielnadon.com/en/
+Business software & automation for SMBs — gabrielnadon.com/en/
 bonjour@gabrielnadon.com`,
           html:
             `<p>Hi ${esc(prenom)},</p>` +
             `<p>Your request (“${esc(SUJETS_EN[sujet])}”) came through. I read it myself and will get back to you within 24&nbsp;hours.</p>` +
             `<p>If you’d like to move faster: <a href="${CAL}">book your free 20-minute review directly</a> (no commitment).</p>` +
             `<p>You’ll leave the call knowing what to tackle first and with an honest sense of the effort involved — whether or not we work together.</p>` +
-            `<p>Gabriel Nadon<br>Consultant · Systems &amp; AI — <a href="https://gabrielnadon.com/en/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
+            `<p>Gabriel Nadon<br>Business software &amp; automation for SMBs — <a href="https://gabrielnadon.com/en/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
         }
       : {
           subject: "Bien reçu — je vous réponds sous 24 h",
@@ -215,14 +227,14 @@ ${CAL}
 
 ` +
             `Gabriel Nadon
-Conseiller · Systèmes & IA — gabrielnadon.com
+Logiciels de gestion et automatisation pour PME — gabrielnadon.com
 bonjour@gabrielnadon.com`,
           html:
             `<p>Bonjour ${esc(prenom)},</p>` +
             `<p>Votre demande (« ${esc(sujet)} ») est bien reçue. Je la lis moi-même et je vous réponds d'ici 24&nbsp;h.</p>` +
             `<p>Si vous voulez aller plus vite&nbsp;: <a href="${CAL}">réservez directement vos 20&nbsp;minutes de diagnostic</a> (gratuit, sans obligation).</p>` +
             `<p>Vous repartez de l'appel avec les gestes à poser en premier et une idée honnête de l'effort — que l'on travaille ensemble ou non.</p>` +
-            `<p>Gabriel Nadon<br>Conseiller · Systèmes &amp; IA — <a href="https://gabrielnadon.com/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
+            `<p>Gabriel Nadon<br>Logiciels de gestion et automatisation pour PME — <a href="https://gabrielnadon.com/">gabrielnadon.com</a><br>bonjour@gabrielnadon.com</p>`,
         };
   try {
     await sendResend(env, {

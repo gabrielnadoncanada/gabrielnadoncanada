@@ -216,24 +216,8 @@ if (await exists(sitemapPath)) {
 }
 
 // ---------------------------------------------------------------------------
-// 4. Entonnoir payant : /diagnostic/, /merci/, code client embarqué
+// 4. Conversion : /merci/, code client embarqué (landing /diagnostic/ retirée le 2026-10-22)
 // ---------------------------------------------------------------------------
-const diag = pages.find((p) => p.rel === "diagnostic/index.html");
-check(!!diag, "Landing /diagnostic/ absente du build.");
-if (diag) {
-  check(diag.noindex, "/diagnostic/ devrait être noindex (landing payante).");
-  check(diag.html.includes("cf-tel"), "/diagnostic/ : champ téléphone absent.");
-  check(diag.html.includes("56 000"), "/diagnostic/ : preuve chiffrée (56 000 $) absente.");
-  check(diag.html.includes('id="diagnostic"'), "/diagnostic/ : ancre #diagnostic absente.");
-}
-
-const diagEn = pages.find((p) => p.rel === "en/assessment/index.html");
-check(!!diagEn, "Landing anglaise /en/assessment/ absente du build.");
-if (diagEn) {
-  check(diagEn.noindex, "/en/assessment/ devrait être noindex (landing payante).");
-  check(diagEn.html.includes("cf-tel"), "/en/assessment/ : champ téléphone absent.");
-  check(diagEn.html.includes('id="diagnostic"'), "/en/assessment/ : ancre #diagnostic absente.");
-}
 const merciEn = pages.find((p) => p.rel === "en/thank-you/index.html");
 check(!!merciEn, "Page de conversion anglaise /en/thank-you/ absente du build.");
 if (merciEn) {
@@ -292,7 +276,7 @@ const LEAD = {
   nom: "Test Vérification",
   email: "prospect@exemple.ca",
   tel: "418 555-0123",
-  page: "/diagnostic/",
+  page: "/logiciel-sur-mesure/",
   attribution: { utm_source: "google", utm_campaign: "auto-qc", gclid: "abc123" },
   website: "",
 };
@@ -302,6 +286,21 @@ const LEAD = {
   const calls = mockFetch([]);
   const r = await onRequestPost(fakeRequest({ ...LEAD, website: "spam" }));
   check(r.status === 200 && calls.length === 0, "Function : le honeypot déclenche un envoi.");
+}
+{
+  // Soumission en moins de 2 s (robot) → ok silencieux, aucun envoi.
+  const calls = mockFetch([]);
+  const r = await onRequestPost(fakeRequest({ ...LEAD, elapsed: 400 }));
+  check(r.status === 200 && calls.length === 0, "Function : une soumission robot (< 2 s) déclenche un envoi.");
+}
+{
+  // Taille de l'entreprise → visible dans le sujet du lead (qualification).
+  const calls = mockFetch([true, true]);
+  await onRequestPost(fakeRequest({ ...LEAD, elapsed: 9000, taille: "10-49" }));
+  check(
+    calls.length === 2 && calls[0].body.subject.includes("[10-49]"),
+    "Function : la taille de l'entreprise n'apparaît pas dans le sujet du lead."
+  );
 }
 {
   // Courriel invalide → 400.

@@ -1,18 +1,18 @@
 {
   "systeme": {
     "meta": {
-      "title": "Legacy system replacement for Quebec SMBs | Gabriel Nadon",
-      "description": "Is your in-house software, aging system or pile of Excel files slowing you down? Step-by-step replacement, with no data loss and no downtime. Free 20-minute assessment, in Quebec.",
-      "ogTitle": "System replacement: modernize without stopping your operations",
+      "title": "Aging in-house software: takeover, maintenance, replacement",
+      "description": "In-house software, an Access database, a WinDev or .NET program nobody maintains anymore? I take it over, stabilize it, then modernize it step by step.",
+      "ogTitle": "Aging in-house software: take it over, stabilize it, then modernize it",
       "ogDescription": "Step-by-step replacement of in-house software, aging systems and Excel processes: data migrated, zero downtime. Quebec SMBs.",
       "twitterDescription": "Step-by-step replacement of in-house software, aging systems and Excel processes: data migrated, zero downtime."
     },
     "jsonld": {
-      "name": "IT system replacement",
-      "serviceType": "System replacement and modernization",
-      "description": "Step-by-step replacement of in-house software, aging systems and Excel processes for SMBs: mapping, data migration, switchover with no interruption to operations.",
+      "name": "Legacy software takeover, maintenance and replacement",
+      "serviceType": "Legacy software takeover, maintenance and modernization",
+      "description": "Takeover of in-house software, Access databases and old Windows programs for SMBs: stabilization, maintenance, then step-by-step modernization, with data migration and no interruption to operations.",
       "home": "Home",
-      "crumb": "System replacement"
+      "crumb": "Legacy software takeover"
     },
     "nav": {
       "approach": "Approach",
@@ -21,9 +21,10 @@
       "contact": "Contact"
     },
     "hero": {
-      "eyebrow": "System replacement · Quebec SMBs",
+      "eyebrow": "Legacy software takeover · Quebec SMBs",
       "title": "Your business runs on a system <em>nobody dares to touch anymore.</em>",
-      "lead": "It was programmed fifteen years ago by someone who left long ago. Every bug becomes a prayer. Every new need ends up in one more Excel file, one more round of double data entry. You’re walking on eggshells — and deep down, you’re waiting for the day it gives out. We replace that system piece by piece: no big bang, without losing a single record, without stopping your operations for a single day."
+      "lead": "It was programmed fifteen years ago by someone who left long ago. Every bug becomes a prayer. Every new need ends up in one more Excel file, one more round of double data entry. You’re walking on eggshells — and deep down, you’re waiting for the day it gives out. We replace that system piece by piece: no big bang, without losing a single record, without stopping your operations for a single day.",
+      "brief": "I take over the in-house software, Access database or old Windows program nobody maintains anymore. First I read it and stabilize it (backups, blocking bugs, documentation); then we modernize it step by step, with data migration and <strong>without stopping your operations</strong>. A free 20-minute review, then a fixed scope and price; for reference, my sprints start at $4,500 and replacement is done in phases of about $6,000."
     },
     "risks": {
       "kicker": "The cost of doing nothing",

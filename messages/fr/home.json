@@ -1,44 +1,43 @@
 {
   "meta": {
-    "title": "Gabriel Nadon — IA et automatisation pour PME au Québec",
-    "description": "Consultant IA et automatisation à Montréal : je remplace Excel, la double saisie et les outils dispersés des PME du Québec par un système qui travaille.",
-    "ogTitle": "Gabriel Nadon — Systèmes opérationnels pour PME",
-    "ogDescription": "Remplacer les suivis manuels, Excel et courriels par un système qui centralise l'information et fait une partie du travail. PME du Québec."
+    "title": "Remplacer Excel et les vieux logiciels | Développeur PME Québec",
+    "description": "Gestion sur Excel, Access ou un vieux logiciel maison ? J’élimine la tâche manuelle la plus coûteuse, en 2 à 3 semaines, à prix fixe. PME du Québec.",
+    "ogTitle": "Gabriel Nadon — Remplacer Excel et les vieux logiciels des PME",
+    "ogDescription": "La tâche manuelle qui vous coûte le plus, éliminée en 2 à 3 semaines à prix fixe. Ensuite, on remplace ou on maintient le reste du système. PME du Québec."
   },
   "jsonld": {
-    "siteName": "Gabriel Nadon — Systèmes opérationnels pour PME",
-    "jobTitle": "Consultant en IA et en systèmes opérationnels",
-    "personDescription": "Gabriel Nadon, consultant IA et automatisation à Montréal, aide les PME québécoises aux opérations complexes à remplacer les suivis manuels, Excel, courriels et logiciels mal adaptés par des systèmes qui centralisent l'information et automatisent une partie du travail.",
+    "siteName": "Gabriel Nadon — Logiciels de gestion et automatisation pour PME",
+    "jobTitle": "Développeur de logiciels de gestion et d’automatisation pour PME",
+    "personDescription": "Gabriel Nadon, développeur indépendant de la Rive-Nord de Montréal, construit et maintient des logiciels de gestion pour les PME québécoises : remplacement de fichiers Excel et de bases Access, reprise de vieux logiciels maison, automatisation de tâches manuelles et intégration entre logiciels.",
     "knowsAbout": [
-      "Systèmes opérationnels",
-      "Automatisation des opérations",
-      "Intégration de systèmes",
-      "Logiciels sur mesure pour PME",
+      "Logiciels de gestion sur mesure",
+      "Remplacement de fichiers Excel",
+      "Microsoft Access et VBA",
+      "Reprise et maintenance de logiciels existants",
       "Automatisation de processus",
-      "Intelligence artificielle",
-      "Agents IA",
-      "Traitement automatique de documents"
+      "Intégration de systèmes et API",
+      "Python",
+      "Laravel",
+      "Intelligence artificielle appliquée"
     ],
-    "businessName": "Gabriel Nadon — IA, automatisation et systèmes pour PME",
-    "businessDescription": "Consultation et implantation en IA pour les PME du Québec : agents IA, traitement automatique de factures et documents, automatisation des processus, logiciels sur mesure et refonte de systèmes vieillissants.",
+    "businessName": "Gabriel Nadon — Logiciels de gestion et automatisation pour PME",
+    "businessDescription": "Remplacement d’Excel et d’Access, reprise de vieux logiciels maison, automatisation de tâches manuelles et logiciels de gestion sur mesure pour les PME du Québec.",
     "catalog": "Mandats",
     "offers": {
-      "consultantIa": "Consultant IA pour PME",
-      "agentsIa": "Agents IA pour entreprise",
-      "documents": "Traitement automatique de factures et documents",
+      "logiciel": "Remplacer Excel ou Access par un logiciel de gestion",
+      "refonte": "Reprise, maintenance et refonte de logiciels existants",
       "automatisation": "Automatisation des processus d’affaires",
-      "logiciel": "Logiciel sur mesure pour PME",
-      "refonte": "Refonte de systèmes existants"
+      "documents": "Traitement automatique de factures et documents"
     }
   },
   "hero": {
-    "kicker": "IA, automatisation et systèmes sur mesure pour les PME du Québec",
-    "title": "Vos opérations ne devraient pas vivre dans 12 logiciels.",
-    "lead": "Je transforme les suivis manuels, fichiers Excel, courriels et logiciels mal adaptés en un système opérationnel simple : l’information au même endroit, une partie du travail qui se fait seule.",
-    "cta": "Me montrer comment vous travaillez",
-    "ctaShort": "Analyser mes opérations",
+    "kicker": "PME du Québec · Excel, Access, logiciels maison",
+    "title": "Votre gestion roule sur Excel ou un vieux logiciel que personne n’ose toucher ?",
+    "lead": "J’élimine d’abord la tâche manuelle qui vous coûte le plus : en 2 à 3 semaines, à portée et prix fixes, dès 4 500 $. Ensuite, on remplace ou on maintient le reste du système, à votre rythme.",
+    "cta": "Décrire ce qui coince",
+    "ctaShort": "Diagnostic gratuit",
     "ctaCase": "Voir un cas concret",
-    "who": "<strong>Gabriel Nadon</strong>, conseiller indépendant à Montréal. Vous parlez à celui qui construit, et vous avez une réponse sous 24 h."
+    "who": "<strong>Gabriel Nadon</strong>, développeur indépendant, Rive-Nord de Montréal. J’ai bâti ou maintenu les systèmes de plus de 20 PME québécoises. Vous parlez à celui qui code, et vous avez une réponse sous 24 h."
   },
   "sys": {
     "aria": "Illustration : une matinée type une fois le système en place",
@@ -50,11 +49,11 @@
       "PDF"
     ],
     "title": "Votre système, ce matin",
-    "time": "8 h 02",
+    "time": "8 h 02",
     "queue": [
       {
         "title": "Listes de prix de 3 fournisseurs importées",
-        "meta": "1 284 prix comparés, 37 écarts signalés",
+        "meta": "1 284 prix comparés, 37 écarts signalés",
         "done": true
       },
       {
@@ -80,34 +79,34 @@
     "caption": "Illustration : une matinée type, une fois le système en place."
   },
   "pains": {
-    "title": "Votre information est partout. Sauf au même endroit.",
+    "title": "Votre vrai logiciel de gestion, c’est un fichier que personne n’ose toucher.",
     "items": [
-      "Une partie de l’information vit dans Excel. Une autre, dans les courriels.",
-      "Les employés s’écrivent par texto pour débloquer le travail.",
-      "La comptabilité roule dans un logiciel, les projets dans un autre — et les deux ne se parlent pas.",
-      "Quelqu’un doit constamment recoller les morceaux : chercher, retranscrire, relancer, vérifier."
+      "Les soumissions, les heures et l’inventaire vivent dans des fichiers Excel qui se contredisent.",
+      "Une base Access ou un logiciel maison fait rouler l’entreprise, et la personne qui le comprenait est partie.",
+      "La comptabilité roule dans un logiciel, les opérations dans un autre — et quelqu’un recopie de l’un à l’autre.",
+      "Chaque semaine, quelqu’un retape, vérifie et relance à la main."
     ],
     "costLabel": "Ce que ça coûte",
     "cost": "Des doubles saisies, de l’information introuvable, des suivis oubliés, des erreurs, des décisions prises trop tard — et de l’argent laissé sur la table."
   },
   "method": {
     "title": "Comment je travaille",
-    "sub": "Trois étapes, dans cet ordre. On ne construit rien avant d’avoir compris où le travail se perd.",
+    "sub": "Une petite étape à prix fixe d’abord. Le reste seulement si la première a rapporté.",
     "steps": [
       {
-        "when": "Semaine 1",
-        "title": "Diagnostic opérationnel",
-        "text": "On regarde comment votre entreprise fonctionne réellement — et on trouve où le temps, l’information ou l’argent se perd."
+        "when": "20 minutes",
+        "title": "Diagnostic gratuit",
+        "text": "On regarde votre fichier, votre base ou votre logiciel, et on trouve la tâche manuelle qui coûte le plus cher."
+      },
+      {
+        "when": "2 à 3 semaines",
+        "title": "Premier sprint à prix fixe",
+        "text": "Cette tâche est automatisée ou remplacée, sur vos vraies données. Dès 4 500 $ : une tâche éliminée, pas un abonnement."
       },
       {
         "when": "Ensuite",
-        "title": "Système opérationnel",
-        "text": "On centralise le processus le plus coûteux autour de votre façon de travailler. Pas l’inverse."
-      },
-      {
-        "when": "Par la suite",
-        "title": "Automatisation intelligente",
-        "text": "Une fois les données et le processus fiables, le système commence à faire une partie du travail."
+        "title": "Le reste du système",
+        "text": "Remplacer l’Excel ou le vieux logiciel morceau par morceau (par tranches d’environ 6 000 $), ou simplement le maintenir en vie."
       }
     ],
     "note": "Quand l’intelligence artificielle accélère une étape, elle travaille sur des données structurées, avec des garde-fous et une validation humaine. C’est un mécanisme, pas le produit."
@@ -151,32 +150,27 @@
     ]
   },
   "services": {
-    "title": "Ce que je mets en place, selon où le travail se perd.",
+    "title": "Ce que je fais, concrètement.",
     "items": {
-      "consultantIa": {
-        "kind": "Pour démarrer",
-        "title": "Consultant IA pour PME",
-        "text": "Trouver les deux ou trois tâches où l’IA rapporte vraiment chez vous, puis les implanter."
+      "logiciel": {
+        "kind": "Excel et Access",
+        "title": "Remplacer Excel ou Access",
+        "text": "Soumissions, bons de travail, feuilles de temps, inventaire : un vrai logiciel de gestion à la place des fichiers qui se contredisent."
       },
-      "documents": {
-        "kind": "Documents",
-        "title": "Factures et documents traités par l’IA",
-        "text": "Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu’on les retape."
-      },
-      "agentsIa": {
-        "kind": "Agents",
-        "title": "Agents IA",
-        "text": "Un assistant qui traite les demandes, prépare soumissions et réponses, et demande avant d’agir."
+      "refonte": {
+        "kind": "Vieux logiciels",
+        "title": "Reprendre un logiciel existant",
+        "text": "Un logiciel maison, une base Access ou un vieux programme Windows que plus personne n’entretient : je le reprends, le stabilise, puis le modernise par étapes."
       },
       "automatisation": {
         "kind": "Processus",
-        "title": "Automatisation des processus",
+        "title": "Automatiser une tâche manuelle",
         "text": "La double saisie, les rapports et les relances qui se refont chaque semaine, confiés à la machine."
       },
-      "logiciel": {
-        "kind": "Systèmes",
-        "title": "Logiciel sur mesure",
-        "text": "Quand Excel est devenu votre logiciel de gestion. Ou <refonte>quand le vieux système doit être remplacé</refonte>."
+      "documents": {
+        "kind": "Documents",
+        "title": "Factures et documents lus automatiquement",
+        "text": "Factures, bons de commande, listes de prix : lus, vérifiés et saisis sans qu’on les retape."
       }
     },
     "toolsLead": "<strong>Vos outils restent en place.</strong> Le système remplace ce qui ne fonctionne plus et se connecte à ce qui fonctionne déjà, selon les accès disponibles.",
@@ -192,7 +186,7 @@
   },
   "proof": {
     "kicker": "Cas concret : épicerie indépendante, Québec",
-    "num": "56 000 $",
+    "num": "56 000 $",
     "txt": "par année, récupérés sur une seule tâche manuelle.",
     "cta": "Lire le cas complet",
     "steps": [
@@ -214,25 +208,25 @@
     ],
     "stats": [
       {
-        "num": "12 h+",
+        "num": "12 h+",
         "label": "récupérées chaque semaine, en moyenne"
       },
       {
         "num": "20+",
-        "label": "PME accompagnées au Québec"
+        "label": "PME québécoises dont j’ai bâti ou maintenu les systèmes"
       },
       {
-        "num": "37 000",
+        "num": "37 000",
         "label": "prix comparés à chaque cycle, sans effort humain"
       },
       {
-        "num": "30 min",
-        "label": "pour une première analyse de vos opérations"
+        "num": "20 min",
+        "label": "pour un premier diagnostic, gratuit"
       }
     ]
   },
   "me": {
-    "photoAlt": "Portrait de Gabriel Nadon, conseiller",
+    "photoAlt": "Portrait de Gabriel Nadon, développeur",
     "quote": "Je ne vends pas de la technologie. Je règle des problèmes d’affaires.",
     "body": "Chaque mandat commence par vos opérations réelles — où le temps se perd, où l’information circule mal, où l’argent sort sans que personne ne le voie — et se termine par un système qui fait une partie du travail. Pas d’intermédiaire, pas de jargon, pas de surprise.",
     "principles": [
@@ -240,11 +234,11 @@
       "<strong>Un seul interlocuteur.</strong> Vous parlez à celui qui analyse vos opérations et qui construit le système.",
       "<strong>Des livraisons visibles.</strong> Le système avance par étapes : vous voyez chaque morceau fonctionner avant d’aller plus loin."
     ],
-    "role": "Conseiller, systèmes opérationnels"
+    "role": "Développeur, logiciels de gestion pour PME"
   },
   "for": {
     "title": "Pour qui",
-    "text": "Les entreprises où les opérations sont devenues trop complexes pour Excel, les courriels et les outils séparés.",
+    "text": "Les PME de 10 à 200 employés dont la gestion roule sur Excel, Access ou un logiciel maison vieillissant.",
     "sectors": [
       "Construction",
       "Industriel",
@@ -254,36 +248,40 @@
     ]
   },
   "free": {
-    "title": "Outils et guides gratuits",
+    "title": "Guides : les réponses aux questions qu’on me pose",
     "items": {
-      "calculateur": {
-        "kind": "Calculateur",
-        "title": "Combien vous coûte le travail manuel"
+      "excel": {
+        "kind": "Excel",
+        "title": "Remplacer Excel par un logiciel de gestion"
       },
-      "quiz": {
-        "kind": "Test en 10 questions",
-        "title": "Votre PME est-elle prête pour l’IA ?"
+      "coutLogiciel": {
+        "kind": "Prix 2026",
+        "title": "Combien coûte un logiciel sur mesure au Québec"
+      },
+      "access": {
+        "kind": "Access",
+        "title": "Remplacer une base Access : options et migration"
+      },
+      "reprise": {
+        "kind": "Vieux logiciels",
+        "title": "Reprendre un logiciel WinDev, Access ou maison"
+      },
+      "coutAuto": {
+        "kind": "Prix 2026",
+        "title": "Combien coûte l’automatisation d’un processus"
       },
       "guide": {
         "kind": "Guide",
         "title": "Automatiser sa PME au Québec"
-      },
-      "comparatif": {
-        "kind": "Comparatif",
-        "title": "Logiciels d’épicerie au Québec"
-      },
-      "barometre": {
-        "kind": "Baromètre",
-        "title": "Baromètre PME 2026"
       }
     }
   },
   "contact": {
-    "title": "Montrez-moi comment vous travaillez.",
-    "lead": "En 30 minutes, on regarde votre processus actuel et on identifie où un système pourrait réellement enlever du travail ou récupérer de la valeur — que l’on travaille ensemble ou non.",
+    "title": "Montrez-moi le fichier ou le logiciel qui coince.",
+    "lead": "En 20 minutes, on regarde votre processus et on identifie la tâche à éliminer en premier, avec une idée honnête du coût — que l’on travaille ensemble ou non.",
     "points": [
       "Gratuit et sans engagement",
-      "Réponse sous 24 h",
+      "Réponse sous 24 h",
       "Directement avec Gabriel, pas un vendeur"
     ]
   }

@@ -11,6 +11,7 @@ import { cp, access, readdir, rename, rm, mkdir, readFile, writeFile, stat } fro
 import { constants } from "node:fs";
 import path from "node:path";
 import { routing } from "../i18n/routing.ts";
+import { PAGE_DATES } from "../lib/entity.ts";
 
 const OUT = "out";
 const SITE = "https://gabrielnadon.com";
@@ -91,6 +92,9 @@ const publicPath = (locale, internal) => {
   return `${prefix}${p === "/" ? "" : p}/`;
 };
 
+// <lastmod> = date réelle de la dernière révision du contenu (lib/entity.ts),
+// pas la date du build : sinon toutes les pages paraissent modifiées à chaque
+// déploiement et le signal ne vaut plus rien pour Google et Bing.
 const today = new Date().toISOString().slice(0, 10);
 const urls = [];
 for (const internal of Object.keys(routing.pathnames)) {
@@ -105,7 +109,7 @@ for (const internal of Object.keys(routing.pathnames)) {
   }));
   alts.push({ hreflang: "x-default", href: SITE + publicPath("fr", internal) });
   for (const l of routing.locales) {
-    urls.push({ loc: SITE + publicPath(l, internal), alts });
+    urls.push({ loc: SITE + publicPath(l, internal), alts, lastmod: PAGE_DATES[internal]?.modified ?? today });
   }
 }
 
@@ -115,7 +119,7 @@ const sitemap =
   urls
     .map(
       (u) =>
-        `<url><loc>${u.loc}</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq>` +
+        `<url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><changefreq>monthly</changefreq>` +
         u.alts
           .map((a) => `<xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`)
           .join("") +
@@ -126,7 +130,7 @@ const sitemap =
 await writeFile(path.join(OUT, "sitemap.xml"), sitemap);
 
 const noindexPaths = [];
-for (const internal of ["/diagnostic", "/merci"]) {
+for (const internal of ["/merci"]) {
   for (const l of routing.locales) noindexPaths.push(publicPath(l, internal));
 }
 const robots =

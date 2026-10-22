@@ -43,9 +43,9 @@ export default async function LogicielSurMesurePage({ params }: Params) {
         ),
         related: [
           href(locale, "/refonte-de-systeme"),
+          href(locale, "/guides/combien-coute-logiciel-sur-mesure-quebec"),
+          href(locale, "/guides/remplacer-base-access"),
           href(locale, "/automatisation-processus"),
-          href(locale, "/logiciel-gestion-epicerie"),
-          href(locale, "/consultant-ia"),
         ],
       })}
     />

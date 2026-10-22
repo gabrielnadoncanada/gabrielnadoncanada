@@ -12,8 +12,6 @@ export const routing = defineRouting({
   localeDetection: false,
   pathnames: {
     "/": "/",
-    "/consultant-ia": { fr: "/consultant-ia", en: "/ai-consultant" },
-    "/agents-ia": { fr: "/agents-ia", en: "/ai-agents" },
     "/traitement-documents-ia": {
       fr: "/traitement-documents-ia",
       en: "/ai-document-processing",
@@ -28,14 +26,6 @@ export const routing = defineRouting({
       fr: "/cas/synchronisation-prix-fournisseurs",
       en: "/case-studies/supplier-price-sync",
     },
-    "/logiciel-gestion-epicerie": {
-      fr: "/logiciel-gestion-epicerie",
-      en: "/grocery-management-software",
-    },
-    "/calculateur": { fr: "/calculateur", en: "/calculator" },
-    "/diagnostic-ia": { fr: "/diagnostic-ia", en: "/ai-readiness-test" },
-    "/barometre": { fr: "/barometre", en: "/barometer" },
-    "/diagnostic": { fr: "/diagnostic", en: "/assessment" },
     "/merci": { fr: "/merci", en: "/thank-you" },
     "/guides/automatisation-pme-quebec": {
       fr: "/guides/automatisation-pme-quebec",
@@ -49,17 +39,33 @@ export const routing = defineRouting({
       fr: "/guides/comparatif-logiciels-epicerie-quebec",
       en: "/guides/grocery-software-comparison-quebec",
     },
-    "/guides/inventaire-epicerie-excel": {
-      fr: "/guides/inventaire-epicerie-excel",
-      en: "/guides/grocery-inventory-excel",
+    "/guides/combien-coute-logiciel-sur-mesure-quebec": {
+      fr: "/guides/combien-coute-logiciel-sur-mesure-quebec",
+      en: "/guides/custom-software-cost-quebec",
     },
-    "/guides/mise-a-jour-prix-fournisseurs": {
-      fr: "/guides/mise-a-jour-prix-fournisseurs",
-      en: "/guides/supplier-price-updates",
+    "/guides/remplacer-base-access": {
+      fr: "/guides/remplacer-base-access",
+      en: "/guides/replace-access-database",
     },
-    "/guides/calculer-marge-epicerie": {
-      fr: "/guides/calculer-marge-epicerie",
-      en: "/guides/grocery-margin",
+    "/guides/remplacer-excel-logiciel-gestion": {
+      fr: "/guides/remplacer-excel-logiciel-gestion",
+      en: "/guides/replace-excel-business-software",
+    },
+    "/guides/reprendre-vieux-logiciel": {
+      fr: "/guides/reprendre-vieux-logiciel",
+      en: "/guides/legacy-software-takeover",
+    },
+    "/guides/maintenance-logiciel-sur-mesure": {
+      fr: "/guides/maintenance-logiciel-sur-mesure",
+      en: "/guides/custom-software-maintenance",
+    },
+    "/guides/choisir-developpeur-logiciel": {
+      fr: "/guides/choisir-developpeur-logiciel",
+      en: "/guides/choosing-software-developer",
+    },
+    "/guides/subventions-projet-logiciel-quebec": {
+      fr: "/guides/subventions-projet-logiciel-quebec",
+      en: "/guides/software-project-grants-quebec",
     },
   },
 });

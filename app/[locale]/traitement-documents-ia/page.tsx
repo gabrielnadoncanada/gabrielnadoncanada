@@ -30,12 +30,12 @@ export default async function DocumentsPage({ params }: Params) {
         pathname: "/traitement-documents-ia",
         sujet: "documents",
         proofHref: href(locale, "/cas/synchronisation-prix-fournisseurs"),
-        priceHref: href(locale, "/calculateur"),
+        priceHref: href(locale, "/guides/combien-coute-automatisation-pme-quebec"),
         related: [
-          href(locale, "/guides/mise-a-jour-prix-fournisseurs"),
-          href(locale, "/agents-ia"),
           href(locale, "/automatisation-processus"),
-          href(locale, "/consultant-ia"),
+          href(locale, "/cas/synchronisation-prix-fournisseurs"),
+          href(locale, "/logiciel-sur-mesure"),
+          href(locale, "/guides/combien-coute-automatisation-pme-quebec"),
         ],
       })}
     />

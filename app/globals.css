@@ -1525,7 +1525,7 @@ a.mandat {
 .form-opt {
   text-transform: none;
   letter-spacing: var(--ls-normal);
-  color: rgb(124, 135, 129);
+  color: var(--color-muted);
 }
 .form-input {
   font-family: var(--font-sans);

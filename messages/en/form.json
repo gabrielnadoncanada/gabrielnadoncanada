@@ -2,7 +2,7 @@
   "besoin": "What do you need?",
   "detail": "In a few words, where does your team lose the most time?",
   "opt": "(optional)",
-  "placeholder": "E.g. invoices are keyed in by hand two days a week…",
+  "placeholder": "E.g. our quotes live in a spreadsheet only one person understands…",
   "nom": "Name",
   "email": "Email",
   "tel": "Phone",
@@ -22,13 +22,21 @@
   "mailCourriel": "Email",
   "mailTel": "Phone",
   "sujets": {
+    "logiciel": "Replace spreadsheets or Access with software",
+    "refonte": "Take over or maintain existing software",
+    "automatisation": "Automate a manual task",
     "diagnostic": "Review of my operations",
-    "ia": "AI project or AI agent",
-    "automatisation": "Automate a process",
     "documents": "Document or invoice processing",
-    "logiciel": "Custom software / internal system",
-    "refonte": "Replace an existing system",
+    "ia": "AI project or AI agent",
     "web": "Website",
     "autre": "Something else"
+  },
+  "taille": "Company size",
+  "tailleNc": "Select…",
+  "tailles": {
+    "1-9": "1 to 9 employees",
+    "10-49": "10 to 49 employees",
+    "50-199": "50 to 199 employees",
+    "200+": "200+ employees"
   }
 }

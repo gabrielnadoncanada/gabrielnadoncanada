@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PERSON_REF, BUSINESS_REF, articleDates } from "@/lib/entity";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -67,19 +68,12 @@ export default async function CasPage({ params }: Params) {
     "@graph": [
       {
         "@type": "Article",
+        ...articleDates("/cas/synchronisation-prix-fournisseurs"),
         headline: t("jsonld.headline"),
         description: t("jsonld.description"),
         inLanguage: jsonLdLang(locale),
-        author: {
-          "@type": "Person",
-          name: "Gabriel Nadon",
-          url: home,
-        },
-        publisher: {
-          "@type": "Person",
-          name: "Gabriel Nadon",
-          url: home,
-        },
+        author: PERSON_REF,
+        publisher: BUSINESS_REF,
         mainEntityOfPage: url,
         image: "https://gabrielnadon.com/og-image.png",
       },
@@ -130,6 +124,7 @@ export default async function CasPage({ params }: Params) {
             navItems={NAV}
             ctaHref={href(locale, "/", "contact")}
           />
+          <main>
 
           {/* Hero : l'argent d'abord */}
           <section className="case-hero">
@@ -274,7 +269,7 @@ export default async function CasPage({ params }: Params) {
                   </a>
                 ))}
                 <a
-                  href={href(locale, "/logiciel-gestion-epicerie")}
+                  href={href(locale, "/guides/comparatif-logiciels-epicerie-quebec")}
                   className="serif-muted link-serif"
                 >
                   <span>{t("sectors.epicerie")}</span>
@@ -314,6 +309,7 @@ export default async function CasPage({ params }: Params) {
             </div>
           </section>
 
+          </main>
           <MinimalFooter />
         </div>
       </div>

@@ -14,16 +14,20 @@ const CAL = "https://calendly.com/bonjour-gabrielnadon/audit-gratuit-20-min";
 // en français quelle que soit la langue de la page — modifier les deux ensemble.
 // Le libellé affiché vient des messages (form.sujets.<clé>).
 export const SUJETS = {
+  logiciel: "Remplacer Excel ou Access par un logiciel",
+  refonte: "Reprendre ou maintenir un logiciel existant",
+  automatisation: "Automatiser une tâche manuelle",
   diagnostic: "Diagnostic de mes opérations",
-  ia: "Projet d’IA ou d’agent IA",
-  automatisation: "Automatiser un processus",
   documents: "Traitement de documents ou de factures",
-  logiciel: "Système opérationnel sur mesure",
-  refonte: "Refonte d’un système existant",
+  ia: "Projet d’IA ou d’agent IA",
   web: "Site web",
   autre: "Autre sujet",
 } as const;
 export type SujetKey = keyof typeof SUJETS;
+
+// Qualification minimale (facultative) : taille de l'entreprise. Valeurs
+// acceptées par functions/api/contact.js (Set TAILLES) — modifier les deux.
+export const TAILLES = ["1-9", "10-49", "50-199", "200+"] as const;
 
 // ?sujet=… dans l'URL → clé de sujet.
 const PARAM_SUJETS: Record<string, SujetKey> = {
@@ -45,7 +49,9 @@ type Data = {
   nom: string;
   email: string;
   tel: string;
+  taille: string;
   website: string;
+  elapsed: number;
   page: string;
   lang: Locale;
   attribution: Attribution | null;
@@ -60,6 +66,7 @@ function mailtoHref(d: Data, t: FormT) {
     (d.detail ? `${t("mailContexte")} : ${d.detail}\n` : "") +
     `${t("mailNom")} : ${d.nom}\n${t("mailCourriel")} : ${d.email}\n` +
     (d.tel ? `${t("mailTel")} : ${d.tel}\n` : "") +
+    (d.taille ? `${t("taille")} : ${d.taille}\n` : "") +
     `\n${t("mailFrom")}`;
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
@@ -76,12 +83,14 @@ export function ContactForm({
   const t = useTranslations("form");
   const locale = useLocale() as Locale;
   const sujetRef = useRef<HTMLSelectElement>(null);
+  const mountedAt = useRef(0);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState<DoneState>(null);
 
   // Présélection du sujet : ?sujet=refonte, ou clic sur un mandat de la page.
   useEffect(() => {
+    mountedAt.current = Date.now();
     const sel = sujetRef.current;
     if (!sel) return;
     const setSujet = (v: string) => {
@@ -119,7 +128,9 @@ export function ContactForm({
       nom: (form.elements.namedItem("nom") as HTMLInputElement).value.trim(),
       email: (form.elements.namedItem("email") as HTMLInputElement).value.trim(),
       tel: telField ? telField.value.trim() : "",
+      taille: (form.elements.namedItem("taille") as HTMLSelectElement).value,
       website: (form.elements.namedItem("website") as HTMLInputElement).value,
+      elapsed: Date.now() - mountedAt.current,
       page: window.location.pathname,
       lang: locale,
       attribution: getAttribution(),
@@ -131,7 +142,7 @@ export function ContactForm({
     }
     setError(null);
     setSubmitting(true);
-    track("form_submit", { form_subject: d.sujet });
+    track("form_submit", { form_subject: d.sujet, company_size: d.taille || "nc" });
     try {
       const r = await fetch("/api/contact", {
         method: "POST",
@@ -223,6 +234,19 @@ export function ContactForm({
             autoComplete="email"
           />
         </div>
+      </div>
+      <div className="form-field">
+        <label className="form-label" htmlFor="cf-taille">
+          {t("taille")} <span className="form-opt">{t("opt")}</span>
+        </label>
+        <select className="form-input" id="cf-taille" name="taille" defaultValue="">
+          <option value="">{t("tailleNc")}</option>
+          {TAILLES.map((v) => (
+            <option key={v} value={v}>
+              {t(`tailles.${v}`)}
+            </option>
+          ))}
+        </select>
       </div>
       {withPhone ? (
         <div className="form-field">

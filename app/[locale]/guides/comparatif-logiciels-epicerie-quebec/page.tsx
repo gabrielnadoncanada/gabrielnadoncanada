@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { PERSON_REF, BUSINESS_REF, articleDates } from "@/lib/entity";
+import { FaqSection } from "@/components/FaqSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -52,7 +54,7 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
 
   const url = absUrl(locale, PATH);
   const home = absUrl(locale, "/");
-  const author = { "@type": "Person", name: "Gabriel Nadon", url: home };
+  const author = PERSON_REF;
   const listItems = t.raw("jsonld.listItems") as string[];
 
   const JSONLD = {
@@ -60,11 +62,12 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
     "@graph": [
       {
         "@type": "Article",
+        ...articleDates("/guides/comparatif-logiciels-epicerie-quebec"),
         headline: t("jsonld.headline"),
         description: t("jsonld.description"),
         inLanguage: jsonLdLang(locale),
         author,
-        publisher: author,
+        publisher: BUSINESS_REF,
         mainEntityOfPage: url,
         image: `${SITE}/og-image.png`,
       },
@@ -93,12 +96,6 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
           {
             "@type": "ListItem",
             position: 2,
-            name: t("jsonld.breadcrumbParent"),
-            item: absUrl(locale, "/logiciel-gestion-epicerie"),
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
             name: t("jsonld.breadcrumb"),
             item: url,
           },
@@ -108,7 +105,7 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
   };
 
   const NAV = [
-    { href: href(locale, "/logiciel-gestion-epicerie"), label: t("nav.grocery") },
+    { href: href(locale, "/cas/synchronisation-prix-fournisseurs"), label: t("nav.grocery") },
     { href: href(locale, "/", "cas"), label: t("nav.cases") },
     { href: href(locale, "/", "contact"), label: t("nav.contact") },
   ];
@@ -132,18 +129,6 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
     },
     {
       num: "II.",
-      key: "methods",
-      link: (
-        <a
-          href={href(locale, "/guides/mise-a-jour-prix-fournisseurs")}
-          className="link-serif"
-        >
-          {t("blind.methods.link")}
-        </a>
-      ),
-    },
-    {
-      num: "III.",
       key: "template",
       link: (
         <TrackedLink
@@ -298,7 +283,7 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
                     {t("cta.book")} <span>→</span>
                   </TrackedLink>
                   <a
-                    href={href(locale, "/logiciel-gestion-epicerie")}
+                    href={href(locale, "/cas/synchronisation-prix-fournisseurs")}
                     className="scp5 contact-link u-mt-sm"
                   >
                     <span>
@@ -312,6 +297,7 @@ export default async function ComparatifEpiceriePage({ params }: Params) {
             </div>
           </section>
 
+          <FaqSection items={t.raw("jsonld.faq") as Faq[]} />
           <MinimalFooter />
         </div>
       </div>

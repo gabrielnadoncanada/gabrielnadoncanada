@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "@/app/home.css";
+import { PERSON_REF } from "@/lib/entity";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -41,6 +43,7 @@ export default async function RefontePage({ params }: Params) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("refonte.systeme");
+  const tb = await getTranslations("common.service");
 
   const NAV = [
     { href: href(locale, "/", "approche"), label: t("nav.approach") },
@@ -61,12 +64,8 @@ export default async function RefontePage({ params }: Params) {
         name: t("jsonld.name"),
         serviceType: t("jsonld.serviceType"),
         description: t("jsonld.description"),
-        provider: {
-          "@type": "Person",
-          name: "Gabriel Nadon",
-          url: home,
-        },
-        areaServed: "Québec",
+        provider: PERSON_REF,
+        areaServed: { "@type": "AdministrativeArea", name: "Québec" },
         url,
       },
       {
@@ -110,6 +109,7 @@ export default async function RefontePage({ params }: Params) {
             navItems={NAV}
             ctaHref={contactRefonte}
           />
+          <main>
 
           {/* Hero : la douleur d'abord */}
           <section className="case-hero">
@@ -127,6 +127,10 @@ export default async function RefontePage({ params }: Params) {
                 <p className="case-lead" data-rise="200">
                   {t("hero.lead")}
                 </p>
+                <div className="gd-brief" role="note" data-rise="240">
+                  <p className="gd-brief-label">{tb("briefLabel")}</p>
+                  <p>{t.rich("hero.brief", { strong: (c) => <strong>{c}</strong> })}</p>
+                </div>
               </div>
               <div data-rise="280">
                 <div className="money-box">
@@ -277,6 +281,7 @@ export default async function RefontePage({ params }: Params) {
             </div>
           </section>
 
+          </main>
           <MinimalFooter />
         </div>
       </div>

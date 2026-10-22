@@ -1,18 +1,18 @@
 {
   "prixFournisseurs": {
     "meta": {
-      "title": "Cas : 56 000 $ par année récupérés en éliminant la mise à jour manuelle des prix | Gabriel Nadon",
-      "description": "Une tâche manuelle coûtait à une PME québécoise l'équivalent d'un poste à temps partiel — près de 56 000 $ par année. Voici le système qui l'a éliminée, et la marge regagnée en achetant au meilleur prix.",
-      "ogTitle": "56 000 $ par année, cachés dans une tâche manuelle",
+      "title": "Cas : 56 000 $ par année récupérés en éliminant la mise à jour manuelle des prix | Gabriel Nadon",
+      "description": "Une tâche manuelle coûtait à une PME québécoise l'équivalent d'un poste à temps partiel — près de 56 000 $ par année. Voici le système qui l'a éliminée, et la marge regagnée en achetant au meilleur prix.",
+      "ogTitle": "56 000 $ par année, cachés dans une tâche manuelle",
       "ogDescription": "Le coût réel d'un processus manuel dans une PME — et comment on l'a récupéré, avec de la marge en prime.",
       "twitterDescription": "Le coût réel d'un processus manuel dans une PME — et comment on l'a récupéré."
     },
     "jsonld": {
-      "headline": "56 000 $ par année, cachés dans une tâche manuelle",
+      "headline": "56 000 $ par année, cachés dans une tâche manuelle",
       "description": "Étude de cas : le coût réel d'un processus manuel dans une PME québécoise, et le système qui l'a éliminé tout en regagnant de la marge.",
       "home": "Accueil",
       "cases": "Cas concrets",
-      "crumb": "56 000 $ récupérés sur une tâche manuelle"
+      "crumb": "56 000 $ récupérés sur une tâche manuelle"
     },
     "nav": {
       "approach": "Approche",
@@ -22,12 +22,12 @@
     },
     "hero": {
       "eyebrow": "Cas concret · Le vrai coût d'un processus manuel",
-      "title": "Près de 56 000 $ par année, cachés dans une tâche que <em>personne n'avait chiffrée.</em>",
+      "title": "Près de 56 000 $ par année, cachés dans une tâche que <em>personne n'avait chiffrée.</em>",
       "lead": "Chaque semaine, une équipe recopiait à la main les prix de ses fournisseurs dans son système de caisse. Le geste semblait anodin. Additionné sur l'année, c'était l'équivalent d'un salaire à temps partiel — dépensé à retaper des chiffres. Nous avons bâti le système qui le fait à leur place. Et comme il compare tous les fournisseurs à chaque commande, l'entreprise achète désormais au meilleur prix : de la marge regagnée, en plus du temps."
     },
     "money": {
       "kicker": "Temps repris, chaque année",
-      "num": "56 000",
+      "num": "56 000",
       "cur": "$",
       "sub": "L'équivalent d'un poste à temps partiel, rendu à l'équipe pour un travail qui fait grandir l'entreprise.",
       "plus": "+ la marge regagnée sur chaque produit acheté au meilleur prix."
@@ -58,7 +58,7 @@
       "eyebrow": "Une dépense que personne ne voyait",
       "title": "La tâche n'était pas sur les livres. Elle était sur la paie.",
       "p1": "Personne n'avait jamais additionné les heures. On acceptait la mise à jour des prix comme une corvée normale, un mal nécessaire du métier. Mais chaque liste de fournisseur — des dizaines de milliers de lignes — se retapait à la main, semaine après semaine.",
-      "p2": "Mis bout à bout, ce travail invisible coûtait près de <strong>56 000 $ par année</strong> en temps. Sans compter les erreurs de saisie, et sans compter l'argent laissé sur la table chaque fois qu'un produit était commandé chez le fournisseur le plus cher, faute de pouvoir comparer."
+      "p2": "Mis bout à bout, ce travail invisible coûtait près de <strong>56 000 $ par année</strong> en temps. Sans compter les erreurs de saisie, et sans compter l'argent laissé sur la table chaque fois qu'un produit était commandé chez le fournisseur le plus cher, faute de pouvoir comparer."
     },
     "steps": {
       "eyebrow": "Comment on l'a récupéré",
@@ -79,7 +79,7 @@
     },
     "note": {
       "eyebrow": "Ce n'est pas une histoire d'épicerie",
-      "quote": "Chaque PME a une tâche à 56 000 $. Presque personne ne l'a chiffrée.",
+      "quote": "Chaque PME a une tâche à 56 000 $. Presque personne ne l'a chiffrée.",
       "body": "Une corvée hebdomadaire que tout le monde accepte parce qu'« on a toujours fait comme ça ». Elle ne paraît nulle part dans les états financiers, mais elle est bien là, chaque semaine, sur la paie de quelqu'un. La retrouver et la chiffrer, c'est déjà la moitié du travail.",
       "principles": [
         {
@@ -102,9 +102,9 @@
     },
     "cta": {
       "eyebrow": "Faisons le calcul",
-      "title": "Quelle est <em>votre tâche à 56 000 $ ?</em>",
+      "title": "Quelle est <em>votre tâche à 56 000 $ ?</em>",
       "lead": "En vingt minutes, on cible le processus manuel qui vous coûte le plus cher et on met un chiffre dessus. Vous repartez avec ce montant en main — que l'on travaille ensemble ou non.",
-      "button": "Trouver ma tâche à 56 000 $",
+      "button": "Trouver ma tâche à 56 000 $",
       "direct": "Ou directement",
       "calendly": "Réserver 20 min (Calendly)"
     }

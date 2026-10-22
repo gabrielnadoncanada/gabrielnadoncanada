@@ -32,10 +32,10 @@ export default async function AutomatisationPage({ params }: Params) {
         proofHref: href(locale, "/cas/synchronisation-prix-fournisseurs"),
         priceHref: href(locale, "/guides/combien-coute-automatisation-pme-quebec"),
         related: [
-          href(locale, "/calculateur"),
+          href(locale, "/guides/combien-coute-automatisation-pme-quebec"),
           href(locale, "/guides/automatisation-pme-quebec"),
           href(locale, "/traitement-documents-ia"),
-          href(locale, "/consultant-ia"),
+          href(locale, "/logiciel-sur-mesure"),
         ],
       })}
     />

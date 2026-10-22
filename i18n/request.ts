@@ -11,14 +11,9 @@ export const NAMESPACES = [
   "services",
   "cas",
   "refonte",
-  "epicerie",
   "guides",
-  "guidesEpicerie",
-  "calculateur",
-  "quiz",
-  "barometre",
-  "diagnostic",
   "merci",
+  "articles",
 ] as const;
 
 // Espaces de noms lus par des composants client (« use client ») : seuls ceux-ci
@@ -26,9 +21,6 @@ export const NAMESPACES = [
 export const CLIENT_NAMESPACES = [
   "common",
   "form",
-  "calculateur",
-  "quiz",
-  "barometre",
 ] as const;
 
 export async function loadMessages(locale: string) {

@@ -2,7 +2,7 @@
   "automatisationPme": {
     "meta": {
       "title": "Automating your processes: the guide for Quebec SMBs (2026) | Gabriel Nadon",
-      "description": "What to automate first, in what order, at what price, with which grants (ESSOR, C3I, PME MTL): the complete guide for Quebec SMBs, built on a real $56,000/year case. With a free calculator and prioritization template.",
+      "description": "What to automate first, in what order, at what price, with which grants (ESSOR, C3I, PME MTL): the complete guide for Quebec SMBs, built on a real $56,000/year case. With a free prioritization template.",
       "ogTitle": "Automating your processes: the guide for Quebec SMBs (2026)",
       "ogDescription": "What to automate first, at what price, with which grants — built on a real $56,000/year case."
     },
@@ -17,7 +17,7 @@
         },
         {
           "q": "What grants are available in Quebec for automation in 2026?",
-          "a": "The main active programs: Investissement Québec’s ESSOR component 1 (open until March 31, 2027) — 50% of fees up to $20,000 for a digital assessment (1B) and up to $50,000 to implement the plan (1C), limited to businesses with 250 employees or fewer and annual revenue of at least $2.5M; the C3I tax credit (15 to 25% on equipment and management software, until the end of 2029); PME MTL’s innovation and productivity fund (up to $50,000, 80% of the project, Island of Montreal); and Services Québec training grants (MFOR). The federal CDAP (Canada Digital Adoption Program) has been closed to new applications since February 2024."
+          "a": "The main active programs: Investissement Québec’s ESSOR component 1 (open until March 31, 2027) — 50% of fees up to $20,000 for a digital assessment (1B) and up to $50,000 to implement the plan (1C), limited to businesses with 250 employees or fewer and annual revenue of at least $2.5M; the C3I tax credit (covers purchased computer equipment and management software packages, not custom development; check rates and eligibility with Revenu Québec or your accountant); PME MTL’s innovation and productivity fund (up to $50,000, 80% of the project, Island of Montreal); and Services Québec training grants (MFOR). The federal CDAP (Canada Digital Adoption Program) has been closed to new applications since February 2024."
         },
         {
           "q": "How much does it cost to automate a process in an SMB?",
@@ -31,7 +31,7 @@
     },
     "nav": {
       "approach": "Approach",
-      "calculator": "Calculator",
+      "calculator": "Prices",
       "cases": "Case studies",
       "contact": "Contact"
     },
@@ -50,14 +50,14 @@
       "eyebrow": "Step 1 — Put a number on it first",
       "title": "No number, no project.",
       "p1": "Most automation projects fail before they start: people pick the most exciting process instead of the most expensive one. The formula that puts everything back in order fits on one line: <strong>hours per week × people × loaded hourly cost × 50 weeks</strong>. Apply it to every recurring chore. The results always surprise — the “minor” 8-hour-a-week task at $25/h costs $10,000 a year.",
-      "p2": "Two free tools to do it properly: <calc>the online calculator</calc> (30 seconds, one task) and <gabarit>the Excel prioritization template</gabarit> (in French; up to 15 tasks, ranked automatically by return and simplicity)."
+      "p2": "To put a number on it: hours per week × people × hourly rate × 50 weeks. <calc>Market price ranges</calc> then tell you whether automation pays for itself, and <gabarit>the Excel prioritization template</gabarit> (in French) ranks up to 15 tasks by return and simplicity."
     },
     "step2": {
       "eyebrow": "Step 2 — The six processes with the best return",
       "items": [
         {
           "title": "Supplier prices and catalogues",
-          "text": "Lists that arrive in every format and get retyped into the point-of-sale (POS) system or the ERP. The return champion in retail — it’s the process behind the $56,000 case. <guide>The 4 methods compared →</guide>"
+          "text": "Lists that arrive in every format and get retyped into the point-of-sale (POS) system or the ERP. The return champion in retail — it’s the process behind the $56,000 case. <guide>The full case →</guide>"
         },
         {
           "title": "Invoicing and quotes",
@@ -119,7 +119,7 @@
         {
           "num": "C3I",
           "title": "Investment and innovation tax credit",
-          "text": "15 to 25% (depending on the region) on manufacturing equipment, computer hardware and management software. In effect for expenses incurred before January 1, 2030. It’s the successor to the defunct “IT integration” credit."
+          "text": "Covers purchases of manufacturing equipment, computer hardware and management software packages (not custom development). The rate depends on the region; Revenu Québec’s official page does not publish it, so have your accountant confirm the rate and eligibility before you count on it."
         },
         {
           "num": "MTL",
@@ -127,11 +127,6 @@
           "text": "On the Island of Montreal: PME MTL’s innovation and productivity fund, a grant of up to $50,000 covering up to 80% of an automation project. Anywhere in Quebec: Services Québec’s training measures (MFOR) generally reimburse up to 50% of training costs related to new tools. Watch out for outdated pages elsewhere: the federal CDAP (Canada Digital Adoption Program) has been closed since February 2024, and “PME en action” no longer accepts applications."
         }
       ]
-    },
-    "ai": {
-      "label": "And where does AI fit in?",
-      "text": "Only 12.7% of Quebec businesses use AI (ISQ, 2024-2025) — not for lack of tools, but for lack of foundations: accessible data, documented processes, someone who owns the project. See where your business stands in 10 questions.",
-      "link": "Take the “ready for AI?” test →"
     },
     "services": {
       "label": "Get it implemented"
@@ -143,7 +138,7 @@
       "lead": "You describe your operations, I tell you what to automate first, the realistic effort and the expected return — and if nothing is worth it, I’ll tell you that too. Free, no obligation.",
       "book": "Book my 20 minutes",
       "altLabel": "Not ready to call?",
-      "altText": "Put a number on your chore first"
+      "altText": "Market prices, in numbers"
     }
   },
   "coutAutomatisation": {
@@ -173,13 +168,13 @@
         },
         {
           "q": "Can grants reduce the cost of an automation project in Quebec?",
-          "a": "Yes. In 2026: Investissement Québec’s ESSOR component 1B reimburses 50% of the fees for a digital assessment (max $20,000) and component 1C, 50% of implementation (max $50,000) — for businesses with 250 employees or fewer and $2.5M or more in revenue; the C3I tax credit covers 15 to 25% of equipment and management software until the end of 2029; PME MTL offers up to $50,000 (80% of the project) on the Island of Montreal. The federal CDAP (Canada Digital Adoption Program) has been closed since February 2024."
+          "a": "Yes. In 2026: Investissement Québec’s ESSOR component 1B reimburses 50% of the fees for a digital assessment (max $20,000) and component 1C, 50% of implementation (max $50,000) — for businesses with 250 employees or fewer and $2.5M or more in revenue; the C3I tax credit covers purchased computer equipment and management software packages (check rates and eligibility with Revenu Québec or your accountant); PME MTL offers up to $50,000 (80% of the project) on the Island of Montreal. The federal CDAP (Canada Digital Adoption Program) has been closed since February 2024."
         }
       ]
     },
     "nav": {
       "guide": "The complete guide",
-      "calculator": "Calculator",
+      "calculator": "Custom software cost",
       "contact": "Contact"
     },
     "hero": {
@@ -190,7 +185,7 @@
       "moneyKicker": "The only rule that matters",
       "moneyCur": "months",
       "moneySub": "An automation project should pay for itself in under twelve months with the hours it eliminates. Otherwise, turn it down — no matter who’s selling it.",
-      "moneyLink": "Put a number on your chore in 30 seconds →"
+      "moneyLink": "Put numbers on your tasks with the free template →"
     },
     "ranges": {
       "eyebrow": "The ranges, with their sources",
@@ -217,7 +212,7 @@
       "eyebrow": "What drives the bill",
       "title": "Three factors — and two government discounts.",
       "p1": "<strong>The number of systems involved</strong> (connecting two pieces of software costs less than connecting five), <strong>how clean the data is</strong> (PDFs and paper that need interpreting add a layer), and <strong>the human exception</strong> (the more “it depends” there is in the process, the bigger the project). That’s why any serious quote starts by looking at your real files, not with a price per square foot.",
-      "p2": "On the grants side: <strong>ESSOR component 1B/1C</strong> (50% of the assessment up to $20,000, 50% of implementation up to $50,000 — businesses with 250 employees or fewer and $2.5M or more in revenue) and the <strong>C3I tax credit</strong> (15 to 25% on equipment and management software, until the end of 2029). The details of the active programs are in <guide>the complete guide</guide>."
+      "p2": "On the grants side: <strong>ESSOR component 1B/1C</strong> (50% of the assessment up to $20,000, 50% of implementation up to $50,000 — businesses with 250 employees or fewer and $2.5M or more in revenue) and the <strong>C3I tax credit</strong> (purchased computer equipment and management software packages; check rates and eligibility with Revenu Québec). The details of the active programs are in <guide>the complete guide</guide>."
     },
     "proof": {
       "label": "The other side of the equation",
@@ -234,7 +229,7 @@
       "lead": "In 20 minutes on the phone, we put a number on your chore, I give you an honest range for eliminating it — and if the math doesn’t hold up, I’ll tell you and we’ll leave it there.",
       "book": "Book my 20 minutes",
       "altLabel": "A number first?",
-      "altText": "The free calculator"
+      "altText": "The free prioritization template"
     }
   },
   "comparatifEpicerie": {
@@ -255,7 +250,6 @@
         "ACCEO Logivision — L-POS / L-BOSS (Montreal)",
         "Square (general-purpose)"
       ],
-      "breadcrumbParent": "Management software for grocery and convenience stores",
       "breadcrumb": "Grocery store software in Quebec compared",
       "faq": [
         {
@@ -273,7 +267,7 @@
       ]
     },
     "nav": {
-      "grocery": "Grocery",
+      "grocery": "The grocery case",
       "cases": "Case studies",
       "contact": "Contact"
     },
@@ -331,11 +325,6 @@
         "text": "37,000 prices synchronized, $56,000/year recovered, zero days of downtime.",
         "link": "Read the case →"
       },
-      "methods": {
-        "title": "The 4 ways to update prices",
-        "text": "From manual entry to automated synchronization: real costs and pitfalls.",
-        "link": "Read the guide →"
-      },
       "template": {
         "title": "Free Excel template",
         "text": "Compare prices from 3 suppliers, product by product, until you automate (template in French).",
@@ -349,7 +338,7 @@
       "lead": "I don’t sell any of these systems — I have nothing to gain by steering you toward one or another. In 20 minutes, we look at your store, your suppliers and your quotes, and I tell you what I would do in your place. Free.",
       "book": "Book my 20 minutes",
       "altLabel": "Keep your POS?",
-      "altText": "Automate without replacing anything"
+      "altText": "The $56,000 case, in detail"
     }
   }
 }

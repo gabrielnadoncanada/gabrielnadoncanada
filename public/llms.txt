@@ -1,58 +1,55 @@
-# Gabriel Nadon — Consultant IA et automatisation pour PME (Québec)
+# Gabriel Nadon — Développeur de logiciels de gestion pour PME (Québec)
 
-> Consultant indépendant au Québec (Montréal, à distance, en français et en
-> anglais) : implantation d'IA dans les PME — agents IA, traitement automatique
-> de factures et documents, automatisation des processus, logiciels sur mesure
-> et refonte de systèmes. Prix publiés :
-> diagnostic gratuit de 20 minutes ; sprint d'automatisation dès 4 500 $ CA ;
-> refonte de système par tranches d'environ 6 000 $ (la plupart entre 12 000 $
-> et 30 000 $). Cas documenté : une épicerie indépendante du Québec a récupéré
+> Développeur indépendant basé à Saint-Eustache (Rive-Nord de Montréal), à
+> distance partout au Québec, en français et en anglais. Remplace les fichiers
+> Excel, les bases Access et les vieux logiciels maison des PME québécoises
+> (10 à 200 employés) par un logiciel de gestion sur mesure, reprend et
+> maintient les logiciels que plus personne n'entretient, et automatise les
+> tâches manuelles. Prix publiés : diagnostic gratuit de 20 minutes ; premier
+> sprint à portée fixe dès 4 500 $ CA (2 à 3 semaines) ; remplacement par
+> tranches d'environ 6 000 $ (la plupart des systèmes entre 12 000 $ et
+> 30 000 $). Cas documenté : une épicerie indépendante du Québec a récupéré
 > près de 56 000 $/an en éliminant la mise à jour manuelle de ses prix
 > fournisseurs, sans remplacer sa caisse. Contact : bonjour@gabrielnadon.com.
 
-## Pages principales
+## Services
 
-- [Accueil](https://gabrielnadon.com/) : services, approche, cas concrets, contact
-- [Consultant IA pour PME au Québec](https://gabrielnadon.com/consultant-ia/) : démarche en 5 étapes, prix (diagnostic gratuit, sprint dès 4 500 $), Loi 25
-- [Agents IA pour entreprise](https://gabrielnadon.com/agents-ia/) : agents de réception, de soumission, de service client et de suivi, avec validation humaine
-- [Traitement automatique des factures et documents par IA](https://gabrielnadon.com/traitement-documents-ia/) : factures, bons de commande, listes de prix ; OCR + IA + règles de validation ; QuickBooks, Acomba, Sage, ERP, Excel
-- [Automatisation des processus d'affaires](https://gabrielnadon.com/automatisation-processus/) : Make, n8n, Power Automate, Zapier ou code ; sprint dès 4 500 $
-- [Logiciel sur mesure pour PME](https://gabrielnadon.com/logiciel-sur-mesure/) : remplacer Excel par un système interne, par tranches d'environ 6 000 $
+- [Remplacer Excel ou Access par un logiciel de gestion](https://gabrielnadon.com/logiciel-sur-mesure/) : soumissions, heures, inventaire, bons de travail ; par tranches d'environ 6 000 $, premier sprint dès 4 500 $
+- [Reprise, maintenance et refonte de vieux logiciels](https://gabrielnadon.com/refonte-de-systeme/) : logiciel maison, base Access, programme WinDev ou .NET ; stabiliser d'abord, moderniser par étapes, sans arrêter les opérations
+- [Automatiser une tâche manuelle](https://gabrielnadon.com/automatisation-processus/) : double saisie, rapports, relances ; sprint à portée fixe dès 4 500 $
 - [Cas : synchronisation des prix fournisseurs](https://gabrielnadon.com/cas/synchronisation-prix-fournisseurs/) : 56 000 $/an récupérés, 37 000 prix synchronisés, caisse conservée
-- [Refonte de système](https://gabrielnadon.com/refonte-de-systeme/) : remplacer un vieux système par tranches, sans big bang
-- [Logiciel de gestion pour épicerie et dépanneur](https://gabrielnadon.com/logiciel-gestion-epicerie/) : automatiser la caisse existante d'un commerce d'alimentation au Québec
+- [Traitement automatique des factures et documents](https://gabrielnadon.com/traitement-documents-ia/) : factures, bons de commande, listes de prix ; QuickBooks, Acomba, Sage, ERP, Excel
 
 ## Guides
 
+- [Remplacer Excel par un logiciel de gestion](https://gabrielnadon.com/guides/remplacer-excel-logiciel-gestion/) : signes qu'Excel ne suffit plus, options comparées (outil en ligne, logiciel du marché, sur mesure), prix et migration des formules
+- [Combien coûte un logiciel sur mesure au Québec (2026)](https://gabrielnadon.com/guides/combien-coute-logiciel-sur-mesure-quebec/) : prix réels publiés, ce qui fait varier le coût, subventions vérifiées (ESSOR) et pièges
+- [Remplacer une base Access en 2026](https://gabrielnadon.com/guides/remplacer-base-access/) : fin du support d'Access 2016/2019 (14 octobre 2025) et d'Access 2021 (14 octobre 2026), options comparées, migration des données
+- [Reprendre un logiciel WinDev, Access ou maison abandonné](https://gabrielnadon.com/guides/reprendre-vieux-logiciel/) : stabiliser, maintenir ou réécrire ; liste de vérification de reprise
+- [Maintenance d'un logiciel sur mesure](https://gabrielnadon.com/guides/maintenance-logiciel-sur-mesure/) : coût annuel (10 à 15 % du coût initial selon Witify), contrat, propriété du code
+- [Indépendant, agence ou offshore : choisir son développeur](https://gabrielnadon.com/guides/choisir-developpeur-logiciel/) : taux publiés au Québec, risques, clauses à exiger
+- [Subventions pour un projet logiciel au Québec (2026)](https://gabrielnadon.com/guides/subventions-projet-logiciel-quebec/) : ESSOR 1A/1B/1C vérifiés, C3i, piège des dépenses avant dépôt
 - [Automatiser ses processus : le guide PME Québec (2026)](https://gabrielnadon.com/guides/automatisation-pme-quebec/) : quoi automatiser en premier, prix du marché, subventions actives vérifiées (ESSOR 1A/1B/1C, C3I, PME MTL, MFOR)
 - [Combien coûte l'automatisation d'un processus dans une PME au Québec ?](https://gabrielnadon.com/guides/combien-coute-automatisation-pme-quebec/) : fourchettes vérifiées 2026 — 2 500 $ à 10 000 $ (premier processus), 8 000 $ à 18 000 $ (3-5 processus), 150-350 $/h en consultation
 - [Comparatif des logiciels d'épicerie au Québec (2026)](https://gabrielnadon.com/guides/comparatif-logiciels-epicerie-quebec/) : SIR Solutions, LOC Software, Panza, ACCEO Logivision, Square — faits sourcés, prix publiés quand ils existent
-- [Mise à jour des prix fournisseurs : les 4 méthodes](https://gabrielnadon.com/guides/mise-a-jour-prix-fournisseurs/) : saisie manuelle, import CSV, portail/EDI, synchronisation automatisée
-- [Inventaire d'épicerie dans Excel](https://gabrielnadon.com/guides/inventaire-epicerie-excel/) : gabarit gratuit, comptage cyclique, limites d'Excel
-- [Calculer sa marge en épicerie](https://gabrielnadon.com/guides/calculer-marge-epicerie/) : marge vs majoration, formules exactes, pièges
-
-## Outils gratuits
-
-- [Calculateur du coût du travail manuel](https://gabrielnadon.com/calculateur/) : heures × personnes × taux × 50 semaines, résultat immédiat
-- [Test : votre PME est-elle prête pour l'IA ?](https://gabrielnadon.com/diagnostic-ia/) : 10 questions, résultat immédiat (52 % des Québécois utilisent l'IA générative, 12,7 % des entreprises — NETendances 2025 / ISQ)
-- [Baromètre IA & automatisation des PME du Québec](https://gabrielnadon.com/barometre/) : enquête annuelle, résultats compilés publiés
-- Gabarits Excel gratuits, sans inscription : [coût du travail manuel](https://gabrielnadon.com/gabarits/cout-travail-manuel.xlsx), [comparaison de prix fournisseurs](https://gabrielnadon.com/gabarits/comparaison-prix-fournisseurs.xlsx), [matrice de priorisation](https://gabrielnadon.com/gabarits/matrice-priorisation-automatisations.xlsx), [inventaire épicerie](https://gabrielnadon.com/gabarits/inventaire-epicerie.xlsx)
 
 ## English
 
 The whole site is available in English under /en/ (same content, translated).
 
 - [Home (English)](https://gabrielnadon.com/en/): services, approach, case study, contact
-- [AI consultant for Quebec SMBs](https://gabrielnadon.com/en/ai-consultant/)
-- [AI agents for business](https://gabrielnadon.com/en/ai-agents/)
-- [AI invoice and document processing](https://gabrielnadon.com/en/ai-document-processing/)
+- [Replace spreadsheets or Access with business software](https://gabrielnadon.com/en/custom-software/)
+- [Legacy software takeover, maintenance and replacement](https://gabrielnadon.com/en/system-replacement/)
 - [Business process automation](https://gabrielnadon.com/en/process-automation/)
-- [Custom software for SMBs](https://gabrielnadon.com/en/custom-software/)
-- [Legacy system replacement](https://gabrielnadon.com/en/system-replacement/)
+- [AI invoice and document processing](https://gabrielnadon.com/en/ai-document-processing/)
 - [Case study: supplier price sync](https://gabrielnadon.com/en/case-studies/supplier-price-sync/): about $56,000 a year recovered, 37,000 prices synced, existing POS kept
-- [Grocery store management software](https://gabrielnadon.com/en/grocery-management-software/)
+- [Guide: what custom software costs in Quebec](https://gabrielnadon.com/en/guides/custom-software-cost-quebec/)
+- [Guide: replacing Excel with business software](https://gabrielnadon.com/en/guides/replace-excel-business-software/)
+- [Guide: replacing an Access database](https://gabrielnadon.com/en/guides/replace-access-database/)
+- [Guide: taking over legacy software](https://gabrielnadon.com/en/guides/legacy-software-takeover/)
+- [Guide: custom software maintenance](https://gabrielnadon.com/en/guides/custom-software-maintenance/)
+- [Guide: choosing a software developer](https://gabrielnadon.com/en/guides/choosing-software-developer/)
+- [Guide: grants for a software project in Quebec](https://gabrielnadon.com/en/guides/software-project-grants-quebec/)
 - [Guide: automating an SMB in Quebec](https://gabrielnadon.com/en/guides/sme-automation-quebec/)
 - [Guide: what automation costs in Quebec](https://gabrielnadon.com/en/guides/automation-cost-quebec/)
 - [Grocery software comparison, Quebec](https://gabrielnadon.com/en/guides/grocery-software-comparison-quebec/)
-- [Manual work cost calculator](https://gabrielnadon.com/en/calculator/)
-- [AI readiness test](https://gabrielnadon.com/en/ai-readiness-test/)

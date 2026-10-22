@@ -1,13 +1,13 @@
 {
   "ticker": {
-    "available": "Available · 2 projects · {quarter}",
+    "available": "Taking new projects · {quarter}",
     "quarter": "Q{q} {year}",
-    "practice": "Independent practice · Montreal"
+    "practice": "Independent · Saint-Eustache, Montreal’s North Shore"
   },
   "header": {
-    "brandLabel": "Gabriel Nadon — Operations systems for SMBs",
-    "brandSub": "Operations systems",
-    "cta": "Review my operations",
+    "brandLabel": "Gabriel Nadon — Business software for SMBs",
+    "brandSub": "Business software · SMBs",
+    "cta": "Free review",
     "ctaShort": "Let’s talk",
     "switchLabel": "Français",
     "switchAria": "Lire cette page en français",
@@ -20,16 +20,16 @@
     }
   },
   "footer": {
-    "sub": "Operations systems · SMBs",
-    "desc": "I replace the manual tracking SMBs live with — spreadsheets, email, ill-fitting software — with systems that keep information in one place and do part of the work.",
+    "sub": "Business software · SMBs",
+    "desc": "I replace the spreadsheets, Access databases and aging in-house software of Quebec SMBs, and automate the manual tasks that cost the most.",
     "contact": "Contact",
-    "available": "2 projects available · {quarter}",
-    "location": "Montreal, Quebec · remote",
+    "available": "Taking new projects · {quarter}",
+    "location": "Saint-Eustache (Montreal’s North Shore) · remote across Quebec",
     "social": "Social",
     "navigation": "Navigation",
     "services": "Services",
-    "free": "Free guides and tools",
-    "freeShort": "Free",
+    "free": "Guides",
+    "freeShort": "Guides",
     "cases": "Case studies",
     "rights": "All rights reserved",
     "toTop": "Back to top",
@@ -37,26 +37,30 @@
     "language": "Version française"
   },
   "links": {
-    "consultantIa": "AI consultant for SMBs",
-    "agentsIa": "AI agents",
     "documents": "Invoice and document processing",
     "documentsShort": "Document processing",
     "automatisation": "Process automation",
-    "logiciel": "Custom software",
-    "refonte": "System replacement",
-    "calculateur": "Manual work cost calculator",
-    "quiz": "“Is my business AI-ready?” test",
-    "guideAutomatisation": "Guide: automating your SMB",
-    "guideAutomatisationShort": "SMB automation guide",
+    "logiciel": "Replace spreadsheets or Access",
+    "refonte": "Legacy software takeover",
     "comparatifEpicerie": "Grocery software comparison",
-    "barometre": "2026 SMB barometer"
+    "guideCoutLogiciel": "Custom software cost",
+    "guideAccess": "Replacing an Access database",
+    "guideReprise": "Taking over old software",
+    "guideCoutAuto": "Automation cost",
+    "guideExcel": "Replacing Excel with software",
+    "cas": "Case: $56,000 a year recovered",
+    "guideMaintenance": "Software maintenance",
+    "guideChoisir": "Choosing a developer",
+    "guideSubventions": "Grants for a software project",
+    "guideAutomatisation": "Guide: automating an SMB"
   },
   "service": {
     "ctaPrimary": "Describe your process",
     "ctaProof": "See a real case",
-    "who": "<strong>Gabriel Nadon</strong>, independent consultant in Montreal. You talk to the person who builds it.",
+    "who": "<strong>Gabriel Nadon</strong>, independent developer, Montreal’s North Shore. You talk to the person who writes the code.",
     "calendly": "Or book your 20 minutes now",
-    "home": "Home"
+    "home": "Home",
+    "briefLabel": "In short"
   },
   "notFound": {
     "title": "Page not found | Gabriel Nadon",
@@ -65,5 +69,6 @@
     "lead": "The link may be outdated. Here are the most useful pages:",
     "home": "Back to home",
     "english": "English website"
-  }
+  },
+  "faqTitle": "Frequently asked questions"
 }

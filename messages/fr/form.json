@@ -2,7 +2,7 @@
   "besoin": "Votre besoin",
   "detail": "En quelques mots, où perdez-vous le plus de temps ?",
   "opt": "(facultatif)",
-  "placeholder": "Ex. : la facturation nous prend deux jours par semaine…",
+  "placeholder": "Ex. : nos soumissions vivent dans un Excel que personne d’autre ne comprend…",
   "nom": "Nom",
   "email": "Courriel",
   "tel": "Téléphone",
@@ -10,7 +10,7 @@
   "required": "Votre nom et un courriel valide sont requis.",
   "sending": "Envoi en cours…",
   "send": "Envoyer ma demande",
-  "note": "Réponse sous 24 h. Ou",
+  "note": "Réponse sous 24 h. Ou",
   "cal": "réservez 20 min directement",
   "errorTitle": "Un pépin technique est survenu.",
   "errorText": "Votre message n’est pas parti. <mail>Envoyez-le par courriel</mail> (déjà rédigé), ou <cal>réservez 20 minutes</cal>.",
@@ -22,13 +22,21 @@
   "mailCourriel": "Courriel",
   "mailTel": "Téléphone",
   "sujets": {
+    "logiciel": "Remplacer Excel ou Access par un logiciel",
+    "refonte": "Reprendre ou maintenir un logiciel existant",
+    "automatisation": "Automatiser une tâche manuelle",
     "diagnostic": "Diagnostic de mes opérations",
-    "ia": "Projet d’IA ou d’agent IA",
-    "automatisation": "Automatiser un processus",
     "documents": "Traitement de documents ou de factures",
-    "logiciel": "Système opérationnel sur mesure",
-    "refonte": "Refonte d’un système existant",
+    "ia": "Projet d’IA ou d’agent IA",
     "web": "Site web",
     "autre": "Autre sujet"
+  },
+  "taille": "Taille de l’entreprise",
+  "tailleNc": "Choisir…",
+  "tailles": {
+    "1-9": "1 à 9 employés",
+    "10-49": "10 à 49 employés",
+    "50-199": "50 à 199 employés",
+    "200+": "200 employés et plus"
   }
 }

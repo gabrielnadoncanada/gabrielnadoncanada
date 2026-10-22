@@ -24,6 +24,8 @@ export type ServicePageProps = {
   eyebrow: string;
   title: ReactNode;
   lead: ReactNode;
+  /** Réponse directe (prix, délai, pour qui) sous le titre — citable telle quelle. */
+  brief?: ReactNode;
   box: { kicker: string; items: string[] };
   pains: { eyebrow: string; title: string; intro?: string; items: string[] };
   approach: { eyebrow: string; quote: string; body: ReactNode; principles: Item[] };
@@ -132,6 +134,8 @@ export function ServicePage(p: ServicePageProps) {
         <Ticker />
         <SiteHeader pathname={p.pathname} navItems={nav} ctaHref="#contact" />
 
+        <main>
+
         {/* Hero : reprend les mots de la recherche, puis la promesse */}
         <section className="hm-hero">
           <div className="hm-wrap hm-hero-grid">
@@ -139,6 +143,12 @@ export function ServicePage(p: ServicePageProps) {
               <p className="hm-kicker">{p.eyebrow}</p>
               <h1 className="hm-h1 svc-h1">{p.title}</h1>
               <p className="hm-lead">{p.lead}</p>
+              {p.brief ? (
+                <div className="gd-brief" role="note">
+                  <p className="gd-brief-label">{t("service.briefLabel")}</p>
+                  <p>{p.brief}</p>
+                </div>
+              ) : null}
               <div className="hm-cta">
                 <a href="#contact" className="btn">
                   {t("service.ctaPrimary")}
@@ -338,6 +348,7 @@ export function ServicePage(p: ServicePageProps) {
             </div>
           </div>
         </section>
+        </main>
 
         <MinimalFooter />
       </div>

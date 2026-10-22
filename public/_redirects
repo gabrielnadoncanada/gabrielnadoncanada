@@ -1,2 +1,47 @@
 /subventions/*  /  301
 /api/lead  /  301
+
+# Pages retirées le 2026-10-22 (recentrage sur Excel/Access et vieux logiciels) :
+# 301 vers la page la plus proche pour garder l'indexation acquise.
+/calculateur  /guides/combien-coute-automatisation-pme-quebec/  301
+/calculateur/  /guides/combien-coute-automatisation-pme-quebec/  301
+/en/calculator  /en/guides/automation-cost-quebec/  301
+/en/calculator/  /en/guides/automation-cost-quebec/  301
+/diagnostic-ia  /  301
+/diagnostic-ia/  /  301
+/en/ai-readiness-test  /en/  301
+/en/ai-readiness-test/  /en/  301
+/barometre  /  301
+/barometre/  /  301
+/en/barometer  /en/  301
+/en/barometer/  /en/  301
+/consultant-ia  /  301
+/consultant-ia/  /  301
+/en/ai-consultant  /en/  301
+/en/ai-consultant/  /en/  301
+/agents-ia  /automatisation-processus/  301
+/agents-ia/  /automatisation-processus/  301
+/en/ai-agents  /en/process-automation/  301
+/en/ai-agents/  /en/process-automation/  301
+/logiciel-gestion-epicerie  /cas/synchronisation-prix-fournisseurs/  301
+/logiciel-gestion-epicerie/  /cas/synchronisation-prix-fournisseurs/  301
+/en/grocery-management-software  /en/case-studies/supplier-price-sync/  301
+/en/grocery-management-software/  /en/case-studies/supplier-price-sync/  301
+/guides/inventaire-epicerie-excel  /guides/comparatif-logiciels-epicerie-quebec/  301
+/guides/inventaire-epicerie-excel/  /guides/comparatif-logiciels-epicerie-quebec/  301
+/en/guides/grocery-inventory-excel  /en/guides/grocery-software-comparison-quebec/  301
+/en/guides/grocery-inventory-excel/  /en/guides/grocery-software-comparison-quebec/  301
+/guides/calculer-marge-epicerie  /guides/comparatif-logiciels-epicerie-quebec/  301
+/guides/calculer-marge-epicerie/  /guides/comparatif-logiciels-epicerie-quebec/  301
+/en/guides/grocery-margin  /en/guides/grocery-software-comparison-quebec/  301
+/en/guides/grocery-margin/  /en/guides/grocery-software-comparison-quebec/  301
+/guides/mise-a-jour-prix-fournisseurs  /cas/synchronisation-prix-fournisseurs/  301
+/guides/mise-a-jour-prix-fournisseurs/  /cas/synchronisation-prix-fournisseurs/  301
+/en/guides/supplier-price-updates  /en/case-studies/supplier-price-sync/  301
+/en/guides/supplier-price-updates/  /en/case-studies/supplier-price-sync/  301
+/diagnostic  /  301
+/diagnostic/  /  301
+/en/assessment  /en/  301
+/en/assessment/  /en/  301
+/gabarits/cout-travail-manuel.xlsx  /guides/combien-coute-automatisation-pme-quebec/  301
+/gabarits/inventaire-epicerie.xlsx  /guides/comparatif-logiciels-epicerie-quebec/  301

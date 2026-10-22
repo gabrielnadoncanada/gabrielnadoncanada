@@ -48,6 +48,9 @@ export function serviceProps(t: T, o: Options): ServicePageProps {
     eyebrow: t("eyebrow"),
     title: t("title"),
     lead: t("lead"),
+    brief: t.has("brief")
+      ? t.rich("brief", { strong: (c: ReactNode) => <strong>{c}</strong> })
+      : undefined,
     box: { kicker: t("box.kicker"), items: t.raw("box.items") as string[] },
     pains: {
       eyebrow: t("pains.eyebrow"),

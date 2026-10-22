@@ -1,0 +1,660 @@
+{
+  "coutLogiciel": {
+    "meta": {
+      "title": "How much does custom software cost in Quebec? (2026 prices)",
+      "description": "Real published prices: sprints from $4,500, management software from $12,000 to $30,000 in phases. What drives cost, timelines, ESSOR, pitfalls.",
+      "ogTitle": "How much does custom software cost in Quebec — real 2026 prices"
+    },
+    "breadcrumb": "Custom software pricing",
+    "eyebrow": "Guide · 2026 prices · Quebec SMBs",
+    "title": "How much does custom software cost in Quebec?",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "With me, a first fixed-scope sprint costs <strong>from $4,500</strong> and is delivered in 2 to 3 weeks. A complete management system is then built <strong>in phases of about $6,000</strong>; most end up at <strong>$12,000 to $30,000</strong> in total. The price depends mainly on the number of screens and business rules, the data to bring over (Excel, Access) and the software to connect. Also plan for maintenance after delivery.",
+    "sections": [
+      {
+        "h": "How much does custom software cost for an SMB?",
+        "p": [
+          "The price of custom software depends less on the technology than on the scope: how many screens, how many business rules, how much data to bring over and how many systems to connect. Here are my prices, published as is so you can compare the quotes you receive."
+        ],
+        "table": {
+          "caption": "Custom software prices by scope (Gabriel Nadon’s prices, 2026)",
+          "head": ["Scope", "Concrete example", "Price", "Timeline"],
+          "rows": [
+            ["One task eliminated", "Import supplier price lists, produce quotes from a template", "from $4,500", "2 to 3 weeks"],
+            ["One phase of a system", "Work orders and timesheets connected to payroll", "about $6,000", "a few weeks"],
+            ["Complete management system", "Quotes, projects, hours, inventory and invoicing in one place", "$12,000 to $30,000 (most)", "in successive phases"],
+            ["Large integrated platform", "Multiple sites, client portal, many integrations", "can exceed $100,000", "insist on a step-by-step breakdown"]
+          ]
+        },
+        "after": [
+          "The first row matters most: you start with the task that costs you the most today, at a fixed scope and price. If it doesn’t pay off, you haven’t committed $30,000 to find out. That’s how <cas>the grocery store case worth $56,000 a year</cas> started."
+        ]
+      },
+      {
+        "h": "What do you get for $5,000, $15,000 or $30,000?",
+        "table": {
+          "caption": "What a budget gets you (typical examples, Gabriel Nadon’s prices)",
+          "head": ["Budget", "What you get", "Typical example"],
+          "rows": [
+            ["About $5,000", "One manual task eliminated, connected to your existing tools", "Supplier price lists imported and compared automatically"],
+            ["About $15,000", "A small management system: two or three modules that talk to each other", "Quotes + work orders + hours, with export to your accounting software"],
+            ["About $30,000", "The company’s management software, built in roughly five phases", "Quotes, projects, inventory, hours, invoicing and a dashboard"]
+          ]
+        },
+        "after": [
+          "These are typical examples to help you place a budget, not packages: the actual price is set after the assessment, phase by phase, at a fixed scope."
+        ]
+      },
+      {
+        "h": "What makes the price go up or down?",
+        "list": [
+          "<strong>The number of screens and business rules.</strong> A simple data entry form costs little; a quote calculation with discounts, taxes and client-specific exceptions costs more.",
+          "<strong>The data to bring over.</strong> Clean Excel files import quickly. Years of history with duplicates, inconsistent formats and hidden formulas need cleanup — that’s often where projects go off the rails.",
+          "<strong>The software to connect.</strong> QuickBooks, Acomba, Sage, an ERP or an API: each integration adds work, and some software only offers file imports.",
+          "<strong>Who uses it, and where.</strong> Three people at the office, or twenty employees in the field with a phone and different access rights.",
+          "<strong>Personal information.</strong> If the system holds client or employee data, Quebec’s Law 25 requires security measures and an incident register (<cai>Quebec’s privacy regulator</cai>). Plan for it from the start."
+        ]
+      },
+      {
+        "h": "Fixed price or hourly rate: how to read a quote",
+        "p": [
+          "An hourly rate puts the risk on the client: if the project goes off the rails, the bill follows. A fixed price with a fixed scope puts the risk on the developer, as long as the scope is clearly written. I work at a fixed price, in phases.",
+          "A good quote should include, at a minimum:"
+        ],
+        "list": [
+          "the list of screens, calculations and reports delivered — what’s included and what isn’t;",
+          "the data brought over (which files, how many years of history) and the software connected;",
+          "the schedule for each stage and what you’ll be able to use at the end of each one;",
+          "ownership: handover of the source code, the documentation and all access;",
+          "after delivery: hosting, backups, fixes and what they cost."
+        ]
+      },
+      {
+        "h": "How long does it take to develop custom software?",
+        "p": [
+          "Count on 2 to 3 weeks for a first task eliminated and running on your real data. A complete management system is built in several phases, each one delivered and used before the next.",
+          "“All at once” projects lasting six to eighteen months are the ones that go off the rails most often: the need changes while it’s being built, and nobody uses anything until the end. Working in phases gives you something useful from the first month."
+        ]
+      },
+      {
+        "h": "Is custom software worth the investment?",
+        "p": [
+          "Do the math before asking for a quote: <strong>hours per week × number of people × loaded hourly rate × 50 weeks</strong>. One person spending 10 hours a week re-keying data at $35 an hour costs $17,500 a year.",
+          "If the targeted task costs less than the project over 12 months, custom software probably isn’t the right choice for it. And if off-the-shelf software does 80% of the job, buy it: custom software makes sense when the way you work is a competitive advantage, or when you’re paying for several subscriptions that don’t talk to each other."
+        ]
+      },
+      {
+        "h": "Custom software or off-the-shelf software: what’s the difference?",
+        "p": [
+          "Off-the-shelf software is sold to many businesses, and you configure it. Custom software is built around your process, and you own it."
+        ],
+        "table": {
+          "caption": "Off-the-shelf or custom software",
+          "head": ["Criterion", "Off-the-shelf software", "Custom software"],
+          "rows": [
+            ["Upfront cost", "Low: subscription or licence", "From $4,500 for a first task"],
+            ["Recurring cost", "Per-user licences, every month", "Hosting and maintenance"],
+            ["Fit", "You adapt your process to the software", "The software adapts to your process"],
+            ["Ownership", "The vendor keeps the software and its rules", "You receive the code, the data and the access"],
+            ["Timeline", "Fast if the need is standard", "In phases, the first in 2 to 3 weeks"]
+          ]
+        }
+      },
+      {
+        "h": "What grants are available for a software project in Quebec?",
+        "p": [
+          "The <essor>Investissement Québec ESSOR program</essor> (Component 1) is the main option, and it ends on March 31, 2027. Component 1B covers 50% of a digital assessment and plan, up to $20,000; Component 1C covers 50% of implementing that plan, up to $50,000, for a project of 12 months or less. Both target businesses with 250 employees or fewer and annual revenue of at least $2.5M, and 1C requires a plan completed under 1B within the last 24 months.",
+          "<strong>The trap to avoid:</strong> the program guides exclude expenses incurred before the application is filed, including contractual commitments. Don’t sign anything before you’ve applied. The 1C guide doesn’t say whether custom development is eligible: get Investissement Québec to confirm it. As for Revenu Québec’s C3i tax credit, it covers acquired assets (hardware, management software packages), not custom development."
+        ]
+      },
+      {
+        "h": "What costs should you plan for after delivery?",
+        "p": [
+          "Software is a living thing: hosting, backups, security updates, small fixes and improvements. With me, the system is handed over documented with all its access, and support is agreed on together — per phase or under a monthly agreement. Always ask who will maintain the system three years from now; that’s the question that separates a good price from a low one."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Investissement Québec — ESSOR, Component 1: support for carrying out investment projects", "url": "https://www.investquebec.com/fr/financement/programmes-gouvernementaux/essor/appui-la-concretisation-de-projets-dinvestissement" },
+        { "label": "Investissement Québec — ESSOR 1B application guide (March 2026, PDF)", "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1b.pdf" },
+        { "label": "Investissement Québec — ESSOR 1C application guide (March 2026, PDF)", "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1c.pdf" },
+        { "label": "Revenu Québec — Investment and Innovation Tax Credit (C3i)", "url": "https://www.revenuquebec.ca/fr/entreprises/impots/impot-des-societes/credits-dimpot-des-societes/credits-auxquels-une-societe-peut-avoir-droit/credit-dimpot-investissement-et-innovation/" },
+        { "label": "Commission d’accès à l’information (Quebec’s privacy regulator) — Confidentiality incidents and security measures", "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises" }
+      ],
+      "note": "Prices are Gabriel Nadon’s, as published on this site. Program conditions were checked against the official pages on October 22, 2026; they may change, and Investissement Québec can suspend applications without notice."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "A price for your project, not a range.",
+      "lead": "Tell me about the file or software that’s holding you back. I’ll reply within 24 hours with a first breakdown and the price of the first phase."
+    }
+  },
+  "remplacerAccess": {
+    "meta": {
+      "title": "Replacing an Access database in 2026: options, cost, migration",
+      "description": "Access 2016 and 2019 lost support in October 2025, Access 2021 in October 2026. Options compared, costs, timelines and migration without data loss.",
+      "ogTitle": "Replacing an Access database in 2026 — options compared and migration"
+    },
+    "breadcrumb": "Replacing an Access database",
+    "eyebrow": "Guide · Access · Quebec SMBs",
+    "title": "Replacing an Access database in 2026: with what, for how much, and how to migrate",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "Access still exists, but <strong>Access 2016 and 2019 have not received security updates since October 14, 2025, and Access 2021 since October 14, 2026</strong> (Microsoft). If your database runs on one of these versions, there are three realistic paths: move to a supported version and stabilize the database, move the data to SQL Server while keeping the Access screens, or replace the application with web software. In all three cases, you start by taking stock of what the database really does.",
+    "sections": [
+      {
+        "h": "Does Access still exist?",
+        "p": [
+          "Yes. It’s the one-time purchase versions that are reaching end of support, one after the other. According to <msft>Microsoft</msft>, after the end date there are no more security updates, no more fixes and no more support, free or paid. The software keeps starting up — which is exactly what makes the risk invisible."
+        ],
+        "table": {
+          "caption": "End of support for Access versions (Microsoft)",
+          "head": ["Version", "End of support", "What it means"],
+          "rows": [
+            ["Access 2016", "October 14, 2025", "No more security updates"],
+            ["Access 2019", "October 14, 2025", "No more security updates"],
+            ["Access 2021", "October 14, 2026", "No more security updates, as of a few days ago"],
+            ["Access 2024", "October 10, 2029", "Supported, but with a known end date"],
+            ["Access in Microsoft 365", "Follows the subscription", "Updated as long as the subscription is active"]
+          ]
+        },
+        "after": [
+          "On October 14, 2025, Windows 10 also reached end of support. An Access database running on an old Windows 10 computer therefore carries two risks. The dates for <v2021>Access 2021</v2021> and <v2024>Access 2024</v2024> come from Microsoft’s lifecycle pages."
+        ]
+      },
+      {
+        "h": "When should you replace an Access database?",
+        "list": [
+          "<strong>Several people use it at the same time</strong> on a network drive, and the database gets corrupted or slows down.",
+          "<strong>The file keeps growing.</strong> An Access file is capped at 2 GB (<specs>Microsoft’s official specifications</specs>).",
+          "<strong>You want remote access</strong> or access from a phone, at a job site or in a warehouse.",
+          "<strong>Only one person understands the VBA code</strong>, and they’ve left or will be leaving soon.",
+          "<strong>The database holds personal information</strong> (clients, employees) on a computer that no longer gets updates: Quebec’s Law 25 requires reasonable security measures (<cai>Quebec’s privacy regulator</cai>)."
+        ]
+      },
+      {
+        "h": "What can replace Access?",
+        "p": [
+          "There’s no single replacement: the right choice depends on the number of users, remote access needs and how much business logic is hidden in the macros."
+        ],
+        "table": {
+          "caption": "Options for replacing an Access database",
+          "head": ["Option", "Best for", "Advantage", "Limitation"],
+          "rows": [
+            ["Supported Access version + stabilization", "Database that works well, few users", "Fast, nothing to relearn", "Same limits: 2 GB, local network, Windows computer"],
+            ["Data in SQL Server, Access screens kept", "Several users, growing database", "Robust, backed-up data, smooth transition", "The VBA code still needs maintaining"],
+            ["Power Apps and Dataverse (Microsoft 365)", "Business already on Microsoft 365, simple needs", "Mobile, little code; Microsoft documents how to migrate the tables", "Power Apps licence that includes Dataverse; only supported data types migrate"],
+            ["Off-the-shelf software", "Standard processes (accounting, CRM, inventory)", "Ready quickly", "You adapt the way you work"],
+            ["Custom web application", "Specific processes, remote access, multiple sites", "Built for you, and you own it", "Longer project, best done in phases"]
+          ]
+        },
+        "after": [
+          "For most SMBs, the second option is a good first step: you secure the data in SQL Server without changing anyone’s habits, then replace the screens with a web application, piece by piece, if the business needs it."
+        ]
+      },
+      {
+        "h": "How do you migrate an Access database without losing data?",
+        "list": [
+          "<strong>Inventory.</strong> List the tables, queries, forms, reports, macros and VBA modules, as well as tables linked to other files. That’s where the business rules hide.",
+          "<strong>Verified backup.</strong> Copy the file and test that it can be restored, before touching anything.",
+          "<strong>Cleanup.</strong> Fix duplicates, inconsistent data types and text fields that contain dates.",
+          "<strong>Data migration.</strong> Microsoft provides a free tool, the <ssma>SQL Server Migration Assistant for Access (SSMA)</ssma>, which moves the tables to SQL Server or Azure SQL and lets you link the existing Access forms to the new tables.",
+          "<strong>Checks.</strong> Compare the totals (row counts, sums, balances) between the old and new databases. They must match.",
+          "<strong>Cutover.</strong> Run both in parallel for a few days, then switch over one evening or weekend."
+        ],
+        "after": [
+          "The usual pitfalls: VBA code and macros, which don’t migrate on their own; queries written in Access’s own SQL dialect; AutoNumber, Yes/No, multivalued and Attachment fields, which behave differently; and printed reports, which have to be rebuilt. If you’re aiming for Power Apps, Microsoft notes that <dataverse>only supported data types are exported to Dataverse</dataverse>."
+        ]
+      },
+      {
+        "h": "How long does it take to replace an Access database?",
+        "p": [
+          "Securing the data in SQL Server while keeping the Access screens usually takes a first sprint of 2 to 3 weeks. Replacing the screens with a web application then happens in phases, one group of forms at a time: your employees keep working in the old database while the new one grows.",
+          "What makes a project longer is almost never the number of tables: it’s the logic hidden in the VBA, the reports that must be rebuilt exactly, and the data that needs cleaning."
+        ]
+      },
+      {
+        "h": "How much does it cost to replace an Access database?",
+        "p": [
+          "The cost depends mainly on the number of forms, reports and lines of VBA code, much more than on the number of tables. With me, a first fixed-scope sprint starts at <strong>$4,500</strong> for 2 to 3 weeks — often enough to secure the data in SQL Server. Replacing all the screens is then done in phases of about $6,000. The details are in <cout>the custom software pricing guide</cout>."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Microsoft Learn — End of support in 2025 (Access, Excel and Office 2016 and 2019, Windows 10)", "url": "https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025" },
+        { "label": "Microsoft Learn — Access 2021 lifecycle", "url": "https://learn.microsoft.com/en-us/lifecycle/products/access-2021" },
+        { "label": "Microsoft Learn — Access 2024 lifecycle", "url": "https://learn.microsoft.com/en-us/lifecycle/products/access-2024" },
+        { "label": "Microsoft — Migrate Access data to Dataverse", "url": "https://support.microsoft.com/en-us/access/get-started-migrate-access-data-to-dataverse" },
+        { "label": "Microsoft — Access specifications (size limits)", "url": "https://support.microsoft.com/access/access-specifications" },
+        { "label": "Microsoft Learn — SQL Server Migration Assistant for Access (SSMA)", "url": "https://learn.microsoft.com/en-us/sql/ssma/access/sql-server-migration-assistant-for-access-accesstosql" },
+        { "label": "Commission d’accès à l’information (Quebec’s privacy regulator) — Confidentiality incidents and security measures", "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises" }
+      ],
+      "note": "Facts checked against the official Microsoft and privacy regulator pages on October 22, 2026 (Microsoft lists lifecycle dates in Pacific Time). Prices are Gabriel Nadon’s."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "Your Access database, reviewed by someone who can read it.",
+      "lead": "Tell me what your database does and how many people use it. I’ll reply within 24 hours with the safest option and its price."
+    }
+  },
+  "repriseLogiciel": {
+    "meta": {
+      "title": "Taking over old WinDev or Access software: where to start",
+      "description": "The developer left and the software runs your business? What to check before touching it, then maintain, modernize or replace, with prices.",
+      "ogTitle": "Taking over abandoned in-house software — the method, step by step"
+    },
+    "breadcrumb": "Taking over old software",
+    "eyebrow": "Guide · Legacy software · Quebec SMBs",
+    "title": "Taking over abandoned WinDev, Access or in-house software: where to start",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "Before rewriting anything, you secure what’s there: <strong>recover the source code and the access, make a complete, verified backup</strong>, then document what the software really does. Only then do you choose: keep it as is, stabilize it and modernize it piece by piece, or replace it in stages. A complete rewrite all at once is rarely the right first decision.",
+    "sections": [
+      {
+        "h": "The 7 checks before touching anything",
+        "list": [
+          "<strong>The source code</strong>, not just the installed program. Without it, you can only work around problems, never fix them.",
+          "<strong>The development tools and licences.</strong> WinDev, for example, is a commercial environment from PC SOFT: changing the code requires a licence from the vendor.",
+          "<strong>The access</strong>: server, database, hosting, domain name, administrator accounts. They’re often in the former developer’s name.",
+          "<strong>A backup that has been successfully restored.</strong> A backup that has never been tested isn’t a backup.",
+          "<strong>The dependencies</strong>: Windows version, printer or barcode scanner drivers, libraries, database (HFSQL for WinDev, .accdb file for Access).",
+          "<strong>Who uses what</strong>, and the tasks that can only be done in this software.",
+          "<strong>What breaks most often</strong>, and what the team already does to work around it."
+        ]
+      },
+      {
+        "h": "The developer left and you don’t have the source code: what now?",
+        "p": [
+          "It’s the most common situation, and it’s almost never hopeless. Start by looking for the code: the former supplier’s contract or invoice, the former developer’s computer, the server, backups, a USB key forgotten in a drawer. For a WinDev project, you need the project files, not just the installed program (.exe).",
+          "If the code can’t be found, the data can almost always be recovered: an HFSQL database or an Access file can be read and exported without the program. The application can then be rebuilt around the existing data, in stages, by observing what the old software does screen by screen.",
+          "<strong>To keep it from happening again:</strong> require every supplier, in writing, to hand over the source code, the documentation and all access, in your company’s name."
+        ]
+      },
+      {
+        "h": "How do you find a developer to take over software?",
+        "p": [
+          "Look for someone who offers to read the software first, not rebuild it. Three questions quickly separate the candidates: have they already taken over software written by someone else in that language? Do they start with an inventory and a backup? What do they hand over at the end — code, documentation, access?",
+          "Be wary of “it all needs to be redone” before they’ve even seen the code. Sometimes it’s true, but that gets shown after the inventory, not before."
+        ]
+      },
+      {
+        "h": "What’s the future of WinDev, Access and old Windows software?",
+        "p": [
+          "WinDev is still sold by PC SOFT, and Access is still offered by Microsoft. The real question isn’t the tool’s future, but your software’s: who can fix it when it crashes, and what computer it runs on. Since October 14, 2025, Windows 10, Access 2016 and Access 2019 no longer receive security updates (<msft>Microsoft</msft>). In-house software that depends on any of them becomes a risk, even if it still works."
+        ]
+      },
+      {
+        "h": "Maintain, modernize or replace?",
+        "table": {
+          "caption": "The three paths after a takeover",
+          "head": ["Path", "When to choose it", "Risk", "Price range"],
+          "rows": [
+            ["Keep it as is", "The software does its job well, few changes planned", "Low in the short term, the dependency remains", "Support agreement"],
+            ["Stabilize, then modernize piece by piece", "The software is critical but fragile; you want to keep existing habits", "Low: you change one part at a time", "Sprint from $4,500, then phases of about $6,000"],
+            ["Replace in stages", "The software is holding back growth or can no longer be changed", "Medium: the data migration must be checked", "Most systems: $12,000 to $30,000"]
+          ]
+        }
+      },
+      {
+        "h": "What software should replace WinDev or Access?",
+        "p": [
+          "There’s no single best language: choose a widely used technology that other developers will be able to take over after you. For an SMB, that’s often a web application (PHP/Laravel, .NET or Python) with a standard SQL database, accessible from any computer or phone. If your needs are standard, off-the-shelf software may be enough.",
+          "The data from the old system (HFSQL, Access) is migrated to the new database; you check that the totals match before switching over. For Access, the method is detailed in <access>the guide to replacing an Access database</access>."
+        ]
+      },
+      {
+        "h": "How much does it cost to take over software?",
+        "p": [
+          "The 20-minute assessment is free. The takeover starts with a fixed-scope, fixed-price sprint, from <strong>$4,500</strong>: inventory, verified backup, fixes for blocking bugs and documentation. The rest is done in phases of about $6,000, at the pace of your operations. Pricing details are in <cout>the custom software pricing guide</cout>, and the service is described on the <refonte>legacy software takeover</refonte> page."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Microsoft Learn — End of support in 2025 (Windows 10, Access 2016 and 2019)", "url": "https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025" },
+        { "label": "PC SOFT — WinDev (vendor’s official site)", "url": "https://windev.com/" },
+        { "label": "Microsoft Learn — SQL Server Migration Assistant for Access (SSMA)", "url": "https://learn.microsoft.com/en-us/sql/ssma/access/sql-server-migration-assistant-for-access-accesstosql" }
+      ],
+      "note": "Facts checked against the official pages on October 22, 2026. Prices are Gabriel Nadon’s."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "The developer left? We start by reading what they left behind.",
+      "lead": "Tell me what language the software is written in and what it does. I’ll reply within 24 hours with the first checks to make and the price of the first sprint."
+    }
+  },
+  "remplacerExcel": {
+    "meta": {
+      "title": "Replacing Excel with business software: options and prices",
+      "description": "When Excel isn’t enough: what to choose (online tool, off-the-shelf or custom software), what it costs and how to migrate without losing your formulas.",
+      "ogTitle": "Replacing Excel with business software — options compared and real prices"
+    },
+    "breadcrumb": "Replacing Excel with software",
+    "eyebrow": "Guide · Excel · Quebec SMBs",
+    "title": "Replacing Excel with business software: when, with what, and for how much",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "Excel becomes a problem when several people edit the same file, when data gets re-keyed elsewhere, or when only one person understands the formulas. There are three families of replacements: <strong>an online tool</strong> (Airtable, Smartsheet, Power Apps), <strong>off-the-shelf software</strong> (accounting, ERP) or <strong>custom software</strong>. Custom software makes sense when your process is specific; with me, you start with a single task, <strong>from $4,500 in 2 to 3 weeks</strong>.",
+    "sections": [
+      {
+        "h": "What are the signs that Excel isn’t enough anymore?",
+        "list": [
+          "<strong>Several versions of the same file are circulating</strong> and nobody knows which one is right.",
+          "<strong>The same data gets re-keyed</strong> in Excel, then in the accounting software, then in an email.",
+          "<strong>Only one person understands the formulas or macros</strong>, and everything stops when they’re away.",
+          "<strong>Field teams can’t use it properly</strong> on a phone, at a job site or in a warehouse.",
+          "<strong>A formula error has already been costly</strong>: an underpriced quote, wrong inventory, a payroll to correct.",
+          "<strong>The file holds personal information</strong> (clients, employees) that everyone can access: Quebec’s Law 25 requires reasonable security measures (<cai>Quebec’s privacy regulator</cai>).",
+          "<strong>Your version of Excel is no longer supported</strong>: Excel 2016 and 2019 have not received security updates since October 14, 2025 (<msft>Microsoft</msft>)."
+        ]
+      },
+      {
+        "h": "What can replace Excel?",
+        "p": [
+          "There’s no single right replacement: it all depends on how much of your process is standard, and how much is unique to you."
+        ],
+        "table": {
+          "caption": "The three families of Excel replacements",
+          "head": ["Option", "Examples", "Best for", "Limitation"],
+          "rows": [
+            ["Online tool (spreadsheet or no-code database)", "Airtable, Smartsheet, Power Apps", "Teams that want to share simple lists and tracking", "Per-user subscription; complex logic quickly becomes fragile"],
+            ["Off-the-shelf software", "Accounting software, ERP, CRM", "Standard processes: invoicing, accounting, sales", "You adapt the way you work to the software"],
+            ["Custom software", "Quotes, work orders, hours, inventory based on your rules", "Specific processes, several tools that don’t talk to each other", "Project to break into phases; you need a developer who sticks around"]
+          ]
+        },
+        "after": [
+          "A hybrid approach is often best: you keep your accounting software, and the custom software only covers what it doesn’t do, by connecting to it."
+        ]
+      },
+      {
+        "h": "When is custom software worth it?",
+        "list": [
+          "The way you calculate a quote, plan work or track production is an advantage, and no off-the-shelf software can reproduce it.",
+          "You pay for three or four subscriptions that each cover part of the need, and someone copies data from one to the other.",
+          "The task to replace costs more per year than the project: hours per week × people × hourly rate × 50 weeks.",
+          "If off-the-shelf software does 80% of the job, buy it — I’ll tell you so during the assessment."
+        ]
+      },
+      {
+        "h": "How do you migrate an Excel file without losing its formulas?",
+        "list": [
+          "<strong>Inventory.</strong> List the sheets, formulas, macros and links to other files. The formulas are your business rules: they get written down in black and white.",
+          "<strong>Cleanup.</strong> Duplicates, merged cells, dates entered as text, inconsistent product codes.",
+          "<strong>Rebuilding the rules.</strong> Each calculation becomes a rule tested in the software, with real examples.",
+          "<strong>Import.</strong> The useful data and history are imported; the rest is archived.",
+          "<strong>Checks.</strong> The totals in the software and in Excel must match for the same period.",
+          "<strong>Parallel run.</strong> A few days with both, then the file is closed."
+        ]
+      },
+      {
+        "h": "How much does it cost to replace Excel, and how long does it take?",
+        "p": [
+          "With me, the first task replaced costs <strong>from $4,500</strong> and is delivered in 2 to 3 weeks, at a fixed scope. A complete management system is then built in phases of about $6,000; most end up at $12,000 to $30,000 in total. The details are in <cout>the custom software pricing guide</cout>.",
+          "A real example: an independent grocery store in Quebec received its suppliers’ price lists in Excel, CSV and PDF, and re-keyed them into its point-of-sale system — nearly $56,000 a year in staff time. The system now imports and compares them automatically, connected to the existing point-of-sale system. <cas>Read the full case</cas>."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Microsoft Learn — End of support in 2025 (Excel 2016 and 2019, Office 2016 and 2019)", "url": "https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025" },
+        { "label": "Commission d’accès à l’information (Quebec’s privacy regulator) — Confidentiality incidents and security measures", "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises" }
+      ],
+      "note": "Facts checked against the official pages on October 22, 2026. Prices are Gabriel Nadon’s; the case is documented on this site."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "Which Excel file runs your business?",
+      "lead": "Describe it in a few words. I’ll reply within 24 hours with what we’d replace first and the price of that first step."
+    }
+  },
+  "maintenanceLogiciel": {
+    "meta": {
+      "title": "Custom software maintenance: what it costs and what to require",
+      "description": "What custom software maintenance costs per year, what it covers, what a contract should include and what to do if the developer disappears.",
+      "ogTitle": "Custom software maintenance — the real yearly cost and the pitfalls"
+    },
+    "breadcrumb": "Custom software maintenance",
+    "eyebrow": "Guide · Maintenance · Quebec SMBs",
+    "title": "Custom software maintenance: how much per year, and what to require",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "Plan a yearly maintenance budget: <wit>Witify, a Quebec firm</wit>, recommends <strong>10% to 15% of the initial cost per year</strong>, or $2,000 to $3,000 a year for a $20,000 system. That budget covers hosting, backups, security updates, fixes and small improvements. Before signing, require the source code, the documentation and the access in your company’s name: that’s what protects you if the supplier disappears.",
+    "sections": [
+      {
+        "h": "What does custom software maintenance cover?",
+        "list": [
+          "<strong>Fixes</strong>: a calculation that’s wrong, a screen that crashes, a report that no longer runs.",
+          "<strong>Security</strong>: updates to libraries, the server and certificates. Software that’s never updated becomes vulnerable, even if it still works.",
+          "<strong>Backups</strong>: automatic, and above all tested with an actual restore.",
+          "<strong>Hosting</strong>: server or cloud, domain name, emails sent by the system.",
+          "<strong>Compatibility</strong>: new versions of Windows, browsers and the connected accounting software. A recent example: Windows 10 has not been supported since October 14, 2025 (<msft>Microsoft</msft>).",
+          "<strong>Small improvements</strong>: one more field, a new report, a rule that changes."
+        ]
+      },
+      {
+        "h": "How much does maintenance cost per year?",
+        "p": [
+          "The rule published by <wit>Witify</wit>, a Quebec firm, is <strong>10% to 15% of the initial cost per year</strong>. For a $20,000 system, that means $2,000 to $3,000 a year, plus hosting depending on usage.",
+          "With me, support is agreed on together after delivery — per phase, or under a monthly agreement — and the system is handed over documented, with all its access. You’re never locked in."
+        ]
+      },
+      {
+        "h": "What should a maintenance contract specify?",
+        "list": [
+          "the response time for a blocking outage, and for an ordinary request;",
+          "what’s included (fixes, security updates, backups) and what’s billed separately (improvements);",
+          "how often backups run and how restores are tested;",
+          "the price of improvements: fixed price per request or a bank of hours;",
+          "reversibility: handover of the code, the documentation and the access if you change suppliers."
+        ]
+      },
+      {
+        "h": "What happens if the developer disappears?",
+        "p": [
+          "Without the source code and the access, every fix becomes a workaround. With them, another developer can take over the software. Be careful: in Canada, the author of software is the first owner of its copyright, and an assignment is only valid if it’s in writing and signed (<lda>Copyright Act, s. 13</lda>). An outside supplier therefore doesn’t transfer the code to you by default: put it in the contract.",
+          "If it has already happened, the method is in <reprise>the guide to taking over old software</reprise>."
+        ]
+      },
+      {
+        "h": "Maintenance is part of your obligations under Quebec’s Law 25",
+        "p": [
+          "If your software holds personal information (clients, employees), you must take reasonable security measures and keep a register of confidentiality incidents (<cai>Quebec’s privacy regulator</cai>). Software that’s never updated, with no tested backup, is hard to defend after an incident."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Witify — How much does custom software development cost in Quebec? (10% to 15% a year rule)", "url": "https://witify.io/blogue/combien-coute-le-developpement-dun-logiciel-sur-mesure-au-quebec" },
+        { "label": "Copyright Act (R.S.C. 1985, c. C-42), section 13 — Ownership of copyright", "url": "https://laws-lois.justice.gc.ca/eng/acts/C-42/page-3.html" },
+        { "label": "Commission d’accès à l’information (Quebec’s privacy regulator) — Confidentiality incidents and security measures", "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises" },
+        { "label": "Microsoft Learn — End of support in 2025 (Windows 10)", "url": "https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025" }
+      ],
+      "note": "Sources consulted on October 22, 2026. This guide is not legal advice."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "No one left to maintain your software?",
+      "lead": "Tell me what it’s written in and what’s not working. I’ll reply within 24 hours with the first checks to make."
+    }
+  },
+  "choisirDeveloppeur": {
+    "meta": {
+      "title": "Freelancer, agency or offshore: choosing your developer",
+      "description": "Published Quebec rates, pros and risks of each option, questions to ask and clauses to require (code ownership, price per stage) before signing.",
+      "ogTitle": "Choosing a software developer in Quebec — rates, risks and contract"
+    },
+    "breadcrumb": "Choosing your developer",
+    "eyebrow": "Guide · Choosing a supplier · Quebec SMBs",
+    "title": "Freelancer, agency or offshore team: how to choose your developer",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "The hourly rate alone is misleading: compare the scope delivered, who will maintain the software and what you own at the end. Published rates in Quebec range from about <strong>$25 to $80/h</strong> for an offshore team, <strong>$80 to $160/h</strong> for a senior developer in Canada and <strong>$125 to $250/h</strong> for a local agency (<wit>Witify, 2026</wit>). In every case, require a price per stage, the source code and the access in your name.",
+    "sections": [
+      {
+        "h": "How much does a developer cost in Quebec?",
+        "table": {
+          "caption": "Rates published by Witify (2026), in Canadian dollars",
+          "head": ["Model", "Approximate rate", "Makes sense when…"],
+          "rows": [
+            ["Offshore team", "$25 to $80/h", "The need is very well specified and you have in-house technical oversight"],
+            ["Senior developer (Canada)", "$80 to $160/h", "You already have a clear picture of what needs to be built"],
+            ["Local agency (Quebec)", "$125 to $250/h", "Complex processes, need for end-to-end support"]
+          ]
+        },
+        "after": [
+          "I don’t bill by the hour: each stage has a fixed scope and price — from $4,500 for a first task, then in phases of about $6,000. You know what you’re paying before work starts."
+        ]
+      },
+      {
+        "h": "Freelancer, agency or offshore: pros and risks",
+        "table": {
+          "caption": "Comparing the three options",
+          "head": ["Option", "Advantage", "Main risk"],
+          "rows": [
+            ["Freelance developer", "You talk to the person who writes the code; low overhead", "Dependence on a single person"],
+            ["Local agency", "Full team: project management, design, development", "Higher price; you rarely talk to the person who writes the code"],
+            ["Offshore team", "Low rates", "Time zone, language, demanding oversight; hard to take over if things go wrong"]
+          ]
+        },
+        "after": [
+          "The risk with a freelancer is dependence. My answer: the code and the access in your name, documentation delivered with every phase, and widely used technologies that other developers can take over."
+        ]
+      },
+      {
+        "h": "Questions to ask before signing",
+        "list": [
+          "Have you ever taken over software written by someone else? Can you show me one in production?",
+          "Who will write the code, and who will answer me when something crashes?",
+          "Is the price fixed per stage, or hourly? What isn’t included?",
+          "What will I be able to use at the end of each stage?",
+          "Will the code, the hosting and the accounts be in my name?",
+          "What happens if you get sick or close your business?"
+        ]
+      },
+      {
+        "h": "What the contract should include",
+        "list": [
+          "<strong>The scope</strong>: screens, calculations, reports and data brought over, for each stage.",
+          "<strong>Payment per stage</strong>, tied to usable deliverables.",
+          "<strong>Assignment of the copyright in the code</strong>, in writing and signed: without it, the outside developer remains the owner (<lda>Copyright Act, s. 13</lda>).",
+          "<strong>The access</strong>: hosting, database, domain name and accounts in your company’s name.",
+          "<strong>Personal information</strong>: who has access to it and how it’s protected (<cai>Quebec’s Law 25</cai>).",
+          "<strong>After delivery</strong>: maintenance, response times, price of improvements — see <maintenance>the maintenance guide</maintenance>."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Witify — How much does custom software development cost in Quebec? (rates by model)", "url": "https://witify.io/blogue/combien-coute-le-developpement-dun-logiciel-sur-mesure-au-quebec" },
+        { "label": "Copyright Act (R.S.C. 1985, c. C-42), section 13 — Ownership of copyright", "url": "https://laws-lois.justice.gc.ca/eng/acts/C-42/page-3.html" },
+        { "label": "Commission d’accès à l’information (Quebec’s privacy regulator) — Confidentiality incidents and security measures", "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises" }
+      ],
+      "note": "Sources consulted on October 22, 2026. This guide is not legal advice; have a lawyer review any important contract."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "Talk to the person who will write the code.",
+      "lead": "Describe your project. I’ll reply within 24 hours with a stage-by-stage breakdown and the price of the first stage."
+    }
+  },
+  "subventionsLogiciel": {
+    "meta": {
+      "title": "Grants for a software project in Quebec (2026)",
+      "description": "ESSOR 1A, 1B and 1C, the C3i tax credit: what really funds an SMB software project in Quebec, the caps, and the trap that cancels the grant.",
+      "ogTitle": "Grants for a software project in Quebec — ESSOR, C3i and the trap to avoid"
+    },
+    "breadcrumb": "Grants for a software project",
+    "eyebrow": "Guide · 2026 grants · Quebec SMBs",
+    "title": "Grants for a software project in Quebec: what’s really eligible",
+    "byline": "By <author>Gabriel Nadon</author>, business software developer for SMBs",
+    "updated": "Updated",
+    "summaryLabel": "In short",
+    "summary": "The main program is <iq>Investissement Québec’s ESSOR program</iq> (Component 1): <strong>50% of a digital assessment and plan, up to $20,000</strong> (1B), then <strong>50% of implementation, up to $50,000</strong> (1C), for businesses with 250 employees or fewer and at least $2.5M in revenue, until March 31, 2027. Golden rule: <strong>don’t sign anything before the application is filed</strong>. The C3i credit covers purchased assets, not custom development.",
+    "sections": [
+      {
+        "h": "Which programs fund a software project?",
+        "table": {
+          "caption": "Funding for an SMB software project in Quebec (checked October 22, 2026)",
+          "head": ["Program", "What’s funded", "Funding", "Good to know"],
+          "rows": [
+            ["ESSOR 1A", "Feasibility studies", "50%, up to $50,000 per project", "Investissement Québec"],
+            ["ESSOR 1B", "Digital assessment and plan (system selection, including AI)", "50%, up to $20,000 for the life of the program", "250 employees or fewer, revenue of $2.5M or more"],
+            ["ESSOR 1C", "Implementing the digital plan", "50%, up to $50,000", "1B plan less than 24 months old; project of 12 months or less"],
+            ["C3i credit (Revenu Québec)", "Acquired assets: hardware, management software packages", "Rates not published on the official page", "Not custom development; confirm with your accountant"],
+            ["PCAN (Canada Digital Adoption Program)", "Digital plan", "—", "Federal; closed to new applications since February 2024"]
+          ]
+        },
+        "after": [
+          "The ESSOR program ends on March 31, 2027, and Investissement Québec can suspend applications without notice: check the status on the official page before building your budget."
+        ]
+      },
+      {
+        "h": "The trap that cancels the grant: spending before applying",
+        "p": [
+          "The ESSOR 1B and 1C guides exclude expenses incurred before the application is filed, <strong>including contractual commitments</strong>. Signing a quote or paying a deposit before applying can make those expenses ineligible. Also excluded: internal expenses, capital assets and taxes.",
+          "The order to follow: get the quotes, file the application, wait for the answer, then sign."
+        ]
+      },
+      {
+        "h": "Is custom development eligible?",
+        "p": [
+          "The 1B guide covers the assessment, the digital plan and system selection. The 1C guide funds implementing the plan, but doesn’t say explicitly whether developing custom software is eligible. Get Investissement Québec to confirm it, in writing, before you commit.",
+          "For a small project (under $30,000), the most realistic route is often to start with a 1B assessment, which documents the need and sets up what comes next."
+        ]
+      },
+      {
+        "h": "How to prepare an application for a software project",
+        "list": [
+          "Describe the problem in numbers: hours lost per week, errors, yearly cost.",
+          "Get a quote broken into stages, with scope, schedule and deliverables.",
+          "File the 1B application (assessment) before any commitment; then the 1C, within 24 months.",
+          "Keep invoices and proof of payment, and stay within the 12-month maximum project length for 1C."
+        ]
+      }
+    ],
+    "faq": { "eyebrow": "", "items": [] },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        { "label": "Investissement Québec — ESSOR, Component 1: support for carrying out investment projects", "url": "https://www.investquebec.com/fr/financement/programmes-gouvernementaux/essor/appui-la-concretisation-de-projets-dinvestissement" },
+        { "label": "Investissement Québec — ESSOR 1B application guide (March 2026, PDF)", "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1b.pdf" },
+        { "label": "Investissement Québec — ESSOR 1C application guide (March 2026, PDF)", "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1c.pdf" },
+        { "label": "Revenu Québec — Investment and Innovation Tax Credit (C3i)", "url": "https://www.revenuquebec.ca/fr/entreprises/impots/impot-des-societes/credits-dimpot-des-societes/credits-auxquels-une-societe-peut-avoir-droit/credit-dimpot-investissement-et-innovation/" }
+      ],
+      "note": "Conditions checked against the official pages on October 22, 2026. They may change; this guide doesn’t replace confirmation from Investissement Québec or advice from your accountant."
+    },
+    "relatedLabel": "Further reading",
+    "cta": {
+      "eyebrow": "Free assessment · 20 minutes",
+      "title": "A quote broken into stages, ready for your application.",
+      "lead": "Describe your project. I’ll reply within 24 hours with a stage-by-stage breakdown and fixed prices you can use in a grant application."
+    }
+  }
+}

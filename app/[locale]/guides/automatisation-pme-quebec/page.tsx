@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { PERSON_REF, BUSINESS_REF, articleDates } from "@/lib/entity";
+import { FaqSection } from "@/components/FaqSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Ticker } from "@/components/Ticker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -29,11 +31,10 @@ type NumItem = { num: string; title: string; text: string };
 
 // Pont vers les pages de service (libellés : common.links.*).
 const SERVICES: Array<{ key: string; pathname: Pathname }> = [
+  { key: "logiciel", pathname: "/logiciel-sur-mesure" },
+  { key: "refonte", pathname: "/refonte-de-systeme" },
   { key: "automatisation", pathname: "/automatisation-processus" },
   { key: "documents", pathname: "/traitement-documents-ia" },
-  { key: "agentsIa", pathname: "/agents-ia" },
-  { key: "logiciel", pathname: "/logiciel-sur-mesure" },
-  { key: "consultantIa", pathname: "/consultant-ia" },
 ];
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -61,18 +62,19 @@ export default async function GuideAutomatisationPage({ params }: Params) {
 
   const url = absUrl(locale, PATH);
   const home = absUrl(locale, "/");
-  const author = { "@type": "Person", name: "Gabriel Nadon", url: home };
+  const author = PERSON_REF;
 
   const JSONLD = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
+        ...articleDates("/guides/automatisation-pme-quebec"),
         headline: t("jsonld.headline"),
         description: t("jsonld.description"),
         inLanguage: jsonLdLang(locale),
         author,
-        publisher: author,
+        publisher: BUSINESS_REF,
         mainEntityOfPage: url,
         image: `${SITE}/og-image.png`,
       },
@@ -101,7 +103,7 @@ export default async function GuideAutomatisationPage({ params }: Params) {
 
   const NAV = [
     { href: href(locale, "/", "approche"), label: t("nav.approach") },
-    { href: href(locale, "/calculateur"), label: t("nav.calculator") },
+    { href: href(locale, "/guides/combien-coute-automatisation-pme-quebec"), label: t("nav.calculator") },
     { href: href(locale, "/", "cas"), label: t("nav.cases") },
     { href: href(locale, "/", "contact"), label: t("nav.contact") },
   ];
@@ -175,7 +177,7 @@ export default async function GuideAutomatisationPage({ params }: Params) {
                 <p>
                   {t.rich("step1.p2", {
                     calc: (c) => (
-                      <a href={href(locale, "/calculateur")} className="link-serif">
+                      <a href={href(locale, "/guides/combien-coute-automatisation-pme-quebec")} className="link-serif">
                         {c}
                       </a>
                     ),
@@ -214,7 +216,7 @@ export default async function GuideAutomatisationPage({ params }: Params) {
                       {t.rich(`step2.items.${i}.text`, {
                         guide: (c) => (
                           <a
-                            href={href(locale, "/guides/mise-a-jour-prix-fournisseurs")}
+                            href={href(locale, "/cas/synchronisation-prix-fournisseurs")}
                             className="link-serif"
                           >
                             {c}
@@ -297,18 +299,6 @@ export default async function GuideAutomatisationPage({ params }: Params) {
             </div>
           </section>
 
-          {/* Pont diagnostic IA */}
-          <section className="bb">
-            <div className="sectors">
-              <span className="sectors-label">{t("ai.label")}</span>
-              <div className="u-measure-prose">
-                <span className="serif-muted">{t("ai.text")} </span>
-                <a href={href(locale, "/diagnostic-ia")} className="link-serif">
-                  {t("ai.link")}
-                </a>
-              </div>
-            </div>
-          </section>
 
           {/* Pont vers les pages de service (intention commerciale) */}
           <section className="bb">
@@ -351,7 +341,7 @@ export default async function GuideAutomatisationPage({ params }: Params) {
                     {t("cta.book")} <span>→</span>
                   </TrackedLink>
                   <a
-                    href={href(locale, "/calculateur")}
+                    href={href(locale, "/guides/combien-coute-automatisation-pme-quebec")}
                     className="scp5 contact-link u-mt-sm"
                   >
                     <span>
@@ -365,6 +355,7 @@ export default async function GuideAutomatisationPage({ params }: Params) {
             </div>
           </section>
 
+          <FaqSection items={t.raw("jsonld.faq") as Faq[]} />
           <MinimalFooter />
         </div>
       </div>

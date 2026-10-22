@@ -1,13 +1,13 @@
 {
   "ticker": {
-    "available": "Disponible · 2 mandats · {quarter}",
+    "available": "Nouveaux mandats · {quarter}",
     "quarter": "T{q} {year}",
-    "practice": "Cabinet indépendant · Montréal"
+    "practice": "Indépendant · Saint-Eustache, Rive-Nord de Montréal"
   },
   "header": {
-    "brandLabel": "Gabriel Nadon — Systèmes opérationnels pour PME",
-    "brandSub": "Systèmes opérationnels",
-    "cta": "Analyser mes opérations",
+    "brandLabel": "Gabriel Nadon — Logiciels de gestion pour PME",
+    "brandSub": "Logiciels de gestion · PME",
+    "cta": "Diagnostic gratuit",
     "ctaShort": "Parlons-en",
     "switchLabel": "English",
     "switchAria": "Read this page in English",
@@ -20,16 +20,16 @@
     }
   },
   "footer": {
-    "sub": "Systèmes opérationnels · PME",
-    "desc": "Je remplace les suivis manuels des PME — Excel, courriels, logiciels mal adaptés — par des systèmes qui centralisent l’information et font une partie du travail.",
+    "sub": "Logiciels de gestion · PME",
+    "desc": "Je remplace les fichiers Excel, les bases Access et les vieux logiciels maison des PME du Québec, et j’automatise les tâches manuelles qui coûtent le plus.",
     "contact": "Contact",
-    "available": "2 mandats disponibles · {quarter}",
-    "location": "Montréal, Québec · à distance",
+    "available": "Nouveaux mandats · {quarter}",
+    "location": "Saint-Eustache (Rive-Nord de Montréal) · à distance partout au Québec",
     "social": "Réseaux",
     "navigation": "Navigation",
     "services": "Services",
-    "free": "Guides et outils gratuits",
-    "freeShort": "Gratuit",
+    "free": "Guides",
+    "freeShort": "Guides",
     "cases": "Cas concrets",
     "rights": "Tous droits réservés",
     "toTop": "Haut de page",
@@ -37,26 +37,30 @@
     "language": "English version"
   },
   "links": {
-    "consultantIa": "Consultant IA pour PME",
-    "agentsIa": "Agents IA",
     "documents": "Traitement de factures et documents",
     "documentsShort": "Traitement de documents",
     "automatisation": "Automatisation des processus",
-    "logiciel": "Logiciel sur mesure",
-    "refonte": "Refonte de système",
-    "calculateur": "Calculateur du travail manuel",
-    "quiz": "Test « prête pour l’IA ? »",
-    "guideAutomatisation": "Guide : automatiser sa PME",
-    "guideAutomatisationShort": "Guide automatisation PME",
+    "logiciel": "Remplacer Excel ou Access",
+    "refonte": "Reprise de vieux logiciels",
     "comparatifEpicerie": "Comparatif logiciels d’épicerie",
-    "barometre": "Baromètre PME 2026"
+    "guideCoutLogiciel": "Prix d’un logiciel sur mesure",
+    "guideAccess": "Remplacer une base Access",
+    "guideReprise": "Reprendre un vieux logiciel",
+    "guideCoutAuto": "Prix de l’automatisation",
+    "guideExcel": "Remplacer Excel par un logiciel",
+    "cas": "Cas : 56 000 $ par année récupérés",
+    "guideMaintenance": "Maintenance d’un logiciel",
+    "guideChoisir": "Choisir son développeur",
+    "guideSubventions": "Subventions pour un projet logiciel",
+    "guideAutomatisation": "Guide : automatiser sa PME"
   },
   "service": {
     "ctaPrimary": "Décrire mon processus",
     "ctaProof": "Voir un cas réel",
-    "who": "<strong>Gabriel Nadon</strong>, consultant indépendant à Montréal. Vous parlez à celui qui construit.",
+    "who": "<strong>Gabriel Nadon</strong>, développeur indépendant, Rive-Nord de Montréal. Vous parlez à celui qui code.",
     "calendly": "Ou réservez vos 20 minutes maintenant",
-    "home": "Accueil"
+    "home": "Accueil",
+    "briefLabel": "En bref"
   },
   "notFound": {
     "title": "Page introuvable | Gabriel Nadon",
@@ -65,5 +69,6 @@
     "lead": "Le lien est peut-être ancien. Voici les pages qui servent le plus :",
     "home": "Retour à l’accueil",
     "english": "English website"
-  }
+  },
+  "faqTitle": "Questions fréquentes"
 }

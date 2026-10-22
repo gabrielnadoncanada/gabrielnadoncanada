@@ -39,10 +39,10 @@ export function SiteHeader({ pathname, navItems, ctaHref, brandHref }: Props) {
         <div className="flex-center">
           <a
             href={brandHref ?? href(locale, "/")}
-            aria-label={t("brandLabel")}
+            title={t("brandLabel")}
             className="cab-brand brand"
           >
-            <span className="mark">
+            <span className="mark" aria-hidden="true">
               <span className="mark-gn">GN</span>
             </span>
             <span className="cab-brandname brand-text">

@@ -1,18 +1,18 @@
 {
   "systeme": {
     "meta": {
-      "title": "Refonte de système informatique pour PME au Québec | Gabriel Nadon",
-      "description": "Votre logiciel maison, votre vieux système ou vos fichiers Excel vous ralentissent ? Refonte par étapes, sans perte de données ni interruption d'opérations. Diagnostic gratuit de 20 minutes, au Québec.",
-      "ogTitle": "Refonte de système : moderniser sans arrêter vos opérations",
+      "title": "Vieux logiciel maison : reprise, maintenance et refonte | PME",
+      "description": "Logiciel maison, base Access, programme WinDev ou .NET que plus personne n’entretient ? Je le reprends, le stabilise, puis le modernise par étapes.",
+      "ogTitle": "Vieux logiciel maison : le reprendre, le stabiliser, puis le moderniser",
       "ogDescription": "Refonte par étapes de logiciels maison, vieux systèmes et processus Excel : données migrées, zéro interruption. PME du Québec.",
       "twitterDescription": "Refonte par étapes de logiciels maison, vieux systèmes et processus Excel : données migrées, zéro interruption."
     },
     "jsonld": {
-      "name": "Refonte de système informatique",
-      "serviceType": "Refonte et modernisation de systèmes",
-      "description": "Refonte par étapes de logiciels maison, systèmes vieillissants et processus Excel pour PME : cartographie, migration des données, bascule sans interruption d'opérations.",
+      "name": "Reprise, maintenance et refonte de logiciels existants",
+      "serviceType": "Reprise, maintenance et modernisation de logiciels",
+      "description": "Reprise de logiciels maison, bases Access et vieux programmes Windows pour PME : stabilisation, maintenance, puis modernisation par étapes, avec migration des données et sans interruption des opérations.",
       "home": "Accueil",
-      "crumb": "Refonte de système"
+      "crumb": "Reprise de vieux logiciels"
     },
     "nav": {
       "approach": "Approche",
@@ -21,9 +21,10 @@
       "contact": "Contact"
     },
     "hero": {
-      "eyebrow": "Refonte de système · PME du Québec",
+      "eyebrow": "Reprise de vieux logiciels · PME du Québec",
       "title": "Votre entreprise roule sur un système que <em>plus personne n’ose toucher.</em>",
-      "lead": "Il a été programmé il y a quinze ans par quelqu’un qui est parti depuis longtemps. Chaque bogue devient une prière. Chaque nouveau besoin finit dans un Excel de plus, une double saisie de plus. Vous avancez sur des œufs — et au fond, vous attendez le jour où ça va lâcher. On remplace ce système morceau par morceau, sans big bang, sans perdre une seule donnée, sans arrêter vos opérations une seule journée."
+      "lead": "Il a été programmé il y a quinze ans par quelqu’un qui est parti depuis longtemps. Chaque bogue devient une prière. Chaque nouveau besoin finit dans un Excel de plus, une double saisie de plus. Vous avancez sur des œufs — et au fond, vous attendez le jour où ça va lâcher. On remplace ce système morceau par morceau, sans big bang, sans perdre une seule donnée, sans arrêter vos opérations une seule journée.",
+      "brief": "Je reprends le logiciel maison, la base Access ou le vieux programme Windows que plus personne n’entretient. D’abord je le lis et je le stabilise (sauvegardes, bogues bloquants, documentation) ; ensuite on le modernise par étapes, avec migration des données et <strong>sans arrêter vos opérations</strong>. Diagnostic gratuit de 20 minutes, puis une portée et un prix fixes ; pour situer, mes sprints commencent à 4 500 $ et le remplacement se fait par tranches d’environ 6 000 $."
     },
     "risks": {
       "kicker": "Le coût de ne rien faire",

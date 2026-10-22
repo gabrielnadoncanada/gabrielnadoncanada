@@ -1,44 +1,43 @@
 {
   "meta": {
-    "title": "Gabriel Nadon — AI and automation for Quebec SMBs",
-    "description": "AI and automation consultant in Montreal: I replace spreadsheets, double data entry and scattered tools in Quebec SMBs with a system that does the work.",
-    "ogTitle": "Gabriel Nadon — Operations systems for SMBs",
-    "ogDescription": "Replace manual tracking, spreadsheets and email with a system that keeps information in one place and does part of the work. Quebec SMBs."
+    "title": "Replace spreadsheets and old software | Quebec SMB developer",
+    "description": "Running on spreadsheets, Access or aging in-house software? I first remove your most expensive manual task, in 2 to 3 weeks, at a fixed price. Quebec SMBs.",
+    "ogTitle": "Gabriel Nadon — Replacing spreadsheets and old software for SMBs",
+    "ogDescription": "Your most expensive manual task, gone in 2 to 3 weeks at a fixed price. Then we replace or maintain the rest of the system. Quebec SMBs."
   },
   "jsonld": {
-    "siteName": "Gabriel Nadon — Operations systems for SMBs",
-    "jobTitle": "AI and operations systems consultant",
-    "personDescription": "Gabriel Nadon, an AI and automation consultant in Montreal, helps Quebec SMBs with complex operations replace manual tracking, spreadsheets, email and ill-fitting software with systems that centralize information and automate part of the work.",
+    "siteName": "Gabriel Nadon — Business software and automation for SMBs",
+    "jobTitle": "Business software and automation developer for SMBs",
+    "personDescription": "Gabriel Nadon, an independent developer based on Montreal’s North Shore, builds and maintains business software for Quebec SMBs: replacing spreadsheets and Access databases, taking over aging in-house software, automating manual tasks and connecting business systems.",
     "knowsAbout": [
-      "Operations systems",
-      "Operations automation",
-      "Systems integration",
-      "Custom software for SMBs",
+      "Custom business software",
+      "Replacing spreadsheets",
+      "Microsoft Access and VBA",
+      "Legacy software maintenance and takeover",
       "Process automation",
-      "Artificial intelligence",
-      "AI agents",
-      "Automated document processing"
+      "Systems integration and APIs",
+      "Python",
+      "Laravel",
+      "Applied artificial intelligence"
     ],
-    "businessName": "Gabriel Nadon — AI, automation and systems for SMBs",
-    "businessDescription": "AI consulting and implementation for Quebec SMBs: AI agents, automated invoice and document processing, process automation, custom software and replacement of aging systems.",
+    "businessName": "Gabriel Nadon — Business software and automation for SMBs",
+    "businessDescription": "Replacing spreadsheets and Access, taking over aging in-house software, automating manual tasks and building custom business software for Quebec SMBs.",
     "catalog": "Services",
     "offers": {
-      "consultantIa": "AI consultant for SMBs",
-      "agentsIa": "AI agents for business",
-      "documents": "Automated invoice and document processing",
+      "logiciel": "Replace spreadsheets or Access with business software",
+      "refonte": "Legacy software takeover, maintenance and replacement",
       "automatisation": "Business process automation",
-      "logiciel": "Custom software for SMBs",
-      "refonte": "Legacy system replacement"
+      "documents": "Automated invoice and document processing"
     }
   },
   "hero": {
-    "kicker": "AI, automation and custom systems for Quebec SMBs",
-    "title": "Your operations shouldn’t live in 12 different apps.",
-    "lead": "I turn manual tracking, spreadsheets, email threads and ill-fitting software into one simple operations system: information in one place, and part of the work done for you.",
-    "cta": "Show me how you work",
-    "ctaShort": "Review my operations",
+    "kicker": "Quebec SMBs · spreadsheets, Access, in-house software",
+    "title": "Is your business running on spreadsheets or old software nobody dares to touch?",
+    "lead": "I first remove the manual task that costs you the most: in 2 to 3 weeks, fixed scope and price, from $4,500. Then we replace or maintain the rest of the system, at your pace.",
+    "cta": "Describe what’s stuck",
+    "ctaShort": "Free review",
     "ctaCase": "See a real case",
-    "who": "<strong>Gabriel Nadon</strong>, independent consultant in Montreal. You talk to the person who builds it, and you get an answer within 24 hours."
+    "who": "<strong>Gabriel Nadon</strong>, independent developer, Montreal’s North Shore. I’ve built or maintained the systems of more than 20 Quebec SMBs. You talk to the person who writes the code, and you get an answer within 24 hours."
   },
   "sys": {
     "aria": "Illustration: a typical morning once the system is in place",
@@ -80,34 +79,34 @@
     "caption": "Illustration: a typical morning, once the system is in place."
   },
   "pains": {
-    "title": "Your information is everywhere. Except in one place.",
+    "title": "Your real management software is a file nobody dares to touch.",
     "items": [
-      "Some of the information lives in spreadsheets. The rest, in email.",
-      "Employees text each other just to get work unblocked.",
-      "Accounting runs in one app, projects in another — and the two don’t talk.",
-      "Someone is constantly gluing the pieces back together: searching, re-keying, chasing, checking."
+      "Quotes, hours and inventory live in spreadsheets that contradict each other.",
+      "An Access database or in-house program runs the business, and the person who understood it has left.",
+      "Accounting runs in one app, operations in another — and someone copies from one to the other.",
+      "Every week, someone re-keys, checks and chases things by hand."
     ],
     "costLabel": "What it costs you",
     "cost": "Double data entry, information nobody can find, forgotten follow-ups, errors, decisions made too late — and money left on the table."
   },
   "method": {
     "title": "How I work",
-    "sub": "Three steps, in this order. Nothing gets built until we understand where the work is being lost.",
+    "sub": "A small fixed-price step first. The rest only if the first one paid off.",
     "steps": [
       {
-        "when": "Week 1",
-        "title": "Operations review",
-        "text": "We look at how your business really runs — and find where time, information or money is being lost."
+        "when": "20 minutes",
+        "title": "Free review",
+        "text": "We look at your spreadsheet, database or software and find the manual task that costs the most."
       },
       {
-        "when": "Next",
-        "title": "Operations system",
-        "text": "We centralize your most expensive process around the way you work. Not the other way around."
+        "when": "2 to 3 weeks",
+        "title": "First fixed-price sprint",
+        "text": "That task is automated or replaced, on your real data. From $4,500: one task eliminated, not a subscription."
       },
       {
         "when": "After that",
-        "title": "Smart automation",
-        "text": "Once the data and the process are reliable, the system starts doing part of the work."
+        "title": "The rest of the system",
+        "text": "Replace the spreadsheet or old software piece by piece (in phases of about $6,000), or simply keep it running."
       }
     ],
     "note": "When artificial intelligence speeds up a step, it works on structured data, with guardrails and human approval. It’s a mechanism, not the product."
@@ -151,32 +150,27 @@
     ]
   },
   "services": {
-    "title": "What I put in place, depending on where the work is lost.",
+    "title": "What I do, concretely.",
     "items": {
-      "consultantIa": {
-        "kind": "Getting started",
-        "title": "AI consultant for SMBs",
-        "text": "Find the two or three tasks where AI really pays off in your business, then implement them."
+      "logiciel": {
+        "kind": "Spreadsheets and Access",
+        "title": "Replace spreadsheets or Access",
+        "text": "Quotes, work orders, timesheets, inventory: real business software instead of files that contradict each other."
       },
-      "documents": {
-        "kind": "Documents",
-        "title": "AI invoice and document processing",
-        "text": "Invoices, purchase orders, price lists: read, checked and entered without anyone re-typing them."
-      },
-      "agentsIa": {
-        "kind": "Agents",
-        "title": "AI agents",
-        "text": "An assistant that handles requests, drafts quotes and replies, and asks before it acts."
+      "refonte": {
+        "kind": "Legacy software",
+        "title": "Take over existing software",
+        "text": "An in-house program, an Access database or an old Windows app nobody maintains anymore: I take it over, stabilize it, then modernize it step by step."
       },
       "automatisation": {
         "kind": "Processes",
-        "title": "Process automation",
+        "title": "Automate a manual task",
         "text": "The double entry, reports and follow-ups redone every week, handed to the machine."
       },
-      "logiciel": {
-        "kind": "Systems",
-        "title": "Custom software",
-        "text": "When a spreadsheet has become your management system. Or <refonte>when the old system needs replacing</refonte>."
+      "documents": {
+        "kind": "Documents",
+        "title": "Invoices and documents read automatically",
+        "text": "Invoices, purchase orders, price lists: read, checked and entered without anyone re-typing them."
       }
     },
     "toolsLead": "<strong>Your tools stay in place.</strong> The system replaces what no longer works and connects to what already does, depending on the access available.",
@@ -219,20 +213,20 @@
       },
       {
         "num": "20+",
-        "label": "SMBs supported in Quebec"
+        "label": "Quebec SMBs whose systems I’ve built or maintained"
       },
       {
         "num": "37,000",
         "label": "prices compared every cycle, with no manual effort"
       },
       {
-        "num": "30 min",
-        "label": "for a first review of your operations"
+        "num": "20 min",
+        "label": "for a first review, free"
       }
     ]
   },
   "me": {
-    "photoAlt": "Portrait of Gabriel Nadon, consultant",
+    "photoAlt": "Portrait of Gabriel Nadon, developer",
     "quote": "I don’t sell technology. I solve business problems.",
     "body": "Every project starts with how your operations really run — where time is lost, where information gets stuck, where money leaks out without anyone noticing — and ends with a system that does part of the work. No middlemen, no jargon, no surprises.",
     "principles": [
@@ -240,11 +234,11 @@
       "<strong>One point of contact.</strong> You talk to the person who analyzes your operations and builds the system.",
       "<strong>Visible progress.</strong> The system is delivered in steps: you see each piece working before we go further."
     ],
-    "role": "Consultant, operations systems"
+    "role": "Developer, business software for SMBs"
   },
   "for": {
     "title": "Who it’s for",
-    "text": "Businesses whose operations have outgrown spreadsheets, email and disconnected tools.",
+    "text": "SMBs with 10 to 200 employees whose operations run on spreadsheets, Access or aging in-house software.",
     "sectors": [
       "Construction",
       "Industrial",
@@ -254,33 +248,37 @@
     ]
   },
   "free": {
-    "title": "Free tools and guides",
+    "title": "Guides: answers to the questions I get asked",
     "items": {
-      "calculateur": {
-        "kind": "Calculator",
-        "title": "What manual work really costs you"
+      "excel": {
+        "kind": "Excel",
+        "title": "Replacing Excel with business software"
       },
-      "quiz": {
-        "kind": "10-question test",
-        "title": "Is your business ready for AI?"
+      "coutLogiciel": {
+        "kind": "2026 prices",
+        "title": "What custom software costs in Quebec"
+      },
+      "access": {
+        "kind": "Access",
+        "title": "Replacing an Access database: options and migration"
+      },
+      "reprise": {
+        "kind": "Legacy software",
+        "title": "Taking over WinDev, Access or in-house software"
+      },
+      "coutAuto": {
+        "kind": "2026 prices",
+        "title": "What process automation costs"
       },
       "guide": {
         "kind": "Guide",
         "title": "Automating an SMB in Quebec"
-      },
-      "comparatif": {
-        "kind": "Comparison",
-        "title": "Grocery store software in Quebec"
-      },
-      "barometre": {
-        "kind": "Barometer",
-        "title": "2026 SMB barometer"
       }
     }
   },
   "contact": {
-    "title": "Show me how you work.",
-    "lead": "In 30 minutes, we look at your current process and pinpoint where a system could genuinely remove work or recover value — whether or not we end up working together.",
+    "title": "Show me the file or software that’s holding you back.",
+    "lead": "In 20 minutes, we look at your process and pinpoint the task to eliminate first, with an honest idea of the cost — whether or not we end up working together.",
     "points": [
       "Free, no commitment",
       "Reply within 24 hours",

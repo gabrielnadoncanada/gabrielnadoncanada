@@ -1,289 +1,4 @@
 {
-  "consultantIa": {
-    "meta": {
-      "title": "Consultant IA pour PME au Québec | Gabriel Nadon",
-      "description": "Consultant IA pour PME au Québec : je trouve où l’IA enlève du travail (factures, courriels, soumissions) et je l’implante dans vos outils.",
-      "ogTitle": "Consultant IA pour PME au Québec"
-    },
-    "breadcrumb": "Consultant IA",
-    "service": {
-      "name": "Consultant IA pour PME",
-      "type": "Consultation et implantation en intelligence artificielle",
-      "description": "Diagnostic des processus d’une PME québécoise, choix des tâches où l’intelligence artificielle rapporte, puis implantation dans les outils existants : traitement de documents, agents IA, automatisation et systèmes internes."
-    },
-    "eyebrow": "Consultant IA · PME du Québec",
-    "title": "L’IA dans votre PME : moins de démos, plus de travail enlevé.",
-    "lead": "Vous savez que l’intelligence artificielle peut aider. Ce qui manque, c’est de savoir où, avec quelles données, et qui va l’installer pour que ça tienne. Je suis consultant IA indépendant, basé à Montréal : je regarde comment votre entreprise travaille vraiment, je trouve les deux ou trois tâches où l’IA rapporte, puis je les implante — branchées sur vos outils actuels, avec une validation humaine.",
-    "box": {
-      "kicker": "Où l’IA rapporte d’abord dans une PME",
-      "items": [
-        "Lire les factures, bons de commande et listes de prix — et les saisir à votre place.",
-        "Trier les courriels de demandes et préparer la réponse ou la fiche client.",
-        "Monter une soumission ou un rapport à partir de vos propres données.",
-        "Retrouver l’information dans les documents d’un projet en quelques secondes."
-      ]
-    },
-    "pains": {
-      "eyebrow": "Vous vous reconnaissez ?",
-      "title": "Tout le monde parle d’IA. Chez vous, rien n’a encore changé.",
-      "intro": "Ce n’est pas un manque de volonté. C’est qu’entre un abonnement ChatGPT et un processus qui roule tout seul, il manque une étape : relier l’IA à vos données et à votre façon de travailler.",
-      "items": [
-        "Quelques employés utilisent ChatGPT dans leur coin, mais les opérations, elles, n’ont pas bougé.",
-        "Chaque fournisseur vous vend sa plateforme « avec IA » — sans jamais avoir regardé comment vous travaillez.",
-        "Vos données vivent dans Excel, les courriels et un logiciel qui ne parle à personne.",
-        "Vous hésitez à mettre des données clients dans un outil d’IA, à cause de la Loi 25.",
-        "Personne à l’interne n’a le temps de piloter un projet de plus."
-      ]
-    },
-    "approach": {
-      "eyebrow": "Ma façon de faire",
-      "quote": "L’IA n’est pas le projet. Le projet, c’est la tâche qui coûte cher — l’IA est un des outils pour l’enlever.",
-      "body": "<dropcap>J</dropcap>e commence par vos opérations, pas par la technologie : où le temps se perd, combien ça coûte, quelles données existent déjà. Ensuite seulement on choisit l’outil — parfois un modèle d’IA, parfois une simple automatisation, parfois un petit logiciel interne. Vous parlez à celui qui analyse et qui construit : pas d’intermédiaire, pas de jargon.",
-      "principles": [
-        {
-          "title": "Chiffré avant d’être construit",
-          "text": "Chaque cas d’usage part d’un calcul simple : heures par semaine × personnes × taux horaire. Pas de chiffre, pas de projet."
-        },
-        {
-          "title": "Vos données restent encadrées",
-          "text": "Les données sensibles ne vont pas dans un outil grand public sans encadrement ; on choisit hébergement, accès et réglages en fonction de vos obligations."
-        },
-        {
-          "title": "Un humain valide",
-          "text": "L’IA prépare, résume, propose. Les décisions qui engagent l’entreprise restent à vos gens."
-        }
-      ]
-    },
-    "steps": {
-      "eyebrow": "La démarche, en cinq étapes",
-      "items": [
-        {
-          "title": "Diagnostic de 20 minutes",
-          "text": "Gratuit. Vous me décrivez où l’équipe perd le plus de temps ; je vous dis si l’IA est la bonne réponse — ou non."
-        },
-        {
-          "title": "Cartographie et priorisation",
-          "text": "On liste les tâches répétitives, on les chiffre, et on retient celle qui rapporte le plus pour le moins d’effort."
-        },
-        {
-          "title": "Prototype sur vos vrais fichiers",
-          "text": "Pas de démo générique : le premier essai roule sur vos factures, vos courriels, vos exports. On voit tout de suite si ça tient."
-        },
-        {
-          "title": "Implantation dans vos outils",
-          "text": "Le système se branche sur ce que vous utilisez déjà — Outlook, Excel, QuickBooks, votre ERP — selon les accès disponibles."
-        },
-        {
-          "title": "Mesure, puis cas suivant",
-          "text": "On compare le temps avant et après. Quand le premier cas est rentable, on passe au suivant, au rythme de vos opérations."
-        }
-      ]
-    },
-    "services": {
-      "title": "Ce que j’implante, concrètement.",
-      "items": [
-        {
-          "kind": "Agents IA",
-          "title": "Agents IA pour entreprise",
-          "text": "Un agent qui lit une demande, consulte vos données et prépare l’action — réponse, soumission, saisie — pour validation."
-        },
-        {
-          "kind": "Documents",
-          "title": "Traitement de factures et documents",
-          "text": "Factures, bons de commande, listes de prix : lus, vérifiés et saisis automatiquement, les exceptions envoyées à un humain."
-        },
-        {
-          "kind": "Automatisation",
-          "title": "Automatisation des processus",
-          "text": "Les copier-coller entre logiciels, rapports et relances qui se refont chaque semaine — faits par la machine."
-        },
-        {
-          "kind": "Systèmes",
-          "title": "Logiciel sur mesure",
-          "text": "Quand Excel est devenu votre logiciel de gestion : un vrai système interne, construit par tranches."
-        }
-      ]
-    },
-    "proof": {
-      "label": "Sur le terrain",
-      "body": "<muted>Une épicerie indépendante du Québec retapait à la main les prix de ses fournisseurs : près de 56 000 $ par année en temps de saisie. Le système lit maintenant les listes de tous ses fournisseurs, compare quelque 37 000 prix à chaque cycle et prépare la mise à jour de la caisse — que l’équipe approuve. </muted><a>Lire le cas complet →</a> <muted>Et je fais rouler mes propres agents : mon système de prospection cherche des entreprises, analyse leur site et rédige un premier courriel personnalisé — rien ne part sans ma validation.</muted>"
-    },
-    "price": {
-      "label": "Prix",
-      "body": "<muted>Diagnostic : 20 minutes, gratuit. Premier sprint d’implantation : dès 4 500 $, portée fixe, 2 à 3 semaines — une tâche éliminée, pas un abonnement. Des programmes peuvent rembourser une partie des honoraires (ESSOR d’Investissement Québec, PME MTL) : </muted><a>prix du marché et subventions détaillés →</a>"
-    },
-    "faq": {
-      "eyebrow": "Les questions qu’on me pose",
-      "items": [
-        {
-          "q": "Combien coûte un consultant IA au Québec ?",
-          "a": "Les grilles publiées au Canada vont d’environ 150 à 350 $ de l’heure pour la consultation en IA et en automatisation, mais la plupart des projets se vendent à forfait. Chez moi : diagnostic gratuit de 20 minutes, puis des sprints à portée fixe dès 4 500 $."
-        },
-        {
-          "q": "Faut-il changer nos logiciels pour utiliser l’IA ?",
-          "a": "Non, dans la grande majorité des cas. L’IA se branche sur vos outils actuels par leurs API, leurs exports ou les courriels. On ne remplace que ce qui bloque vraiment."
-        },
-        {
-          "q": "Nos données sont-elles en sécurité (Loi 25) ?",
-          "a": "On décide ensemble quelles données l’IA peut voir, où elles sont traitées et qui y a accès. Les renseignements personnels ne vont pas dans un outil grand public sans encadrement, et chaque accès est documenté."
-        },
-        {
-          "q": "Quelle différence avec une agence IA ?",
-          "a": "Vous parlez directement à la personne qui analyse vos opérations et qui construit le système. Pas de vendeur, pas de sous-traitance, pas de plateforme imposée."
-        },
-        {
-          "q": "Et si l’IA n’est pas la bonne solution chez nous ?",
-          "a": "Je vous le dis pendant le diagnostic. Souvent, une simple automatisation ou un meilleur fichier règle le problème pour moins cher — et c’est ce que je recommande alors."
-        },
-        {
-          "q": "Travaillez-vous en anglais ?",
-          "a": "Oui. Je travaille en français et en anglais, depuis Montréal et à distance partout au Québec."
-        }
-      ]
-    },
-    "cta": {
-      "eyebrow": "Diagnostic gratuit",
-      "title": "Vingt minutes pour savoir où l’IA vous ferait gagner du temps.",
-      "lead": "Décrivez la tâche qui vous coûte le plus d’heures. Je vous réponds sous 24 h avec une première piste honnête — que l’on travaille ensemble ou non."
-    },
-    "related": {
-      "label": "Pour aller plus loin",
-      "links": [
-        "Test : votre PME est-elle prête pour l’IA ?",
-        "Calculer le coût d’une tâche manuelle",
-        "Guide : automatiser sa PME",
-        "English: AI consultant in Quebec"
-      ]
-    }
-  },
-  "agentsIa": {
-    "meta": {
-      "title": "Agents IA pour entreprise au Québec | Gabriel Nadon",
-      "description": "Agents IA pour PME du Québec : un assistant qui traite vos demandes et prépare soumissions et réponses, branché sur vos données, avec validation humaine.",
-      "ogTitle": "Agents IA pour entreprise au Québec"
-    },
-    "breadcrumb": "Agents IA",
-    "service": {
-      "name": "Agents IA pour entreprise",
-      "type": "Conception et implantation d’agents d’intelligence artificielle",
-      "description": "Agents IA pour PME québécoises : réception et tri des demandes, préparation de soumissions, réponses aux questions répétitives à partir des documents de l’entreprise, suivi des dossiers — branchés sur les outils existants, avec validation humaine."
-    },
-    "eyebrow": "Agents IA · PME du Québec",
-    "title": "Un agent IA qui fait une vraie tâche — et qui demande avant d’agir.",
-    "lead": "Un agent IA, concrètement, c’est un assistant logiciel qui reçoit une demande, va chercher l’information dans vos systèmes, prépare l’action — une réponse, une soumission, une saisie — et vous la soumet. Pas un gadget de conversation : un employé virtuel affecté à une tâche précise, qui travaille avec vos données et sous vos règles.",
-    "box": {
-      "kicker": "Des agents qui rapportent dans une PME",
-      "items": [
-        "Réception : lit chaque demande reçue par courriel, crée la fiche et prépare la réponse.",
-        "Soumission : monte un premier jet à partir de vos prix, gabarits et projets passés.",
-        "Service client : répond aux questions répétitives à partir de vos documents, et passe la main à un humain.",
-        "Suivi : repère les dossiers en retard et prépare les relances."
-      ]
-    },
-    "pains": {
-      "eyebrow": "Pourquoi un agent, et pas juste ChatGPT",
-      "title": "ChatGPT aide une personne. Un agent enlève une tâche à l’entreprise.",
-      "intro": "Un abonnement ChatGPT rend chaque employé un peu plus rapide, à condition qu’il pense à s’en servir. Un agent est branché sur le processus lui-même : il démarre seul quand une demande arrive, et il connaît vos données.",
-      "items": [
-        "Les mêmes questions de clients reviennent chaque jour, et quelqu’un répond chaque fois à la main.",
-        "Les demandes arrivent par courriel, par formulaire, par téléphone — et se perdent entre les trois.",
-        "Une soumission prend des heures alors que l’essentiel du contenu existe déjà quelque part.",
-        "L’information d’un dossier est dispersée entre courriels, PDF et logiciels.",
-        "Vous avez essayé un chatbot générique : il inventait des réponses."
-      ]
-    },
-    "approach": {
-      "eyebrow": "Ma façon de faire",
-      "quote": "Un bon agent a une seule tâche, accès aux bonnes données, et une limite claire de ce qu’il peut faire seul.",
-      "body": "<dropcap>L</dropcap>es agents qui échouent sont ceux à qui on demande de « tout faire ». Je conçois des agents étroits : une tâche, des sources d’information définies, des règles écrites, et un point de validation humaine avant toute action qui engage l’entreprise — envoi, paiement, engagement auprès d’un client.",
-      "principles": [
-        {
-          "title": "Il répond à partir de vos données",
-          "text": "L’agent cite vos documents, vos prix, vos dossiers. S’il ne trouve pas, il le dit et transfère — il n’invente pas."
-        },
-        {
-          "title": "Il demande avant d’agir",
-          "text": "Brouillon, proposition, saisie en attente : la décision finale reste à une personne tant que la confiance n’est pas établie."
-        },
-        {
-          "title": "Il laisse une trace",
-          "text": "Chaque action est journalisée : ce qu’il a lu, ce qu’il a proposé, qui a approuvé."
-        }
-      ]
-    },
-    "steps": {
-      "eyebrow": "La démarche, en cinq étapes",
-      "items": [
-        {
-          "title": "Choisir la tâche",
-          "text": "Une tâche fréquente, répétitive et coûteuse. On la chiffre avant d’écrire une seule ligne."
-        },
-        {
-          "title": "Rassembler les sources",
-          "text": "Documents, gabarits, prix, historique : ce que l’agent doit connaître, et ce qu’il ne doit jamais voir."
-        },
-        {
-          "title": "Prototype sur des cas réels",
-          "text": "On rejoue des demandes passées. Vous comparez ce que l’agent propose à ce que votre équipe a réellement fait."
-        },
-        {
-          "title": "Mise en service supervisée",
-          "text": "L’agent prépare, votre équipe approuve. On mesure le temps gagné et les corrections nécessaires."
-        },
-        {
-          "title": "Élargir prudemment",
-          "text": "Quand les propositions sont fiables, on lui confie plus d’autonomie — ou une deuxième tâche."
-        }
-      ]
-    },
-    "proof": {
-      "label": "Sur le terrain",
-      "body": "<muted>Je fais rouler mes propres agents avant de vous en vendre : mon système de prospection cherche des entreprises, analyse leur site et rédige un premier courriel personnalisé — rien ne part sans ma validation. Côté clients, le système de prix fournisseurs d’une épicerie indépendante lit les listes de tous ses fournisseurs et prépare la mise à jour de la caisse, que l’équipe approuve : près de 56 000 $ par année de saisie éliminée. </muted><a>Lire le cas complet →</a>"
-    },
-    "price": {
-      "label": "Prix",
-      "body": "<muted>Premier agent : sprint à portée fixe dès 4 500 $, 2 à 3 semaines. S’ajoutent les frais d’utilisation du modèle d’IA, facturés à l’usage par le fournisseur — je les estime sur vos volumes réels avant de construire, pour qu’il n’y ait pas de surprise.</muted>"
-    },
-    "faq": {
-      "eyebrow": "Les questions qu’on me pose",
-      "items": [
-        {
-          "q": "Quelle différence entre un agent IA et un chatbot ?",
-          "a": "Un chatbot converse. Un agent agit : il consulte vos systèmes, prépare une saisie, une réponse ou un document, et s’intègre au processus. Un chatbot de service client peut d’ailleurs être un agent, s’il répond à partir de vos documents et transfère au bon humain."
-        },
-        {
-          "q": "Un agent IA peut-il se tromper ?",
-          "a": "Oui, comme un nouvel employé. C’est pour ça qu’il répond à partir de vos sources, qu’il signale quand il n’est pas sûr, et qu’une personne valide toute action qui engage l’entreprise."
-        },
-        {
-          "q": "ChatGPT Entreprise ou Copilot ne suffisent-ils pas ?",
-          "a": "Pour aider chaque employé à écrire ou résumer, souvent oui. Pour qu’une tâche se fasse sans qu’on y pense — dès qu’un courriel arrive, par exemple — il faut relier l’IA à vos systèmes et à vos règles. C’est ce que fait un agent."
-        },
-        {
-          "q": "Qu’advient-il de nos données ?",
-          "a": "On définit précisément ce que l’agent peut lire et écrire. Les renseignements personnels sont traités selon vos obligations (Loi 25) : fournisseurs choisis en conséquence, accès limités, aucune utilisation de vos données pour entraîner un modèle public."
-        },
-        {
-          "q": "Combien de temps avant qu’un agent soit utile ?",
-          "a": "Un premier agent étroit se met en service supervisé en 2 à 3 semaines. La valeur apparaît dès qu’il prépare correctement la majorité des cas, même si votre équipe approuve encore chaque proposition."
-        }
-      ]
-    },
-    "cta": {
-      "eyebrow": "Diagnostic gratuit",
-      "title": "Quelle tâche confieriez-vous à un employé de plus ?",
-      "lead": "Décrivez-la. Je vous dis sous 24 h si un agent IA peut s’en charger, avec quelles données et pour quel effort — que l’on travaille ensemble ou non."
-    },
-    "related": {
-      "label": "Pour aller plus loin",
-      "links": [
-        "Consultant IA pour PME",
-        "Traitement de factures et documents",
-        "Automatisation des processus",
-        "Test : prête pour l’IA ?"
-      ]
-    }
-  },
   "documents": {
     "meta": {
       "title": "Traitement de factures et documents par IA | Gabriel Nadon",
@@ -366,11 +81,11 @@
     },
     "proof": {
       "label": "Sur le terrain",
-      "body": "<muted>Une épicerie indépendante recevait les listes de prix de tous ses fournisseurs, chacune dans son format, et les retapait dans sa caisse : près de 56 000 $ par année. Le système lit maintenant ces listes, compare quelque 37 000 prix à chaque cycle et prépare la mise à jour — sans remplacer la caisse, et l’équipe approuve avant application. </muted><a>Lire le cas complet →</a>"
+      "body": "<muted>Une épicerie indépendante recevait les listes de prix de tous ses fournisseurs, chacune dans son format, et les retapait dans sa caisse : près de 56 000 $ par année. Le système lit maintenant ces listes, compare quelque 37 000 prix à chaque cycle et prépare la mise à jour — sans remplacer la caisse, et l’équipe approuve avant application. </muted><a>Lire le cas complet →</a>"
     },
     "price": {
       "label": "Prix",
-      "body": "<muted>Essai sur échantillon compris dans le premier sprint : dès 4 500 $, portée fixe, 2 à 3 semaines pour un type de document. S’ajoutent les frais de traitement à l’usage, estimés sur vos volumes réels avant de construire. </muted><a>Calculer ce que la saisie vous coûte →</a>"
+      "body": "<muted>Essai sur échantillon compris dans le premier sprint : dès 4 500 $, portée fixe, 2 à 3 semaines pour un type de document. S’ajoutent les frais de traitement à l’usage, estimés sur vos volumes réels avant de construire. </muted><a>Calculer ce que la saisie vous coûte →</a>"
     },
     "faq": {
       "eyebrow": "Les questions qu’on me pose",
@@ -400,15 +115,15 @@
     "cta": {
       "eyebrow": "Diagnostic gratuit",
       "title": "Combien de documents votre équipe retape-t-elle chaque mois ?",
-      "lead": "Dites-moi lesquels et à peu près combien. Je vous réponds sous 24 h avec ce qui est automatisable et une idée honnête de l’effort."
+      "lead": "Dites-moi lesquels et à peu près combien. Je vous réponds sous 24 h avec ce qui est automatisable et une idée honnête de l’effort."
     },
     "related": {
       "label": "Pour aller plus loin",
       "links": [
-        "Mise à jour des prix fournisseurs : 4 méthodes",
-        "Agents IA pour entreprise",
         "Automatisation des processus",
-        "Consultant IA pour PME"
+        "Cas : 56 000 $ par année récupérés",
+        "Remplacer Excel ou Access",
+        "Combien coûte l’automatisation"
       ]
     }
   },
@@ -494,11 +209,11 @@
     },
     "proof": {
       "label": "Sur le terrain",
-      "body": "<muted>La mise à jour des prix fournisseurs d’une épicerie indépendante prenait l’équivalent d’un poste à temps partiel — près de 56 000 $ par année. Automatisée de bout en bout et branchée sur la caisse existante, elle se fait maintenant sans saisie manuelle — l’équipe ne fait qu’approuver — et l’entreprise achète au meilleur prix à chaque commande. </muted><a>Lire le cas complet →</a>"
+      "body": "<muted>La mise à jour des prix fournisseurs d’une épicerie indépendante prenait l’équivalent d’un poste à temps partiel — près de 56 000 $ par année. Automatisée de bout en bout et branchée sur la caisse existante, elle se fait maintenant sans saisie manuelle — l’équipe ne fait qu’approuver — et l’entreprise achète au meilleur prix à chaque commande. </muted><a>Lire le cas complet →</a>"
     },
     "price": {
       "label": "Prix",
-      "body": "<muted>Sprint d’automatisation : dès 4 500 $, portée fixe, 2 à 3 semaines. Au Québec, les prix publiés vont d’environ 2 500 $ à 10 000 $ pour un premier processus. </muted><a>Fourchettes et subventions détaillées →</a>"
+      "body": "<muted>Sprint d’automatisation : dès 4 500 $, portée fixe, 2 à 3 semaines. Au Québec, les prix publiés vont d’environ 2 500 $ à 10 000 $ pour un premier processus. </muted><a>Fourchettes et subventions détaillées →</a>"
     },
     "faq": {
       "eyebrow": "Les questions qu’on me pose",
@@ -509,7 +224,7 @@
         },
         {
           "q": "Par quel processus commencer ?",
-          "a": "Par celui qui combine trois choses : il revient chaque semaine, il suit toujours les mêmes étapes et il coûte le plus d’heures. Le calculateur gratuit du site vous donne un premier chiffre en 30 secondes."
+          "a": "Par celui qui combine trois choses : il revient chaque semaine, il suit toujours les mêmes étapes et il coûte le plus d’heures. Pour un premier chiffre : heures par semaine × personnes × taux horaire × 50 semaines."
         },
         {
           "q": "Qu’arrive-t-il si une automatisation brise ?",
@@ -528,23 +243,24 @@
     "cta": {
       "eyebrow": "Diagnostic gratuit",
       "title": "Quelle tâche votre équipe refait-elle chaque semaine ?",
-      "lead": "Décrivez-la en deux lignes. Je vous réponds sous 24 h avec ce qu’on peut automatiser, et à quel prix — que l’on travaille ensemble ou non."
+      "lead": "Décrivez-la en deux lignes. Je vous réponds sous 24 h avec ce qu’on peut automatiser, et à quel prix — que l’on travaille ensemble ou non."
     },
     "related": {
       "label": "Pour aller plus loin",
       "links": [
-        "Calculateur du coût du travail manuel",
+        "Combien coûte l’automatisation",
         "Guide : automatiser sa PME",
         "Traitement de factures et documents",
-        "Consultant IA pour PME"
+        "Remplacer Excel ou Access"
       ]
-    }
+    },
+    "brief": "J’automatise une tâche manuelle précise — double saisie, rapports, relances, transferts entre logiciels — en <strong>un sprint à portée fixe de 2 à 3 semaines, dès 4 500 $</strong>. Je chiffre d’abord ce que la tâche vous coûte par année ; si l’automatisation ne se rembourse pas en moins de 12 mois, je vous le dis."
   },
   "logiciel": {
     "meta": {
-      "title": "Logiciel sur mesure pour PME au Québec | Gabriel Nadon",
-      "description": "Soumissions, bons de travail, feuilles de temps, inventaire : quand Excel est devenu votre logiciel de gestion, je bâtis un vrai système. PME du Québec.",
-      "ogTitle": "Logiciel sur mesure pour PME au Québec — remplacer Excel par un vrai système"
+      "title": "Logiciel sur mesure : remplacer Excel ou Access | PME Québec",
+      "description": "Quand Excel ou une base Access est devenu votre logiciel de gestion : soumissions, heures, inventaire. Un vrai système, livré par tranches. PME du Québec.",
+      "ogTitle": "Remplacer Excel ou Access par un vrai logiciel de gestion — PME du Québec"
     },
     "breadcrumb": "Logiciel sur mesure",
     "service": {
@@ -552,8 +268,8 @@
       "type": "Développement de logiciels et systèmes internes sur mesure",
       "description": "Systèmes internes sur mesure pour PME québécoises — soumissions, bons de travail, feuilles de temps, inventaire, suivi de projets, portails clients — construits par tranches et reliés aux logiciels existants (comptabilité, ERP, Excel)."
     },
-    "eyebrow": "Logiciel sur mesure · PME du Québec",
-    "title": "Quand Excel est devenu votre logiciel de gestion, il est temps d’en avoir un vrai.",
+    "eyebrow": "Remplacer Excel ou Access · PME du Québec",
+    "title": "Quand Excel ou Access est devenu votre logiciel de gestion, il est temps d’en avoir un vrai.",
     "lead": "Votre entreprise a grandi plus vite que ses outils. Les soumissions vivent dans un fichier, les heures dans un autre, les projets dans les courriels — et aucun logiciel du marché ne colle à votre façon de travailler. Je construis le système interne qui manque, morceau par morceau, relié à ce que vous utilisez déjà.",
     "box": {
       "kicker": "Ce que les PME me demandent de construire",
@@ -573,12 +289,12 @@
         "Vous payez trois ou quatre abonnements qui couvrent chacun une partie du besoin.",
         "Les logiciels du marché vous obligent à changer une façon de faire qui fonctionne.",
         "Les chiffres pour décider arrivent en fin de mois — trop tard.",
-        "Votre ancien logiciel maison n’est plus entretenu par personne."
+        "Une base Access ou des macros VBA font rouler l’entreprise, et la personne qui les a écrites est partie."
       ]
     },
     "approach": {
       "eyebrow": "Acheter ou construire ?",
-      "quote": "Si un logiciel du marché fait 80 % du travail, achetez-le. Le sur mesure se justifie quand votre façon de travailler est votre avantage.",
+      "quote": "Si un logiciel du marché fait 80 % du travail, achetez-le. Le sur mesure se justifie quand votre façon de travailler est votre avantage.",
       "body": "<dropcap>J</dropcap>e vous le dis franchement pendant le diagnostic : souvent, la bonne réponse est un logiciel existant, bien configuré. Le sur mesure devient rentable quand vous jonglez entre plusieurs outils qui ne se parlent pas, quand votre processus est particulier, ou quand le coût cumulé des licences dépasse celui d’un système fait pour vous.",
       "refonte": "Votre système actuel est vieillissant ? <a>Voyez comment je le remplace sans arrêter vos opérations →</a>",
       "principles": [
@@ -623,18 +339,22 @@
     },
     "proof": {
       "label": "Sur le terrain",
-      "body": "<muted>Plutôt que de remplacer la caisse d’une épicerie indépendante, j’ai construit à côté un système qui lit les listes de prix des fournisseurs, compare quelque 37 000 prix à chaque cycle et alimente la caisse existante : près de 56 000 $ par année de saisie éliminée, sans interruption des opérations. </muted><a>Lire le cas complet →</a>"
+      "body": "<muted>Plutôt que de remplacer la caisse d’une épicerie indépendante, j’ai construit à côté un système qui lit les listes de prix des fournisseurs, compare quelque 37 000 prix à chaque cycle et alimente la caisse existante : près de 56 000 $ par année de saisie éliminée, sans interruption des opérations. </muted><a>Lire le cas complet →</a>"
     },
     "price": {
       "label": "Prix",
-      "body": "<muted>Par tranches d’environ 6 000 $ ; la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Le crédit d’impôt C3I et ESSOR peuvent couvrir une partie de l’investissement. </muted><a>Prix du marché et subventions →</a>"
+      "body": "<muted>Par tranches d’environ 6 000 $ ; la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Le programme ESSOR d’Investissement Québec peut rembourser jusqu’à 50 % de certaines dépenses admissibles — à vérifier avant de signer quoi que ce soit. </muted><a>Prix du marché et subventions →</a>"
     },
     "faq": {
       "eyebrow": "Les questions qu’on me pose",
       "items": [
         {
           "q": "Combien coûte un logiciel sur mesure pour une PME ?",
-          "a": "Chez moi, par tranches d’environ 6 000 $, et la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Les plateformes intégrées plus larges peuvent dépasser 100 000 $ ; à ce niveau, exigez un découpage par étapes."
+          "a": "Chez moi, par tranches d’environ 6 000 $, et la plupart des systèmes totalisent entre 12 000 $ et 30 000 $. Les plateformes intégrées plus larges peuvent dépasser 100 000 $ ; à ce niveau, exigez un découpage par étapes."
+        },
+        {
+          "q": "Pouvez-vous reprendre notre fichier Excel, nos macros ou notre base Access ?",
+          "a": "Oui. Je commence par lire ce qui existe — feuilles, formules, macros, tables et règles cachées — pour ne rien perdre. Selon le cas, on stabilise l’outil actuel le temps de construire, ou on migre ses données dans le nouveau système en vérifiant que les totaux balancent."
         },
         {
           "q": "Combien de temps avant d’avoir quelque chose d’utilisable ?",
@@ -657,16 +377,17 @@
     "cta": {
       "eyebrow": "Diagnostic gratuit",
       "title": "Quel fichier Excel fait rouler votre entreprise ?",
-      "lead": "Décrivez-le, ou ce qui coince dans vos outils actuels. Je vous réponds sous 24 h avec un premier découpage et une idée honnête de l’effort."
+      "lead": "Décrivez-le, ou ce qui coince dans vos outils actuels. Je vous réponds sous 24 h avec un premier découpage et une idée honnête de l’effort."
     },
     "related": {
       "label": "Pour aller plus loin",
       "links": [
-        "Refonte d’un système existant",
-        "Automatisation des processus",
-        "Logiciel de gestion pour épicerie",
-        "Consultant IA pour PME"
+        "Reprise de vieux logiciels",
+        "Combien coûte un logiciel sur mesure",
+        "Remplacer une base Access",
+        "Automatisation des processus"
       ]
-    }
+    },
+    "brief": "Je remplace le fichier Excel ou la base Access qui fait rouler votre PME par un logiciel de gestion sur mesure — soumissions, heures, inventaire, bons de travail — relié à vos outils existants. On commence par la tâche la plus coûteuse : <strong>premier sprint à portée fixe dès 4 500 $, en service en 2 à 3 semaines</strong>. La suite se fait par tranches d’environ 6 000 $ ; la plupart des systèmes totalisent 12 000 $ à 30 000 $."
   }
 }

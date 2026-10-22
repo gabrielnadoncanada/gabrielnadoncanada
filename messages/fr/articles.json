@@ -1,0 +1,986 @@
+{
+  "coutLogiciel": {
+    "meta": {
+      "title": "Combien coûte un logiciel sur mesure au Québec ? (prix 2026)",
+      "description": "Prix réels publiés : sprint dès 4 500 $, logiciel de gestion de 12 000 $ à 30 000 $ par tranches. Ce qui fait varier le coût, délais, ESSOR, pièges.",
+      "ogTitle": "Combien coûte un logiciel sur mesure au Québec — les vrais prix 2026"
+    },
+    "breadcrumb": "Prix d’un logiciel sur mesure",
+    "eyebrow": "Guide · Prix 2026 · PME du Québec",
+    "title": "Combien coûte un logiciel sur mesure au Québec ?",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Chez moi, un premier sprint à portée fixe coûte <strong>à partir de 4 500 $</strong> et se livre en 2 à 3 semaines. Un logiciel de gestion complet se construit ensuite <strong>par tranches d’environ 6 000 $</strong> ; la plupart totalisent <strong>12 000 $ à 30 000 $</strong>. Le prix dépend surtout du nombre d’écrans et de règles d’affaires, des données à reprendre (Excel, Access) et des logiciels à brancher. Prévoyez aussi l’entretien après la livraison.",
+    "sections": [
+      {
+        "h": "Combien coûte un logiciel sur mesure pour une PME ?",
+        "p": [
+          "Le prix d’un logiciel sur mesure dépend moins de la technologie que de la portée : combien d’écrans, combien de règles d’affaires, combien de données à reprendre et combien de logiciels à relier. Voici mes prix, publiés tels quels pour que vous puissiez comparer les soumissions que vous recevrez."
+        ],
+        "table": {
+          "caption": "Prix d’un logiciel sur mesure selon la portée (prix de Gabriel Nadon, 2026)",
+          "head": [
+            "Portée",
+            "Exemple concret",
+            "Prix",
+            "Délai"
+          ],
+          "rows": [
+            [
+              "Une tâche éliminée",
+              "Importer les listes de prix des fournisseurs, produire les soumissions à partir d’un gabarit",
+              "dès 4 500 $",
+              "2 à 3 semaines"
+            ],
+            [
+              "Une tranche de système",
+              "Bons de travail et feuilles de temps reliés à la paie",
+              "environ 6 000 $",
+              "quelques semaines"
+            ],
+            [
+              "Logiciel de gestion complet",
+              "Soumissions, projets, heures, inventaire et facturation au même endroit",
+              "12 000 $ à 30 000 $ (la plupart)",
+              "par tranches successives"
+            ],
+            [
+              "Plateforme intégrée large",
+              "Plusieurs sites, portail client, nombreuses intégrations",
+              "peut dépasser 100 000 $",
+              "exigez un découpage par étapes"
+            ]
+          ]
+        },
+        "after": [
+          "La première ligne est la plus importante : on commence par la tâche qui coûte le plus cher aujourd’hui, à portée et prix fixes. Si elle ne rapporte pas, vous n’avez pas engagé 30 000 $ pour le découvrir. C’est ainsi qu’a commencé <cas>le cas de l’épicerie à 56 000 $ par année</cas>."
+        ]
+      },
+      {
+        "h": "Qu’obtient-on pour 5 000 $, 15 000 $ ou 30 000 $ ?",
+        "table": {
+          "caption": "Ce qu’un budget permet d’obtenir (exemples types, prix de Gabriel Nadon)",
+          "head": [
+            "Budget",
+            "Ce qu’on obtient",
+            "Exemple type"
+          ],
+          "rows": [
+            [
+              "Environ 5 000 $",
+              "Une tâche manuelle éliminée, reliée à vos outils existants",
+              "Les listes de prix des fournisseurs importées et comparées automatiquement"
+            ],
+            [
+              "Environ 15 000 $",
+              "Un petit système de gestion : deux ou trois modules qui se parlent",
+              "Soumissions + bons de travail + heures, avec export vers la comptabilité"
+            ],
+            [
+              "Environ 30 000 $",
+              "Le logiciel de gestion de l’entreprise, construit en cinq tranches environ",
+              "Soumissions, projets, inventaire, heures, facturation et tableau de bord"
+            ]
+          ]
+        },
+        "after": [
+          "Ce sont des exemples types pour situer un budget, pas des forfaits : le prix réel se fixe après le diagnostic, tranche par tranche, à portée fixe."
+        ]
+      },
+      {
+        "h": "Qu’est-ce qui fait varier le prix ?",
+        "list": [
+          "<strong>Le nombre d’écrans et de règles d’affaires.</strong> Un formulaire de saisie simple coûte peu ; un calcul de soumission avec remises, taxes et exceptions par client coûte plus.",
+          "<strong>Les données à reprendre.</strong> Des fichiers Excel propres s’importent vite. Des années d’historique avec doublons, formats différents et formules cachées demandent du nettoyage — c’est souvent là que les projets dérapent.",
+          "<strong>Les logiciels à brancher.</strong> QuickBooks, Acomba, Sage, un ERP ou une API : chaque intégration ajoute du travail, et certains logiciels n’offrent qu’un import de fichiers.",
+          "<strong>Qui l’utilise, et où.</strong> Trois personnes au bureau, ou vingt employés sur le terrain avec un téléphone et des droits d’accès différents.",
+          "<strong>Les renseignements personnels.</strong> Si le système contient des données de clients ou d’employés, la Loi 25 impose des mesures de sécurité et un registre des incidents (<cai>Commission d’accès à l’information</cai>). Ça se prévoit dès le départ."
+        ]
+      },
+      {
+        "h": "Forfait ou taux horaire : comment lire une soumission ?",
+        "p": [
+          "Un taux horaire fait porter le risque au client : si le projet dérape, la facture suit. Un forfait à portée fixe fait porter le risque au développeur, à condition que la portée soit écrite clairement. Je travaille au forfait, par tranches.",
+          "Une bonne soumission devrait contenir, au minimum :"
+        ],
+        "list": [
+          "la liste des écrans, calculs et rapports livrés — ce qui est inclus et ce qui ne l’est pas ;",
+          "les données reprises (quels fichiers, combien d’années d’historique) et les logiciels branchés ;",
+          "le calendrier par étape et ce que vous pourrez utiliser à la fin de chacune ;",
+          "la propriété : remise du code source, de la documentation et de tous les accès ;",
+          "l’après-livraison : hébergement, sauvegardes, corrections et leur coût."
+        ]
+      },
+      {
+        "h": "Combien de temps faut-il pour développer un logiciel sur mesure ?",
+        "p": [
+          "Comptez 2 à 3 semaines pour une première tâche éliminée et en service sur vos vraies données. Un logiciel de gestion complet se construit en plusieurs tranches, chacune livrée et utilisée avant la suivante.",
+          "Les projets « tout d’un coup » de six à dix-huit mois sont ceux qui dérapent le plus : le besoin change pendant qu’on construit, et personne n’utilise rien avant la fin. Un découpage par tranches vous donne quelque chose d’utile dès le premier mois."
+        ]
+      },
+      {
+        "h": "Est-ce rentable de créer un logiciel sur mesure ?",
+        "p": [
+          "Faites le calcul avant de demander une soumission : <strong>heures par semaine × nombre de personnes × taux horaire chargé × 50 semaines</strong>. Une personne qui passe 10 heures par semaine à recopier des données à 35 $ de l’heure, c’est 17 500 $ par année.",
+          "Si la tâche visée coûte moins que le projet sur 12 mois, le sur mesure n’est probablement pas le bon choix pour elle. Et si un logiciel du marché fait 80 % du travail, achetez-le : le sur mesure se justifie quand votre façon de travailler est un avantage, ou quand vous payez plusieurs abonnements qui ne se parlent pas."
+        ]
+      },
+      {
+        "h": "Logiciel sur mesure ou progiciel : quelle différence ?",
+        "p": [
+          "Un progiciel est un logiciel du marché, vendu à plusieurs entreprises, que vous configurez. Un logiciel sur mesure est construit pour votre processus, et vous en êtes propriétaire."
+        ],
+        "table": {
+          "caption": "Progiciel ou logiciel sur mesure",
+          "head": [
+            "Critère",
+            "Progiciel (logiciel du marché)",
+            "Logiciel sur mesure"
+          ],
+          "rows": [
+            [
+              "Coût de départ",
+              "Faible : abonnement ou licence",
+              "Dès 4 500 $ pour une première tâche"
+            ],
+            [
+              "Coût récurrent",
+              "Licences par utilisateur, chaque mois",
+              "Hébergement et entretien"
+            ],
+            [
+              "Adaptation",
+              "Vous adaptez votre processus au logiciel",
+              "Le logiciel s’adapte à votre processus"
+            ],
+            [
+              "Propriété",
+              "L’éditeur garde le logiciel et ses règles",
+              "Vous recevez le code, les données et les accès"
+            ],
+            [
+              "Délai",
+              "Rapide si le besoin est standard",
+              "Par tranches, première en 2 à 3 semaines"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Quelles subventions pour un projet logiciel au Québec ?",
+        "p": [
+          "Le programme <essor>ESSOR d’Investissement Québec</essor> (volet 1) est la piste principale, et il se termine le 31 mars 2027. Le volet 1B finance 50 % d’un diagnostic et d’un plan numérique, jusqu’à 20 000 $ ; le volet 1C finance 50 % de la mise en œuvre de ce plan, jusqu’à 50 000 $, pour un projet de 12 mois au plus. Les deux visent les entreprises de 250 employés ou moins avec un chiffre d’affaires d’au moins 2,5 M$, et le 1C exige un plan fait en 1B depuis moins de 24 mois.",
+          "<strong>Le piège à éviter :</strong> les guides du programme excluent les dépenses faites avant le dépôt de la demande, y compris les engagements contractuels. Ne signez rien avant d’avoir déposé. Le guide 1C ne précise pas si le développement sur mesure est admissible : faites-le confirmer par Investissement Québec. Quant au crédit d’impôt C3i de Revenu Québec, il vise des biens acquis (matériel, progiciels de gestion), pas le développement sur mesure."
+        ]
+      },
+      {
+        "h": "Quels coûts prévoir après la livraison ?",
+        "p": [
+          "Un logiciel vit : hébergement, sauvegardes, mises à jour de sécurité, petites corrections et évolutions. Chez moi, le système vous est remis documenté avec tous ses accès, et le soutien se convient ensemble — à la tranche ou selon une entente mensuelle. Demandez toujours qui maintiendra le système dans trois ans ; c’est la question qui distingue un bon prix d’un prix bas."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Investissement Québec — ESSOR, volet 1 : appui à la concrétisation de projets d’investissement",
+          "url": "https://www.investquebec.com/fr/financement/programmes-gouvernementaux/essor/appui-la-concretisation-de-projets-dinvestissement"
+        },
+        {
+          "label": "Investissement Québec — Guide de présentation ESSOR 1B (mars 2026, PDF)",
+          "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1b.pdf"
+        },
+        {
+          "label": "Investissement Québec — Guide de présentation ESSOR 1C (mars 2026, PDF)",
+          "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1c.pdf"
+        },
+        {
+          "label": "Revenu Québec — Crédit d’impôt pour investissement et innovation (C3i)",
+          "url": "https://www.revenuquebec.ca/fr/entreprises/impots/impot-des-societes/credits-dimpot-des-societes/credits-auxquels-une-societe-peut-avoir-droit/credit-dimpot-investissement-et-innovation/"
+        },
+        {
+          "label": "Commission d’accès à l’information — Incidents de confidentialité et mesures de sécurité",
+          "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises"
+        }
+      ],
+      "note": "Les prix sont ceux de Gabriel Nadon, publiés sur ce site. Les conditions des programmes ont été vérifiées sur les pages officielles le 22 octobre 2026 ; elles peuvent changer, et Investissement Québec peut suspendre les demandes sans préavis."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Un prix pour votre projet, pas une fourchette.",
+      "lead": "Décrivez le fichier ou le logiciel qui coince. Je vous réponds sous 24 h avec un premier découpage et le prix de la première tranche."
+    }
+  },
+  "remplacerAccess": {
+    "meta": {
+      "title": "Remplacer une base Access en 2026 : options, coûts et migration",
+      "description": "Access 2016 et 2019 ne sont plus supportés depuis octobre 2025, Access 2021 depuis octobre 2026. Options comparées, coûts, délais et migration sans perte.",
+      "ogTitle": "Remplacer une base Access en 2026 — options comparées et migration"
+    },
+    "breadcrumb": "Remplacer une base Access",
+    "eyebrow": "Guide · Access · PME du Québec",
+    "title": "Remplacer une base Access en 2026 : par quoi, combien, et comment migrer",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Access existe encore, mais <strong>Access 2016 et 2019 ne reçoivent plus de mises à jour de sécurité depuis le 14 octobre 2025, et Access 2021 depuis le 14 octobre 2026</strong> (Microsoft). Si votre base roule sur l’une de ces versions, trois chemins sont réalistes : passer à une version supportée et stabiliser la base, déplacer les données vers SQL Server en gardant les écrans Access, ou remplacer l’application par un logiciel web. Dans les trois cas, on commence par l’inventaire de ce que la base fait vraiment.",
+    "sections": [
+      {
+        "h": "Est-ce qu’Access existe encore ?",
+        "p": [
+          "Oui. Ce sont les versions achetées une fois qui arrivent l’une après l’autre en fin de support. Selon <msft>Microsoft</msft>, après la date de fin il n’y a plus de mises à jour de sécurité, plus de correctifs et plus d’assistance, gratuite ou payante. Le logiciel continue de démarrer — c’est justement ce qui rend le risque invisible."
+        ],
+        "table": {
+          "caption": "Fin du support des versions d’Access (Microsoft)",
+          "head": [
+            "Version",
+            "Fin du support",
+            "Ce que ça veut dire"
+          ],
+          "rows": [
+            [
+              "Access 2016",
+              "14 octobre 2025",
+              "Plus aucune mise à jour de sécurité"
+            ],
+            [
+              "Access 2019",
+              "14 octobre 2025",
+              "Plus aucune mise à jour de sécurité"
+            ],
+            [
+              "Access 2021",
+              "14 octobre 2026",
+              "Plus aucune mise à jour de sécurité, depuis quelques jours"
+            ],
+            [
+              "Access 2024",
+              "10 octobre 2029",
+              "Supporté, mais avec une date de fin connue"
+            ],
+            [
+              "Access dans Microsoft 365",
+              "Suit l’abonnement",
+              "Mis à jour tant que l’abonnement est actif"
+            ]
+          ]
+        },
+        "after": [
+          "Le 14 octobre 2025, Windows 10 a aussi atteint sa fin de support. Une base Access qui roule sur un vieux poste Windows 10 cumule donc deux risques. Les dates d’<v2021>Access 2021</v2021> et d’<v2024>Access 2024</v2024> viennent des fiches de cycle de vie de Microsoft."
+        ]
+      },
+      {
+        "h": "Quand faut-il remplacer une base Access ?",
+        "list": [
+          "<strong>Plusieurs personnes l’utilisent en même temps</strong> sur un lecteur réseau, et la base se corrompt ou ralentit.",
+          "<strong>Le fichier grossit.</strong> Un fichier Access est plafonné à 2 Go (<specs>spécifications officielles de Microsoft</specs>).",
+          "<strong>On veut y accéder à distance</strong> ou sur un téléphone, depuis un chantier ou un entrepôt.",
+          "<strong>Une seule personne comprend le code VBA</strong>, et elle est partie ou partira bientôt.",
+          "<strong>La base contient des renseignements personnels</strong> (clients, employés) sur un poste qui n’est plus mis à jour : la Loi 25 exige des mesures de sécurité raisonnables (<cai>Commission d’accès à l’information</cai>)."
+        ]
+      },
+      {
+        "h": "Qu’est-ce qui peut remplacer Access ?",
+        "p": [
+          "Il n’y a pas de remplaçant unique : le bon choix dépend du nombre d’utilisateurs, de l’accès à distance et de la part de logique d’affaires cachée dans les macros."
+        ],
+        "table": {
+          "caption": "Les options pour remplacer une base Access",
+          "head": [
+            "Option",
+            "Pour qui",
+            "Avantage",
+            "Limite"
+          ],
+          "rows": [
+            [
+              "Version d’Access supportée + stabilisation",
+              "Base qui fonctionne bien, peu d’utilisateurs",
+              "Rapide, rien à réapprendre",
+              "Mêmes limites : 2 Go, réseau local, poste Windows"
+            ],
+            [
+              "Données dans SQL Server, écrans Access conservés",
+              "Plusieurs utilisateurs, base qui grossit",
+              "Données robustes et sauvegardées, transition douce",
+              "Le code VBA reste à maintenir"
+            ],
+            [
+              "Power Apps et Dataverse (Microsoft 365)",
+              "Entreprise déjà sur Microsoft 365, besoins simples",
+              "Mobile, peu de code ; Microsoft documente la migration des tables",
+              "Licence Power Apps incluant Dataverse ; seuls les types de données pris en charge migrent"
+            ],
+            [
+              "Logiciel du marché",
+              "Processus standard (comptabilité, CRM, inventaire)",
+              "Prêt rapidement",
+              "Vous adaptez votre façon de travailler"
+            ],
+            [
+              "Application web sur mesure",
+              "Processus particulier, accès à distance, plusieurs sites",
+              "Taillée pour vous, vous êtes propriétaire",
+              "Projet plus long, à faire par tranches"
+            ]
+          ]
+        },
+        "after": [
+          "Pour la plupart des PME, la deuxième option est une bonne première étape : on sécurise les données dans SQL Server sans changer les habitudes, puis on remplace les écrans par une application web, morceau par morceau, si l’entreprise en a besoin."
+        ]
+      },
+      {
+        "h": "Comment migrer une base Access sans perdre de données ?",
+        "list": [
+          "<strong>Inventaire.</strong> Lister les tables, requêtes, formulaires, états, macros et modules VBA, ainsi que les tables liées à d’autres fichiers. C’est là que se cachent les règles d’affaires.",
+          "<strong>Sauvegarde vérifiée.</strong> Copier le fichier et tester qu’on peut le restaurer, avant de toucher à quoi que ce soit.",
+          "<strong>Nettoyage.</strong> Corriger doublons, types de données incohérents et champs texte qui contiennent des dates.",
+          "<strong>Migration des données.</strong> Microsoft fournit un outil gratuit, l’<ssma>Assistant Migration SQL Server pour Access (SSMA)</ssma>, qui déplace les tables vers SQL Server ou Azure SQL et permet de relier les formulaires Access existants aux nouvelles tables.",
+          "<strong>Contrôle.</strong> Comparer les totaux (nombre de lignes, sommes, soldes) entre l’ancienne et la nouvelle base. Ils doivent balancer.",
+          "<strong>Bascule.</strong> Faire rouler les deux en parallèle quelques jours, puis basculer un soir ou une fin de semaine."
+        ],
+        "after": [
+          "Les pièges qui reviennent : le code VBA et les macros, qui ne migrent pas d’eux-mêmes ; les requêtes écrites dans le dialecte d’Access ; les champs NuméroAuto, Oui/Non, multivalués et pièces jointes, qui changent de comportement ; et les états imprimés, qu’il faut refaire. Si vous visez Power Apps, Microsoft précise que <dataverse>seuls les types de données pris en charge sont exportés vers Dataverse</dataverse>."
+        ]
+      },
+      {
+        "h": "Combien de temps prend le remplacement d’une base Access ?",
+        "p": [
+          "Sécuriser les données dans SQL Server en gardant les écrans Access se fait habituellement en un premier sprint de 2 à 3 semaines. Remplacer ensuite les écrans par une application web se fait par tranches, un groupe de formulaires à la fois : vos employés continuent de travailler dans l’ancienne base pendant que la nouvelle grandit.",
+          "Ce qui allonge un projet, ce n’est presque jamais le nombre de tables : c’est la logique cachée dans le VBA, les états à refaire à l’identique et les données à nettoyer."
+        ]
+      },
+      {
+        "h": "Combien coûte le remplacement d’une base Access ?",
+        "p": [
+          "Le coût dépend surtout du nombre de formulaires, d’états et de lignes de code VBA, bien plus que du nombre de tables. Chez moi, un premier sprint à portée fixe commence à <strong>4 500 $</strong> pour 2 à 3 semaines — souvent assez pour sécuriser les données dans SQL Server. Le remplacement complet des écrans se fait ensuite par tranches d’environ 6 000 $. Le détail est dans <cout>le guide des prix d’un logiciel sur mesure</cout>."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Microsoft Learn — Fin du support en 2025 (Access, Excel et Office 2016 et 2019, Windows 10)",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/end-of-support/end-of-support-2025"
+        },
+        {
+          "label": "Microsoft Learn — Access 2021, cycle de vie",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/products/access-2021"
+        },
+        {
+          "label": "Microsoft Learn — Access 2024, cycle de vie",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/products/access-2024"
+        },
+        {
+          "label": "Microsoft — Migrer des données Access vers Dataverse",
+          "url": "https://support.microsoft.com/fr-fr/access/get-started-migrate-access-data-to-dataverse"
+        },
+        {
+          "label": "Microsoft — Spécifications d’Access (limites de taille)",
+          "url": "https://support.microsoft.com/access/access-specifications"
+        },
+        {
+          "label": "Microsoft Learn — Assistant Migration SQL Server pour Access (SSMA)",
+          "url": "https://learn.microsoft.com/fr-fr/sql/ssma/access/sql-server-migration-assistant-for-access-accesstosql"
+        },
+        {
+          "label": "Commission d’accès à l’information — Incidents de confidentialité et mesures de sécurité",
+          "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises"
+        }
+      ],
+      "note": "Faits vérifiés sur les pages officielles de Microsoft et de la CAI le 22 octobre 2026 (les dates de cycle de vie sont affichées par Microsoft à l’heure du Pacifique). Les prix sont ceux de Gabriel Nadon."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Votre base Access, regardée par quelqu’un qui sait la lire.",
+      "lead": "Dites-moi ce que fait votre base et combien de personnes l’utilisent. Je vous réponds sous 24 h avec l’option la plus sûre et son prix."
+    }
+  },
+  "repriseLogiciel": {
+    "meta": {
+      "title": "Reprendre un vieux logiciel WinDev ou Access : par où commencer",
+      "description": "Le développeur est parti, le logiciel fait rouler l’entreprise ? Les vérifications avant d’y toucher, puis maintenir, moderniser ou remplacer, avec prix.",
+      "ogTitle": "Reprendre un logiciel maison abandonné — la méthode, étape par étape"
+    },
+    "breadcrumb": "Reprendre un vieux logiciel",
+    "eyebrow": "Guide · Vieux logiciels · PME du Québec",
+    "title": "Reprendre un logiciel WinDev, Access ou maison abandonné : par où commencer",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Avant de réécrire quoi que ce soit, on sécurise : <strong>récupérer le code source et les accès, faire une sauvegarde complète et vérifiée</strong>, puis documenter ce que le logiciel fait vraiment. Ensuite seulement on choisit : le maintenir tel quel, le stabiliser et le moderniser par morceaux, ou le remplacer par étapes. Une réécriture complète d’un coup est rarement la bonne première décision.",
+    "sections": [
+      {
+        "h": "Les 7 vérifications avant de toucher à quoi que ce soit",
+        "list": [
+          "<strong>Le code source</strong>, pas seulement le programme installé. Sans lui, on ne peut que contourner, jamais corriger.",
+          "<strong>Les outils et licences de développement.</strong> WinDev, par exemple, est un environnement commercial de PC SOFT : modifier le code demande une licence de l’éditeur.",
+          "<strong>Les accès</strong> : serveur, base de données, hébergement, nom de domaine, comptes administrateur. Ils sont souvent au nom de l’ancien développeur.",
+          "<strong>Une sauvegarde restaurée avec succès.</strong> Une sauvegarde jamais testée n’est pas une sauvegarde.",
+          "<strong>Les dépendances</strong> : version de Windows, pilotes d’imprimante ou de lecteur de codes-barres, bibliothèques, base de données (HFSQL pour WinDev, fichier .accdb pour Access).",
+          "<strong>Qui utilise quoi</strong>, et les tâches qui ne se font que dans ce logiciel.",
+          "<strong>Ce qui casse le plus souvent</strong>, et ce que l’équipe fait déjà pour le contourner."
+        ]
+      },
+      {
+        "h": "Le développeur est parti et on n’a pas le code source : que faire ?",
+        "p": [
+          "C’est la situation la plus fréquente, et elle n’est presque jamais désespérée. Cherchez d’abord le code : contrat ou facture de l’ancien fournisseur, poste de l’ancien développeur, serveur, sauvegardes, clé USB oubliée dans un tiroir. Pour un projet WinDev, il faut les fichiers du projet, pas seulement le programme installé (.exe).",
+          "Si le code reste introuvable, les données, elles, se récupèrent presque toujours : une base HFSQL ou un fichier Access se lit et s’exporte sans le programme. On peut alors reconstruire l’application autour des données existantes, par étapes, en observant ce que fait l’ancien logiciel écran par écran.",
+          "<strong>Pour que ça ne se reproduise pas :</strong> exigez par écrit, de tout fournisseur, la remise du code source, de la documentation et de tous les accès, au nom de votre entreprise."
+        ]
+      },
+      {
+        "h": "Comment trouver un développeur pour reprendre un logiciel ?",
+        "p": [
+          "Cherchez quelqu’un qui propose d’abord de lire le logiciel, pas de le refaire. Trois questions départagent vite les candidats : a-t-il déjà repris un logiciel écrit par quelqu’un d’autre dans ce langage ? Commence-t-il par un inventaire et une sauvegarde ? Que vous remet-il à la fin — code, documentation, accès ?",
+          "Méfiez-vous de la réponse « il faut tout refaire » avant même d’avoir vu le code. C’est parfois vrai, mais ça se démontre après l’inventaire, pas avant."
+        ]
+      },
+      {
+        "h": "Quel est l’avenir de WinDev, Access et des vieux logiciels Windows ?",
+        "p": [
+          "WinDev est toujours commercialisé par PC SOFT, et Access est toujours offert par Microsoft. La vraie question n’est pas l’avenir de l’outil, mais celui de votre logiciel : qui peut le corriger quand il plante, et sur quel poste il roule. Depuis le 14 octobre 2025, Windows 10, Access 2016 et Access 2019 ne reçoivent plus de mises à jour de sécurité (<msft>Microsoft</msft>). Un logiciel maison qui dépend de l’un d’eux devient un risque, même s’il fonctionne encore."
+        ]
+      },
+      {
+        "h": "Maintenir, moderniser ou remplacer ?",
+        "table": {
+          "caption": "Les trois chemins après une reprise",
+          "head": [
+            "Chemin",
+            "Quand le choisir",
+            "Risque",
+            "Ordre de prix"
+          ],
+          "rows": [
+            [
+              "Maintenir tel quel",
+              "Le logiciel fait bien son travail, peu de changements prévus",
+              "Faible à court terme, la dépendance demeure",
+              "Entente de soutien"
+            ],
+            [
+              "Stabiliser, puis moderniser par morceaux",
+              "Le logiciel est critique mais fragile ; on veut garder les habitudes",
+              "Faible : on change une partie à la fois",
+              "Sprint dès 4 500 $, puis tranches d’environ 6 000 $"
+            ],
+            [
+              "Remplacer par étapes",
+              "Le logiciel bloque la croissance ou ne peut plus être modifié",
+              "Moyen : migration des données à contrôler",
+              "La plupart des systèmes : 12 000 $ à 30 000 $"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Quel logiciel pour remplacer WinDev ou Access ?",
+        "p": [
+          "Il n’y a pas de bon langage dans l’absolu : choisissez une technologie répandue, que d’autres développeurs pourront reprendre après vous. Pour une PME, c’est souvent une application web (PHP/Laravel, .NET ou Python) avec une base SQL standard, accessible depuis n’importe quel poste ou téléphone. Si votre besoin est standard, un logiciel du marché peut suffire.",
+          "Les données de l’ancien système (HFSQL, Access) se migrent vers la nouvelle base ; on vérifie que les totaux balancent avant de basculer. Pour Access, la méthode est détaillée dans <access>le guide pour remplacer une base Access</access>."
+        ]
+      },
+      {
+        "h": "Combien coûte la reprise d’un logiciel ?",
+        "p": [
+          "Le diagnostic de 20 minutes est gratuit. La reprise commence par un sprint à portée et prix fixes, dès <strong>4 500 $</strong> : inventaire, sauvegarde vérifiée, correction des bogues bloquants et documentation. La suite se fait par tranches d’environ 6 000 $, au rythme de vos opérations. Le détail des prix est dans <cout>le guide des prix d’un logiciel sur mesure</cout>, et le service est décrit sur la page <refonte>reprise de vieux logiciels</refonte>."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Microsoft Learn — Fin du support en 2025 (Windows 10, Access 2016 et 2019)",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/end-of-support/end-of-support-2025"
+        },
+        {
+          "label": "PC SOFT — WinDev (site officiel de l’éditeur)",
+          "url": "https://windev.com/"
+        },
+        {
+          "label": "Microsoft Learn — Assistant Migration SQL Server pour Access (SSMA)",
+          "url": "https://learn.microsoft.com/fr-fr/sql/ssma/access/sql-server-migration-assistant-for-access-accesstosql"
+        }
+      ],
+      "note": "Faits vérifiés sur les pages officielles le 22 octobre 2026. Les prix sont ceux de Gabriel Nadon."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Le développeur est parti ? On commence par lire ce qu’il a laissé.",
+      "lead": "Dites-moi dans quoi le logiciel est écrit et ce qu’il fait. Je vous réponds sous 24 h avec les premières vérifications à faire et le prix du premier sprint."
+    }
+  },
+  "remplacerExcel": {
+    "meta": {
+      "title": "Remplacer Excel par un logiciel de gestion : options et prix",
+      "description": "Quand Excel ne suffit plus, quoi choisir (outil en ligne, logiciel du marché ou sur mesure), combien ça coûte et comment migrer sans perdre vos formules.",
+      "ogTitle": "Remplacer Excel par un logiciel de gestion — options comparées et vrais prix"
+    },
+    "breadcrumb": "Remplacer Excel par un logiciel",
+    "eyebrow": "Guide · Excel · PME du Québec",
+    "title": "Remplacer Excel par un logiciel de gestion : quand, par quoi, et combien",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Excel devient un problème quand plusieurs personnes modifient le même fichier, que des données se retapent ailleurs, ou qu’une seule personne comprend les formules. Trois familles de remplaçants : <strong>un outil en ligne</strong> (Airtable, Smartsheet, Power Apps), <strong>un logiciel du marché</strong> (comptabilité, ERP) ou <strong>un logiciel sur mesure</strong>. Le sur mesure se justifie quand votre processus est particulier ; chez moi, on commence par une seule tâche, <strong>dès 4 500 $ en 2 à 3 semaines</strong>.",
+    "sections": [
+      {
+        "h": "Quels sont les signes qu’Excel ne suffit plus ?",
+        "list": [
+          "<strong>Plusieurs versions du même fichier circulent</strong> et personne ne sait laquelle est la bonne.",
+          "<strong>Les mêmes données se retapent</strong> dans Excel, puis dans la comptabilité, puis dans un courriel.",
+          "<strong>Une seule personne comprend les formules ou les macros</strong>, et tout s’arrête quand elle est absente.",
+          "<strong>Les équipes terrain ne peuvent pas l’utiliser</strong> correctement sur un téléphone, depuis un chantier ou un entrepôt.",
+          "<strong>Une erreur de formule a déjà coûté cher</strong> : une soumission sous-évaluée, un inventaire faux, une paie à corriger.",
+          "<strong>Le fichier contient des renseignements personnels</strong> (clients, employés) accessibles à tous : la Loi 25 exige des mesures de sécurité raisonnables (<cai>Commission d’accès à l’information</cai>).",
+          "<strong>Votre version d’Excel n’est plus supportée</strong> : Excel 2016 et 2019 ne reçoivent plus de mises à jour de sécurité depuis le 14 octobre 2025 (<msft>Microsoft</msft>)."
+        ]
+      },
+      {
+        "h": "Par quoi remplacer Excel ?",
+        "p": [
+          "Il n’y a pas un seul bon remplaçant : tout dépend de la part de votre processus qui est standard, et de celle qui vous est propre."
+        ],
+        "table": {
+          "caption": "Les trois familles de remplaçants d’Excel",
+          "head": [
+            "Option",
+            "Exemples",
+            "Pour qui",
+            "Limite"
+          ],
+          "rows": [
+            [
+              "Outil en ligne (tableur ou base sans code)",
+              "Airtable, Smartsheet, Power Apps",
+              "Équipe qui veut partager des listes et suivis simples",
+              "Abonnement par utilisateur ; la logique complexe devient vite fragile"
+            ],
+            [
+              "Logiciel du marché",
+              "Logiciel comptable, ERP, CRM",
+              "Processus standard : facturation, comptabilité, ventes",
+              "Vous adaptez votre façon de travailler au logiciel"
+            ],
+            [
+              "Logiciel sur mesure",
+              "Soumissions, bons de travail, heures, inventaire selon vos règles",
+              "Processus particulier, plusieurs outils qui ne se parlent pas",
+              "Projet à découper par tranches ; il faut un développeur qui reste"
+            ]
+          ]
+        },
+        "after": [
+          "Une approche hybride est souvent la meilleure : on garde le logiciel comptable, et le sur mesure couvre seulement ce qu’il ne fait pas, en s’y branchant."
+        ]
+      },
+      {
+        "h": "Quand le sur mesure vaut-il la peine ?",
+        "list": [
+          "Votre façon de calculer une soumission, de planifier ou de suivre la production est un avantage, et aucun logiciel du marché ne la reproduit.",
+          "Vous payez trois ou quatre abonnements qui couvrent chacun une partie du besoin, et quelqu’un recopie de l’un à l’autre.",
+          "La tâche à remplacer coûte plus par année que le projet : heures par semaine × personnes × taux horaire × 50 semaines.",
+          "Si un logiciel du marché fait 80 % du travail, achetez-le — je vous le dirai pendant le diagnostic."
+        ]
+      },
+      {
+        "h": "Comment migrer un fichier Excel sans perdre ses formules ?",
+        "list": [
+          "<strong>Inventaire.</strong> Lister les feuilles, les formules, les macros et les liens vers d’autres fichiers. Les formules sont vos règles d’affaires : on les écrit noir sur blanc.",
+          "<strong>Nettoyage.</strong> Doublons, cellules fusionnées, dates saisies en texte, codes produits incohérents.",
+          "<strong>Reconstruction des règles.</strong> Chaque calcul devient une règle testée dans le logiciel, avec des exemples réels.",
+          "<strong>Import.</strong> Les données et l’historique utiles sont importés ; le reste est archivé.",
+          "<strong>Contrôle.</strong> Les totaux du logiciel et ceux d’Excel doivent balancer sur une même période.",
+          "<strong>Période en parallèle.</strong> Quelques jours avec les deux, puis on ferme le fichier."
+        ]
+      },
+      {
+        "h": "Combien coûte remplacer Excel, et en combien de temps ?",
+        "p": [
+          "Chez moi, la première tâche remplacée coûte <strong>dès 4 500 $</strong> et se livre en 2 à 3 semaines, à portée fixe. Un logiciel de gestion complet se construit ensuite par tranches d’environ 6 000 $ ; la plupart totalisent 12 000 $ à 30 000 $. Le détail est dans <cout>le guide des prix d’un logiciel sur mesure</cout>.",
+          "Exemple réel : une épicerie indépendante du Québec recevait les listes de prix de ses fournisseurs en Excel, CSV et PDF, et les retapait dans sa caisse — près de 56 000 $ par année en temps. Le système les importe et les compare maintenant automatiquement, branché sur la caisse existante. <cas>Lire le cas complet</cas>."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Microsoft Learn — Fin du support en 2025 (Excel 2016 et 2019, Office 2016 et 2019)",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/end-of-support/end-of-support-2025"
+        },
+        {
+          "label": "Commission d’accès à l’information — Incidents de confidentialité et mesures de sécurité",
+          "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises"
+        }
+      ],
+      "note": "Faits vérifiés sur les pages officielles le 22 octobre 2026. Les prix sont ceux de Gabriel Nadon ; le cas est documenté sur ce site."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Quel fichier Excel fait rouler votre entreprise ?",
+      "lead": "Décrivez-le en quelques mots. Je vous réponds sous 24 h avec ce qu’on remplacerait en premier et le prix de cette première étape."
+    }
+  },
+  "maintenanceLogiciel": {
+    "meta": {
+      "title": "Maintenance d’un logiciel sur mesure : coût et quoi exiger",
+      "description": "Combien coûte l’entretien d’un logiciel sur mesure par année, ce qu’il couvre, ce qu’un contrat doit prévoir et quoi faire si le développeur disparaît.",
+      "ogTitle": "Maintenance d’un logiciel sur mesure — le vrai coût annuel et les pièges"
+    },
+    "breadcrumb": "Maintenance d’un logiciel sur mesure",
+    "eyebrow": "Guide · Maintenance · PME du Québec",
+    "title": "Maintenance d’un logiciel sur mesure : combien par année, et quoi exiger",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Prévoyez un budget d’entretien annuel : <wit>Witify, une firme québécoise</wit>, recommande <strong>10 à 15 % du coût initial par année</strong>, soit 2 000 $ à 3 000 $ par année pour un système de 20 000 $. Ce budget couvre l’hébergement, les sauvegardes, les mises à jour de sécurité, les corrections et les petites évolutions. Avant de signer, exigez le code source, la documentation et les accès au nom de votre entreprise : c’est ce qui vous protège si le fournisseur disparaît.",
+    "sections": [
+      {
+        "h": "Que couvre la maintenance d’un logiciel sur mesure ?",
+        "list": [
+          "<strong>Les corrections</strong> : un calcul qui se trompe, un écran qui plante, un rapport qui ne sort plus.",
+          "<strong>La sécurité</strong> : mises à jour des bibliothèques, du serveur et des certificats. Un logiciel qu’on ne met jamais à jour devient vulnérable, même s’il fonctionne.",
+          "<strong>Les sauvegardes</strong> : automatiques, et surtout testées par une restauration réelle.",
+          "<strong>L’hébergement</strong> : serveur ou infonuagique, nom de domaine, courriels envoyés par le système.",
+          "<strong>La compatibilité</strong> : nouvelles versions de Windows, des navigateurs, du logiciel comptable relié. Exemple récent : Windows 10 n’est plus supporté depuis le 14 octobre 2025 (<msft>Microsoft</msft>).",
+          "<strong>Les petites évolutions</strong> : un champ de plus, un nouveau rapport, une règle qui change."
+        ]
+      },
+      {
+        "h": "Combien coûte la maintenance par année ?",
+        "p": [
+          "La règle publiée par <wit>Witify</wit>, une firme québécoise, est de <strong>10 à 15 % du coût initial par année</strong>. Pour un système de 20 000 $, comptez donc 2 000 $ à 3 000 $ par année, hébergement en plus selon l’usage.",
+          "Chez moi, le soutien se convient ensemble après la livraison — à la tranche, ou selon une entente mensuelle — et le système vous est remis documenté, avec tous ses accès. Vous n’êtes jamais obligé de rester."
+        ]
+      },
+      {
+        "h": "Que doit préciser un contrat de maintenance ?",
+        "list": [
+          "le délai de réponse pour une panne bloquante, et pour une demande ordinaire ;",
+          "ce qui est inclus (corrections, mises à jour de sécurité, sauvegardes) et ce qui est facturé à part (évolutions) ;",
+          "la fréquence des sauvegardes et le test de restauration ;",
+          "le prix des évolutions : forfait par demande ou banque d’heures ;",
+          "la réversibilité : remise du code, de la documentation et des accès si vous changez de fournisseur."
+        ]
+      },
+      {
+        "h": "Que se passe-t-il si le développeur disparaît ?",
+        "p": [
+          "Sans le code source et les accès, chaque correction devient un contournement. Avec eux, un autre développeur peut reprendre le logiciel. Attention : au Canada, l’auteur d’un logiciel en est le premier titulaire du droit d’auteur, et une cession n’est valable que si elle est écrite et signée (<lda>Loi sur le droit d’auteur, art. 13</lda>). Un fournisseur externe ne vous cède donc pas le code par défaut : prévoyez-le au contrat.",
+          "Si c’est déjà arrivé, la méthode est dans <reprise>le guide pour reprendre un vieux logiciel</reprise>."
+        ]
+      },
+      {
+        "h": "La maintenance fait partie de vos obligations sous la Loi 25",
+        "p": [
+          "Si votre logiciel contient des renseignements personnels (clients, employés), vous devez prendre des mesures de sécurité raisonnables et tenir un registre des incidents de confidentialité (<cai>Commission d’accès à l’information</cai>). Un logiciel jamais mis à jour, sans sauvegarde testée, est difficile à défendre après un incident."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Witify — Combien coûte le développement d’un logiciel sur mesure au Québec ? (règle de 10 à 15 % par année)",
+          "url": "https://witify.io/blogue/combien-coute-le-developpement-dun-logiciel-sur-mesure-au-quebec"
+        },
+        {
+          "label": "Loi sur le droit d’auteur (L.R.C. 1985, ch. C-42), article 13 — Possession du droit d’auteur",
+          "url": "https://laws-lois.justice.gc.ca/fra/lois/C-42/page-3.html"
+        },
+        {
+          "label": "Commission d’accès à l’information — Incidents de confidentialité et mesures de sécurité",
+          "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises"
+        },
+        {
+          "label": "Microsoft Learn — Fin du support en 2025 (Windows 10)",
+          "url": "https://learn.microsoft.com/fr-fr/lifecycle/end-of-support/end-of-support-2025"
+        }
+      ],
+      "note": "Sources consultées le 22 octobre 2026. Ce guide ne constitue pas un avis juridique."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Votre logiciel n’a plus personne pour l’entretenir ?",
+      "lead": "Dites-moi dans quoi il est écrit et ce qui coince. Je vous réponds sous 24 h avec les premières vérifications à faire."
+    }
+  },
+  "choisirDeveloppeur": {
+    "meta": {
+      "title": "Indépendant, agence ou offshore : choisir son développeur",
+      "description": "Taux publiés au Québec, avantages et risques de chaque option, questions à poser et clauses à exiger (propriété du code, prix par étape) avant de signer.",
+      "ogTitle": "Choisir son développeur logiciel au Québec — taux, risques et contrat"
+    },
+    "breadcrumb": "Choisir son développeur",
+    "eyebrow": "Guide · Choisir un fournisseur · PME du Québec",
+    "title": "Indépendant, agence ou équipe à l’étranger : comment choisir son développeur",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "Le taux horaire seul trompe : comparez la portée livrée, qui maintiendra le logiciel et ce qui vous appartient à la fin. Les taux publiés au Québec vont d’environ <strong>25 à 80 $/h</strong> pour une équipe à l’étranger, <strong>80 à 160 $/h</strong> pour un développeur senior au Canada et <strong>125 à 250 $/h</strong> pour une agence locale (<wit>Witify, 2026</wit>). Dans tous les cas, exigez un prix par étape, le code source et les accès à votre nom.",
+    "sections": [
+      {
+        "h": "Combien coûte un développeur au Québec ?",
+        "table": {
+          "caption": "Taux publiés par Witify (2026), en dollars canadiens",
+          "head": [
+            "Modèle",
+            "Taux approximatif",
+            "Pertinent quand…"
+          ],
+          "rows": [
+            [
+              "Équipe à l’étranger",
+              "25 $ – 80 $/h",
+              "Le besoin est très bien spécifié et vous avez une supervision technique interne"
+            ],
+            [
+              "Développeur senior (Canada)",
+              "80 $ – 160 $/h",
+              "Vous avez déjà une vision claire de ce qu’il faut construire"
+            ],
+            [
+              "Agence locale (Québec)",
+              "125 $ – 250 $/h",
+              "Processus complexes, besoin d’accompagnement de bout en bout"
+            ]
+          ]
+        },
+        "after": [
+          "Je ne facture pas à l’heure : chaque étape a une portée et un prix fixes — dès 4 500 $ pour une première tâche, puis par tranches d’environ 6 000 $. Vous savez ce que vous payez avant de commencer."
+        ]
+      },
+      {
+        "h": "Indépendant, agence ou étranger : avantages et risques",
+        "table": {
+          "caption": "Comparer les trois options",
+          "head": [
+            "Option",
+            "Avantage",
+            "Risque principal"
+          ],
+          "rows": [
+            [
+              "Développeur indépendant",
+              "Vous parlez à celui qui code ; peu de frais de structure",
+              "Dépendance à une seule personne"
+            ],
+            [
+              "Agence locale",
+              "Équipe complète : gestion de projet, design, développement",
+              "Prix plus élevé ; vous parlez rarement à celui qui code"
+            ],
+            [
+              "Équipe à l’étranger",
+              "Taux bas",
+              "Fuseau horaire, langue, suivi exigeant ; reprise difficile si ça tourne mal"
+            ]
+          ]
+        },
+        "after": [
+          "Le risque d’un indépendant, c’est la dépendance. Ma réponse : le code et les accès à votre nom, une documentation livrée à chaque tranche, et des technologies répandues que d’autres développeurs peuvent reprendre."
+        ]
+      },
+      {
+        "h": "Les questions à poser avant de signer",
+        "list": [
+          "Avez-vous déjà repris un logiciel écrit par quelqu’un d’autre ? Pouvez-vous m’en montrer un en production ?",
+          "Qui va écrire le code, et qui me répondra quand quelque chose plante ?",
+          "Le prix est-il fixe par étape, ou à l’heure ? Qu’est-ce qui n’est pas inclus ?",
+          "Que pourrai-je utiliser à la fin de chaque étape ?",
+          "Le code, l’hébergement et les comptes seront-ils à mon nom ?",
+          "Que se passe-t-il si vous tombez malade ou arrêtez vos activités ?"
+        ]
+      },
+      {
+        "h": "Ce que le contrat doit prévoir",
+        "list": [
+          "<strong>La portée</strong> : écrans, calculs, rapports et données reprises, par étape.",
+          "<strong>Le paiement par étape</strong>, lié à des livrables utilisables.",
+          "<strong>La cession du droit d’auteur sur le code</strong>, par écrit et signée : sans elle, le développeur externe reste titulaire (<lda>Loi sur le droit d’auteur, art. 13</lda>).",
+          "<strong>Les accès</strong> : hébergement, base de données, nom de domaine et comptes au nom de votre entreprise.",
+          "<strong>Les renseignements personnels</strong> : qui y a accès et comment ils sont protégés (<cai>Loi 25</cai>).",
+          "<strong>L’après-livraison</strong> : maintenance, délais de réponse, prix des évolutions — voir <maintenance>le guide de la maintenance</maintenance>."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Witify — Combien coûte le développement d’un logiciel sur mesure au Québec ? (taux par modèle)",
+          "url": "https://witify.io/blogue/combien-coute-le-developpement-dun-logiciel-sur-mesure-au-quebec"
+        },
+        {
+          "label": "Loi sur le droit d’auteur (L.R.C. 1985, ch. C-42), article 13 — Possession du droit d’auteur",
+          "url": "https://laws-lois.justice.gc.ca/fra/lois/C-42/page-3.html"
+        },
+        {
+          "label": "Commission d’accès à l’information — Incidents de confidentialité et mesures de sécurité",
+          "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/incidents-confidentialite-mesures-securite-entreprises"
+        }
+      ],
+      "note": "Sources consultées le 22 octobre 2026. Ce guide ne constitue pas un avis juridique ; faites relire un contrat important par un avocat."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Parlez à celui qui va écrire le code.",
+      "lead": "Décrivez votre projet. Je vous réponds sous 24 h avec un découpage par étapes et le prix de la première."
+    }
+  },
+  "subventionsLogiciel": {
+    "meta": {
+      "title": "Subventions pour un projet logiciel au Québec (2026)",
+      "description": "ESSOR volets 1A, 1B et 1C, crédit C3i, PCAN : ce qui finance vraiment un projet logiciel de PME au Québec, les plafonds, et le piège qui annule l’aide.",
+      "ogTitle": "Subventions pour un projet logiciel au Québec — ESSOR, C3i et le piège à éviter"
+    },
+    "breadcrumb": "Subventions pour un projet logiciel",
+    "eyebrow": "Guide · Subventions 2026 · PME du Québec",
+    "title": "Subventions pour un projet logiciel au Québec : ce qui est vraiment admissible",
+    "byline": "Par <author>Gabriel Nadon</author>, développeur de logiciels de gestion pour PME",
+    "updated": "Mis à jour le",
+    "summaryLabel": "En bref",
+    "summary": "La principale aide est <iq>ESSOR, d’Investissement Québec</iq> (volet 1) : <strong>50 % d’un diagnostic et plan numérique jusqu’à 20 000 $</strong> (1B), puis <strong>50 % de la mise en œuvre jusqu’à 50 000 $</strong> (1C), pour les entreprises de 250 employés ou moins avec au moins 2,5 M$ de chiffre d’affaires, jusqu’au 31 mars 2027. Règle d’or : <strong>ne rien signer avant d’avoir déposé la demande</strong>. Le crédit C3i vise des biens achetés, pas le développement sur mesure.",
+    "sections": [
+      {
+        "h": "Quelles aides financent un projet logiciel ?",
+        "table": {
+          "caption": "Aides pour un projet logiciel de PME au Québec (vérifié le 22 octobre 2026)",
+          "head": [
+            "Programme",
+            "Ce qui est financé",
+            "Aide",
+            "À savoir"
+          ],
+          "rows": [
+            [
+              "ESSOR 1A",
+              "Études de faisabilité",
+              "50 %, jusqu’à 50 000 $ par projet",
+              "Investissement Québec"
+            ],
+            [
+              "ESSOR 1B",
+              "Diagnostic et plan numérique (sélection de systèmes, IA comprise)",
+              "50 %, jusqu’à 20 000 $ pour la durée du programme",
+              "250 employés ou moins, chiffre d’affaires de 2,5 M$ ou plus"
+            ],
+            [
+              "ESSOR 1C",
+              "Mise en œuvre du plan numérique",
+              "50 %, jusqu’à 50 000 $",
+              "Plan 1B de moins de 24 mois ; projet de 12 mois au plus"
+            ],
+            [
+              "Crédit C3i (Revenu Québec)",
+              "Biens acquis : matériel, progiciels de gestion",
+              "Taux non publiés sur la page officielle",
+              "Pas le développement sur mesure ; à valider avec votre comptable"
+            ],
+            [
+              "PCAN (fédéral)",
+              "Plan numérique",
+              "—",
+              "Fermé aux nouvelles demandes depuis février 2024"
+            ]
+          ]
+        },
+        "after": [
+          "Le programme ESSOR se termine le 31 mars 2027, et Investissement Québec peut suspendre les demandes sans préavis : vérifiez le statut sur la page officielle avant de bâtir votre budget."
+        ]
+      },
+      {
+        "h": "Le piège qui annule l’aide : dépenser avant de déposer",
+        "p": [
+          "Les guides ESSOR 1B et 1C excluent les dépenses faites avant le dépôt de la demande, <strong>y compris les engagements contractuels</strong>. Signer une soumission ou verser un dépôt avant d’avoir déposé peut rendre ces dépenses inadmissibles. Sont aussi exclus : les dépenses internes, les immobilisations et les taxes.",
+          "L’ordre à suivre : obtenir les soumissions, déposer la demande, attendre la réponse, puis signer."
+        ]
+      },
+      {
+        "h": "Le développement sur mesure est-il admissible ?",
+        "p": [
+          "Le guide 1B couvre le diagnostic, le plan numérique et la sélection de systèmes. Le guide 1C finance la mise en œuvre du plan, mais ne précise pas explicitement si le développement d’un logiciel sur mesure est admissible. Faites-le confirmer par Investissement Québec, par écrit, avant de vous engager.",
+          "Pour un petit projet (moins de 30 000 $), le plus réaliste est souvent de commencer par un diagnostic 1B, qui documente le besoin et prépare la suite."
+        ]
+      },
+      {
+        "h": "Comment préparer une demande pour un projet logiciel",
+        "list": [
+          "Décrire le problème en chiffres : heures perdues par semaine, erreurs, coût annuel.",
+          "Obtenir une soumission par étapes, avec portée, échéancier et livrables.",
+          "Déposer la demande 1B (diagnostic) avant tout engagement ; la 1C ensuite, dans les 24 mois.",
+          "Garder les factures et preuves de paiement, et respecter le projet de 12 mois au plus pour la 1C."
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "",
+      "items": []
+    },
+    "sources": {
+      "label": "Sources",
+      "items": [
+        {
+          "label": "Investissement Québec — ESSOR, volet 1 : appui à la concrétisation de projets d’investissement",
+          "url": "https://www.investquebec.com/fr/financement/programmes-gouvernementaux/essor/appui-la-concretisation-de-projets-dinvestissement"
+        },
+        {
+          "label": "Investissement Québec — Guide de présentation ESSOR 1B (mars 2026, PDF)",
+          "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1b.pdf"
+        },
+        {
+          "label": "Investissement Québec — Guide de présentation ESSOR 1C (mars 2026, PDF)",
+          "url": "https://www.investquebec.com/sites/default/files/2026-04/essor-guidedepresentation1c.pdf"
+        },
+        {
+          "label": "Revenu Québec — Crédit d’impôt pour investissement et innovation (C3i)",
+          "url": "https://www.revenuquebec.ca/fr/entreprises/impots/impot-des-societes/credits-dimpot-des-societes/credits-auxquels-une-societe-peut-avoir-droit/credit-dimpot-investissement-et-innovation/"
+        }
+      ],
+      "note": "Conditions vérifiées sur les pages officielles le 22 octobre 2026. Elles peuvent changer ; ce guide ne remplace pas la confirmation d’Investissement Québec ni l’avis de votre comptable."
+    },
+    "relatedLabel": "Pour aller plus loin",
+    "cta": {
+      "eyebrow": "Diagnostic gratuit · 20 minutes",
+      "title": "Une soumission par étapes, prête pour votre demande.",
+      "lead": "Décrivez votre projet. Je vous réponds sous 24 h avec un découpage par étapes et des prix fixes, utilisables dans un dossier de subvention."
+    }
+  }
+}
