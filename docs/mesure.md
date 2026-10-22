@@ -31,6 +31,12 @@ Le canal et la page d'entrée sont dans le courriel de lead ; rien d'autre à sa
 - Calendly, 120 jours : 4 réservations, toutes issues de la prospection sortante
   de l'été 2026 (aucune du site).
 - Contrats attribuables au site : 0.
+- GA4 (propriété 543003574, lisible par le compte de service depuis le 2026-10-22),
+  90 jours : 149 sessions — direct 110, recherche organique 31 (Google 25, Bing 3),
+  référents 3, payant 2 ; **0 événement clé** ; aucune session venue d'un assistant IA.
+  Attention : la propriété reçoit aussi les visites des pages d'audit de la prospection
+  (`/<domaine>.com`, servies par audit.gabrielnadon.com) et des tests locaux
+  (127.0.0.1) — les exclure en lisant le trafic « direct » du site.
 
 ## À relire
 
